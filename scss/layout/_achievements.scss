@@ -123,7 +123,11 @@
     .achievements-text {
         font-size: 14px;
     }
-
+@media (orientation: landscape) {
+    .achievements{
+        margin-top: 140px;
+    }
+}
 }
  
 

@@ -996,6 +996,12 @@ h1 span::after {
   }
 }
 
+@media (max-width: 767px) and (orientation: landscape) {
+  .achievements {
+    margin-top: 140px;
+  }
+}
+
 /*About Us client --------------------------------------------*/
 .about-us {
   height: 100vh;
