@@ -384,9 +384,10 @@ header .logotype {
     display: flex;
     align-items: flex-start;
     padding-left: 15%;
+    box-sizing: border-box;
   }
   #menu ul {
-    width: 25%;
+    width: 30%;
     margin-top: 20px;
     margin-bottom: 30px;
   }
