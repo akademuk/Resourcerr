@@ -276,14 +276,13 @@
 }
 @media (orientation: landscape) {
 .burger-module_logo {
-  top: 40px;
+  top: 50px;
 }
 #modul-window_open {
   top: 62px;
 }
 #menu {
   ul {
-    padding-top: 50px;
     margin-top: 0;
     margin-bottom: 30px;
     a {
@@ -297,6 +296,12 @@
 .menu-top {
   margin-bottom: 15px;
   font-size: 13px;
+}
+.burger-module_logo {
+  a {
+    width: 56px;
+    height: 56px;
+  }
 }
 }
 }

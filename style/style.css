@@ -374,13 +374,12 @@ header .logotype {
 
 @media (max-width: 767px) and (orientation: landscape) {
   .burger-module_logo {
-    top: 40px;
+    top: 50px;
   }
   #modul-window_open {
     top: 62px;
   }
   #menu ul {
-    padding-top: 50px;
     margin-top: 0;
     margin-bottom: 30px;
   }
@@ -391,6 +390,10 @@ header .logotype {
   .menu-top {
     margin-bottom: 15px;
     font-size: 13px;
+  }
+  .burger-module_logo a {
+    width: 56px;
+    height: 56px;
   }
 }
 
@@ -839,17 +842,17 @@ h1 span::after {
     bottom: -15vh;
   }
   .tittle .toggle-switch {
-    padding-left: 45%;
+    padding-left: 0;
+    position: absolute;
+    top: 15px;
+    left: 35%;
   }
   h1 {
-    margin-top: 10px;
+    margin-top: 0;
   }
   h1 br {
     display: none;
   }
-}
-
-@media (max-width: 767px) {
   #menuToggle {
     top: 20px;
   }
