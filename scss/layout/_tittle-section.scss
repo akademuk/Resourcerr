@@ -243,17 +243,23 @@ h1 {
 }
 @media (orientation: landscape) {
     .tittle-container-btn {
-        left: 35%;
-        bottom: -30vh;
+        left: 45%;
+        bottom: -15vh;
     }
     .tittle {
     .toggle-switch {
-        padding-left: 35%;
+        padding-left: 45%;
     }
 }
 h1 {
     margin-top: 10px;
+    br {
+        display: none;
+    }
 }
+}
+#menuToggle {
+    top: 20px;
 }
 }
 /*@media max-width: 576px --------------------------------------------*/ 
