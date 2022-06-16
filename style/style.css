@@ -1052,7 +1052,7 @@ h1 span::after {
 }
 
 .about-us .wrapper .about-us-container .about-us_img .about-us_img-container .container {
-  background: url(../../images/about-us.png);
+  background: url(../images/about-us.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -2270,7 +2270,7 @@ h4 {
 
 #modul-window_open:after {
   content: "";
-  background: url(../../images/contact-us.png);
+  background: url(../images/contact-us.png);
   background-size: contain;
   width: 40px;
   height: 40px;
