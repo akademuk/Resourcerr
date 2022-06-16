@@ -1,0 +1,217 @@
+.get-in-touch {
+    background: $cod-gray;
+    padding: 120px 0;
+    .wrapper {
+        h2 {
+            margin-top: 0;
+            color: white;
+            margin-left: 55%;
+            position: relative;
+            span {
+                filter: drop-shadow(4px 4px #fff);
+            }
+            &::before {
+                content: "05";
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 110%;
+                text-align: right;
+                opacity: 0.5;
+                position: absolute;
+                top: 0;
+                left: -40px;
+            }
+        }
+    }
+}
+.get-in-touch-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.get-in-touch-container_contact {
+    padding-top: 50px;
+    width: 30%;
+    line-height: 150%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    span {
+        font-weight: 600;
+        font-size: 16px;
+        opacity: 0.5;
+    }
+    p {
+        font-size: 20px;
+        margin-bottom: 45px;
+    }
+    a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        margin-bottom: 45px;
+    }
+}
+.get-in-touch-container_form {
+    width: 45%;
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.get-in-touch-container_contact-icon {
+    padding-top: 10px;
+    display: flex;
+    a {
+        width: 60px;
+        height: 60px;
+        border: 2px solid #FFFFFF;
+        border-radius: 15px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+    }
+}
+.get-in-touch-container_form {
+   form {
+       margin-top: 50px;
+    input, textarea {
+        width:80%;
+        height: 40px;
+        background: transparent;
+        border-radius: 16px;
+        margin-bottom: 28px;
+        border:  1px solid #8A8A8A;
+        padding-left: 10px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        color:  white;
+        position: relative;
+        &:focus {
+          background: #262626;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 140%;
+          color: white;
+          box-shadow: 0 1px 0 #51E589, inset 0 1px 0 #0EC3B5;
+        }
+   }
+}
+}
+.get-in-touch-submit {
+    @include text-center;
+    width:80%;
+    button{
+      width: 112px;
+      height: 112px;
+      background: white;
+      border-radius: 50%;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 115%;
+      @include text-center;
+      color: #151515;
+      margin-right: 40px;
+      padding: 45px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 140%;
+      display: flex;
+      flex-wrap: wrap;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+      color: #FFFFFF;
+    }
+}
+.partners-get-in-touch {
+    .wrapper {
+        h2 {
+            span {
+                @include partners-gradient;
+            }
+        }
+    }
+}
+.partners-form {
+    form {
+        input, textarea {
+            &:focus {
+                box-shadow: 0 1px 0 #29A9EE, inset 0 1px 0 #41E4F0;
+              }
+        }
+    }
+}
+
+/*@media min-width: 768px --------------------------------------------*/
+@media (max-width: 768px) {
+    .get-in-touch {
+        .wrapper {
+            padding-left: 50px;
+            h2 {
+                margin-left: 0;
+            }
+            .get-in-touch-container {
+                flex-direction: column-reverse;
+                 width: 100%;
+            }
+        }
+    }
+.get-in-touch-container_form {
+    width: 100%;
+    form {
+        width: 80%;
+    }
+}
+.get-in-touch-container_contact {
+    width: 50%;
+}
+}
+
+/*@media min-width: 576px --------------------------------------------*/
+@media (max-width: 576px) {
+    .get-in-touch {
+        padding: 50px 0;
+        .wrapper {
+            padding-left: 0;
+            h2 {
+                padding-left: 30px;
+                &:before {
+                    left: -10px;
+                }
+            }
+        }
+    }
+.get-in-touch-container_form {
+    form {
+        width:100%;
+        input {
+            width: 90%;
+        }
+        textarea {
+            width: 90%;
+        }
+}
+.get-in-touch-submit {
+    p {
+        font-size: 14px;
+    }
+}
+}
+.get-in-touch-submit {
+    width: 90%;
+    button {
+        width: 88px;
+        height: 88px;
+        font-size: 12px;
+    }
+}
+.get-in-touch-container_contact {
+    width: 90%;
+}
+}

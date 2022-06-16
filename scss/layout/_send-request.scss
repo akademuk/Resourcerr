@@ -1,0 +1,176 @@
+/*Send Request client --------------------------------------------*/
+.send-request {
+    position: relative;
+    margin-top: 100px;
+    .wrapper {
+    position: relative;
+    background: linear-gradient(90.96deg, #0EC4B5 0%,#51E689 99.64%);
+    border-radius: 48px;
+    padding: 60px 120px 60px 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 150px;
+    .send-request-text {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        color: $cod-gray;
+        width: 80%;
+        }
+    }
+}
+.send-request {
+    .wrapper {
+        img {
+            &:nth-of-type(1) {
+            object-fit: contain;
+            width: 200px;
+            height: 55px;
+            position: absolute;
+            top: -10%;
+            right: 20%;
+            }
+            &:nth-of-type(2) {
+            object-fit: contain;
+            width: 138px;
+            height: 36px;
+            position: absolute;
+            top: 70%;
+            right: 30%;
+            }
+            &:nth-of-type(3) {
+            object-fit: contain;
+            width: 158px;
+            height: 42px;
+            position: absolute;
+            top: 75%;
+            right: -2%;
+            }
+        }
+    }
+}
+
+/*Send Request partners --------------------------------------------*/
+.partners-send-request {
+    .wrapper {
+        padding-left: 70px;
+        background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
+        .send-request-text {
+            width: 90%;
+        }
+    }
+}
+
+/*@media max-width: 992px --------------------------------------------*/
+
+/*@media (min-width: 768px) and (max-width: 991px) --------------------------------------------*/
+@media (min-width: 768px) and (max-width: 991px) {
+.send-request {
+    .wrapper {
+        padding: 72px 48px;
+        .send-request-text {
+            font-size: 32px;
+            width: 76%;
+            word-wrap: break-word;
+        }
+        .btn-send-request {
+            width: 144px;
+            height: 144px;
+            font-size: 18px;
+            
+        }
+    }
+}
+.send-request {
+    .wrapper {
+        img {
+            &:nth-of-type(2) {
+                top: inherit;
+                bottom: 0;
+            }
+        }
+    }
+}
+}
+/*@media max-width: 767px --------------------------------------------*/
+@media (max-width: 767px) {
+.btn-send-request {
+    width: 144px;
+    height: 144px;
+    font-size: 18px;
+}
+.send-request {
+    .wrapper {
+        padding: 72px 48px;
+        .send-request-text {
+            width: 60%;
+            font-size: 32px;
+            word-wrap: break-word;
+        }
+    }
+}
+}
+/*@media max-width: 568px --------------------------------------------*/
+@media (max-width: 568px){
+.send-request {
+    height: 430px;
+    position: relative;
+    .wrapper {
+        height: 100%;
+        padding: 40px 28px 176px 28px;
+        flex-direction: column;
+        img {
+            &:nth-of-type(1) {
+                bottom: 10vh;
+                top: inherit;
+                left: 2vw;
+                width: 150px;
+            }
+            &:nth-of-type(2) {
+                width: 100px;
+                top: inherit;
+                bottom: 18vh;
+                left: 30vw;
+            }
+            &:nth-of-type(3) {
+                width: 100px;
+                top: inherit;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        .send-request-text {
+            font-size: 28px;
+            width: 90%;
+            margin-bottom: 10px;
+            word-wrap: break-word;
+        }
+        .btn-send-request {
+            width: 104px;
+            height: 104px;
+            font-size: 16px;
+            position: absolute;
+            bottom: 5vh;
+            right: 10vw;
+        }
+    }
+}
+}
+       
+
+
+
+@media (max-width: 767px) {
+    /* стили для xs-устройств */
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* стили для sm-устройств */
+  }
+  @media (min-width: 991px) and (max-width: 1199px) {
+    /* стили для md-устройств */
+  }
+  @media (min-width: 1200px) {
+    /* стили для lg-устройств */
+  }

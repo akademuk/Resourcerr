@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../style/slick-theme.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <!--Header + burger + switch----------------------------------------------------------->   
+    <header>
+        <div class="logotype">
+            <svg width="72" height="24" viewBox="0 0 72 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V24H8.72437V12.1714C8.72437 10.4 9.25166 9.04286 10.3063 8.1C11.3928 7.15714 12.9108 6.68571 14.8602 6.68571H17.976V0H15.8189C12.9108 0 10.6738 0.942857 9.10786 2.82857C7.88702 4.32936 7.152 6.2826 6.9028 8.68827V0H0ZM26.7004 24H17.976V0H24.8788V8.68828C25.128 6.2826 25.8631 4.32937 27.0839 2.82857C28.6498 0.942857 30.8868 0 33.7949 0H35.9521V6.68571H32.8362C30.8868 6.68571 29.3688 7.15714 28.2823 8.1C27.2277 9.04286 26.7004 10.4 26.7004 12.1714V24ZM35.9521 24H44.6764V12.1714C44.6764 10.4 45.2037 9.04286 46.2583 8.1C47.3449 7.15714 48.8628 6.68571 50.8122 6.68571H53.9281V0H51.771C48.8628 0 46.6258 0.942857 45.0599 2.82857C43.8391 4.32936 43.1041 6.28259 42.8549 8.68826V0H35.9521V24ZM60.8309 0H53.9281V24H62.6525V12.1714C62.6525 10.4 63.1798 9.04286 64.2344 8.1C65.3209 7.15714 66.8389 6.68571 68.7883 6.68571H72V0H69.747C66.8389 0 64.6019 0.942857 63.0359 2.82857C61.8151 4.32936 61.0801 6.28259 60.8309 8.68826V0Z" fill="#151515"/>
+            </svg>     
+            <p class="logotype-text">Resourcerr - lead <br> generation company</p>    
+        </div>
+        <div class="burger-module">
+        
+            <div id="modul-window">
+                <button id="modul-window_open">Send request</button>
+                <div class="modal modal_animation">
+                
+                    <div class="modal_content__header">
+                     
+                      <div class="modul-window-header">
+                        
+                          <p>Requirements of the project</p>
+                          <span class="modal_close">&times;</span>
+                      </div>
+                      <div class="modul-window-main">
+                          <form action="">
+                            <!------------------------>
+                            <h3>Corporate details</h3>
+                            <label>Full name <input type="text"></label>
+                            <label>Company name <input type="text"></label>
+                            <label>Company website <input type="text"></label>
+                            <label>Brief company overview <textarea name="" id="" cols="30" rows="10"></textarea></label>
+                            <label>Additional criteria <textarea name="" id="" cols="30" rows="10"></textarea></label>
+                            <!------------------------>
+                            <h3>Campaign  details</h3>
+                            <label>Budget<input type="text"></label>
+                            <label>Max trial period<input type="text"></label>
+                            <label>Number of contacts<input type="text"></label>
+                            <label>Number of appointments<input type="text"></label>
+                            <label>Preferable outreach language<input type="text"></label>
+                            <label>Additional criteria<textarea name="" id="" cols="30" rows="10"></textarea></label>
+                            <!------------------------>
+                            <h3>Product overview</h3>
+                            <label>Average deal value<input type="text"></label>
+                            <label>Average sales cycle (days)<input type="text"></label>
+                            <label>Conversion details<input type="text"></label>
+                            <!------------------------>
+                            <h3>Ideal customer profile</h3>
+                            <label>Industry<input type="text"></label>
+                            <label>Location<input type="text"></label>
+                            <label>Titles<input type="text"></label>
+                            <label>Number of employees<input type="text"></label>
+                            <label>Additional criteria<textarea name="" id="" cols="30" rows="10"></textarea></label>
+                            <!------------------------>
+                           <div class="form-submit">
+                            <input type="submit" value="Submit">                          
+                            <p>Click to Submit I agree to the <span> Terms of Use </span> and <span> Privacy Policy</span></p>
+                         
+                           </div>
+                        
+                        </form>
+                      </div>
+                    </div>       
+                  </div>
+                </div>  
+              </div>
+        </div>       
+        <nav role="navigation" class="width-nav">
+          
+            <div id="menuToggle" >
+                <input type="checkbox" class="chec" id="myInput"/>
+                <span class="menuToggle-span"></span>
+                <span class="menuToggle-span"></span>
+                <span class="menuToggle-span"></span>
+               
+                
+                <nav id="menu">
+                    <ul>
+                        <a href="#about"><li>About us</li></a>
+                        <a href="#why-we"><li>Why resourcer?</li></a>
+                        <a href="#how-it-works"><li>How it works</li></a>
+                        <a href="#reviews"><li>Reviews</li></a>
+                        <a href="#contact"><li>Contacts</li></a>
+                    </ul>    
+    <!--toggle-switch---------------------------------------------------->             
+                    <div class="toggle-switch">
+                        <div class="toggle-custom">
+                          <input id="s2" type="checkbox" onclick="switchClicked(this, 's1');">
+                          <label for="toggle"></label>
+                          <span>For clients</span>
+                          <span>For parents</span>
+                        </div>
+                    </div>
+
+                <div class="burger-module_logo">
+                    <svg width="72" height="24" viewBox="0 0 72 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V24H8.72437V12.1714C8.72437 10.4 9.25166 9.04286 10.3063 8.1C11.3928 7.15714 12.9108 6.68571 14.8602 6.68571H17.976V0H15.8189C12.9108 0 10.6738 0.942857 9.10786 2.82857C7.88702 4.32936 7.152 6.2826 6.9028 8.68827V0H0ZM26.7004 24H17.976V0H24.8788V8.68828C25.128 6.2826 25.8631 4.32937 27.0839 2.82857C28.6498 0.942857 30.8868 0 33.7949 0H35.9521V6.68571H32.8362C30.8868 6.68571 29.3688 7.15714 28.2823 8.1C27.2277 9.04286 26.7004 10.4 26.7004 12.1714V24ZM35.9521 24H44.6764V12.1714C44.6764 10.4 45.2037 9.04286 46.2583 8.1C47.3449 7.15714 48.8628 6.68571 50.8122 6.68571H53.9281V0H51.771C48.8628 0 46.6258 0.942857 45.0599 2.82857C43.8391 4.32936 43.1041 6.28259 42.8549 8.68826V0H35.9521V24ZM60.8309 0H53.9281V24H62.6525V12.1714C62.6525 10.4 63.1798 9.04286 64.2344 8.1C65.3209 7.15714 66.8389 6.68571 68.7883 6.68571H72V0H69.747C66.8389 0 64.6019 0.942857 63.0359 2.82857C61.8151 4.32936 61.0801 6.28259 60.8309 8.68826V0Z" fill="#151515"/>
+                    </svg>
+                    <p class="logotype-text">Resourcerr - lead <br> generation company</p> 
+                   </div>
+
+                
+                </nav>
+                
+        </nav>
+    </header>
+    <!--Tittle + switch + button----------------------------------------------------------->   
+    <section class="tittle partners-tittle">
+        <div class="toggle-switch">
+            <div class="toggle-custom switch">
+              <input id="s1" type="checkbox" onclick="switchClicked(this, 's2');">
+              <label for="toggle"></label>
+              <span>For clients</span>
+              <span>For parents</span>
+            </div>
+        </div>
+        <div class="tittle-container partners-tittle-text">
+            <h1>Acquire new<br> <span>clients</span> for your <br><p>lead generation</p>business</h1>
+        <div class="tittle-container-btn">
+            <p>Use additional source <br> to get new clients</p>
+            <button type="submit" class="btn-send-request">Find<br>clients</button>
+        </div>
+        </div>
+    </section>
+    <!--Achievements + counter----------------------------------------------------------->   
+    <section class="achievements">
+        <div class="wrapper">
+            <div class="achievements-section partners-achievements">
+                <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.6667C12.8409 6.6667 14.3333 5.1743 14.3333 3.33333C14.3333 1.49238 12.8409 0 11 0C9.15906 0 7.66663 1.49238 7.66663 3.33333C7.66663 5.1743 9.15906 6.6667 11 6.6667ZM11 5.6667C12.2887 5.6667 13.3333 4.622 13.3333 3.33333C13.3333 2.04467 12.2887 1 11 1C9.71126 1 8.66663 2.04467 8.66663 3.33333C8.66663 4.622 9.71126 5.6667 11 5.6667Z" fill="#858585"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 5.5C6.5 6.8807 5.38071 8 4 8C2.61929 8 1.5 6.8807 1.5 5.5C1.5 4.11929 2.61929 3 4 3C5.38071 3 6.5 4.11929 6.5 5.5ZM5.5 5.5C5.5 6.3284 4.82843 7 4 7C3.17157 7 2.5 6.3284 2.5 5.5C2.5 4.67157 3.17157 4 4 4C4.82843 4 5.5 4.67157 5.5 5.5Z" fill="#858585"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 14V12C0.5 10.067 2.067 8.5 4 8.5C5.22483 8.5 6.3027 9.1292 6.92809 10.0819C7.64816 8.5559 9.2008 7.5 11 7.5C12.7992 7.5 14.3518 8.5559 15.0719 10.0819C15.6973 9.1292 16.7752 8.5 18 8.5C19.933 8.5 21.5 10.067 21.5 12V14C21.5 14.2761 21.2761 14.5 21 14.5H1C0.72386 14.5 0.5 14.2761 0.5 14ZM1.5 12C1.5 10.6193 2.61929 9.5 4 9.5C5.38071 9.5 6.5 10.6193 6.5 12V13.5H1.5V12ZM20.5 13.5V12C20.5 10.6193 19.3807 9.5 18 9.5C16.6193 9.5 15.5 10.6193 15.5 12V13.5H20.5ZM14.5 13.5V12C14.5 10.067 12.933 8.5 11 8.5C9.067 8.5 7.5 10.067 7.5 12V13.5H14.5Z" fill="#858585"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 5.5C20.5 6.8807 19.3807 8 18 8C16.6193 8 15.5 6.8807 15.5 5.5C15.5 4.11929 16.6193 3 18 3C19.3807 3 20.5 4.11929 20.5 5.5ZM19.5 5.5C19.5 6.3284 18.8284 7 18 7C17.1716 7 16.5 6.3284 16.5 5.5C16.5 4.67157 17.1716 4 18 4C18.8284 4 19.5 4.67157 19.5 5.5Z" fill="#858585"/>
+                    </svg>                    
+             <p class="achievements-counter partners-text"><span class="number">200</span>+</p>
+             <p class="achievements-text">Total number <br> of clients</p>
+            </div>
+        
+            <div class="achievements-section partners-achievements">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4.6875C11.7413 4.6875 11.5312 4.89752 11.5312 5.15625C11.5312 5.41498 11.7413 5.625 12 5.625C12.2587 5.625 12.4688 5.41498 12.4688 5.15625C12.4688 4.89752 12.2587 4.6875 12 4.6875Z" fill="#858585"/>
+                    <path d="M4.21875 13.125C4.47748 13.125 4.6875 12.915 4.6875 12.6562C4.6875 12.3975 4.47748 12.1875 4.21875 12.1875C3.96002 12.1875 3.75 12.3975 3.75 12.6562C3.75 12.915 3.96002 13.125 4.21875 13.125Z" fill="#858585"/>
+                    <path d="M15.75 0C11.53 0 8.06635 2.90955 7.79846 6.5744C3.77948 6.776 0 9.67401 0 13.5938C0 15.2318 0.648193 16.819 1.82812 18.0765C2.06158 19.0389 1.77814 20.059 1.07483 20.7623C0.940796 20.8964 0.900696 21.098 0.973206 21.2732C1.04572 21.4482 1.21655 21.5625 1.40625 21.5625C2.7431 21.5625 4.03143 21.0383 4.98871 20.1145C5.92126 20.4324 7.138 20.625 8.25 20.625C12.4695 20.625 15.9327 17.7162 16.2014 14.0521C17.1828 14.0085 18.2036 13.8272 19.0113 13.552C19.9686 14.4758 21.2569 15 22.5938 15C22.7834 15 22.9543 14.8857 23.0268 14.7107C23.0993 14.5355 23.0592 14.3339 22.9252 14.1998C22.2219 13.4965 21.9384 12.4764 22.1719 11.514C23.3518 10.2565 24 8.66931 24 7.03125C24 2.95844 19.9294 0 15.75 0ZM8.25 19.6875C7.14368 19.6875 5.883 19.4703 5.03851 19.1343C4.8576 19.0622 4.65088 19.1096 4.51923 19.2534C3.95325 19.8721 3.21735 20.3035 2.41553 20.5018C2.85736 19.6553 2.97015 18.6573 2.70135 17.7118C2.68011 17.6373 2.64075 17.5692 2.58673 17.5137C1.52325 16.4183 0.9375 15.0262 0.9375 13.5938C0.9375 10.2905 4.28613 7.5 8.25 7.5C11.993 7.5 15.2812 10.1028 15.2812 13.5938C15.2812 16.9539 12.1271 19.6875 8.25 19.6875ZM21.4133 10.9512C21.3593 11.0068 21.3199 11.075 21.2986 11.1493C21.0298 12.0948 21.1426 13.0928 21.5845 13.9393C20.7827 13.7411 20.0468 13.3096 19.4808 12.6909C19.3491 12.5473 19.1424 12.4997 18.9615 12.5718C18.2296 12.863 17.1855 13.0646 16.1999 13.1133C16.0629 11.3406 15.1787 9.67456 13.667 8.4375H19.7812C20.0402 8.4375 20.25 8.22766 20.25 7.96875C20.25 7.70984 20.0402 7.5 19.7812 7.5H12.2269C11.1628 6.95837 9.96808 6.64252 8.73834 6.57623C9.00769 3.42792 12.0496 0.9375 15.75 0.9375C19.7139 0.9375 23.0625 3.72803 23.0625 7.03125C23.0625 8.46368 22.4767 9.85583 21.4133 10.9512Z" fill="#858585"/>
+                    <path d="M12 12.1875H6.09375C5.83484 12.1875 5.625 12.3973 5.625 12.6562C5.625 12.9152 5.83484 13.125 6.09375 13.125H12C12.2589 13.125 12.4688 12.9152 12.4688 12.6562C12.4688 12.3973 12.2589 12.1875 12 12.1875Z" fill="#858585"/>
+                    <path d="M12 15H4.21875C3.95984 15 3.75 15.2098 3.75 15.4688C3.75 15.7277 3.95984 15.9375 4.21875 15.9375H12C12.2589 15.9375 12.4688 15.7277 12.4688 15.4688C12.4688 15.2098 12.2589 15 12 15Z" fill="#858585"/>
+                    <path d="M19.7812 4.6875H13.875C13.6161 4.6875 13.4062 4.89734 13.4062 5.15625C13.4062 5.41516 13.6161 5.625 13.875 5.625H19.7812C20.0402 5.625 20.25 5.41516 20.25 5.15625C20.25 4.89734 20.0402 4.6875 19.7812 4.6875Z" fill="#858585"/>     
+                </svg>      
+                <p class="achievements-counter partners-text"><span class="number">5</span>K+</p>
+                <p class="achievements-text">Meetings arranged</p>
+            </div>
+        
+            <div class="achievements-section partners-achievements">
+                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.56 2.71998C21.4876 2.66426 21.4038 2.62542 21.3145 2.60631C21.2252 2.58721 21.1328 2.58833 21.044 2.60958L18.7424 3.19998C17.8928 3.15198 15.1832 2.11038 13.64 1.44798L13.6088 1.43598C11.5592 0.699184 9.78556 0.864784 8.30236 1.91598C6.32956 1.24158 3.80236 2.66478 3.02236 3.15198L0.948757 2.61918C0.860152 2.59601 0.767406 2.59351 0.677682 2.61188C0.587958 2.63025 0.503657 2.669 0.431289 2.72513C0.358921 2.78126 0.300423 2.85328 0.260312 2.93561C0.220202 3.01795 0.199552 3.1084 0.199957 3.19998V11.6C0.199957 11.7591 0.263171 11.9117 0.375693 12.0242C0.488215 12.1368 0.640827 12.2 0.799957 12.2H2.07436L7.52956 16.5008C7.73893 16.7022 7.99395 16.8499 8.27283 16.9314C8.55171 17.0128 8.84616 17.0256 9.13103 16.9685C9.4159 16.9114 9.68273 16.7863 9.90871 16.6037C10.1347 16.4211 10.3131 16.1865 10.4288 15.92C10.7006 16.0757 11.0082 16.1584 11.3216 16.16C11.6733 16.1601 12.0173 16.0572 12.3112 15.864C12.605 15.6708 12.8359 15.3957 12.9752 15.0728C13.2465 15.2298 13.5544 15.3125 13.868 15.3128C14.2193 15.3125 14.5628 15.2094 14.8562 15.0162C15.1496 14.823 15.38 14.5482 15.5192 14.2256C15.7962 14.3829 16.1102 14.4637 16.4288 14.4595C16.7474 14.4554 17.0591 14.3666 17.332 14.2022C17.6049 14.0377 17.8292 13.8036 17.9817 13.5239C18.1342 13.2441 18.2096 12.9289 18.2 12.6104L19.484 12.2H21.2C21.3591 12.2 21.5117 12.1368 21.6242 12.0242C21.7367 11.9117 21.8 11.7591 21.8 11.6V3.19998C21.8003 3.10677 21.7788 3.01477 21.7371 2.9314C21.6954 2.84803 21.6348 2.77561 21.56 2.71998ZM1.39996 3.96798L2.47276 4.24398L2.04316 8.23998L1.74556 11H1.39996V3.96798ZM16.8368 13.0784C16.7227 13.1884 16.5704 13.2498 16.412 13.2498C16.2535 13.2498 16.1012 13.1884 15.9872 13.0784L15.14 12.2312L11.7464 8.83518C11.6323 8.73267 11.4834 8.67769 11.3301 8.68154C11.1768 8.68539 11.0309 8.74777 10.9221 8.85588C10.8134 8.964 10.7502 9.10963 10.7455 9.26289C10.7408 9.41614 10.7949 9.56539 10.8968 9.67998L14.2928 13.0808C14.4019 13.1941 14.4622 13.3457 14.4606 13.5031C14.459 13.6604 14.3957 13.8108 14.2843 13.9219C14.1729 14.033 14.0223 14.0959 13.865 14.097C13.7076 14.0981 13.5562 14.0374 13.4432 13.928L12.5936 13.0784L10.04 10.532C9.98417 10.4762 9.91794 10.4319 9.84506 10.4018C9.77217 10.3716 9.69405 10.356 9.61516 10.356C9.53626 10.356 9.45814 10.3716 9.38526 10.4018C9.31237 10.4319 9.24614 10.4762 9.19036 10.532C9.13457 10.5878 9.09032 10.654 9.06013 10.7269C9.02994 10.7998 9.0144 10.8779 9.0144 10.9568C9.0144 11.0357 9.02994 11.1138 9.06013 11.1867C9.09032 11.2596 9.13457 11.3258 9.19036 11.3816L11.7464 13.928C11.8036 13.9834 11.8492 14.0497 11.8805 14.1229C11.9119 14.1962 11.9283 14.2749 11.9289 14.3546C11.9295 14.4343 11.9142 14.5132 11.8839 14.5869C11.8536 14.6606 11.809 14.7276 11.7526 14.7838C11.6961 14.8401 11.6291 14.8845 11.5553 14.9146C11.4815 14.9446 11.4025 14.9597 11.3228 14.9589C11.2432 14.9581 11.1645 14.9414 11.0913 14.9099C11.0182 14.8784 10.952 14.8326 10.8968 14.7752L8.35996 12.2312C8.30443 12.1754 8.23842 12.1311 8.16572 12.1009C8.09303 12.0707 8.01508 12.0551 7.93636 12.0551C7.85763 12.0551 7.77968 12.0707 7.70699 12.1009C7.6343 12.1311 7.56829 12.1754 7.51276 12.2312C7.45682 12.2863 7.4125 12.3521 7.38241 12.4247C7.35232 12.4972 7.33707 12.575 7.33756 12.6536C7.33729 12.7324 7.35263 12.8106 7.38269 12.8835C7.41276 12.9564 7.45697 13.0226 7.51276 13.0784L9.20956 14.7752C9.32182 14.8881 9.38484 15.0408 9.38484 15.2C9.38484 15.3592 9.32182 15.5119 9.20956 15.6248C9.09493 15.7337 8.94286 15.7944 8.78476 15.7944C8.62665 15.7944 8.47459 15.7337 8.35996 15.6248C8.34352 15.6075 8.32587 15.5915 8.30716 15.5768L2.91436 11.3336L3.51676 5.76798L3.69196 4.14558C4.45516 3.66558 5.94556 2.92398 7.18156 2.94558C6.81423 3.3697 6.48571 3.82593 6.19996 4.30878C5.93525 4.75983 5.85098 5.29431 5.96405 5.80492C6.07713 6.31553 6.37918 6.76446 6.80956 7.06158C7.65916 7.64238 9.20956 8.18238 11.1296 6.52398L16.8368 12.2288C16.9484 12.342 17.0111 12.4946 17.0111 12.6536C17.0111 12.8126 16.9484 12.9652 16.8368 13.0784ZM17.78 11.4872C17.7507 11.4503 17.7195 11.415 17.6864 11.3816L11.9744 5.66958C12.2144 5.39598 12.4544 5.09118 12.6944 4.74558C12.7489 4.68229 12.7896 4.6083 12.8139 4.52835C12.8382 4.4484 12.8456 4.36425 12.8355 4.28131C12.8254 4.19836 12.798 4.11844 12.7553 4.04666C12.7125 3.97489 12.6552 3.91284 12.587 3.86449C12.5189 3.81614 12.4414 3.78257 12.3595 3.76591C12.2776 3.74925 12.1931 3.74988 12.1115 3.76776C12.0299 3.78564 11.9529 3.82037 11.8855 3.86972C11.818 3.91908 11.7617 3.98198 11.72 4.05438C10.6544 5.56398 9.06076 7.13838 7.49596 6.07038C7.31828 5.94384 7.19487 5.75493 7.15038 5.54138C7.10589 5.32783 7.14359 5.10535 7.25596 4.91838C7.6449 4.2235 8.15351 3.60277 8.75836 3.08478C8.77781 3.07091 8.79626 3.05567 8.81356 3.03918C10.0136 2.07918 11.4536 1.93278 13.2008 2.55918C13.6544 2.75118 16.676 4.03038 18.26 4.33518L18.788 11.1728L17.78 11.4872ZM20.6 11H19.9568L19.436 4.25838L20.6 3.96798V11Z" fill="#858585"/>
+                    </svg>
+                    
+              
+                    
+             <p class="achievements-counter partners-text"><span class="number">40</span>+</p>
+             <p class="achievements-text">Partners are already <br> cooperating with us</p>
+            </div>
+        
+            <div class="achievements-section partners-achievements">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.702999 18.7343H4.21862V20.8437C4.21862 21.232 4.53343 21.5468 4.92174 21.5468H23.2967C23.685 21.5468 23.9998 21.232 23.9998 20.8437V2.5625C23.9998 2.17418 23.685 1.85937 23.2967 1.85937H19.7811V1.15625C19.7811 0.767937 19.4663 0.453125 19.078 0.453125C18.6896 0.453125 18.3748 0.767937 18.3748 1.15625V1.85937H14.8123V1.15625C14.8123 0.767937 14.4975 0.453125 14.1092 0.453125C13.7209 0.453125 13.4061 0.767937 13.4061 1.15625V1.85937H9.89048V1.15625C9.89048 0.767937 9.57567 0.453125 9.18736 0.453125C8.79904 0.453125 8.48423 0.767937 8.48423 1.15625V1.85937H4.92174C4.53343 1.85937 4.21862 2.17418 4.21862 2.5625V6.78124C4.21862 11.9633 2.06495 15.9498 0.252859 17.4911C0.0254223 17.6806 -0.0589056 17.9922 0.0418286 18.2706C0.142657 18.5489 0.406937 18.7343 0.702999 18.7343ZM22.5936 20.1406H5.62486V18.7343H19.078C19.2424 18.7343 19.4017 18.6767 19.5281 18.5714C20.3733 17.8673 21.6826 16.1912 22.5936 14.0444V20.1406ZM5.62486 3.26562H8.48423V3.96874C8.48423 4.35705 8.79904 4.67187 9.18736 4.67187C9.57567 4.67187 9.89048 4.35705 9.89048 3.96874V3.26562H13.4061V3.96874C13.4061 4.35705 13.7209 4.67187 14.1092 4.67187C14.4975 4.67187 14.8123 4.35705 14.8123 3.96874V3.26562H18.3748V3.96874C18.3748 4.35705 18.6896 4.67187 19.078 4.67187C19.4663 4.67187 19.7811 4.35705 19.7811 3.96874V3.26562H22.5936V6.07811H5.62486V3.26562ZM5.61282 7.48389H22.5811C22.4227 11.9443 20.7108 15.4537 18.8022 17.3281H2.30232C4.4648 14.5727 5.4968 10.9851 5.61282 7.48389Z" fill="#858585"/>
+                    <defs>
+                        <linearGradient id="paint0_linear_723_5518" x1="0.200012" y1="0.983643" x2="22.0703" y2="1.47675" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#29A9EE"/>
+                        <stop offset="1" stop-color="#41E4F0"/>
+                        </linearGradient>
+                    </defs>    
+                </svg>
+                    
+             <p class="achievements-counter partners-text"><span class="number">6</span>+</p>
+             <p class="achievements-text">Months our <br> cooperation cycle</p>
+            </div>
+        </div>
+    </section>
+    <!--About us----------------------------------------------------------->
+    <section class="about-us" id="about">
+        <div class="wrapper">
+            <div class="about-us-container partners-about-us-container">
+                <div class="about-us_img" >
+                    <div class="about-us_img-container">
+                        <div class="container">
+                           <div class="object" data-value="3">
+                            <img src="../images/maney1.png" class="object" data-value="-2" alt="">
+                            <img src="../images/maney1.png" class="object" data-value="6" alt="">
+                            <img src="../images/maney1.png" class="object" data-value="4" alt="">
+                            <img src="../images/contact1.png" class="object" data-value="-6" alt="">
+                            <img src="../images/contact2.png" class="object" data-value="8" alt="">
+                            <img src="../images/contact3.png" class="object" data-value="-4" alt="">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-us_tittle">
+                    <h2>About<span class="partners-blue"> us</span></h2>
+                    <p>Resorcer is a business development partner for lead generation companies that brings them new clients. Once you apply and fit one’s project requirements, you’ll be invited to an interview with our manager to discuss the details and your case studies. If you’re the best match, you’ll be connected to our client to sign the agreement and start working your magic. </p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!--Send-request----------------------------------------------------------->
+    <section class="send-request partners-send-request">
+       <div class="wrapper">
+            <img src="../images/path104-2.png" alt="">
+            <img src="../images/path104-1.png" alt="">
+            <img src="../images/path104.png" alt="">
+            <p class="send-request-text">Fill out the application form so that we add you to the list of our partners and and start growing your sales pipeline</p>
+            <button type="submit" class="btn-send-request">Send <br> request</button>
+       </div>
+    </section>
+    <!--Why we ar----------------------------------------------------------->
+    <section class="why-we-ar partners-why-we-ar" id="why-we">
+     <div class="wrapper">
+        <h2>Why <span class="partners-blue">resourcer?</span></h2>
+        <p class="why-we-tittle-text">We can become your business <br> development manager that will provide you <br> with new clients</p>
+        <div class="why-we-ar-flex">
+           <div class="why-we-ar-container">
+            <div class="why-we-ar-container_img">
+                <img src="../images/partners/resourcer1.png" alt="">
+                <img src="../images/partners/resourcer1-hover.png" alt="">
+            </div>
+            <p class="why-we-ar-container_text">Modify presale efforts having no need to spend money and time on the search and communication with the prospects</p>
+           </div>
+           <div class="why-we-ar-container">
+            <div class="why-we-ar-container_img">
+             <img src="../images/partners/resourcer2.png" alt="">
+             <img src="../images/partners/resourcer2-hover.png" alt="">
+             </div>
+            <p class="why-we-ar-container_text">Increase customer lifetime and satisfaction score being the best match</p>
+           </div>
+           <div class="why-we-ar-container">
+            <div class="why-we-ar-container_img">
+                <img src="../images/partners/resourcer3.png" alt="">
+                <img src="../images/partners/resourcer3-hover.png" alt="">  
+             </div>
+            <p class="why-we-ar-container_text">Get the clients you choose and can provide the best results with</p>
+           </div>
+            <div class="why-we-ar-container">
+            <div class="why-we-ar-container_img">
+                <img src="../images/partners/resourcer4.png" alt="">
+                <img src="../images/partners/resourcer4-hover.png" alt="">                 
+             </div>
+            <p class="why-we-ar-container_text">Immediate project launch as the client is ready to cooperate with you</p>
+           </div>
+        </div>
+     </div>
+    </section>
+    <!--How it works----------------------------------------------------------->
+   <section class="how-it-works partners-how-it-works" id="how-it-works">
+       <div class="wrapper">
+        <h2>How<span> it </span>works</h2>
+        <div class="how-it-works-container">
+              <div class="how-it-works-container-info">
+                  <img src="../images/partners/it-works1.png" alt="">
+                  <div class="how-it-works-container-info_text">
+                      <h5>01</h5>
+                      <p>You fill out the application form describing your terms and experience</p>
+                  </div>
+              </div> 
+              <div class="how-it-works-container-info">
+                <img src="../images/partners/it-works2.png" alt="">
+                <div class="how-it-works-container-info_text">
+                    <h5>02</h5>
+                    <p>We verify the information and add you to the list of our partners</p>
+                </div>
+            </div>   
+            <div class="how-it-works-container-info">
+                <img src="../images/partners/it-works3.png" alt="">
+                <div class="how-it-works-container-info_text">
+                    <h5>03</h5>
+                    <p>Once you match the general client’s requirements, we send you the form that can help us understand if your company is suitable for the very project</p>
+                </div>
+            </div>   
+            <div class="how-it-works-container-info">
+                <img src="../images/partners/it-works4.png" alt="">
+                <div class="how-it-works-container-info_text">
+                    <h5>04</h5>
+                    <p>We have an interview with you discussing the details</p>
+                </div>
+            </div>  
+            <div class="how-it-works-container-info">
+                <img src="../images/partners/it-works5.png" alt="">
+                <div class="how-it-works-container-info_text">
+                    <h5>05</h5>
+                    <p>If you’re a 100% match, we send your proposal to the client</p>
+                </div>
+            </div>    
+        </div>
+       </div>
+   </section>
+    <!--Reviews----------------------------------------------------------->
+   <section class="reviews partners-reviews" id="reviews">
+    <!-- Контент -->
+    <h2>Re<span>vie</span>ws</h2>
+    <div class="slider">
+        <div class="slider__item">
+            <h4>I’m very satisfied</h4>
+            <p>We always knew that lead generation is the best way to find clients especially if you have just launched your business. So we started looking for a contractor for the research and cold outreach. But there are so many of them on the market… This is why we decided to contact Resourcer team to find the most fitting partner. <br>
+            <br> aAs a result, I’m very satisfied with the match and we keep cooperating with our lead generation company once we need new clients. </p>
+            <span>&beright</span>
+        </div>
+        <div class="slider__item">
+            <h4>nice work</h4>
+            <p>  Almost every company needs recruiting, which is our expertise. So I was looking for the following combination: leadgen + cold outreach + appointment setting. As our company consists mainly of recruiters, we don’t have time and expertise to communicate with numerous companies that offer such services.<br>
+            <br> So I asked for Resourcer’s help and they sent me a few proposals in a week. The company we work with sets at least 10 meetings/months, which keeps all our employees engaged. </p>
+            <span>StaffMedIT</span>
+        </div>
+        <div class="slider__item">
+            <h4>Cool</h4>
+            <p>It is very difficult to identify the right ICP in our field. But Resourcer matched us with the company that had almost the same case study. It helped us to fill out the ICP and value and we received the first batch of warm leads in a few weeks.<br>
+            <br>   I think if I were to look for a lead generation company, I wouldn’t concentrate and/or waste time on the case studies they have and subsequently wouldn’t choose the partner with the experience in my domain. So I’m really happy I used Resourcer services!</p>
+            <span>Astra Motion</span>
+        </div>
+        
+    </section>
+    <!--Get in touch----------------------------------------------------------->
+    <section class="get-in-touch partners-get-in-touch" id="contact">
+      <div class="wrapper">
+        <h2>Get<span> in </span>touch</h2>
+        <div class="get-in-touch-container">
+            <div class="get-in-touch-container_contact">
+                <span>Visit us</span>
+                <p>Nieuwe Garage Twentepoort West 107609 RD Almelo</p>
+                <span>Email</span>
+                <a href="mailto:resourser@example.com">resourser@example.com</a>
+                <span>Phone</span>
+                <a href="tel:+1 (222) 222-22-22">+1 (222) 222-22-22</a>
+                <span>Social links</span>
+                <div class="get-in-touch-container_contact-icon">
+                    <a href="#"> 
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.36597 8.0383H12.4298V10.0626C13.0152 8.89834 14.5164 7.85228 16.7716 7.85228C21.0948 7.85228 22.1211 10.1698 22.1211 14.4218V22.2968H17.7443V15.3902C17.7443 12.9687 17.1589 11.6032 15.6686 11.6032C13.6017 11.6032 12.7428 13.0749 12.7428 15.3891V22.2968H8.36597V8.0383ZM0.860875 22.1108H5.23766V7.85228H0.860875V22.1108ZM5.86463 3.20304C5.8648 3.5699 5.79204 3.93313 5.6506 4.27162C5.50915 4.61011 5.30184 4.91712 5.0407 5.17479C4.51155 5.70068 3.7953 5.99505 3.04927 5.99324C2.30455 5.99274 1.58995 5.69912 1.06002 5.17588C0.799831 4.91733 0.593219 4.60999 0.452021 4.27145C0.310824 3.93291 0.237816 3.56984 0.237183 3.20304C0.237183 2.46227 0.532616 1.75323 1.06111 1.23021C1.59058 0.70626 2.30548 0.412514 3.05036 0.412842C3.7966 0.412842 4.51221 0.707181 5.0407 1.23021C5.56811 1.75323 5.86463 2.46227 5.86463 3.20304Z" fill="white"/>
+                        </svg>                            
+                    </a>
+                    <a href="#"> 
+                        <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.14329 23.9447V13.7883H0.884521V9.47493H4.14329V5.79075C4.14329 2.89568 6.06826 0.237061 10.5038 0.237061C12.2997 0.237061 13.6276 0.404418 13.6276 0.404418L13.523 4.43238C13.523 4.43238 12.1687 4.41956 10.6908 4.41956C9.09128 4.41956 8.83501 5.1361 8.83501 6.32537V9.47493H13.6501L13.4406 13.7883H8.83501V23.9447H4.14329Z" fill="white"/>
+                        </svg>                                                   
+                    </a>
+                    <a href="#"> 
+                        <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.1211 3.04772C21.3163 3.41327 20.4518 3.66026 19.543 3.7719C20.4807 3.1967 21.1823 2.29139 21.5168 1.2249C20.6358 1.76136 19.6715 2.13897 18.6659 2.34131C17.9897 1.60118 17.094 1.11061 16.1179 0.945769C15.1419 0.780922 14.14 0.951022 13.2679 1.42966C12.3958 1.9083 11.7023 2.66869 11.295 3.59279C10.8876 4.51688 10.7893 5.55298 11.0153 6.54022C9.23005 6.44833 7.4836 5.97267 5.88929 5.14411C4.29497 4.31555 2.88843 3.1526 1.76094 1.73074C1.37542 2.41245 1.15375 3.20283 1.15375 4.04459C1.15332 4.80236 1.33536 5.54853 1.68372 6.21688C2.03208 6.88524 2.53599 7.45512 3.15073 7.87596C2.43779 7.85271 1.74058 7.65523 1.11713 7.29997V7.35925C1.11706 8.42206 1.47569 9.45216 2.13218 10.2748C2.78867 11.0974 3.70258 11.6618 4.71883 11.8723C4.05746 12.0558 3.36406 12.0828 2.691 11.9514C2.97773 12.8659 3.53625 13.6655 4.28837 14.2385C5.04049 14.8114 5.94855 15.1289 6.88544 15.1465C5.29502 16.4263 3.33086 17.1206 1.30892 17.1175C0.950758 17.1176 0.592896 17.0962 0.237183 17.0533C2.28956 18.406 4.67868 19.1239 7.11868 19.1211C15.3784 19.1211 19.8938 12.1085 19.8938 6.02647C19.8938 5.82887 19.889 5.6293 19.8803 5.43171C20.7586 4.7806 21.5167 3.97434 22.1192 3.05068L22.1211 3.04772Z" fill="white"/>
+                        </svg>                     
+                    </a>
+                </div>
+            </div>
+            <div class="get-in-touch-container_form partners-form">
+                <form action="">
+                    <input type="text">
+                    <input type="email">
+                    <input type="tel">
+                    <textarea cols="30" rows="10"></textarea>
+                    <div class="get-in-touch-submit">
+                        <button>Send <br> request</button>
+                        <p>Send a request and our consultants will contact you within an hour</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--Question--------------------------------------------------------------->
+    <section class="question partners-question">
+       <div class="wrapper">
+        <h2>F<span>/</span>Q</h2>
+      <div class="question-container">
+        <div class="question-container-img">
+            <img src="../images/partners/fq.png" alt="question">
+        </div>
+        <div class="question-container-accordions">
+            <div class="accordion">
+              <div class="accordion__slot">
+                <button class="accordion__button">Consequat urna.</button>
+              </div>
+              <div class="accordion__slot">
+                <div class="accordion__panel">
+                  <p class="accordion-panel__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed ac purus nascetur at integer vitae. Nam sed tellus varius tincidunt enim sapien. Auctor eget montes, lectus adipiscing aliquet in nunc. Pellentesque enim a donec turpis suscipit consectetur tempor.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion__slot">
+                <button class="accordion__button">Quis non non eget habitasse nibh.</button>
+              </div>
+              <div class="accordion__slot">
+                <div class="accordion__panel">
+                  <p class="accordion-panel__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed ac purus nascetur at integer vitae. Nam sed tellus varius tincidunt enim sapien. Auctor eget montes, lectus adipiscing aliquet in nunc. Pellentesque enim a donec turpis suscipit consectetur tempor.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion__slot">
+                <button class="accordion__button">Sed id ut id in non purus ut felis.</button>
+              </div>
+              <div class="accordion__slot">
+                <div class="accordion__panel">
+                  <p class="accordion-panel__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed ac purus nascetur at integer vitae. Nam sed tellus varius tincidunt enim sapien. Auctor eget montes, lectus adipiscing aliquet in nunc. Pellentesque enim a donec turpis suscipit consectetur tempor. </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion__slot">
+                <button class="accordion__button">Velit non volutpat massa.</button>
+              </div>
+              <div class="accordion__slot">
+                <div class="accordion__panel">
+                  <p class="accordion-panel__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed ac purus nascetur at integer vitae. Nam sed tellus varius tincidunt enim sapien. Auctor eget montes, lectus adipiscing aliquet in nunc. Pellentesque enim a donec turpis suscipit consectetur tempor. </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion__slot">
+                <button class="accordion__button">Nulla enim felis duis gravida id.</button>
+              </div>
+              <div class="accordion__slot">
+                <div class="accordion__panel">
+                  <p class="accordion-panel__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed ac purus nascetur at integer vitae. Nam sed tellus varius tincidunt enim sapien. Auctor eget montes, lectus adipiscing aliquet in nunc. Pellentesque enim a donec turpis suscipit consectetur tempor. </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__slot">
+                  <button class="accordion__button">Amet sed dignissim.</button>
+                </div>
+                <div class="accordion__slot">
+                  <div class="accordion__panel">
+                    <p class="accordion-panel__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed ac purus nascetur at integer vitae. Nam sed tellus varius tincidunt enim sapien. Auctor eget montes, lectus adipiscing aliquet in nunc. Pellentesque enim a donec turpis suscipit consectetur tempor. </p>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+       </div>
+    </section>
+    <footer class="footer partners-footer">
+        <div class="wrapper">
+            <div class="footer-logo">
+               <div class="footer-logo_container">
+                <svg width="72" height="24" viewBox="0 0 72 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V24H8.72437V12.1714C8.72437 10.4 9.25166 9.04286 10.3063 8.1C11.3928 7.15714 12.9108 6.68571 14.8602 6.68571H17.976V0H15.8189C12.9108 0 10.6738 0.942857 9.10786 2.82857C7.88702 4.32936 7.152 6.2826 6.9028 8.68827V0H0ZM26.7004 24H17.976V0H24.8788V8.68828C25.128 6.2826 25.8631 4.32937 27.0839 2.82857C28.6498 0.942857 30.8868 0 33.7949 0H35.9521V6.68571H32.8362C30.8868 6.68571 29.3688 7.15714 28.2823 8.1C27.2277 9.04286 26.7004 10.4 26.7004 12.1714V24ZM35.9521 24H44.6764V12.1714C44.6764 10.4 45.2037 9.04286 46.2583 8.1C47.3449 7.15714 48.8628 6.68571 50.8122 6.68571H53.9281V0H51.771C48.8628 0 46.6258 0.942857 45.0599 2.82857C43.8391 4.32936 43.1041 6.28259 42.8549 8.68826V0H35.9521V24ZM60.8309 0H53.9281V24H62.6525V12.1714C62.6525 10.4 63.1798 9.04286 64.2344 8.1C65.3209 7.15714 66.8389 6.68571 68.7883 6.68571H72V0H69.747C66.8389 0 64.6019 0.942857 63.0359 2.82857C61.8151 4.32936 61.0801 6.28259 60.8309 8.68826V0Z" fill="#ffffff"/>
+                </svg>
+                <p>Resourcerr - lead <br> generation company</p>    
+               </div>
+                <p>© 2022 Resorcerr. All rights reserved.</p>
+            </div>
+            <div class="footer-navigation">
+                <nav>
+                    <ul>
+                        <a href="#about"><li>About us</li></a>
+                        <a href="#why-we"><li>Why we are</li></a>
+                        <a href="#how-it-works"><li>How it works</li></a>
+                        <a href="#reviews"><li>Reviews</li></a>
+                        <a href="#contact"><li>Contacts</li></a>
+                    </ul>    
+                </nav>
+                <div class="toggle-switch">
+                    <div class="toggle-custom">
+                      <input id="s2" type="checkbox" onclick="switchClicked(this, 's1');">
+                      <label for="toggle"></label>
+                      <a href="../index.html">For clients</a>
+                      <a href="partners.html">For parents</a>
+                    </div>
+                    <button id="modul-window_open">Send request</button>
+                </div>
+              
+            </div>
+        </div>
+    </footer>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../script/switchToToggle.js"></script>
+    <script src="../script/achievements-counter.js"></script>
+    <script src="../script/burger.js"></script>
+    <script src="../script/slick.min.js"></script>
+    <script src="../script/modal.-window.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../script/slick.min.js"></script>
+    <script src="../script/reviews.js"></script>
+    <script src="../script/accordions.js"></script>
+    <script src="../script/paralax.js"></script>
+</body>
+</html>

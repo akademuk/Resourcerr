@@ -1,0 +1,32 @@
+/*button Send Request------------------------------------*/
+.btn-send-request {
+    @include text-center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 115%;
+    width: 112px;
+    height: 112px;
+    color: $white;
+    border: 1px transparent;
+    margin-left: 20px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-animation: glowing 1300ms infinite;
+    -moz-animation: glowing 1300ms infinite;
+    -o-animation: glowing 1300ms infinite;
+    animation: glowing 1300ms infinite;
+    &:hover {
+        background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
+        animation: none;
+        }
+    }
+@-webkit-keyframes glowing {
+    0% { background-color: #151515; -webkit-box-shadow: 0 0 6px #151515; }
+    50% { background-color: #151515; -webkit-box-shadow: 0 0 30px #151515; }
+    100% { background-color: #151515; -webkit-box-shadow: 0 0 6px #151515; }
+}
+@keyframes glowing {
+    0% { background-color: #151515; box-shadow: 0 0 6px #151515; }
+    50% { background-color: #151515; box-shadow: 0 0 30px #151515; }
+    100% { background-color: #151515; box-shadow: 0 0 6px #151515; }
+}
