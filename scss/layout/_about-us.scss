@@ -272,7 +272,11 @@ align-items: center;
 .about-us_img {
     display: none !important;
 }
-
+@media (orientation:landscape) {
+    .about-us {
+        padding-top: 0;
+    }
+}
 }
 /*@media max-width: 568px --------------------------------------------*/
 @media (max-width: 568px) {
