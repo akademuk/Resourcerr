@@ -378,14 +378,24 @@ header .logotype {
   }
   #modul-window_open {
     top: 62px;
+    right: 25% !important;
+  }
+  #menu {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 15%;
   }
   #menu ul {
+    width: 25%;
     margin-top: 20px;
     margin-bottom: 30px;
   }
   #menu ul a li {
     font-size: 24px;
     line-height: 15px;
+  }
+  #menu .toggle-switch {
+    width: auto;
   }
   .menu-top {
     margin-bottom: 15px;
@@ -839,7 +849,7 @@ h1 span::after {
 @media (max-width: 767px) and (orientation: landscape) {
   .tittle-container-btn {
     left: 45%;
-    bottom: -20vh;
+    bottom: -25vh;
   }
   .tittle .toggle-switch {
     padding-left: 0;
@@ -1287,6 +1297,9 @@ h1 span::after {
 @media (max-width: 767px) and (orientation: landscape) {
   .about-us {
     padding-top: 0;
+  }
+  .card__read-more--open {
+    height: 10rem;
   }
 }
 

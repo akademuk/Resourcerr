@@ -280,9 +280,14 @@
 }
 #modul-window_open {
   top: 62px;
+  right: 25% !important;
 }
 #menu {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 15%;
   ul {
+    width: 25%;
     margin-top: 20px;
     margin-bottom: 30px;
     a {
@@ -291,6 +296,9 @@
         line-height: 15px;
       }
     }
+  }
+  .toggle-switch {
+    width: auto;
   }
 }
 .menu-top {
