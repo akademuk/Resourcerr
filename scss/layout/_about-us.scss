@@ -346,5 +346,10 @@ align-items: center;
     .card__read-more--open {
         height: 21rem;
     }
+@media (orientation:landscape) {
+    .card__read-more--open {
+        height: 12rem;
+    }
+}
 }
 

@@ -1396,6 +1396,12 @@ h1 span::after {
   }
 }
 
+@media (max-width: 568px) and (orientation: landscape) {
+  .card__read-more--open {
+    height: 12rem;
+  }
+}
+
 /*Send Request client --------------------------------------------*/
 .send-request {
   position: relative;
@@ -1505,7 +1511,7 @@ h1 span::after {
     position: relative;
   }
   .send-request .wrapper {
-    height: 100%;
+    height: auto;
     padding: 40px 28px 176px 28px;
     flex-direction: column;
   }
@@ -1959,23 +1965,26 @@ h1 span::after {
   }
   .why-we-ar-flex .why-we-ar-container {
     display: flex !important;
+    flex-direction: row;
     padding: 0;
-    height: 100vh;
+    height: 50vh;
   }
   .why-we-ar-flex .why-we-ar-container:nth-of-type(2) {
     margin-top: 0;
   }
   .why-we-ar-flex .why-we-ar-container .why-we-ar-container_img {
-    height: 60%;
-    width: 100%;
+    height: 100% !important;
+    width: 90%;
   }
   .why-we-ar-flex .why-we-ar-container .why-we-ar-container_img img {
-    height: 92%;
+    width: 100%;
+    height: 100% !important;
     object-fit: cover !important;
-    border-radius: 24px 24px 0 0;
+    border-radius: 24px 0 0 24px;
   }
   .why-we-ar-flex .why-we-ar-container_text {
-    padding: 0 15px !important;
+    position: static !important;
+    padding: 20px 20px 0 20px !important;
   }
 }
 
