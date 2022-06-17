@@ -81,9 +81,16 @@ h2 span {
 }
 
 header {
-  width: 90%;
-  height: 70px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
+  position: fixed;
+  background: white;
+  z-index: 100;
+}
+
+header .wrapper {
+  box-shadow: 0 4px 6px -6px #222;
 }
 
 header .logotype {
@@ -103,9 +110,6 @@ header .logotype {
 
 /*@media max-width: 767px --------------------------------------------*/
 @media (max-width: 767px) and (orientation: landscape) {
-  header {
-    height: 50px;
-  }
   header .logotype svg {
     width: 56px;
     height: 56px;
@@ -630,7 +634,7 @@ toggle-switch.toggle-switch {
 .tittle {
   width: 90%;
   margin: 0 auto;
-  padding-top: 5vh;
+  padding-top: 20vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -3021,6 +3025,9 @@ h3:nth-of-type(4)::before {
   }
   .form-submit p span {
     margin-left: 0;
+  }
+  .partners-form label {
+    text-align: left;
   }
 }
 

@@ -14,109 +14,111 @@
 <body>
     <!--Header + burger + switch --------------------------------------------------------->   
     <header>
+       <div class="wrapper">
         <div class="logotype">
-           <a href="#">
-            <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M42.9667 21.4182C2.60057 6.54763 -12.8879 41.6127 31.0689 54.2133C76.8569 67.3387 79.1264 24.1552 32.7281 15.3207" stroke="#151515" stroke-linecap="round"/>
-                <path d="M21.7903 57.4274V57.6214H21.9844H30.9224H31.1165V57.4274V49.225H35.699L41.3705 57.5367L41.4282 57.6214H41.5308H51.1008H51.4693L51.2608 57.3175L44.5684 47.5657C46.4114 46.6414 47.8623 45.3907 48.9149 43.8119L48.9157 43.8106C50.0828 42.0293 50.6629 39.9297 50.6629 37.5198C50.6629 35.0807 50.0832 32.966 48.9161 31.1844C47.7502 29.3746 46.0947 27.997 43.9573 27.0503C41.85 26.1037 39.3389 25.6341 36.4297 25.6341H21.9844H21.7903V25.8281V57.4274ZM35.888 41.9302H31.1165V33.0643H35.888C37.7307 33.0643 39.059 33.4662 39.9113 34.2333L39.9112 34.2333L39.9136 34.2354C40.7961 35.004 41.2464 36.0895 41.2464 37.5198C41.2464 38.9186 40.797 39.9898 39.9136 40.7591L39.9136 40.7591L39.9113 40.7612C39.059 41.5283 37.7307 41.9302 35.888 41.9302Z" fill="#151515" stroke="#151515" stroke-width="0.388103"/>
-                <path d="M18.3252 54.2696V54.7696H18.8252H27.7633H28.2633V54.2696V46.3733H32.3782L37.9586 54.5515L38.1074 54.7696H38.3716H47.9416H48.8912L48.3539 53.9867L41.8575 44.5205C43.5968 43.5919 44.9856 42.3609 46.0103 40.8239L46.0125 40.8206C47.2166 38.9827 47.8096 36.823 47.8096 34.3621C47.8096 31.8733 47.2176 29.6987 46.0136 27.8602C44.8126 25.9962 43.1088 24.5816 40.9225 23.6131C38.767 22.645 36.2113 22.1704 33.2706 22.1704H18.8252H18.3252V22.6704V54.2696ZM32.7289 38.4666H28.2633V30.2125H32.7289C34.535 30.2125 35.7748 30.6076 36.5474 31.303L36.5474 31.303L36.5535 31.3084C37.3564 32.0077 37.7813 33.0016 37.7813 34.3621C37.7813 35.6888 37.3587 36.6694 36.5535 37.3707L36.5535 37.3707L36.5474 37.3761C35.7748 38.0715 34.535 38.4666 32.7289 38.4666Z" fill="url(#paint0_linear_876_1939)" stroke="#151515"/>
-                <defs>
-                <linearGradient id="paint0_linear_876_1939" x1="18.8252" y1="22.6704" x2="48.3139" y2="23.1248" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#10DEC5"/>
-                <stop offset="1" stop-color="#25B2FD"/>
-                </linearGradient>
-                </defs>
-            </svg>                
-           </a> 
-            <p class="logotype-text">looking for a 100% <br> business match</p>    
-        </div>
-        <div class="burger-module">
-            <div id="modul-window">
-                <div class="modal modal_animation">
-                    <div class="modal_content__header">     
-                        <div class="modul-window-header">  
-                          <p>Requirements of the project</p>
-                          <span class="modal_close">&times;</span>
-                        </div>
-                        <div class="modul-window-main">
-                            <form action="get">
-                            <!------------------------>
-                            <h3>Corporate details</h3>
-                            <label>Full name <input type="text"></label>
-                            <label>Corporate email <input type="email"></label>
-                            <label>Phone number <input type="text"></label>
-                            <label>Company name <input type="text"></label>
-                            <label>Company website <input type="text"></label>
-                            <label>Brief company overview <textarea name="Brief-company" cols="30" rows="10"></textarea></label>
-                            <!------------------------>
-                            <h3>Campaign  details</h3>
-                            <label>Budget<input type="text"></label>
-                            <label>Max pilot period<input type="text"></label>
-                            <label>Number of contacts / monts<input type="text"></label>
-                            <label>Number of appointments / monts<input type="text"></label>
-                            <label>Preferable outreach language<input type="text"></label>
-                            <label>Additional criteria (optional)<textarea name="Additional-criteria" cols="30" rows="10"></textarea></label>
-                            <!------------------------>
-                            <h3>Product overview</h3>
-                            <label>Average Deal Value ($ MRR)<input type="text"></label>
-                            <label>Average Sales Cycle<input type="text"></label>
-                            <label>Average number of calls/months<input type="text"></label>
-                            <label>Calls to deals closed conversion<input type="text"></label>
-                            <!------------------------>
-                            <h3>Ideal customer profile</h3>
-                            <label>Industry<input type="text"></label>
-                            <label>Location<input type="text"></label>
-                            <label>Titles<input type="text"></label>
-                            <label>Number of employees<input type="text"></label>
-                            <label>Additional requirements (optional)<textarea name="Additional-requirements" cols="30" rows="10"></textarea></label>
-                            <!------------------------>
-                            <div class="form-submit">
-                            <input type="submit" value="Submit">                          
-                            <p>Click to Submit I agree to the <span> Terms of Use </span></p>
+            <a href="#">
+             <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M42.9667 21.4182C2.60057 6.54763 -12.8879 41.6127 31.0689 54.2133C76.8569 67.3387 79.1264 24.1552 32.7281 15.3207" stroke="#151515" stroke-linecap="round"/>
+                 <path d="M21.7903 57.4274V57.6214H21.9844H30.9224H31.1165V57.4274V49.225H35.699L41.3705 57.5367L41.4282 57.6214H41.5308H51.1008H51.4693L51.2608 57.3175L44.5684 47.5657C46.4114 46.6414 47.8623 45.3907 48.9149 43.8119L48.9157 43.8106C50.0828 42.0293 50.6629 39.9297 50.6629 37.5198C50.6629 35.0807 50.0832 32.966 48.9161 31.1844C47.7502 29.3746 46.0947 27.997 43.9573 27.0503C41.85 26.1037 39.3389 25.6341 36.4297 25.6341H21.9844H21.7903V25.8281V57.4274ZM35.888 41.9302H31.1165V33.0643H35.888C37.7307 33.0643 39.059 33.4662 39.9113 34.2333L39.9112 34.2333L39.9136 34.2354C40.7961 35.004 41.2464 36.0895 41.2464 37.5198C41.2464 38.9186 40.797 39.9898 39.9136 40.7591L39.9136 40.7591L39.9113 40.7612C39.059 41.5283 37.7307 41.9302 35.888 41.9302Z" fill="#151515" stroke="#151515" stroke-width="0.388103"/>
+                 <path d="M18.3252 54.2696V54.7696H18.8252H27.7633H28.2633V54.2696V46.3733H32.3782L37.9586 54.5515L38.1074 54.7696H38.3716H47.9416H48.8912L48.3539 53.9867L41.8575 44.5205C43.5968 43.5919 44.9856 42.3609 46.0103 40.8239L46.0125 40.8206C47.2166 38.9827 47.8096 36.823 47.8096 34.3621C47.8096 31.8733 47.2176 29.6987 46.0136 27.8602C44.8126 25.9962 43.1088 24.5816 40.9225 23.6131C38.767 22.645 36.2113 22.1704 33.2706 22.1704H18.8252H18.3252V22.6704V54.2696ZM32.7289 38.4666H28.2633V30.2125H32.7289C34.535 30.2125 35.7748 30.6076 36.5474 31.303L36.5474 31.303L36.5535 31.3084C37.3564 32.0077 37.7813 33.0016 37.7813 34.3621C37.7813 35.6888 37.3587 36.6694 36.5535 37.3707L36.5535 37.3707L36.5474 37.3761C35.7748 38.0715 34.535 38.4666 32.7289 38.4666Z" fill="url(#paint0_linear_876_1939)" stroke="#151515"/>
+                 <defs>
+                 <linearGradient id="paint0_linear_876_1939" x1="18.8252" y1="22.6704" x2="48.3139" y2="23.1248" gradientUnits="userSpaceOnUse">
+                 <stop offset="0" stop-color="#10DEC5"/>
+                 <stop offset="1" stop-color="#25B2FD"/>
+                 </linearGradient>
+                 </defs>
+             </svg>                
+            </a> 
+             <p class="logotype-text">looking for a 100% <br> business match</p>    
+         </div>
+         <div class="burger-module">
+             <div id="modul-window">
+                 <div class="modal modal_animation">
+                     <div class="modal_content__header">     
+                         <div class="modul-window-header">  
+                           <p>Requirements of the project</p>
+                           <span class="modal_close">&times;</span>
+                         </div>
+                         <div class="modul-window-main">
+                             <form action="get">
+                             <!------------------------>
+                             <h3>Corporate details</h3>
+                             <label>Full name <input type="text"></label>
+                             <label>Corporate email <input type="email"></label>
+                             <label>Phone number <input type="text"></label>
+                             <label>Company name <input type="text"></label>
+                             <label>Company website <input type="text"></label>
+                             <label>Brief company overview <textarea name="Brief-company" cols="30" rows="10"></textarea></label>
+                             <!------------------------>
+                             <h3>Campaign  details</h3>
+                             <label>Budget<input type="text"></label>
+                             <label>Max pilot period<input type="text"></label>
+                             <label>Number of contacts / monts<input type="text"></label>
+                             <label>Number of appointments / monts<input type="text"></label>
+                             <label>Preferable outreach language<input type="text"></label>
+                             <label>Additional criteria (optional)<textarea name="Additional-criteria" cols="30" rows="10"></textarea></label>
+                             <!------------------------>
+                             <h3>Product overview</h3>
+                             <label>Average Deal Value ($ MRR)<input type="text"></label>
+                             <label>Average Sales Cycle<input type="text"></label>
+                             <label>Average number of calls/months<input type="text"></label>
+                             <label>Calls to deals closed conversion<input type="text"></label>
+                             <!------------------------>
+                             <h3>Ideal customer profile</h3>
+                             <label>Industry<input type="text"></label>
+                             <label>Location<input type="text"></label>
+                             <label>Titles<input type="text"></label>
+                             <label>Number of employees<input type="text"></label>
+                             <label>Additional requirements (optional)<textarea name="Additional-requirements" cols="30" rows="10"></textarea></label>
+                             <!------------------------>
+                             <div class="form-submit">
+                             <input type="submit" value="Submit">                          
+                             <p>Click to Submit I agree to the <span> Terms of Use </span></p>
+                          
+                             </div>
                          
-                            </div>
-                        
-                            </form>
-                        </div>
-                    </div>       
-                </div>
-            </div>  
-        </div> 
-        <div class="width-nav">
-            <div id="menuToggle" >
-                <input type="checkbox" class="chec" id="myInput"/>
-                <span class="menuToggle-span"></span>
-                <span class="menuToggle-span"></span>
-                <span class="menuToggle-span"></span>
-                <nav id="menu">
-                    <ul>
-                        <li class="menu-top">Menu</li>
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#why-we">Why we are</a></li>
-                        <li><a href="#how-it-works">How it works</a></li>
-                        <li><a href="#reviews">Reviews</a></li>
-                        <li><a href="#contact">Contacts</a></li>
-                    </ul>    
-<!--toggle-switch---------------------------------------------------->             
-                    <div class="toggle-switch">
-                        <div class="toggle-custom">
-                          <input id="s2" type="checkbox" onclick="switchClicked(this, 's1');">
-                          <label for="toggle"></label>
-                          <a href="#"><span>For clients</span></a>
-                          <a href="#"><span>For parents</span></a>
-                        </div>
-                    </div>
-                    <p class="menu-top-nav">Menu</p>
-                    <button id="modul-window_open">Send request</button>
-                    <div class="burger-module_logo">
-                        <a href="#">
-                            <img src="images/white.png" alt="">
-                        </a>
-                    <p class="logotype-text">looking for a 100% <br> business match</p>    
-                    </div>
-                </nav>
-            </div>
-        </div>
+                             </form>
+                         </div>
+                     </div>       
+                 </div>
+             </div>  
+         </div> 
+         <div class="width-nav">
+             <div id="menuToggle" >
+                 <input type="checkbox" class="chec" id="myInput"/>
+                 <span class="menuToggle-span"></span>
+                 <span class="menuToggle-span"></span>
+                 <span class="menuToggle-span"></span>
+                 <nav id="menu">
+                     <ul>
+                         <li class="menu-top">Menu</li>
+                         <li><a href="#about">About us</a></li>
+                         <li><a href="#why-we">Why we are</a></li>
+                         <li><a href="#how-it-works">How it works</a></li>
+                         <li><a href="#reviews">Reviews</a></li>
+                         <li><a href="#contact">Contacts</a></li>
+                     </ul>    
+ <!--toggle-switch---------------------------------------------------->             
+                     <div class="toggle-switch">
+                         <div class="toggle-custom">
+                           <input id="s2" type="checkbox" onclick="switchClicked(this, 's1');">
+                           <label for="toggle"></label>
+                           <a href="#"><span>For clients</span></a>
+                           <a href="#"><span>For parents</span></a>
+                         </div>
+                     </div>
+                     <p class="menu-top-nav">Menu</p>
+                     <button id="modul-window_open">Send request</button>
+                     <div class="burger-module_logo">
+                         <a href="#">
+                             <img src="images/white.png" alt="">
+                         </a>
+                     <p class="logotype-text">looking for a 100% <br> business match</p>    
+                     </div>
+                 </nav>
+             </div>
+         </div>
+       </div>
     </header>
     <!--Tittle + switch + button----------------------------------------------------------->   
     <div class="tittle">
