@@ -200,6 +200,7 @@
 }
 .get-in-touch-submit {
     flex-direction: row-reverse;
+    justify-content: space-between;
     p {
         font-size: 14px;
     }
@@ -212,6 +213,9 @@
         height: 88px;
         font-size: 12px;
         margin-right: 0;
+    }
+    p {
+        width: 75% !important;
     }
 }
 .get-in-touch-container_contact {

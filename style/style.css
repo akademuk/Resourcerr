@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap");
 .burger-module {
   position: absolute;
@@ -423,7 +422,10 @@ header .logotype {
   #menu ul {
     margin-top: 0;
     width: 73%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+  }
+  #menu ul li {
+    margin-bottom: 20px;
   }
   #menu ul li a {
     font-size: 24px;
@@ -442,10 +444,15 @@ header .logotype {
   #menu #modul-window_open {
     font-size: 0 !important;
     right: 20%;
-    top: 60px;
+    top: 68px;
+  }
+  #menu #modul-window_open:after {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
   }
   #menu .burger-module_logo {
-    top: 55px;
+    top: 53px;
   }
   #menu .burger-module_logo a {
     width: 50px;
@@ -1509,6 +1516,7 @@ h1 span::after {
   .send-request {
     height: 100vh;
     position: relative;
+    margin-top: 50px;
   }
   .send-request .wrapper {
     height: auto;
@@ -1547,22 +1555,6 @@ h1 span::after {
     bottom: 5vh;
     right: 10vw;
   }
-}
-
-@media (max-width: 767px) {
-  /* стили для xs-устройств */
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  /* стили для sm-устройств */
-}
-
-@media (min-width: 991px) and (max-width: 1199px) {
-  /* стили для md-устройств */
-}
-
-@media (min-width: 1200px) {
-  /* стили для lg-устройств */
 }
 
 /*Send Request client --------------------------------------------*/
@@ -1990,7 +1982,7 @@ h1 span::after {
 
 @media (max-width: 320px) {
   .why-we-ar-flex .why-we-ar-container {
-    height: 50vh;
+    height: 70vh;
   }
   .why-we-ar-flex .why-we-ar-container .why-we-ar-container_text {
     font-size: 14px;
@@ -2510,6 +2502,13 @@ h4 {
   }
   .slider .slider__item span {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) and (orientation: landscape) {
+  .slick-next,
+  .slick-prev {
+    display: none !important;
   }
 }
 
@@ -3249,6 +3248,7 @@ h3:nth-of-type(4)::before {
   }
   .get-in-touch-container_form .get-in-touch-submit {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
   .get-in-touch-container_form .get-in-touch-submit p {
     font-size: 14px;
@@ -3261,6 +3261,9 @@ h3:nth-of-type(4)::before {
     height: 88px;
     font-size: 12px;
     margin-right: 0;
+  }
+  .get-in-touch-submit p {
+    width: 75% !important;
   }
   .get-in-touch-container_contact {
     width: 90%;
@@ -3698,19 +3701,25 @@ h3:nth-of-type(4)::before {
 @media (max-width: 576px) {
   .footer-navigation {
     left: 0;
-    top: 15%;
-    margin-top: 50px;
+    top: 30%;
   }
   .footer-navigation {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+  .footer-navigation .toggle-switch {
+    margin-left: 25%;
   }
   .footer-navigation .toggle-switch .toggle-custom {
-    width: 30vw;
+    height: 55px;
+  }
+  .footer-navigation .toggle-switch .toggle-custom a {
+    font-size: 13px;
   }
   .footer-navigation .toggle-switch #modul-window_open {
-    right: -5px;
+    right: -30px;
     text-transform: capitalize;
+    font-size: 13px;
   }
   .footer-navigation .toggle-switch #modul-window_open span {
     display: none;
@@ -3726,7 +3735,7 @@ h3:nth-of-type(4)::before {
   }
   .footer {
     padding-top: 0;
-    height: 50vh;
+    height: 60vh;
     padding-bottom: 10px !important;
   }
   .footer-logo_container {
@@ -3749,6 +3758,26 @@ h3:nth-of-type(4)::before {
   }
   .footer-logo {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) and (orientation: landscape) {
+  .footer-navigation {
+    height: auto;
+    top: 35%;
+  }
+  .footer-navigation .toggle-switch {
+    margin-left: 50%;
+  }
+  .footer-navigation .toggle-switch #modul-window_open {
+    top: 80%;
+    right: -40% !important;
+  }
+  .footer {
+    height: 80vh;
+  }
+  .footer-navigation nav ul li {
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
