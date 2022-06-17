@@ -269,12 +269,20 @@ h5 {
 .how-it-works {
     .wrapper {
         h2 {
+            margin-top: 40px;
             font-size: 40px; 
             &:before {
                 content: none;
             }
         }
     }
+}
+.how-it-works-container {
+    margin-top: 0;
+}
+.how-it-works-container-info {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 }
 

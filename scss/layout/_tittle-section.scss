@@ -295,6 +295,13 @@ h1 {
             }
         }
     }
+h1 {
+    br {
+        &:nth-of-type(2) {
+            display: none;
+        }
+    }
+}
 }
 
 

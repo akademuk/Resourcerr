@@ -181,7 +181,7 @@
             padding-left: 0;
             h2 {
                 font-size: 40px;
-                padding-left: 30px;
+                padding-left:0;
                 &:before {
                    content: none;
                 }
@@ -211,6 +211,7 @@
         width: 88px;
         height: 88px;
         font-size: 12px;
+        margin-right: 0;
     }
 }
 .get-in-touch-container_contact {

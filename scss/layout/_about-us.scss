@@ -340,8 +340,11 @@ align-items: center;
 }
 /*@media max-width: 568px --------------------------------------------*/
 @media (max-width: 568px) {
+    .about-us {
+        padding-top: 20px;
+    }
     .card__read-more--open {
-        height: 20rem;
+        height: 21rem;
     }
 }
 

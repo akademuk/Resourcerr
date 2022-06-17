@@ -418,9 +418,10 @@ header .logotype {
   #menu {
     margin: -100px 0 0 0;
     height: auto;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
   }
   #menu ul {
+    margin-top: 0;
     width: 73%;
     margin-bottom: 100px;
   }
@@ -444,7 +445,7 @@ header .logotype {
     top: 60px;
   }
   #menu .burger-module_logo {
-    top: 47px;
+    top: 55px;
   }
   #menu .burger-module_logo a {
     width: 50px;
@@ -904,6 +905,9 @@ h1 span::after {
     width: 88px;
     height: 88px;
     font-size: 12px;
+  }
+  h1 br:nth-of-type(2) {
+    display: none;
   }
 }
 
@@ -1384,8 +1388,11 @@ h1 span::after {
 
 /*@media max-width: 568px --------------------------------------------*/
 @media (max-width: 568px) {
+  .about-us {
+    padding-top: 20px;
+  }
   .card__read-more--open {
-    height: 20rem;
+    height: 21rem;
   }
 }
 
@@ -1494,7 +1501,7 @@ h1 span::after {
 /*@media max-width: 568px --------------------------------------------*/
 @media (max-width: 568px) {
   .send-request {
-    height: 430px;
+    height: 100vh;
     position: relative;
   }
   .send-request .wrapper {
@@ -1907,7 +1914,7 @@ h1 span::after {
   }
   .why-we-ar-flex .why-we-ar-container {
     position: relative;
-    height: 65vh;
+    height: 80vh;
   }
   .why-we-ar-flex .why-we-ar-container:nth-of-type(2) {
     margin-top: 0;
@@ -2255,10 +2262,18 @@ h5 {
     margin-top: 50px;
   }
   .how-it-works .wrapper h2 {
+    margin-top: 40px;
     font-size: 40px;
   }
   .how-it-works .wrapper h2:before {
     content: none;
+  }
+  .how-it-works-container {
+    margin-top: 0;
+  }
+  .how-it-works-container-info {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 
@@ -2456,9 +2471,14 @@ h4 {
     font-size: 40px;
     margin-left: 0;
     padding-left: 30px;
+    margin-bottom: 30px;
   }
   .reviews h2::before {
     content: none;
+  }
+  .reviews h2 span {
+    font-size: 40px;
+    filter: drop-shadow(2px 2px #151515);
   }
   .slick-next,
   .slick-prev {
@@ -3204,7 +3224,7 @@ h3:nth-of-type(4)::before {
   }
   .get-in-touch .wrapper h2 {
     font-size: 40px;
-    padding-left: 30px;
+    padding-left: 0;
   }
   .get-in-touch .wrapper h2:before {
     content: none;
@@ -3231,6 +3251,7 @@ h3:nth-of-type(4)::before {
     width: 88px;
     height: 88px;
     font-size: 12px;
+    margin-right: 0;
   }
   .get-in-touch-container_contact {
     width: 90%;
@@ -3350,7 +3371,7 @@ h3:nth-of-type(4)::before {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(../../images/accardion-arrow.svg);
+  background-image: url(../images/accardion-arrow.svg);
 }
 
 .accordion__button-active::after {
@@ -3497,7 +3518,7 @@ h3:nth-of-type(4)::before {
 /*@media min-width: 576px --------------------------------------------*/
 @media (max-width: 576px) {
   .question {
-    padding: 50px 0;
+    padding: 30px 0;
   }
   .question .wrapper {
     padding-left: 0;
@@ -3671,6 +3692,10 @@ h3:nth-of-type(4)::before {
     top: 15%;
     margin-top: 50px;
   }
+  .footer-navigation {
+    width: 100%;
+    justify-content: space-between;
+  }
   .footer-navigation .toggle-switch .toggle-custom {
     width: 30vw;
   }
@@ -3693,12 +3718,13 @@ h3:nth-of-type(4)::before {
   .footer {
     padding-top: 0;
     height: 50vh;
+    padding-bottom: 10px !important;
   }
   .footer-logo_container {
     height: 72px;
   }
   .footer-logo_container a {
-    background: url(../../images/white.png);
+    background: url(../images/white.png);
     background-size: cover;
     width: 72px;
     height: 72px;

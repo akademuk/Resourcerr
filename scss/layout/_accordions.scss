@@ -92,7 +92,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(../../images/accardion-arrow.svg);
+    background-image: url(../images/accardion-arrow.svg);
   }
   
   .accordion__button-active::after {
@@ -236,7 +236,7 @@
 /*@media min-width: 576px --------------------------------------------*/
 @media (max-width: 576px) {
   .question {
-    padding: 50px 0;
+    padding: 30px 0;
     .wrapper {
         padding-left: 0;
         h2 {
