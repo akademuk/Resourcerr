@@ -726,6 +726,7 @@ h1 span::after {
   top: 10%;
   left: -5%;
   filter: initial;
+  z-index: -1;
 }
 
 .tittle-container-btn {
@@ -759,38 +760,11 @@ h1 span::after {
 }
 
 /*Partners------------------------------------------------------------------------------*/
-.partners-tittle-text h1 {
-  line-height: 100%;
-}
-
-.partners-tittle-text h1 span {
-  background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.partners-tittle-text h1 span::after {
-  content: "";
+.tittle-container h1 .partners-blue::after {
   background: url(../images/partners/line-tittle.png);
   background-repeat: no-repeat;
-}
-
-.partners-tittle-text h1 p {
-  margin-left: 10%;
-}
-
-.partners-tittle {
-  padding-top: 0;
-}
-
-.partners-tittle .toggle-switch {
-  padding-left: 70%;
-  height: 50px;
-}
-
-.partners-tittle .toggle-switch div:first-of-type {
-  margin-bottom: 0;
+  background-size: contain;
+  z-index: -1;
 }
 
 /*@media (min-width: 991px) and (max-width: 1199px) --------------------------------------------*/

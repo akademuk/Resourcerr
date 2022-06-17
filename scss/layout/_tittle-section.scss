@@ -85,6 +85,7 @@ h1 {
             top: 10%;
             left: -5%;    
             filter: initial;
+            z-index: -1;
         }
       
     }
@@ -127,33 +128,19 @@ h1 {
 }
 
 /*Partners------------------------------------------------------------------------------*/
-.partners-tittle-text {
+.tittle-container {
     h1 {
-        line-height: 100%;
-        span {
-            @include partners-gradient;
+        .partners-blue {
             &::after {
-                content: "";
                 background: url(../images/partners/line-tittle.png);
-                background-repeat: no-repeat;
-              
-            } 
-        }
-        p {
-            margin-left: 10%;
+                background-repeat: no-repeat; 
+                background-size: contain;
+                z-index: -1;
+            }
         }
     }
 }
-.partners-tittle {
-    padding-top:0;
-    .toggle-switch {
-        padding-left: 70%;
-        height: 50px;
-        div:first-of-type {
-            margin-bottom: 0;
-        }
-    }
-}
+
 /*@media (min-width: 991px) and (max-width: 1199px) --------------------------------------------*/ 
 @media (min-width: 991px) and (max-width: 1199px) {
 h1 {
