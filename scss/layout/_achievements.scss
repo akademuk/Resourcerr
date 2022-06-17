@@ -7,24 +7,25 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-    }
-    .achievements-section {
-        &:hover {
-            svg {
-                path {
-                    fill:url(#paint0_linear_434_2740);
+        .achievements-section {
+            &:hover {
+                svg {
+                    path {
+                        fill:url(#paint0_linear_434_2740);
+                    }
                 }
-            }
-            cursor: pointer;
-            .achievements-counter {
-               background:linear-gradient(90.96deg, #51E589 0%, #0EC3B5 99.64%);
-               -webkit-background-clip: text;
-               -webkit-text-stroke: 1px transparent;
-              
-               text-shadow: 0px 0px 2px rgba(21, 21, 21, 1);
+                cursor: pointer;
+                .achievements-counter {
+                   background:linear-gradient(90.96deg, #51E589 0%, #0EC3B5 99.64%);
+                   -webkit-background-clip: text;
+                   -webkit-text-stroke: 1px transparent;
+                  
+                   text-shadow: 0px 0px 2px rgba(21, 21, 21, 1);
+                }
             }
         }
     }
+
 }
 .achievements-section {
     width: 20%;
@@ -45,25 +46,21 @@
 }
 /*PARTNERS------------------------------------------------------------------------------*/
 .achievements {
-    .partners-achievements {
-        &:hover {
-            svg {
-                path {
-                    fill:url(#paint0_linear_723_5518) !important;
-                   
+    .wrapper {
+        .partners-achievements{
+            &:hover {
+                cursor: pointer;
+                .achievements-counter {
+                    background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
+                    -webkit-background-clip: text;
+                    -webkit-text-stroke: 1px transparent;
+                    text-shadow: 0px 0px 2px rgba(21, 21, 21, 1);
                 }
             }
-            cursor: pointer;
-            .partners-text {
-                background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
-                -webkit-background-clip: text;
-                -webkit-text-stroke: 1px transparent;
-                text-shadow: 0px 0px 2px rgba(21, 21, 21, 1);
+            .achievements-counter {
+                color: #151515;
+                text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
             }
-        }
-        .partners-text {
-            color: #151515;
-            text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
         }
     }
 }

@@ -8,7 +8,7 @@
             margin-left: 55%;
             position: relative;
             span {
-                filter: drop-shadow(4px 4px #fff);
+                filter: drop-shadow(2px 2px #fff);
             }
             &::before {
                 content: "05";
@@ -180,9 +180,10 @@
         .wrapper {
             padding-left: 0;
             h2 {
+                font-size: 40px;
                 padding-left: 30px;
                 &:before {
-                    left: -10px;
+                   content: none;
                 }
             }
         }
@@ -198,6 +199,7 @@
         }
 }
 .get-in-touch-submit {
+    flex-direction: row-reverse;
     p {
         font-size: 14px;
     }
@@ -213,5 +215,19 @@
 }
 .get-in-touch-container_contact {
     width: 90%;
+}
+.get-in-touch-container_contact  {
+    span {
+        font-size: 12px;
+    }
+    p,a {
+        font-size: 16px
+    }
+}
+.get-in-touch-container_contact-icon {
+    a {
+        width: 46px;
+        height: 46px;
+    }
 }
 }

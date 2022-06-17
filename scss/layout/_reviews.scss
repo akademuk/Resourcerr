@@ -171,11 +171,13 @@ h4 {
 @media (max-width: 576px) {
 .reviews {
     height: 100%;
+    padding-top: 50px;
     h2 {
+        font-size: 40px;
         margin-left: 0;
         padding-left: 30px;
         &::before {
-            left: -10px;
+            content: none;
         }
     }
 }
@@ -188,5 +190,21 @@ h4 {
 }
 .slick-next {
     left: 50% !important;
+}
+.slider {
+    .slider__item {
+        h4 {
+            font-size: 18px;
+            &::before {
+                content: none !important;
+            }
+        }
+        p {
+            font-size: 13px;
+        }
+        span {
+            font-size: 13px;
+        }
+    }
 }
 }

@@ -154,15 +154,58 @@
 @media (max-width: 576px) {
     .footer-navigation {
     left: 0;
+    top: 15%;
+    margin-top: 50px;
     }
     .footer-navigation {
         .toggle-switch {
             .toggle-custom {
                 width: 30vw;
             }
+            #modul-window_open {
+                right: -5px;
+                text-transform: capitalize;
+                span {
+                    display: none;
+                }
+            }
+        }
+        nav {
+            ul {
+                width: max-content;
+                li {
+                    margin-bottom: 20px;
+                    a {
+                        font-size: 13px;
+                    }
+                    
+                }
+            }
         }
     }
     .footer {
         padding-top: 0;
+        height: 50vh;
     }
+    .footer-logo_container {
+        height: 72px;
+        a {
+            background: url(../../images/white.png);
+            background-size: cover;
+            width: 72px;
+            height: 72px;
+            img {
+                display: none;
+            }
+        }
+        p {
+            display: flex;
+            margin-left: 0;
+            padding-top: 10px;
+            font-size: 13px;
+        }
+    }
+.footer-logo {
+    font-size: 10px;
+}
 }

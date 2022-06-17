@@ -126,6 +126,7 @@
 .why-we-ar-container_img {
     height: 70% !important;
 }
+
 }
 /*@media (min-width: 768px) and (max-width: 991px) --------------------------------------------*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -162,63 +163,103 @@
     }
 }
 @media (orientation: landscape) {
-    .why-we-ar-flex {
-        height: 80vh;
-        margin-top: 40px;
-        .why-we-ar-container {
-            height: 70vh;
-            .why-we-ar-container_img {
-                img {
-                    height: 100%;
+    .why-we-ar {
+                .wrapper {
+                    align-items: flex-start;
+                    h2 {
+                        margin-left: 0;
+                        &:before {
+                            content: none;
+                        }
+                    }
+                    .why-we-tittle-text {
+                        margin-left: 0;
+                        width: 100%;
+                        br {
+                            display: none;
+                        }
+                    }
                 }
-            }
+    }
+    .slick-slide {
+        margin: 0 2px;
+    }
+    .slick-list {
+        margin: 0 -2px;
+    }
+    .why-we-ar-flex {
+        margin-top: 40px;
+        height: 100%;
+        .why-we-ar-container {
+            display: flex !important;
+            padding: 0;
+            height: 100vh;
             &:nth-of-type(2) {
                 margin-top: 0;
             }
+            .why-we-ar-container_img {
+                height: 70% !important;
+                width: 100%;
+                img {
+                    height: 92%;
+                    object-fit: cover !important;
+                    border-radius: 24px 24px 0 0;
+                }
+            }
         }
-}
-}
+        .why-we-ar-container_text {
+            padding: 0 15px !important;
+        }
+    }
+    
+    } 
 }
 /*@media max-width: 767px --------------------------------------------*/
 @media (max-width: 767px) {
-    .why-we-ar {
-        margin-top: 80px;
-        .wrapper {
-            h2 {
-                text-align: left !important;
-                font-size: 40px;
-                margin-left: 0;
-                span {
-                    display: block !important;
-                }
-                 &::before {
-                content: none;
-                }
+.why-we-ar {
+    margin-top: 80px;
+    .wrapper {
+        h2 {
+            text-align: left !important;
+            font-size: 40px;
+            margin-left: 0;
+            span {
+                display: block !important;
+            }
+            &::before {
+            content: none;
             }
         }
     }
-    .why-we-tittle-text {
-        margin-left: 0 !important;
-        text-align: left !important;
-        font-size: 16px;
-    }
-    .slick-slide {
-        margin: 0 1px;
-    }
-    .slick-list {
-        margin: 0 -1px;
-    }
-    .why-we-ar-flex {
-        margin-top: 40px;
-        height: auto;
-        .why-we-ar-container {
-            position: relative;
-            &:nth-of-type(2) {
-                margin-top: 0;
-            }
+}
+.why-we-tittle-text {
+    margin-left: 0 !important;
+    text-align: left !important;
+    font-size: 16px;
+}
+.slick-slide {
+    margin: 0 1px;
+}
+.slick-list {
+    margin: 0 -1px;
+}
+.why-we-ar-flex {
+    margin-top: 40px;
+    height: auto;
+    .why-we-ar-container {
+        position: relative;
+        &:nth-of-type(2) {
+            margin-top: 0;
         }
-    @media (orientation: landscape) {
-        .why-we-ar {
+    }
+    .why-we-ar-container_img {
+        img {
+            object-fit: contain !important;
+        }
+    }
+}
+@media (orientation: landscape) {
+.why-we-ar {
             .wrapper {
                 align-items: flex-start;
                 h2 {
@@ -231,41 +272,40 @@
                     margin-left: 0;
                 }
             }
+}
+.slick-slide {
+    margin: 0 2px;
+}
+.slick-list {
+    margin: 0 -2px;
+}
+.why-we-ar-flex {
+    margin-top: 40px;
+    height: 100%;
+    .why-we-ar-container {
+        display: flex !important;
+        padding: 0;
+        height: 100vh;
+        &:nth-of-type(2) {
+            margin-top: 0;
         }
-        .slick-slide {
-            margin: 0 2px;
-        }
-        .slick-list {
-            margin: 0 -2px;
-        }
-        .why-we-ar-flex {
-            margin-top: 40px;
-            height: 35vh;
-            .why-we-ar-container {
-                flex-direction: inherit;
-                display: flex !important;
-                padding: 0;
-                height: 200px;
-                &:nth-of-type(2) {
-                    margin-top: 0;
-                }
-                .why-we-ar-container_img {
-                    height: 100%;
-                    width: 40%;
-                    img {
-                        object-fit: contain;
-                        border-radius: 24px 0 0 24px;
-                    }
-                }
+        .why-we-ar-container_img {
+            height: 60%;
+            width: 100%;
+            img {
+                height: 92%;
+                object-fit: contain !important;
+                border-radius: 24px 24px 0 0;
             }
         }
-    }    
-}
-.why-we-ar-container_img {
-    img {
-     object-fit: contain !important;
+    }
+    .why-we-ar-container_text {
+        padding: 0 15px !important;
     }
 }
+
+}    
+
 }
 /*@media min-width: 576px --------------------------------------------*/
 @media (max-width: 576px) {
@@ -322,4 +362,52 @@
         object-fit: contain !important;
        }
     }
+@media (orientation: landscape) {
+.why-we-ar {
+    .wrapper {
+    align-items: flex-start;
+        h2 {
+        margin-left: 0;
+            &:before {
+                content: none;
+            }
+        }
+        .why-we-tittle-text {
+            margin-left: 0;
+        }
+    }
+}
+.slick-slide {
+    margin: 0 2px;
+}
+.slick-list {
+    margin: 0 -2px;
+}
+.why-we-ar-flex {
+    margin-top: 40px;
+    height: 100%;
+    .why-we-ar-container {
+        display: flex !important;
+        padding: 0;
+        height: 100vh;
+        &:nth-of-type(2) {
+            margin-top: 0;
+        }
+        .why-we-ar-container_img {
+            height: 60%;
+            width: 100%;
+            img {
+                height: 92%;
+                object-fit: cover !important;
+                border-radius: 24px 24px 0 0;
+            }
+        }
+    }
+    .why-we-ar-container_text {
+        padding: 0 15px !important;
+    }
+}
+
+}    
+        
 }

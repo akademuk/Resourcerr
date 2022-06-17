@@ -72,6 +72,7 @@ h1 {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        margin-left: 150px;
         filter: drop-shadow(2px 2px #333);
         &::after {
             content: "";
@@ -158,6 +159,9 @@ h1 {
 h1 {
     font-size: 95px;
     margin-bottom: 50px;
+    span {
+        margin-left: 0;
+    }
 }
 .tittle-container-btn {
     left: 60%;
@@ -180,6 +184,9 @@ h1 {
     }
     h1 {
         font-size: 104px;
+         span {
+        margin-left: 0;
+    }
     }
 }
 @media (orientation: landscape) {
@@ -195,6 +202,9 @@ h1 {
 h1 {
     font-size: 60px;
     margin-top: 10px;
+     span {
+        margin-left: 0;
+    }
 }
 .tittle-container-btn {
     p {
@@ -217,6 +227,9 @@ h1 {
 h1 {
     margin-top: 20px;
     font-size: 56px;
+     span {
+        margin-left: 0;
+    }
 }
 .tittle {
     .toggle-switch {
@@ -256,6 +269,9 @@ h1 {
 }
 h1 {
     margin-top: 0;
+     span {
+        margin-left: 0;
+    }
     br {
         display: none;
     }

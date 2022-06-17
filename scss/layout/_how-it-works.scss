@@ -116,6 +116,14 @@
             margin-top: -120px;
         }
     }
+    &:nth-of-type() {
+        flex-direction: row-reverse;
+        text-align: left;
+        margin-right: 38%;
+        .how-it-works-container-info_text {
+            margin-right: 20px;
+        }
+    }
 }
 .how-it-works-container-info_text {
     width: 300px;
@@ -179,6 +187,24 @@ h5 {
                         background-repeat: no-repeat;
                     }
                 }
+                &:nth-of-type(6) {
+                    flex-direction: row-reverse;
+                    text-align: left;
+                    margin-right: 38%;
+                    .how-it-works-container-info_text {
+                        margin-right: 20px;
+                    }
+                    &::before {
+                        content: '';
+                        background: url(../../images/partners/works-line5.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 114px;
+                        height: 133px;
+                        margin-left: 30px;
+                        margin-top: -120px;
+                    }
+                }
             }
         }
     }
@@ -227,6 +253,7 @@ h5 {
     .how-it-works-container {
         margin-top: 50px;
     }
+
 }
 
 /*@media min-width: 576px --------------------------------------------*/
@@ -250,3 +277,4 @@ h5 {
     }
 }
 }
+

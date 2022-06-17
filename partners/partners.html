@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="style/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="../style/slick-theme.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -39,43 +39,28 @@
                           <span class="modal_close">&times;</span>
                         </div>
                         <div class="modul-window-main">
-                            <form action="get">
+                            <form action="get" class="partners-form">
                             <!------------------------>
-                            <h3>Corporate details</h3>
                             <label>Full name <input type="text"></label>
-                            <label>Corporate email <input type="email"></label>
-                            <label>Phone number <input type="text"></label>
+                            <label>Title <input type="text"></label>
+                            <label>Corporate email <input type="text"></label>
+                            <label>Phone Number<input type="tel"></label>
                             <label>Company name <input type="text"></label>
-                            <label>Company website <input type="text"></label>
-                            <label>Brief company overview <textarea name="Brief-company" cols="30" rows="10"></textarea></label>
-                            <!------------------------>
-                            <h3>Campaign  details</h3>
-                            <label>Budget<input type="text"></label>
-                            <label>Max pilot period<input type="text"></label>
-                            <label>Number of contacts / monts<input type="text"></label>
-                            <label>Number of appointments / monts<input type="text"></label>
-                            <label>Preferable outreach language<input type="text"></label>
-                            <label>Additional criteria (optional)<textarea name="Additional-criteria" cols="30" rows="10"></textarea></label>
-                            <!------------------------>
-                            <h3>Product overview</h3>
-                            <label>Average Deal Value ($ MRR)<input type="text"></label>
-                            <label>Average Sales Cycle<input type="text"></label>
-                            <label>Average number of calls/months<input type="text"></label>
-                            <label>Calls to deals closed conversion<input type="text"></label>
-                            <!------------------------>
-                            <h3>Ideal customer profile</h3>
-                            <label>Industry<input type="text"></label>
-                            <label>Location<input type="text"></label>
-                            <label>Titles<input type="text"></label>
+                            <label>Company website<input type="text"></label>
+                            <label>Brief company overview<textarea name="Additional-criteria" cols="30" rows="10"></textarea></label>
                             <label>Number of employees<input type="text"></label>
-                            <label>Additional requirements (optional)<textarea name="Additional-requirements" cols="30" rows="10"></textarea></label>
-                            <!------------------------>
+                            <label>Location<input type="text"></label>
+                            <label>Possible Languages for <br> Communication/Outreach<input type="text"></label>
+                            <label>Pricing options<input type="text"></label>
+                            <label>Describe your main value <br> proposition<textarea name="Additional-criteria" cols="30" rows="10"></textarea></label>
+                            <label>What is the min. pilot period you <br> can go for?<input type="text"></label>
+                            <label>How many contacts your team can <br> provide per month (min & max)?<input type="text"></label>
+                            <label>What countries are you working with?<input type="text"></label>
+                            <label>Provide presentation <br> (link or attachment)<input type="text"></label>
                             <div class="form-submit">
                             <input type="submit" value="Submit">                          
                             <p>Click to Submit I agree to the <span> Terms of Use </span></p>
-                         
                             </div>
-                        
                             </form>
                         </div>
                     </div>       
@@ -83,7 +68,7 @@
             </div>  
         </div> 
         <div class="width-nav">
-            <div id="menuToggle" >
+            <div id="menuToggle" class="partners-hover">
                 <input type="checkbox" class="chec" id="myInput"/>
                 <span class="menuToggle-span"></span>
                 <span class="menuToggle-span"></span>
@@ -92,7 +77,7 @@
                     <ul>
                         <li class="menu-top">Menu</li>
                         <li><a href="#about">About us</a></li>
-                        <li><a href="#why-we">Why we are</a></li>
+                        <li><a href="#why-we">Why resourcerr?</a></li>
                         <li><a href="#how-it-works">How it works</a></li>
                         <li><a href="#reviews">Reviews</a></li>
                         <li><a href="#contact">Contacts</a></li>
@@ -110,7 +95,7 @@
                     <button id="modul-window_open">Send request</button>
                     <div class="burger-module_logo">
                         <a href="#">
-                            <img src="images/white.png" alt="">
+                            <img src="../images/white.png" alt="">
                         </a>
                     <p class="logotype-text">looking for a 100% <br> business match</p>    
                     </div>
@@ -129,17 +114,17 @@
             </div>
         </div>
         <div class="tittle-container">
-            <h1 class="gradient-shadow" title="revenue">Increase your <br> <span>revenue</span> with<br> new clients</h1>
+            <h1 class="gradient-shadow" title="revenue">Acquire new <br> <span  class="partners-blue">clients</span> for your <br> lead generation <br> business</h1>
             <div class="tittle-container-btn">
-            <p>Optimize the search for <br> the most suitable partner</p>
-            <a href="#contact" class="btn-send-request">Send <br> request</a>
+            <p>Use additional source<br> to get new clients</p>
+            <a href="#contact" class="btn-send-request partners-btn-hover">Send <br> request</a>
         </div>
         </div>
     </div>
     <!--Achievements + counter----------------------------------------------------------->   
     <div class="achievements">
         <div class="wrapper">
-            <div class="achievements-section">
+            <div class="achievements-section partners-achievements">
                 <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.6667C12.8409 6.6667 14.3333 5.1743 14.3333 3.33333C14.3333 1.49238 12.8409 0 11 0C9.15906 0 7.66663 1.49238 7.66663 3.33333C7.66663 5.1743 9.15906 6.6667 11 6.6667ZM11 5.6667C12.2887 5.6667 13.3333 4.622 13.3333 3.33333C13.3333 2.04467 12.2887 1 11 1C9.71126 1 8.66663 2.04467 8.66663 3.33333C8.66663 4.622 9.71126 5.6667 11 5.6667Z" fill="white"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 5.5C6.5 6.8807 5.38071 8 4 8C2.61929 8 1.5 6.8807 1.5 5.5C1.5 4.11929 2.61929 3 4 3C5.38071 3 6.5 4.11929 6.5 5.5ZM5.5 5.5C5.5 6.3284 4.82843 7 4 7C3.17157 7 2.5 6.3284 2.5 5.5C2.5 4.67157 3.17157 4 4 4C4.82843 4 5.5 4.67157 5.5 5.5Z" fill="white"/>
@@ -150,16 +135,16 @@
              <p class="achievements-text">Total number <br> of clients</p>
             </div>
         
-            <div class="achievements-section">
+            <div class="achievements-section partners-achievements">
                 <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.56 2.71998C21.4876 2.66426 21.4038 2.62542 21.3145 2.60631C21.2252 2.58721 21.1328 2.58833 21.044 2.60958L18.7424 3.19998C17.8928 3.15198 15.1832 2.11038 13.64 1.44798L13.6088 1.43598C11.5592 0.699184 9.78556 0.864784 8.30236 1.91598C6.32956 1.24158 3.80236 2.66478 3.02236 3.15198L0.948757 2.61918C0.860152 2.59601 0.767406 2.59351 0.677682 2.61188C0.587958 2.63025 0.503657 2.669 0.431289 2.72513C0.358921 2.78126 0.300423 2.85328 0.260312 2.93561C0.220202 3.01795 0.199552 3.1084 0.199957 3.19998V11.6C0.199957 11.7591 0.263171 11.9117 0.375693 12.0242C0.488215 12.1368 0.640827 12.2 0.799957 12.2H2.07436L7.52956 16.5008C7.73893 16.7022 7.99395 16.8499 8.27283 16.9314C8.55171 17.0128 8.84616 17.0256 9.13103 16.9685C9.4159 16.9114 9.68273 16.7863 9.90871 16.6037C10.1347 16.4211 10.3131 16.1865 10.4288 15.92C10.7006 16.0757 11.0082 16.1584 11.3216 16.16C11.6733 16.1601 12.0173 16.0572 12.3112 15.864C12.605 15.6708 12.8359 15.3957 12.9752 15.0728C13.2465 15.2298 13.5544 15.3125 13.868 15.3128C14.2193 15.3125 14.5628 15.2094 14.8562 15.0162C15.1496 14.823 15.38 14.5482 15.5192 14.2256C15.7962 14.3829 16.1102 14.4637 16.4288 14.4595C16.7474 14.4554 17.0591 14.3666 17.332 14.2022C17.6049 14.0377 17.8292 13.8036 17.9817 13.5239C18.1342 13.2441 18.2096 12.9289 18.2 12.6104L19.484 12.2H21.2C21.3591 12.2 21.5117 12.1368 21.6242 12.0242C21.7367 11.9117 21.8 11.7591 21.8 11.6V3.19998C21.8003 3.10677 21.7788 3.01477 21.7371 2.9314C21.6954 2.84803 21.6348 2.77561 21.56 2.71998ZM1.39996 3.96798L2.47276 4.24398L2.04316 8.23998L1.74556 11H1.39996V3.96798ZM16.8368 13.0784C16.7227 13.1884 16.5704 13.2498 16.412 13.2498C16.2535 13.2498 16.1012 13.1884 15.9872 13.0784L15.14 12.2312L11.7464 8.83518C11.6323 8.73267 11.4834 8.67769 11.3301 8.68154C11.1768 8.68539 11.0309 8.74777 10.9221 8.85588C10.8134 8.964 10.7502 9.10963 10.7455 9.26289C10.7408 9.41614 10.7949 9.56539 10.8968 9.67998L14.2928 13.0808C14.4019 13.1941 14.4622 13.3457 14.4606 13.5031C14.459 13.6604 14.3957 13.8108 14.2843 13.9219C14.1729 14.033 14.0223 14.0959 13.865 14.097C13.7076 14.0981 13.5562 14.0374 13.4432 13.928L12.5936 13.0784L10.04 10.532C9.98417 10.4762 9.91794 10.4319 9.84506 10.4018C9.77217 10.3716 9.69405 10.356 9.61516 10.356C9.53626 10.356 9.45814 10.3716 9.38526 10.4018C9.31237 10.4319 9.24614 10.4762 9.19036 10.532C9.13457 10.5878 9.09032 10.654 9.06013 10.7269C9.02994 10.7998 9.0144 10.8779 9.0144 10.9568C9.0144 11.0357 9.02994 11.1138 9.06013 11.1867C9.09032 11.2596 9.13457 11.3258 9.19036 11.3816L11.7464 13.928C11.8036 13.9834 11.8492 14.0497 11.8805 14.1229C11.9119 14.1962 11.9283 14.2749 11.9289 14.3546C11.9295 14.4343 11.9142 14.5132 11.8839 14.5869C11.8536 14.6606 11.809 14.7276 11.7526 14.7838C11.6961 14.8401 11.6291 14.8845 11.5553 14.9146C11.4815 14.9446 11.4025 14.9597 11.3228 14.9589C11.2432 14.9581 11.1645 14.9414 11.0913 14.9099C11.0182 14.8784 10.952 14.8326 10.8968 14.7752L8.35996 12.2312C8.30443 12.1754 8.23842 12.1311 8.16572 12.1009C8.09303 12.0707 8.01508 12.0551 7.93636 12.0551C7.85763 12.0551 7.77968 12.0707 7.70699 12.1009C7.6343 12.1311 7.56829 12.1754 7.51276 12.2312C7.45682 12.2863 7.4125 12.3521 7.38241 12.4247C7.35232 12.4972 7.33707 12.575 7.33756 12.6536C7.33729 12.7324 7.35263 12.8106 7.38269 12.8835C7.41276 12.9564 7.45697 13.0226 7.51276 13.0784L9.20956 14.7752C9.32182 14.8881 9.38484 15.0408 9.38484 15.2C9.38484 15.3592 9.32182 15.5119 9.20956 15.6248C9.09493 15.7337 8.94286 15.7944 8.78476 15.7944C8.62665 15.7944 8.47459 15.7337 8.35996 15.6248C8.34352 15.6075 8.32587 15.5915 8.30716 15.5768L2.91436 11.3336L3.51676 5.76798L3.69196 4.14558C4.45516 3.66558 5.94556 2.92398 7.18156 2.94558C6.81423 3.3697 6.48571 3.82593 6.19996 4.30878C5.93525 4.75983 5.85098 5.29431 5.96405 5.80492C6.07713 6.31553 6.37918 6.76446 6.80956 7.06158C7.65916 7.64238 9.20956 8.18238 11.1296 6.52398L16.8368 12.2288C16.9484 12.342 17.0111 12.4946 17.0111 12.6536C17.0111 12.8126 16.9484 12.9652 16.8368 13.0784ZM17.78 11.4872C17.7507 11.4503 17.7195 11.415 17.6864 11.3816L11.9744 5.66958C12.2144 5.39598 12.4544 5.09118 12.6944 4.74558C12.7489 4.68229 12.7896 4.6083 12.8139 4.52835C12.8382 4.4484 12.8456 4.36425 12.8355 4.28131C12.8254 4.19836 12.798 4.11844 12.7553 4.04666C12.7125 3.97489 12.6552 3.91284 12.587 3.86449C12.5189 3.81614 12.4414 3.78257 12.3595 3.76591C12.2776 3.74925 12.1931 3.74988 12.1115 3.76776C12.0299 3.78564 11.9529 3.82037 11.8855 3.86972C11.818 3.91908 11.7617 3.98198 11.72 4.05438C10.6544 5.56398 9.06076 7.13838 7.49596 6.07038C7.31828 5.94384 7.19487 5.75493 7.15038 5.54138C7.10589 5.32783 7.14359 5.10535 7.25596 4.91838C7.6449 4.2235 8.15351 3.60277 8.75836 3.08478C8.77781 3.07091 8.79626 3.05567 8.81356 3.03918C10.0136 2.07918 11.4536 1.93278 13.2008 2.55918C13.6544 2.75118 16.676 4.03038 18.26 4.33518L18.788 11.1728L17.78 11.4872ZM20.6 11H19.9568L19.436 4.25838L20.6 3.96798V11Z" fill="white"/>
                     </svg>
                     
-             <p class="achievements-counter"><span class="number">95</span>%</p>
-             <p class="achievements-text">Of meetings end in <br> deals</p>
+             <p class="achievements-counter"><span class="number">5</span>K+</p>
+             <p class="achievements-text">Meetings arranged</p>
             </div>
         
-            <div class="achievements-section">
+            <div class="achievements-section partners-achievements">
                 <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.56 2.71998C21.4876 2.66426 21.4038 2.62542 21.3145 2.60631C21.2252 2.58721 21.1328 2.58833 21.044 2.60958L18.7424 3.19998C17.8928 3.15198 15.1832 2.11038 13.64 1.44798L13.6088 1.43598C11.5592 0.699184 9.78556 0.864784 8.30236 1.91598C6.32956 1.24158 3.80236 2.66478 3.02236 3.15198L0.948757 2.61918C0.860152 2.59601 0.767406 2.59351 0.677682 2.61188C0.587958 2.63025 0.503657 2.669 0.431289 2.72513C0.358921 2.78126 0.300423 2.85328 0.260312 2.93561C0.220202 3.01795 0.199552 3.1084 0.199957 3.19998V11.6C0.199957 11.7591 0.263171 11.9117 0.375693 12.0242C0.488215 12.1368 0.640827 12.2 0.799957 12.2H2.07436L7.52956 16.5008C7.73893 16.7022 7.99395 16.8499 8.27283 16.9314C8.55171 17.0128 8.84616 17.0256 9.13103 16.9685C9.4159 16.9114 9.68273 16.7863 9.90871 16.6037C10.1347 16.4211 10.3131 16.1865 10.4288 15.92C10.7006 16.0757 11.0082 16.1584 11.3216 16.16C11.6733 16.1601 12.0173 16.0572 12.3112 15.864C12.605 15.6708 12.8359 15.3957 12.9752 15.0728C13.2465 15.2298 13.5544 15.3125 13.868 15.3128C14.2193 15.3125 14.5628 15.2094 14.8562 15.0162C15.1496 14.823 15.38 14.5482 15.5192 14.2256C15.7962 14.3829 16.1102 14.4637 16.4288 14.4595C16.7474 14.4554 17.0591 14.3666 17.332 14.2022C17.6049 14.0377 17.8292 13.8036 17.9817 13.5239C18.1342 13.2441 18.2096 12.9289 18.2 12.6104L19.484 12.2H21.2C21.3591 12.2 21.5117 12.1368 21.6242 12.0242C21.7367 11.9117 21.8 11.7591 21.8 11.6V3.19998C21.8003 3.10677 21.7788 3.01477 21.7371 2.9314C21.6954 2.84803 21.6348 2.77561 21.56 2.71998ZM1.39996 3.96798L2.47276 4.24398L2.04316 8.23998L1.74556 11H1.39996V3.96798ZM16.8368 13.0784C16.7227 13.1884 16.5704 13.2498 16.412 13.2498C16.2535 13.2498 16.1012 13.1884 15.9872 13.0784L15.14 12.2312L11.7464 8.83518C11.6323 8.73267 11.4834 8.67769 11.3301 8.68154C11.1768 8.68539 11.0309 8.74777 10.9221 8.85588C10.8134 8.964 10.7502 9.10963 10.7455 9.26289C10.7408 9.41614 10.7949 9.56539 10.8968 9.67998L14.2928 13.0808C14.4019 13.1941 14.4622 13.3457 14.4606 13.5031C14.459 13.6604 14.3957 13.8108 14.2843 13.9219C14.1729 14.033 14.0223 14.0959 13.865 14.097C13.7076 14.0981 13.5562 14.0374 13.4432 13.928L12.5936 13.0784L10.04 10.532C9.98417 10.4762 9.91794 10.4319 9.84506 10.4018C9.77217 10.3716 9.69405 10.356 9.61516 10.356C9.53626 10.356 9.45814 10.3716 9.38526 10.4018C9.31237 10.4319 9.24614 10.4762 9.19036 10.532C9.13457 10.5878 9.09032 10.654 9.06013 10.7269C9.02994 10.7998 9.0144 10.8779 9.0144 10.9568C9.0144 11.0357 9.02994 11.1138 9.06013 11.1867C9.09032 11.2596 9.13457 11.3258 9.19036 11.3816L11.7464 13.928C11.8036 13.9834 11.8492 14.0497 11.8805 14.1229C11.9119 14.1962 11.9283 14.2749 11.9289 14.3546C11.9295 14.4343 11.9142 14.5132 11.8839 14.5869C11.8536 14.6606 11.809 14.7276 11.7526 14.7838C11.6961 14.8401 11.6291 14.8845 11.5553 14.9146C11.4815 14.9446 11.4025 14.9597 11.3228 14.9589C11.2432 14.9581 11.1645 14.9414 11.0913 14.9099C11.0182 14.8784 10.952 14.8326 10.8968 14.7752L8.35996 12.2312C8.30443 12.1754 8.23842 12.1311 8.16572 12.1009C8.09303 12.0707 8.01508 12.0551 7.93636 12.0551C7.85763 12.0551 7.77968 12.0707 7.70699 12.1009C7.6343 12.1311 7.56829 12.1754 7.51276 12.2312C7.45682 12.2863 7.4125 12.3521 7.38241 12.4247C7.35232 12.4972 7.33707 12.575 7.33756 12.6536C7.33729 12.7324 7.35263 12.8106 7.38269 12.8835C7.41276 12.9564 7.45697 13.0226 7.51276 13.0784L9.20956 14.7752C9.32182 14.8881 9.38484 15.0408 9.38484 15.2C9.38484 15.3592 9.32182 15.5119 9.20956 15.6248C9.09493 15.7337 8.94286 15.7944 8.78476 15.7944C8.62665 15.7944 8.47459 15.7337 8.35996 15.6248C8.34352 15.6075 8.32587 15.5915 8.30716 15.5768L2.91436 11.3336L3.51676 5.76798L3.69196 4.14558C4.45516 3.66558 5.94556 2.92398 7.18156 2.94558C6.81423 3.3697 6.48571 3.82593 6.19996 4.30878C5.93525 4.75983 5.85098 5.29431 5.96405 5.80492C6.07713 6.31553 6.37918 6.76446 6.80956 7.06158C7.65916 7.64238 9.20956 8.18238 11.1296 6.52398L16.8368 12.2288C16.9484 12.342 17.0111 12.4946 17.0111 12.6536C17.0111 12.8126 16.9484 12.9652 16.8368 13.0784ZM17.78 11.4872C17.7507 11.4503 17.7195 11.415 17.6864 11.3816L11.9744 5.66958C12.2144 5.39598 12.4544 5.09118 12.6944 4.74558C12.7489 4.68229 12.7896 4.6083 12.8139 4.52835C12.8382 4.4484 12.8456 4.36425 12.8355 4.28131C12.8254 4.19836 12.798 4.11844 12.7553 4.04666C12.7125 3.97489 12.6552 3.91284 12.587 3.86449C12.5189 3.81614 12.4414 3.78257 12.3595 3.76591C12.2776 3.74925 12.1931 3.74988 12.1115 3.76776C12.0299 3.78564 11.9529 3.82037 11.8855 3.86972C11.818 3.91908 11.7617 3.98198 11.72 4.05438C10.6544 5.56398 9.06076 7.13838 7.49596 6.07038C7.31828 5.94384 7.19487 5.75493 7.15038 5.54138C7.10589 5.32783 7.14359 5.10535 7.25596 4.91838C7.6449 4.2235 8.15351 3.60277 8.75836 3.08478C8.77781 3.07091 8.79626 3.05567 8.81356 3.03918C10.0136 2.07918 11.4536 1.93278 13.2008 2.55918C13.6544 2.75118 16.676 4.03038 18.26 4.33518L18.788 11.1728L17.78 11.4872ZM20.6 11H19.9568L19.436 4.25838L20.6 3.96798V11Z" fill="white"/>
                     </svg>
@@ -167,16 +152,16 @@
               
                     
              <p class="achievements-counter"><span class="number">40</span>+</p>
-             <p class="achievements-text">Partners are already <br> cooperating with us</p>
+             <p class="achievements-text">Partners already <br> cooperating with us</p>
             </div>
         
-            <div class="achievements-section">
+            <div class="achievements-section partners-achievements">
                 <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.702999 18.7343H4.21862V20.8437C4.21862 21.232 4.53343 21.5468 4.92174 21.5468H23.2967C23.685 21.5468 23.9998 21.232 23.9998 20.8437V2.5625C23.9998 2.17418 23.685 1.85937 23.2967 1.85937H19.7811V1.15625C19.7811 0.767937 19.4663 0.453125 19.078 0.453125C18.6896 0.453125 18.3748 0.767937 18.3748 1.15625V1.85937H14.8123V1.15625C14.8123 0.767937 14.4975 0.453125 14.1092 0.453125C13.7209 0.453125 13.4061 0.767937 13.4061 1.15625V1.85937H9.89048V1.15625C9.89048 0.767937 9.57567 0.453125 9.18736 0.453125C8.79904 0.453125 8.48423 0.767937 8.48423 1.15625V1.85937H4.92174C4.53343 1.85937 4.21862 2.17418 4.21862 2.5625V6.78124C4.21862 11.9633 2.06495 15.9498 0.252859 17.4911C0.0254223 17.6806 -0.0589056 17.9922 0.0418286 18.2706C0.142657 18.5489 0.406937 18.7343 0.702999 18.7343ZM22.5936 20.1406H5.62486V18.7343H19.078C19.2424 18.7343 19.4017 18.6767 19.5281 18.5714C20.3733 17.8673 21.6826 16.1912 22.5936 14.0444V20.1406ZM5.62486 3.26562H8.48423V3.96874C8.48423 4.35705 8.79904 4.67187 9.18736 4.67187C9.57567 4.67187 9.89048 4.35705 9.89048 3.96874V3.26562H13.4061V3.96874C13.4061 4.35705 13.7209 4.67187 14.1092 4.67187C14.4975 4.67187 14.8123 4.35705 14.8123 3.96874V3.26562H18.3748V3.96874C18.3748 4.35705 18.6896 4.67187 19.078 4.67187C19.4663 4.67187 19.7811 4.35705 19.7811 3.96874V3.26562H22.5936V6.07811H5.62486V3.26562ZM5.61282 7.48389H22.5811C22.4227 11.9443 20.7108 15.4537 18.8022 17.3281H2.30232C4.4648 14.5727 5.4968 10.9851 5.61282 7.48389Z" fill="white"/>
                     <defs>
                         <linearGradient id="paint0_linear_434_2740" x1="0.200012" y1="0.983643" x2="22.0703" y2="1.47675" gradientUnits="userSpaceOnUse">
-                        <stop offset="0" stop-color="#51E689"/>
-                        <stop offset="1" stop-color="#0EC4B5"/>
+                        <stop offset="0" stop-color="#29A9EE"/>
+                        <stop offset="1" stop-color="#41E4F0"/>
                         </linearGradient>
                         </defs>    
                 </svg>
@@ -192,14 +177,17 @@
         <div class="about-us-container">
             <div class="about-us_img" >
                 <div class="about-us_img-container">
-                    <div class="container">
+                    <div class="container partners-container">
                        <div class="object" data-value="3">
-                        <img src="images/maney1.png" class="object" data-value="-2" alt="">
-                        <img src="images/maney1.png" class="object" data-value="6" alt="">
-                        <img src="images/maney1.png" class="object" data-value="4" alt="">
-                        <img src="images/contact1.png" class="object" data-value="-6" alt="">
-                        <img src="images/contact2.png" class="object" data-value="8" alt="">
-                        <img src="images/contact3.png" class="object" data-value="-4" alt="">
+                        <img src="../images/maney1.png" class="object" data-value="-2" alt="">
+                        <img src="../images/maney1.png" class="object" data-value="6" alt="">
+                        <img src="../images/maney1.png" class="object" data-value="4" alt="">
+                        <img src="../images/maney1.png" class="object" data-value="4" alt="">
+                        <img src="../images/maney1.png" class="object" data-value="4" alt="">
+                        <img src="../images/contact1.png" class="object" data-value="-6" alt="">
+                        <img src="../images/contact2.png" class="object" data-value="8" alt="">
+                        <img src="../images/contact3.png" class="object" data-value="-4" alt="">
+                        <img src="../images/contact3.png" class="object" data-value="-4" alt="">
                       </div>
                     </div>
                 </div>
@@ -207,10 +195,8 @@
             <div class="about-us_tittle">
                 <div class="card">
                     <div class="card-contents">
-                        <h2>About<span> us</span></h2>
-                        <p>Resourcer is a free business accelerator that connects companies with the most suitable lead generation partners. You don’t need to waste time and money on search and communication. You just need to share project requirements and we’ll send you the alternatives of the most qualified teams accordingly.</p>
-                        <p class="card__read-more">Such cooperation is the most appealing as you cooperate with a company that has experience in working on projects similar to yours. We analyse your needs, select the best players, interview them, send you the proposals, and arrange an intro call with the approved company. This eventually brings higher results and increases ROI along with your revenue. </p>
-                        <p class="read-more-btn">Read more</p>
+                        <h2>About<span class="partners-blue"> us</span></h2>
+                        <p>Resorcerr is a business development partner for lead generation companies that brings them new clients. Once you apply and fit one’s project requirements, you’ll be invited to an interview with our manager to discuss the details and your case studies. If you’re the best match, you’ll be connected to our client to sign the agreement and start working your magic.</p>
                     </div>
                 </div>
             </div>
@@ -218,98 +204,105 @@
      </div>
     </div> 
     <!--About us----------------------------------------------------------->
-    <div class="send-request">
+    <div class="send-request partners-send-request">
      <div class="wrapper">
-        <img src="images/path104-2.png" alt="">
-        <img src="images/path104-1.png" alt="">
-        <img src="images/path104.png" alt="">
-        <p class="send-request-text">You determine cooperation terms (budget/deadline/goals) - we find a reliable partner</p>
+        <img src="../images/path104-2.png" alt="">
+        <img src="../images/path104-1.png" alt="">
+        <img src="../images/path104.png" alt="">
+        <p class="send-request-text">Fill out the application form so that we add you to the list of our partners and and start growing your sales pipeline</p>
         <a href="#contact" class="btn-send-request">Send <br> request</a>
      </div>
     </div>
     <!--Why we ar----------------------------------------------------------->
     <div class="why-we-ar" id="why-we">
         <div class="wrapper">
-           <h2>Why <span>resourcer ?</span></h2>
-           <p class="why-we-tittle-text">We know who can provide the best results <br class="br"> according to your requirements</p>
+           <h2>Why <span class="partners-blue">resourcer ?</span></h2>
+           <p class="why-we-tittle-text">We can become your business <br class="br"> development manager that will provide <br> you with new clients</p>
             <div class="why-we-ar-flex slickNavigator">
                 <div class="why-we-ar-container ">
                     <div class="why-we-ar-container_img">
-                        <img src="images/resourcer1.png" alt="">
-                        <img src="images/resourcer1-hover.png" alt="">
+                        <img src="../images/partners/resourcer1.png" alt="">
+                        <img src="../images/partners/resourcer1-hover.png" alt="">
                     </div>
-                    <p class="why-we-ar-container_text">Get the best fitting company in a few days</p>
+                    <p class="why-we-ar-container_text">No need to spend money and time on the search and communication with the prospects</p>
                 </div>
                 <div class="why-we-ar-container ">
                     <div class="why-we-ar-container_img">
-                    <img src="images/resourcer2.png" alt="">
-                    <img src="images/resourcer2-hover.png" alt="">
+                    <img src="../images/partners/resourcer2.png" alt="">
+                    <img src="../images/partners/resourcer2-hover.png" alt="">
                     </div>
-                    <p class="why-we-ar-container_text">Save time and money on the search for a reliable lead generation partner</p>
+                    <p class="why-we-ar-container_text">Increase customer lifetime and satisfaction score being the best match</p>
                 </div>
                 <div class="why-we-ar-container ">
                        <div class="why-we-ar-container_img">
-                           <img src="images/resourcer3.png" alt="">
-                           <img src="images/resourcer3-hover.png" alt="">  
+                           <img src="../images/partners/resourcer3.png" alt="">
+                           <img src="../images/partners/resourcer3-hover.png" alt="">  
                         </div>
-                       <p class="why-we-ar-container_text">Pay nothing but receive the best lead generation partner to work with</p>
+                       <p class="why-we-ar-container_text">Get the clients you choose and can provide the best results with</p>
                 </div>
                 <div class="why-we-ar-container ">
                        <div class="why-we-ar-container_img">
-                           <img src="images/resourcer4.png" alt="">
-                           <img src="images/resourcer4-hover.png" alt="">                 
+                           <img src="../images/partners/resourcer4.png" alt="">
+                           <img src="../images/partners/resourcer4-hover.png" alt="">                 
                         </div>
-                       <p class="why-we-ar-container_text">Enjoy working with a team that has 5+ years of experience in lead generation and recruiting</p>
+                       <p class="why-we-ar-container_text">Immediate project launch as the client is ready to cooperate with you</p>
                 </div>
             </div>
         </div>
     </div>
     <!--How it works----------------------------------------------------------->
-   <div class="how-it-works" id="how-it-works">
+   <div class="how-it-works partners-how-it-works" id="how-it-works">
        <div class="wrapper">
-        <h2>How<span> it </span>works</h2>
+        <h2>How<span class="partners-blue"> it </span>works</h2>
         <div class="how-it-works-container">
               <div class="how-it-works-container-info">
-                  <img src="images/01.png" alt="">
+                  <img src="../images/partners/it-works1.png" alt="">
                   <div class="how-it-works-container-info_text">
                       <h5>01</h5>
-                      <p>You fill out the application form with the requirements of the project</p>
+                      <p>You fill out the application form describing your terms and experience</p>
                   </div>
               </div> 
               <div class="how-it-works-container-info">
-                <img src="images/02.png" alt="">
+                <img src="../images/partners/it-works2.png" alt="">
                 <div class="how-it-works-container-info_text">
                     <h5>02</h5>
-                    <p>We start the search for the most fitting companies focusing not only on the terms but also on resembling success stories</p>
+                    <p>We verify the information and add you to the list of our partners</p>
                 </div>
             </div>   
             <div class="how-it-works-container-info">
-                <img src="images/03.png" alt="">
+                <img src="../images/partners/it-works3.png" alt="">
                 <div class="how-it-works-container-info_text">
                     <h5>03</h5>
-                    <p>After a few most applicable companies have been selected, our managers interview the candidates-companies to find the best team </p>
+                    <p>Once you match the general client’s requirements, we send you the form that can help us understand if your company is suitable for the very project </p>
                 </div>
             </div>   
             <div class="how-it-works-container-info">
-                <img src="images/04.png" alt="">
+                <img src="../images/partners/it-works4.png" alt="">
                 <div class="how-it-works-container-info_text">
                     <h5>04</h5>
-                    <p>We analyze alternatives and decide which company would be better for you to work with</p>
+                    <p>We have an interview with you discussing the details</p>
                 </div>
             </div>  
             <div class="how-it-works-container-info">
-                <img src="images/05.png" alt="">
+                <img src="../images/partners/it-works5.png" alt="">
                 <div class="how-it-works-container-info_text">
                     <h5>05</h5>
-                    <p>We arrange an intro meeting for you and a few most applicable companies</p>
+                    <p>If you’re a 100% match, we send your proposal to the client</p>
                 </div>
-            </div>    
+            </div>  
+            <div class="how-it-works-container-info">
+                <img src="../images/partners/it-works6.png" alt="">
+                <div class="how-it-works-container-info_text">
+                    <h5>06</h5>
+                    <p>If the client chooses you, we arrange an intro meeting</p>
+                </div>
+            </div>      
         </div>
        </div>
    </div>
     <!--Reviews----------------------------------------------------------->
    <div class="reviews" id="reviews">
-        <h2>Re<span>vie</span>ws</h2>
+        <h2>Re<span  class="partners-blue">vie</span>ws</h2>
         <div class="slider">
             <div class="slider__item">
                 <h4>I’m very satisfied</h4>
@@ -335,7 +328,7 @@
     <!--Get in touch----------------------------------------------------------->
     <div class="get-in-touch" id="contact">
       <div class="wrapper">
-        <h2>Get<span> in </span>touch</h2>
+        <h2>Get<span  class="partners-blue"> in </span>touch</h2>
         <div class="get-in-touch-container">
             <div class="get-in-touch-container_contact">
                 <span>Visit us</span>
@@ -381,18 +374,18 @@
     <!--Question--------------------------------------------------------------->
     <div class="question">
        <div class="wrapper">
-        <h2>F<span>/</span>Q</h2>
+        <h2>F<span  class="partners-blue">/</span>Q</h2>
       <div class="question-container">
         <div class="question-container-img">
             <div class="container">
                 <div class="object" data-value="3">
-                 <img src="images/Subtract.png" class="object" data-value="-2" alt="">
-                 <img src="images/Subtract2.png" class="object" data-value="6" alt="">
-                 <img src="images/Subtract3.png" class="object" data-value="4" alt="">
-                 <img src="images/Subtract4.png" class="object" data-value="-6" alt="">
-                 <img src="images/Subtract5.png" class="object" data-value="8" alt="">
-                 <img src="images/Subtract6.png" class="object" data-value="-4" alt="">
-                 <img src="images/Subtract7.png" class="object" data-value="-4" alt="">
+                 <img src="../images/Subtract.png" class="object" data-value="-2" alt="">
+                 <img src="../images/Subtract2.png" class="object" data-value="6" alt="">
+                 <img src="../images/Subtract3.png" class="object" data-value="4" alt="">
+                 <img src="../images/Subtract4.png" class="object" data-value="-6" alt="">
+                 <img src="../images/Subtract5.png" class="object" data-value="8" alt="">
+                 <img src="../images/Subtract6.png" class="object" data-value="-4" alt="">
+                 <img src="../images/Subtract7.png" class="object" data-value="-4" alt="">
                 </div>
              </div>
         </div>
@@ -457,7 +450,7 @@
             <div class="footer-logo">
                 <div class="footer-logo_container">
                     <a href="#">
-                        <img src="images/logo.png" alt="">
+                        <img src="../images/logo.png" alt="">
                     </a>
                     <p class="logotype-text">looking for a 100% <br> business match</p>    
                    </div>
@@ -487,19 +480,18 @@
         </div>
     </footer>
 
-   
   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="script/switchToToggle.js"></script>
-<script src="script/achievements-counter.js"></script>
-<script src="script/burger.js"></script>
+<script src="../script/switchToToggle.js"></script>
+<script src="../script/achievements-counter.js"></script>
+<script src="../script/burger.js"></script>
 
-<script src="script/modal.-window.js"></script>
+<script src="../script/modal.-window.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="script/slick.min.js"></script>
-<script src="script/reviews.js"></script>
-<script src="script/accordions.js"></script>
-<script src="script/paralax.js"></script>
-<script src="script/read-more.js"></script>
+<script src="../script/slick.min.js"></script>
+<script src="../script/reviews.js"></script>
+<script src="../script/accordions.js"></script>
+<script src="../script/paralax.js"></script>
+<script src="../script/read-more.js"></script>
 </body>
 </html>
