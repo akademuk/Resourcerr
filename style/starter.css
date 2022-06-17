@@ -192,4 +192,12 @@ p {
 .starter-clients .starter-wrapper {
     align-items: flex-start;
 }
+a {
+    width: 56px !important;
+    height: 56px !important;
+}
+img {
+   width: 100%;
+   height: 100%;
+}
 }
