@@ -712,12 +712,12 @@ h1 span {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-left: 150px;
-  filter: drop-shadow(2px 2px #333);
+  position: relative;
 }
 
 h1 span::after {
   content: "";
-  background: url(../../images/revenue.png);
+  background: url(../images/revenue.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 110%;
@@ -772,7 +772,7 @@ h1 span::after {
 
 .partners-tittle-text h1 span::after {
   content: "";
-  background: url(../../images/partners/line-tittle.png);
+  background: url(../images/partners/line-tittle.png);
   background-repeat: no-repeat;
 }
 
@@ -912,6 +912,9 @@ h1 span::after {
     width: 88px;
     height: 88px;
     font-size: 12px;
+  }
+  h1 {
+    font-size: 50px;
   }
   h1 br:nth-of-type(2) {
     display: none;
@@ -1397,6 +1400,9 @@ h1 span::after {
 @media (max-width: 568px) {
   .about-us {
     padding-top: 20px;
+  }
+  .card-contents h2 span {
+    filter: drop-shadow(2px 0px #151515) !important;
   }
   .card__read-more--open {
     height: 21rem;
@@ -1942,6 +1948,9 @@ h1 span::after {
   .why-we-ar .wrapper h2:before {
     content: none;
   }
+  .why-we-ar .wrapper h2 span {
+    filter: drop-shadow(2px 0px #151515);
+  }
   .why-we-ar .wrapper .why-we-tittle-text {
     margin-left: 0;
   }
@@ -2268,6 +2277,9 @@ h5 {
   }
   .how-it-works .wrapper h2:before {
     content: none;
+  }
+  .how-it-works .wrapper h2 span {
+    filter: drop-shadow(2px 0px #fff);
   }
   .how-it-works-container {
     margin-top: 0;
@@ -3237,6 +3249,9 @@ h3:nth-of-type(4)::before {
   .get-in-touch .wrapper h2:before {
     content: none;
   }
+  .get-in-touch .wrapper h2 span {
+    filter: drop-shadow(2px 0px #fff);
+  }
   .get-in-touch-container_form form {
     width: 100%;
   }
@@ -3540,6 +3555,9 @@ h3:nth-of-type(4)::before {
   }
   .question .wrapper h2:before {
     content: none;
+  }
+  .question .wrapper h2 span {
+    filter: drop-shadow(2px 0px #151515);
   }
   .question-container-accordions {
     width: 100%;

@@ -343,6 +343,13 @@ align-items: center;
     .about-us {
         padding-top: 20px;
     }
+    .card-contents {
+        h2 {
+            span {
+                filter: drop-shadow(2px 0px #151515) !important;
+            }
+        }
+    }
     .card__read-more--open {
         height: 21rem;
     }

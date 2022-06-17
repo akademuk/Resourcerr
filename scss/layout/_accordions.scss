@@ -245,6 +245,9 @@
             &:before {
                 content: none;
             }
+            span {
+              filter: drop-shadow(2px 0px #151515);
+            }
         }
     }
 }

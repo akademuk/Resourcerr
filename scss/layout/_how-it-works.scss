@@ -274,6 +274,9 @@ h5 {
             &:before {
                 content: none;
             }
+            span {
+                filter: drop-shadow(2px 0px #fff);
+            }
         }
     }
 }
