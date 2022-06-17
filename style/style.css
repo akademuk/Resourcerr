@@ -202,22 +202,23 @@ header .logotype {
 
 #menu ul {
   margin-top: 50px;
+  text-align: left;
 }
 
-#menu ul a {
+#menu ul li {
   transition: color 0.3s ease;
-  text-decoration: none;
+  margin-bottom: 40px;
 }
 
-#menu ul a li {
+#menu ul li a {
+  text-decoration: none;
   text-align: left;
   font-size: 36px;
   line-height: 45px;
   color: #fff;
-  margin-bottom: 40px;
 }
 
-#menu ul a li:hover {
+#menu ul li a:hover {
   background: linear-gradient(90.96deg, #51E689 0%, #0EC4B5 99.64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -316,7 +317,7 @@ header .logotype {
     margin-top: 0;
     margin-bottom: 30px;
   }
-  #menu ul a li {
+  #menu ul li a {
     font-size: 24px;
     line-height: 15px;
   }
@@ -341,7 +342,7 @@ header .logotype {
     width: 80%;
     margin-bottom: 100px;
   }
-  #menu ul a li {
+  #menu ul li a {
     font-size: 36px;
     line-height: 45px;
   }
@@ -391,7 +392,7 @@ header .logotype {
     margin-top: 20px;
     margin-bottom: 30px;
   }
-  #menu ul a li {
+  #menu ul li a {
     font-size: 24px;
     line-height: 15px;
   }
@@ -419,7 +420,7 @@ header .logotype {
     width: 73%;
     margin-bottom: 100px;
   }
-  #menu ul a li {
+  #menu ul li a {
     font-size: 24px;
     line-height: 30px;
     color: white;
@@ -574,6 +575,8 @@ toggle-switch.toggle-switch {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  text-align: center;
   font-weight: 600;
   font-size: 16px;
   line-height: 115%;

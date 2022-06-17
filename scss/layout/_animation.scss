@@ -1,6 +1,8 @@
 /*button Send Request------------------------------------*/
 .btn-send-request {
     @include text-center;
+    text-decoration: none;
+    text-align: center;
     font-weight: 600;
     font-size: 16px;
     line-height: 115%;

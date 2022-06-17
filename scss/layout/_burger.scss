@@ -89,23 +89,23 @@
   justify-content: flex-start;
   ul {
     margin-top: 50px;
-    a {
+    text-align: left;
+    li {
       transition: color 0.3s ease;
-      text-decoration: none;
-      li {
+      margin-bottom: 40px;
+      a {
+        text-decoration: none;
         text-align: left;
         font-size: 36px;
         line-height: 45px;
         color: $white;
-        margin-bottom: 40px;
         &:hover {
           background: linear-gradient(90.96deg, #51E689 0%, #0EC4B5 99.64%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
         }
-      }
-            
+      }        
     }
   }
 }
@@ -207,8 +207,8 @@
     ul {
       margin-top: 0;
       margin-bottom: 30px;
-      a {
-        li {
+      li {
+        a {
           font-size: 24px;
           line-height: 15px;
         }
@@ -237,8 +237,8 @@
   ul {
     width: 80%;
     margin-bottom: 100px;
-    a {
-      li {
+    li {
+      a {
         font-size: 36px;
         line-height: 45px;
       }
@@ -291,8 +291,8 @@
     width: 30%;
     margin-top: 20px;
     margin-bottom: 30px;
-    a {
-      li {
+    li {
+      a {
         font-size: 24px;
         line-height: 15px;
       }
@@ -324,8 +324,8 @@
     ul {
     width: 73%;
     margin-bottom: 100px;
-      a {
-        li {
+      li {
+        a {
         font-size: 24px;
         line-height: 30px;
         color: white;
