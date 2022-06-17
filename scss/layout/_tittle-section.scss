@@ -140,7 +140,20 @@ h1 {
         }
     }
 }
-
+@media (min-width: 1500px) {
+.tittle-container-btn {
+  left: 60%;
+}
+.tittle {
+    .toggle-switch {
+        padding-left: 60%;
+        
+    }
+}
+h1{
+    margin-left: 10%;
+}
+}
 /*@media (min-width: 991px) and (max-width: 1199px) --------------------------------------------*/ 
 @media (min-width: 991px) and (max-width: 1199px) {
 h1 {

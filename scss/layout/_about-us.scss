@@ -243,7 +243,11 @@ align-items: center;
        } 
     }
 }
-
+@media (min-width: 1500px) {
+.about-us {
+    height: 80vh;
+}
+}
 /*@media (min-width: 991px) and (max-width: 1199px) --------------------------------------------*/
 @media (min-width: 991px) and (max-width: 1199px) {
 .about-us {
@@ -359,4 +363,3 @@ align-items: center;
     }
 }
 }
-

@@ -771,6 +771,18 @@ h1 span::after {
   z-index: -1;
 }
 
+@media (min-width: 1500px) {
+  .tittle-container-btn {
+    left: 60%;
+  }
+  .tittle .toggle-switch {
+    padding-left: 60%;
+  }
+  h1 {
+    margin-left: 10%;
+  }
+}
+
 /*@media (min-width: 991px) and (max-width: 1199px) --------------------------------------------*/
 @media (min-width: 991px) and (max-width: 1199px) {
   h1 {
@@ -1280,6 +1292,12 @@ h1 span::after {
   top: 20%;
   width: 40px;
   height: 40px;
+}
+
+@media (min-width: 1500px) {
+  .about-us {
+    height: 80vh;
+  }
 }
 
 /*@media (min-width: 991px) and (max-width: 1199px) --------------------------------------------*/
@@ -3591,18 +3609,18 @@ h3:nth-of-type(4)::before {
   width: 50%;
 }
 
-.footer-navigation nav ul a {
+.footer-navigation nav ul li {
+  margin-bottom: 24px;
+}
+
+.footer-navigation nav ul li a {
   text-decoration: none;
   font-size: 18px;
   line-height: 140%;
   color: white;
 }
 
-.footer-navigation nav ul a li {
-  margin-bottom: 24px;
-}
-
-.footer-navigation nav ul a li:hover {
+.footer-navigation nav ul li a:hover {
   background: linear-gradient(90.96deg, #0DC6B7 0%, #61F198 99.64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -3679,6 +3697,18 @@ h3:nth-of-type(4)::before {
 .footer-navigation .toggle-switch #modul-window_open {
   height: 50px;
   top: 60%;
+}
+
+@media (min-width: 1500px) {
+  .footer-navigation {
+    padding-top: 80px;
+  }
+  .footer-navigation nav ul li {
+    margin-bottom: 24px;
+  }
+  .footer-navigation .toggle-switch {
+    margin-left: 30%;
+  }
 }
 
 /*@media min-width: 768px --------------------------------------------*/

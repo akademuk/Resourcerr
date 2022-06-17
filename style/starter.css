@@ -1,0 +1,195 @@
+.starter {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.starter-clients {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 120px;
+    box-sizing: border-box;
+    -webkit-transition: all 2s; /* For Safari 3.0 to 6.0 */
+    transition: all 2s; /* For modern browsers */
+}
+h6 {
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 120%;
+    color: black;
+    margin-bottom: 24px;
+}
+.starter-clients p {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: right;
+    color:  white;
+    margin-bottom: 120px;
+}
+.starter-clients a {
+   opacity: 0;
+}
+.starter-partners {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 120px;
+    box-sizing: border-box; 
+    -webkit-transition: all 1s; /* For Safari 3.0 to 6.0 */
+    transition: all 1s; /* For modern browsers */
+}
+.starter-partners p {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: left;
+    color:  white;
+    margin-bottom: 120px;
+}
+.starter-partners a {
+    opacity: 0;
+ }
+.starter-clients:hover {
+    background: black;
+    cursor: pointer;
+}
+.starter-clients:hover .starter-wrapper  .clients {
+    color: white;
+}
+.starter-clients:hover .starter-wrapper  a {
+    opacity: 1;
+}
+.starter-clients:hover .starter-wrapper  .clients span {
+    background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.starter-partners:hover a {
+    opacity: 1;
+}
+.starter-partners:hover {
+    background: black;
+    cursor: pointer;
+}
+.starter-partners:hover .starter-wrapper  .partners {
+    color: white;
+}
+.starter-partners:hover .starter-wrapper  .partners span {
+    background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.starter-partners:hover a {
+    opacity: 1;
+}
+.starter-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.starter-clients .starter-wrapper{
+    align-items: flex-end;
+}
+.starter-partners .starter-wrapper{
+    align-items: baseline;
+}
+@media (max-width: 1200px) {
+    h6 {
+        font-size: 60px;
+    }
+    .starter-partners {
+        padding-left: 80px;
+    }
+    .starter-clients {
+        padding-right: 80px;
+    }
+    .starter-clients .starter-wrapper{
+        align-items: flex-end;
+    }
+    .starter-partners .starter-wrapper{
+        align-items: baseline;
+    }
+}
+@media (max-width: 992px) {
+    h6 {
+        font-size: 50px;
+    }
+    .starter-partners {
+        padding-left: 60px;
+    }
+    .starter-partners .starter-wrapper{
+        align-items: baseline;
+    }
+    .starter-clients {
+        padding-right: 60px;
+    }
+    .starter-clients .starter-wrapper{
+        align-items: flex-end;
+    }
+    p {
+        font-size: 16px !important;
+    }
+}
+@media (max-width: 768px) {
+    h6 {
+        font-size: 35px;
+    }
+    .starter-partners .starter-wrapper{
+        align-items: baseline;
+    }
+    .starter-clients .starter-wrapper{
+        align-items: flex-end;
+    }
+    p {
+        font-size: 14px !important;
+    }
+}
+@media (max-width: 600px) {
+   .starter {
+    flex-direction: column;
+   }
+.starter-clients {
+    width: 100%;
+    height: 50vh;
+    padding-right: 0;
+    align-items: center;
+    justify-content: center;
+}
+.starter-partners {
+    width: 100%;
+    height: 50vh;
+    padding-left: 0;
+    align-items: center;
+    justify-content: center;
+}
+p {
+    text-align: left !important;
+    margin-bottom: 30px !important;
+}
+.starter-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+.starter-partners .starter-wrapper {
+    padding-left: 0;
+}
+.starter-clients .starter-wrapper {
+    align-items: flex-start;
+}
+}

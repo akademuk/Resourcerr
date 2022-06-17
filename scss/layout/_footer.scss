@@ -32,14 +32,16 @@
     width: 50%;
     nav {
         ul {
-            a {
-                text-decoration: none;
-                font-size: 18px;
-                line-height: 140%;
-                color:white;
-                li {
-                    margin-bottom: 24px;
+            li {
+                margin-bottom: 24px;
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    line-height: 140%;
+                    color:white;
+                    
                     &:hover {
+                      
                         background: linear-gradient(90.96deg, #0DC6B7 0%, #61F198 99.64%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
@@ -124,6 +126,21 @@
             top: 60%;
         }
     }
+}
+@media (min-width: 1500px) {
+.footer-navigation {
+    padding-top: 80px;
+    nav {
+        ul {
+            li {
+                margin-bottom: 24px;
+            }
+        }
+    }
+    .toggle-switch {
+        margin-left: 30%;
+    }
+}
 }
 /*@media min-width: 768px --------------------------------------------*/ 
 @media (max-width: 768px) {
