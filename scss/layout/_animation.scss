@@ -38,3 +38,37 @@
         animation: none;
         }
 }
+.btn-send-request-white {
+    @include text-center;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 115%;
+    width: 112px;
+    height: 112px;
+    color: $white;
+    border: 1px transparent;
+    margin-left: 20px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-animation: white-color 1300ms infinite;
+    -moz-animation: white-color 1300ms infinite;
+    -o-animation: white-color 1300ms infinite;
+    animation: white-color 1300ms infinite; 
+    &:hover {
+        background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
+        animation: none;
+        color: white;
+        }
+}
+@-webkit-keyframes white-color {
+    0% { background-color: #fff; -webkit-box-shadow: 0 0 6px #fff; }
+    50% { background-color: #fff; -webkit-box-shadow: 0 0 30px #fff; }
+    100% { background-color: #fff; -webkit-box-shadow: 0 0 6px #fff; }
+}
+@keyframes white-color {
+    0% { background-color: #fff; box-shadow: 0 0 6px #fff; }
+    50% { background-color: #fff; box-shadow: 0 0 30px #fff; }
+    100% { background-color: #fff; box-shadow: 0 0 6px #fff; }
+}

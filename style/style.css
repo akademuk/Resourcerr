@@ -80,6 +80,16 @@ h2 span {
   background-clip: text;
 }
 
+.clients input:hover {
+  box-shadow: 0 1px 0 #51E589, inset 0 1px 0 #0EC3B5;
+  cursor: pointer;
+}
+
+.partners input:hover {
+  box-shadow: 0 1px 0 #29A9EE, inset 0 1px 0 #41E4F0;
+  cursor: pointer;
+}
+
 header {
   width: 100%;
   height: auto;
@@ -628,6 +638,45 @@ toggle-switch.toggle-switch {
 .partners-btn-hover:hover {
   background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
   animation: none;
+}
+
+.btn-send-request-white {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 115%;
+  width: 112px;
+  height: 112px;
+  color: #fff;
+  border: 1px transparent;
+  margin-left: 20px;
+  border-radius: 50%;
+  animation: white-color 1300ms infinite;
+}
+
+.btn-send-request-white:hover {
+  background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%);
+  animation: none;
+  color: white;
+}
+
+@keyframes white-color {
+  0% {
+    background-color: #fff;
+    box-shadow: 0 0 6px #fff;
+  }
+  50% {
+    background-color: #fff;
+    box-shadow: 0 0 30px #fff;
+  }
+  100% {
+    background-color: #fff;
+    box-shadow: 0 0 6px #fff;
+  }
 }
 
 /*Client------------------------------------------------------------------------------*/
@@ -1516,13 +1565,13 @@ h1 span::after {
 /*@media max-width: 568px --------------------------------------------*/
 @media (max-width: 568px) {
   .send-request {
-    height: 100vh;
-    position: relative;
+    height: 100%;
+    position: static;
     margin-top: 50px;
   }
   .send-request .wrapper {
     height: auto;
-    padding: 40px 28px 176px 28px;
+    padding: 40px 28px 50px 28px;
     flex-direction: column;
   }
   .send-request .wrapper img:nth-of-type(1) {
@@ -1546,16 +1595,14 @@ h1 span::after {
   .send-request .wrapper .send-request-text {
     font-size: 28px;
     width: 90%;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     word-wrap: break-word;
   }
   .send-request .wrapper .btn-send-request {
     width: 104px;
     height: 104px;
     font-size: 16px;
-    position: absolute;
-    bottom: 5vh;
-    right: 10vw;
+    margin-left: 70%;
   }
 }
 
@@ -1914,7 +1961,7 @@ h1 span::after {
   }
   .why-we-ar-flex .why-we-ar-container {
     position: relative;
-    height: 80vh;
+    height: calc(50vh + 100px);
   }
   .why-we-ar-flex .why-we-ar-container:nth-of-type(2) {
     margin-top: 0;

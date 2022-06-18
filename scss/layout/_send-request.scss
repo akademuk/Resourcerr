@@ -115,12 +115,12 @@
 /*@media max-width: 568px --------------------------------------------*/
 @media (max-width: 568px){
 .send-request {
-    height: 100vh;
-    position: relative;
+    height: 100%;
+    position: static;
     margin-top: 50px;
     .wrapper {
         height: auto;
-        padding: 40px 28px 176px 28px;
+        padding: 40px 28px 50px 28px;
         flex-direction: column;
         img {
             &:nth-of-type(1) {
@@ -145,16 +145,14 @@
         .send-request-text {
             font-size: 28px;
             width: 90%;
-            margin-bottom: 10px;
+            margin-bottom: 50px;
             word-wrap: break-word;
         }
         .btn-send-request {
             width: 104px;
             height: 104px;
             font-size: 16px;
-            position: absolute;
-            bottom: 5vh;
-            right: 10vw;
+           margin-left: 70%;
         }
     }
 }
