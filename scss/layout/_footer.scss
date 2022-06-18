@@ -209,7 +209,7 @@
     }
     .footer {
         padding-top: 0;
-        height: 60vh;
+        height: calc(30vh + 100px);
         padding-bottom: 10px !important;
     }
     .footer-logo_container {
