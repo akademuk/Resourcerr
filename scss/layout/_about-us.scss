@@ -286,8 +286,23 @@ align-items: center;
 }
 @media (orientation: landscape) {
     .about-us_img {
-        height: 60vh !important;
+        display: none !important;
     }
+.about-us {
+    .wrapper {
+        h2 {
+            &::before {
+                content: none !important;
+            }
+        }
+    }
+}
+.about-us_tittle {
+    width: 100% !important;
+}
+.card__read-more--open {
+    height: 10rem;
+}
 }
 @media (orientation: portrait) {
     .about-us_img {

@@ -166,6 +166,21 @@ h4 {
     .slick-dots {
         bottom: -10px !important;
     }
+@media (orientation:landscape) {
+    .slick-next,
+    .slick-prev {
+        display: none !important;
+    }  
+.reviews {
+    padding-top: 50px;
+    h2 {
+        margin-bottom: 30px;
+        &::before {
+            content: none;
+        }
+    }
+}
+}
 }
 /*@media min-width: 576px --------------------------------------------*/
 @media (max-width: 576px) {

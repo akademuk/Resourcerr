@@ -215,7 +215,26 @@
   align-items: flex-end;
   justify-content: center;
 }
-
+@media (max-width: 992px) {
+@media (orientation: landscape) {
+.question {
+  .wrapper {
+    h2 {
+      margin-left: 0;
+      &:before {
+        content: none;
+      }
+    }
+  }
+}
+.question-container-img {
+  display: none;
+}
+.question-container-accordions {
+  width: 100%;
+}
+}
+}
 /*@media min-width: 768px --------------------------------------------*/
 @media (max-width: 768px) {
   .question-container-img {

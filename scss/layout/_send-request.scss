@@ -93,6 +93,14 @@
         }
     }
 }
+@media (orientation: landscape) {
+.send-request {
+    .wrapper {
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+}
+}
 }
 /*@media max-width: 767px --------------------------------------------*/
 @media (max-width: 767px) {
@@ -122,6 +130,7 @@
         height: auto;
         padding: 40px 28px 50px 28px;
         flex-direction: column;
+        margin-bottom: 50px;
         img {
             &:nth-of-type(1) {
                 bottom: 10vh;

@@ -58,11 +58,13 @@ label {
       text-decoration: none;
       color: $white;
       opacity: 0.5;
+      margin-right: 10px;
       transition: opacity 0.2s ease-in-out,
                   color 0.2s ease-in-out;
       &:last-of-type {
         padding-left: 10px;
         order: 3;
+
       }
       &:hover {
         background: linear-gradient(90.96deg, #51E689 0%, #0EC4B5 99.64%);

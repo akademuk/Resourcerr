@@ -147,7 +147,32 @@
         }
     }
 }
-
+@media (max-width: 992px) {
+@media (orientation: landscape) {
+.get-in-touch {
+    padding-top: 50px;
+    .wrapper {
+            display: flex;
+            flex-direction: column;
+        h2 {
+            margin-left: 30%;
+            margin-left: inherit;
+            &::before {
+                content: none;
+            }
+        }
+    }
+}
+.get-in-touch-container_form {
+    width: 55%;
+    form {
+        input, textarea {
+            width: 100%;
+        }
+    }
+}
+}
+}
 /*@media min-width: 768px --------------------------------------------*/
 @media (max-width: 768px) {
     .get-in-touch {
