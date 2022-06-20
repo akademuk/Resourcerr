@@ -1,5 +1,5 @@
-function switchClicked(currentSwitchState, switchToToggle) {
+function switchClicked(currentSwitchState, switchToToggle, location) {
     var switchElement = document.getElementById(switchToToggle);
     switchElement.checked = currentSwitchState.checked;
-    window.location = "partners/partners.html"  
-  }
+    window.location = location
+}

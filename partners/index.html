@@ -86,9 +86,9 @@
 <!--toggle-switch---------------------------------------------------->             
                     <div class="toggle-switch">
                         <div class="toggle-custom">
-                          <input id="s2" type="checkbox" onclick="switchClicked(this, 's1');">
+                          <input id="s1" type="checkbox" onclick="switchClicked(this, 's1', '/clients');">
                           <label for="toggle"></label>
-                          <a href="#"><span>For clients</span></a>
+                          <a href="#" onclick="switchClicked(this, 's1', '/clients');"><span>For clients</span></a>
                           <a href="#"><span>For parents</span></a>
                         </div>
                     </div>
@@ -108,18 +108,19 @@
     <!--Tittle + switch + button----------------------------------------------------------->   
     <div class="tittle">
         <div class="toggle-switch">
-            <div class="toggle-custom switch">
-              <input id="s1" type="checkbox" onclick="switchClicked(this, 's2');">
-              <label for="toggle"></label>
-              <a href="#"><span>For clients</span></a>
-              <a href="#"><span>For parents</span></a>
+            <div class="toggle-custom switch  partners-toogle-color">
+              <label for="toggle" class="partners-toogle">
+                <input id="s1" type="checkbox" onclick="switchClicked(this, 's1', '/clients');">
+              </label>
+              <a href="" onclick="switchClicked(this, 's1', '/clients');"><span>For clients</span></a>
+              <a href=""><span>For parents</span></a>
             </div>
         </div>
         <div class="tittle-container">
             <h1 class="gradient-shadow" title="revenue">Acquire new <br> <span  class="partners-blue">clients</span> for your <br> lead generation <br> business</h1>
             <div class="tittle-container-btn">
             <p>Use additional source<br> to get new clients</p>
-            <a href="#contact" class="btn-send-request partners-btn-hover">Send <br> request</a>
+            <button class="btn-send-request partners-btn-hover" onclick="toggleModal()">Send <br> request</button>
         </div>
         </div>
     </div>
@@ -212,7 +213,7 @@
         <img src="../images/path104-1.png" alt="">
         <img src="../images/path104.png" alt="">
         <p class="send-request-text">Fill out the application form so that we add you to the list of our partners and and start growing your sales pipeline</p>
-        <a href="#contact" class="btn-send-request partners-btn-hover">Send <br> request</a>
+        <button class="btn-send-request partners-btn-hover" onclick="toggleModal()">Send <br> request</button>
      </div>
     </div>
     <!--Why we ar----------------------------------------------------------->
@@ -474,7 +475,7 @@
                       <a href="index.html">For clients</a>
                       <a href="partners/partners.html">For parents</a>
                     </div>
-                    <button id="modul-window_open"> <span>Send </span> request</button>
+                    <button id="modul-window_open" onclick="toggleModal()"> <span>Send </span> request</button>
                 </div>
               
             </div>

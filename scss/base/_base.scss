@@ -10,6 +10,27 @@ body {
     box-sizing: border-box;  
     overflow-x: hidden;
 }
+* {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+}
+h1,h2,h3,h4,h5,h6,p::-moz-selection{
+    background-color: hsla(120, 60%, 70%, 0.3);
+    }
+    *::selection{
+        background-color: hsla(120, 60%, 70%, 0.3);
+    }
+    *::-moz-selection{
+        background-color: hsla(120, 60%, 70%, 0.3);
+    }
+    *::selection{
+        background-color: hsla(120, 60%, 70%, 0.3);
+    }
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -44,7 +65,7 @@ h2 {
     }
 }
 .clients {
-    input {
+    input, textarea {
         &:hover {
             box-shadow: 0 1px 0 #51E589, inset 0 1px 0 #0EC3B5;
             cursor: pointer;
@@ -52,10 +73,11 @@ h2 {
     }
 }
 .partners {
-    input {
+    input, textarea {
         &:hover {
             box-shadow: 0 1px 0 #29A9EE, inset 0 1px 0 #41E4F0;
             cursor: pointer;
         }
     }
 }
+

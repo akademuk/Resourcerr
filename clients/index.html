@@ -40,15 +40,15 @@
                            <span class="modal_close">&times;</span>
                          </div>
                          <div class="modul-window-main">
-                             <form action="get" class="clients">
+                             <form class="cmxform" id="myform" method="get" action="" class="clients">
                              <!------------------------>
                              <h3>Corporate details</h3>
-                             <label>Full name <input type="text"></label>
-                             <label>Corporate email <input type="email"></label>
-                             <label>Phone number <input type="text"></label>
-                             <label>Company name <input type="text"></label>
-                             <label>Company website <input type="text"></label>
-                             <label>Brief company overview <textarea name="Brief-company" cols="30" rows="10"></textarea></label>
+                             <label>Full name <input type="text" required></label>
+                             <label>Corporate email <input type="email" required></label>
+                             <label>Phone number <input type="text" required></label>
+                             <label>Company name <input type="text" required></label>
+                             <label>Company website <input type="text" required></label>
+                             <label>Brief company overview <textarea name="Brief-company" cols="30" rows="10" required></textarea></label>
                              <!------------------------>
                              <h3>Campaign  details</h3>
                              <label>Budget<input type="text"></label>
@@ -101,10 +101,10 @@
  <!--toggle-switch---------------------------------------------------->             
                      <div class="toggle-switch">
                          <div class="toggle-custom">
-                           <input id="s2" type="checkbox" onclick="switchClicked(this, 's1');">
+                           <input id="s2" type="checkbox" onclick="switchClicked(this, 's2', '/partners');">
                            <label for="toggle"></label>
-                           <a href="#"><span>For clients</span></a>
-                           <a href="#"><span>For parents</span></a>
+                           <a href="#" ><span>For clients</span></a>
+                           <a href="#" onclick="switchClicked(this, 's2', '/partners');"><span>For parents</span></a>
                          </div>
                      </div>
                      <p class="menu-top-nav">Menu</p>
@@ -123,18 +123,20 @@
     <!--Tittle + switch + button----------------------------------------------------------->   
     <div class="tittle">
         <div class="toggle-switch">
-            <div class="toggle-custom switch">
-              <input id="s1" type="checkbox" onclick="switchClicked(this, 's2');">
-              <label for="toggle"></label>
-              <a href="#"><span>For clients</span></a>
-              <a href="#"><span>For parents</span></a>
+            <div class="toggle-custom switch clents-toogle-color">
+                <label for="toggle" class="clients-toogle">    
+                    <input id="s2" type="checkbox" onclick="switchClicked(this, 's2', '/partners');">
+                </label>
+                <a href=""><span>For clients</span></a>
+                <a href="" onclick="switchClicked(this, 's2', '/partners');"><span>For parents</span></a>
             </div>
         </div>
         <div class="tittle-container">
             <h1 class="gradient-shadow" title="revenue">Increase your <br> <span>revenue</span> with<br> new clients</h1>
             <div class="tittle-container-btn">
             <p>Optimize the search for <br> the most suitable partner</p>
-            <a href="#contact" class="btn-send-request">Send <br> request</a>
+            
+            <button class="btn-send-request" onclick="toggleModal()">Send <br> request</button>
         </div>
         </div>
     </div>
@@ -226,7 +228,7 @@
         <img src="../images/path104-1.png" alt="">
         <img src="../images/path104.png" alt="">
         <p class="send-request-text">You determine cooperation terms (budget/deadline/goals) - we find a reliable partner</p>
-        <a href="#contact" class="btn-send-request">Send <br> request</a>
+      <button class="btn-send-request" onclick="toggleModal()">Send <br> request</button>
      </div>
     </div>
     <!--Why we ar----------------------------------------------------------->
@@ -477,18 +479,16 @@
                 </nav>
                 <div class="toggle-switch">
                     <div class="toggle-custom">
-                      <input id="s2" type="checkbox" onclick="switchClicked(this, 's1');">
-                      <label for="toggle"></label>
+                        
                       <a href="../clients/clients.html">For clients</a>
                       <a href="../partners/partners.html">For parents</a>
                     </div>
-                    <button id="modul-window_open"><span>Send </span> request</button>
+                    <button id="modul-window_open" onclick="toggleModal()"><span>Send </span> request</button>
                 </div>
               
             </div>
         </div>
     </footer>
-
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

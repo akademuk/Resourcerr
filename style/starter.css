@@ -79,6 +79,7 @@ h6 {
 }
 .starter-partners:hover a {
     opacity: 1;
+    outline: none;
 }
 .starter-partners:hover {
     background: black;
@@ -95,6 +96,7 @@ h6 {
 }
 .starter-partners:hover a {
     opacity: 1;
+    outline: none;
 }
 .starter-wrapper {
     display: flex;

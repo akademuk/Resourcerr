@@ -43,6 +43,26 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  /* Firefox */
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    not supported by any browser */
+}
+
+*::selection {
+  background-color: rgba(133, 224, 133, 0.3);
+}
+
+*::selection {
+  background-color: rgba(133, 224, 133, 0.3);
+}
+
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -80,12 +100,12 @@ h2 span {
   background-clip: text;
 }
 
-.clients input:hover {
+.clients input:hover, .clients textarea:hover {
   box-shadow: 0 1px 0 #51E589, inset 0 1px 0 #0EC3B5;
   cursor: pointer;
 }
 
-.partners input:hover {
+.partners input:hover, .partners textarea:hover {
   box-shadow: 0 1px 0 #29A9EE, inset 0 1px 0 #41E4F0;
   cursor: pointer;
 }
@@ -581,11 +601,54 @@ header .logotype {
   background-clip: text;
 }
 
+.clients-toogle input {
+  width: 100%;
+  height: 100%;
+}
+
+.clients-toogle::after {
+  left: 4px !important;
+  background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%) !important;
+}
+
+.partners-toogle-color a:nth-of-type(2) span {
+  background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.partners-toogle input {
+  width: 100% !important;
+  height: 100% !important;
+  left: 0 !important;
+}
+
+.partners-toogle::after {
+  right: 4px !important;
+  left: inherit !important;
+  background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+}
+
+.clents-toogle-color a:nth-of-type(1) span {
+  background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
 toggle-switch.toggle-switch {
   position: relative;
 }
 
 #s2 {
+  position: absolute;
+  opacity: 0;
+  z-index: 99 !important;
+  cursor: pointer;
+}
+
+#s1 {
   position: absolute;
   opacity: 0;
   z-index: 99 !important;
@@ -696,10 +759,6 @@ toggle-switch.toggle-switch {
   padding-bottom: 0;
   padding-left: 54%;
   height: max-content;
-}
-
-.tittle .toggle-switch .toggle-custom {
-  position: relative;
 }
 
 .tittle .toggle-switch .toggle-custom #s1 {
@@ -3819,11 +3878,8 @@ h3:nth-of-type(4)::before {
   .question-container-accordions {
     width: 90%;
   }
-  .question .wrapper {
-    padding-left: 20%;
-  }
   .question .wrapper h2 {
-    margin-left: 0;
+    margin-left: 20px;
   }
 }
 
@@ -4013,7 +4069,10 @@ h3:nth-of-type(4)::before {
 
 @media (max-width: 992px) and (orientation: landscape) {
   .footer {
-    height: calc(35vh + 100px);
+    height: calc(60vh + 250px);
+  }
+  .footer .wrapper .footer-navigation {
+    width: 80%;
   }
   .footer .wrapper .footer-navigation .toggle-switch #modul-window_open {
     top: 100%;

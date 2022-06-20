@@ -159,9 +159,10 @@
         }
 @media (orientation:landscape) {
 .footer {
-    height: calc(35vh + 100px);
+    height: calc(60vh + 250px);
     .wrapper {
         .footer-navigation {
+            width: 80%;
             .toggle-switch {
                 #modul-window_open {
                     top: 100%;
