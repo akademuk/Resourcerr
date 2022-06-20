@@ -1360,11 +1360,12 @@ h1 span::after {
     height: 100%;
   }
   .about-us .wrapper .about-us-container {
-    height: 100%;
+    height: 50vh;
     align-items: center;
+    padding-top: 50px;
   }
   .about-us .wrapper .about-us-container .about-us_img {
-    height: 60vh;
+    height: 75%;
   }
 }
 
@@ -1494,7 +1495,7 @@ h1 span::after {
 
 .send-request .wrapper .send-request-text {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 37px;
   line-height: 120%;
   color: #151515;
   width: 80%;
@@ -2332,13 +2333,13 @@ h5 {
 
 .partners-how-it-works .wrapper .how-it-works-container .how-it-works-container-info:nth-of-type(6)::before {
   content: '';
-  background: url(../../images/partners/works-line5.png);
+  background: url(../images/partners/works-line5.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 114px;
   height: 133px;
   margin-left: 30px;
-  margin-top: -120px;
+  margin-top: -65px;
 }
 
 /*@media min-width: 1200px --------------------------------------------*/
@@ -2706,6 +2707,7 @@ h4 {
 
 #modul-window_open:hover {
   background: linear-gradient(90.96deg, #51E689 0%, #0EC4B5 99.64%);
+  background-image: linear-gradient(90.96deg, #51E689 0%, #0EC4B5 99.64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -2982,6 +2984,17 @@ h3:nth-of-type(4)::before {
   box-shadow: 0 1px 0 #29A9EE, inset 0 1px 0 #41E4F0 !important;
 }
 
+.partners-hover li a:hover {
+  background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.partners-hover .chec:hover ~ .menuToggle-span {
+  background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+}
+
 /*@media (min-width: 768px) and (max-width: 991px) --------------------------------------------*/
 @media (min-width: 768px) and (max-width: 991px) {
   .modul-window-header p {
@@ -3020,6 +3033,7 @@ h3:nth-of-type(4)::before {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
   .modul-window-main form label input, .modul-window-main form label textarea {
     width: 100%;
@@ -3049,6 +3063,9 @@ h3:nth-of-type(4)::before {
   }
   .form-submit p span {
     margin-left: 0;
+  }
+  .form-submit .partners label {
+    align-items: flex-start !important;
   }
 }
 
@@ -3299,6 +3316,10 @@ h3:nth-of-type(4)::before {
   background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%);
 }
 
+.get-in-touch-partners .get-in-touch-container_contact-icon a:hover {
+  background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+}
+
 .get-in-touch-container_form form {
   margin-top: 50px;
 }
@@ -3500,7 +3521,7 @@ h3:nth-of-type(4)::before {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 50px 0;
+  padding: 50px 0 150px 0;
 }
 
 .question .wrapper h2 {
@@ -3527,6 +3548,7 @@ h3:nth-of-type(4)::before {
 
 .question-container-img {
   width: 55%;
+  height: 70vh !important;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -3650,13 +3672,13 @@ h3:nth-of-type(4)::before {
 }
 
 .question .wrapper .question-container .question-container-img .container {
-  background: url(../../images/static.png);
+  background: url(../images/static.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -25vh;
   display: flex;
   align-items: flex-start;
-  height: 70vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -3725,6 +3747,36 @@ h3:nth-of-type(4)::before {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+}
+
+.question .wrapper .question-container .question-container-img .partners-container {
+  background: url(../../images/partners/static-partners.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -25vh;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.question .wrapper .question-container .question-container-img .partners-container .object {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1500px) {
+  .wrapper {
+    max-width: 1400px;
+  }
+  .about-us .wrapper .about-us-container {
+    justify-content: space-between;
+  }
+  .about-us .wrapper .about-us-container .about-us_img {
+    width: 45%;
+    height: 50%;
+  }
 }
 
 /*@media (min-width: 768px) and (max-width: 991px) --------------------------------------------*/
@@ -3902,11 +3954,15 @@ h3:nth-of-type(4)::before {
 
 .footer-navigation .toggle-switch #modul-window_open {
   bottom: 0;
-  right: -60px;
+  left: 0;
+}
+
+.footer-navigation .toggle-switch #modul-window_open span {
+  margin-right: 5px;
 }
 
 /*Footer partners --------------------------------------------*/
-.partners-footer .wrapper .footer-navigation nav ul a li:hover {
+.partners-footer .wrapper .footer-navigation nav ul li a:hover {
   background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

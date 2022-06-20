@@ -86,7 +86,10 @@
         }
         #modul-window_open {
             bottom: 0;
-            right: -60px;
+            left: 0;
+            span {
+                margin-right: 5px;
+            }
         }
     }
 }
@@ -96,10 +99,10 @@
         .footer-navigation {
             nav {
                 ul {
-                    a {
-                       li {
+                    li {
+                       a {
                         &:hover {
-                            @include partners-gradient;
+                            @include partners-gradient;    
                         }
                        }
                     }

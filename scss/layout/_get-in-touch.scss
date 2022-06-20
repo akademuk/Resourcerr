@@ -82,6 +82,15 @@
         }
     }
 }
+.get-in-touch-partners {
+    .get-in-touch-container_contact-icon {
+        a {
+            &:hover {
+                background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+            }
+        }
+    }
+}
 .get-in-touch-container_form {
    form {
        margin-top: 50px;

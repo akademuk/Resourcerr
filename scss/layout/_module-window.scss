@@ -33,6 +33,7 @@
   }
   &:hover {
     background: linear-gradient(90.96deg, #51E689 0%, #0EC4B5 99.64%);
+    background-image: linear-gradient(90.96deg, #51E689 0%, #0EC4B5 99.64%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -234,6 +235,21 @@ h3 {
     }
   }
 }
+.partners-hover {
+  li {
+    a {
+      &:hover {
+        background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+      }
+    }
+  }
+}
+.partners-hover .chec:hover ~ .menuToggle-span {
+  background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+}
 /*@media (min-width: 768px) and (max-width: 991px) --------------------------------------------*/
 @media (min-width: 768px) and (max-width: 991px) {
 .modul-window-header {
@@ -274,6 +290,7 @@ h3 {
       width: 100%;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
       input,textarea {
         width: 100%;
         margin-left: 0;
@@ -305,6 +322,11 @@ h3 {
       margin-left: 0;
     }
   }
+.partners {
+  label {
+    align-items: flex-start !important;
+  }
+}
 }
 @media (orientation: landscape) {
 .modul-window-header {
