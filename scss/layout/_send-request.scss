@@ -119,6 +119,22 @@
         }
     }
 }
+@media (orientation: landscape) {
+    .send-request {
+        .wrapper {
+            padding: 50px;
+            margin-bottom: 50px;
+            .send-request-text {
+                font-size: 23px;
+            }
+            .btn-send-request {
+                width: 112px;
+                height: 112px;
+                font-size: 12px;
+            }
+        }
+    }
+}
 }
 /*@media max-width: 568px --------------------------------------------*/
 @media (max-width: 568px){
@@ -162,6 +178,23 @@
             height: 104px;
             font-size: 16px;
            margin-left: 70%;
+        }
+    }
+}
+@media (orientation: landscape) {
+.send-request {
+        margin-top: 50px !important;
+        .wrapper {
+            padding: 50px;
+            margin-bottom: 50px;
+            .send-request-text {
+                font-size: 23px;
+            }
+            .btn-send-request {
+                width: 112px;
+                height: 112px;
+                font-size: 12px;
+            }
         }
     }
 }

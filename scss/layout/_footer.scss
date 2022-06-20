@@ -143,6 +143,17 @@
 }
 }
 @media (max-width: 992px) {
+.footer {
+    height: calc(15vh + 100px);
+}
+.footer-navigation {
+            .toggle-switch {
+                #modul-window_open {
+                    left: 0;
+                    right: inherit;
+                }
+            }
+        }
 @media (orientation:landscape) {
 .footer {
     height: calc(35vh + 100px);
@@ -151,7 +162,8 @@
             .toggle-switch {
                 #modul-window_open {
                     top: 100%;
-                    right: -45px;
+                    left: 0;
+               right: inherit;
                 }
             }
         }
@@ -203,7 +215,8 @@
                 }
             }
             #modul-window_open {
-                right: -30px;
+               left: 0;
+               right: inherit;
                 text-transform: capitalize;
                 font-size: 13px;
                 span {

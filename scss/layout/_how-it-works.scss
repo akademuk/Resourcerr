@@ -55,7 +55,7 @@
         }
         &::before {
             content: "";
-            background: url(../../images/line1.png);
+            background: url(../images/line1.png);
             background-size: contain;
             background-repeat: no-repeat;
             width: 114px;
@@ -72,7 +72,7 @@
         }
         &::before {
             content: "";
-            background: url(../../images/line2.png);
+            background: url(../images/line2.png);
             background-size: contain;
             background-repeat: no-repeat;
             width: 114px;
@@ -90,7 +90,7 @@
         }
         &::before {
             content: "";
-            background: url(../../images/line3.png);
+            background: url(../images/line3.png);
             background-size: contain;
             background-repeat: no-repeat;
             width: 114px;
@@ -107,7 +107,7 @@
         }
         &::before {
             content: "";
-            background: url(../../images/line4.png);
+            background: url(../images/line4.png);
             background-size: contain;
             background-repeat: no-repeat;
             width: 114px;
@@ -160,7 +160,7 @@ h5 {
                 }
                 &:nth-of-type(2) {
                     &::before {
-                        background: url(../../images/partners/works-line1.png);
+                        background: url(../images/partners/works-line1.png);
                         background-size: contain;
                         background-repeat: no-repeat;
                     }
@@ -168,21 +168,21 @@ h5 {
                 &:nth-of-type(3) {
                     &::before {
                         content: "";
-                        background: url(../../images/partners/works-line2.png);
+                        background: url(../images/partners/works-line2.png);
                         background-size: contain;
                         background-repeat: no-repeat;
                     }
                 }
                 &:nth-of-type(4) {
                     &::before {
-                        background: url(../../images/partners/works-line3.png);
+                        background: url(../images/partners/works-line3.png);
                         background-size: contain;
                         background-repeat: no-repeat;
                     }
                 }
                 &:nth-of-type(5) {
                     &::before {
-                        background: url(../../images/partners/works-line4.png);
+                        background: url(../images/partners/works-line4.png);
                         background-size: contain;
                         background-repeat: no-repeat;
                     }

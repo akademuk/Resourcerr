@@ -218,22 +218,27 @@
     display: flex !important;
     padding: 0;
     height: 40vh;
+    width: 44vw;
     flex-direction: row;
         &:nth-of-type(2) {
         margin-top: 0;
         }
         .why-we-ar-container_img {
         height: 100% !important;
-        width: 100%;
+        width: 45vw;
         img {
             height: 100%;
+            width:100%;
+            max-width: 100%;
             object-fit: cover !important;
             border-radius: 24px 0 0 24px;
         }
     }
 }
 .why-we-ar-container_text {
+    width: 55vw;
     padding: 10px 15px !important;
+    font-size: 15px;
 }
 }
 
@@ -285,50 +290,59 @@
     }
 }
 @media (orientation: landscape) {
-.why-we-ar {
-            .wrapper {
-                align-items: flex-start;
-                h2 {
-                    margin-left: 0;
-                    &:before {
-                        content: none;
-                    }
+    .why-we-ar {
+        .wrapper {
+        align-items: flex-start;
+            h2 {
+            margin-left: 0;
+                &:before {
+                    content: none;
                 }
-                .why-we-tittle-text {
-                    margin-left: 0;
+                span {
+                    filter: drop-shadow(2px 0px #151515);
                 }
             }
-}
-.slick-slide {
-    margin: 0 2px;
-}
-.slick-list {
-    margin: 0 -2px;
-}
-.why-we-ar-flex {
-    margin-top: 40px;
-    height: 100%;
-    .why-we-ar-container {
-        display: flex !important;
-        padding: 0;
-        height: 100vh;
-        &:nth-of-type(2) {
-            margin-top: 0;
-        }
-        .why-we-ar-container_img {
-            height: 60%;
-            width: 100%;
-            img {
-                height: 92%;
-                object-fit: contain !important;
-                border-radius: 24px 24px 0 0;
+            .why-we-tittle-text {
+                margin-left: 0;
             }
         }
     }
-    .why-we-ar-container_text {
-        padding: 0 15px !important;
+    .slick-slide {
+        margin: 0 2px;
     }
-}
+    .slick-list {
+        margin: 0 -2px;
+    }
+    .why-we-ar-flex {
+        margin-top: 40px;
+        height: 100%;
+        .why-we-ar-container {
+            display: flex !important;
+            flex-direction: row;
+            padding: 0;
+            height: 35vh;
+            width: 44vw;
+            &:nth-of-type(2) {
+                margin-top: 0;
+            }
+            .why-we-ar-container_img {
+                height: 100% !important;
+                width: 45vw !important;
+                img {
+                    width: 100%;
+                    height: 100% !important;
+                    object-fit: cover !important;
+                    border-radius: 24px 0 0 24px;
+                }
+            }
+        }
+        .why-we-ar-container_text {
+            width: 55vw;
+            position: static !important;
+            padding: 10px 10px 0 10px !important;
+            font-size: 13px !important;
+        }
+    }
 
 }    
 

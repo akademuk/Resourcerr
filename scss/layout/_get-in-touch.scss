@@ -75,6 +75,13 @@
         margin-right: 10px;
     }
 }
+.get-in-touch-container_contact-icon {
+    a {
+        &:hover {
+            background: linear-gradient(90.96deg, #0EC4B5 0%,#51E689 99.64%);
+        }
+    }
+}
 .get-in-touch-container_form {
    form {
        margin-top: 50px;
@@ -148,6 +155,24 @@
     }
 }
 @media (max-width: 992px) {
+.get-in-touch-container_contact {
+    width: 35%;
+    box-sizing: border-box;
+}
+.get-in-touch-container_form {
+    width: 60%;
+    box-sizing: border-box;
+}
+.get-in-touch-container_form {
+    form {
+        input,textarea {
+            width: 100%;
+        }
+    }
+.get-in-touch-submit {
+    width: 100%;
+}
+}
 @media (orientation: landscape) {
 .get-in-touch {
     padding-top: 50px;
