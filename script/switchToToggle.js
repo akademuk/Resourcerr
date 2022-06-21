@@ -1,5 +1,7 @@
 function switchClicked(currentSwitchState, switchToToggle, location) {
-    var switchElement = document.getElementById(switchToToggle);
+   
+    var switchElement = $('input','.' + switchToToggle);
     switchElement.checked = currentSwitchState.checked;
+    $('.' + switchToToggle + '').addClass('checked');
     window.location = location
 }

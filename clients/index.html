@@ -40,7 +40,7 @@
                            <span class="modal_close">&times;</span>
                          </div>
                          <div class="modul-window-main">
-                             <form class="clients" >
+                             <form class="clients">
                              <!------------------------>
                              <h3>Corporate details</h3>
                              <label>Full name <input id="cname" name="name" minlength="2" type="text" required></label>
@@ -103,7 +103,7 @@
                          <div class="toggle-custom">
                           
                            <label for="toggle" class="clients-toogle">
-                            <input id="s2" type="checkbox" onclick="switchClicked(this, 's2', '/partners');">
+                            <input  class="s2" type="checkbox" onclick="switchClicked(this, 's2', '/partners');">
                            </label>
                            <a href="#" ><span>For clients</span></a>
                            <a href="#" onclick="switchClicked(this, 's2', '/partners');"><span>For parents</span></a>
@@ -126,8 +126,8 @@
     <div class="tittle">
         <div class="toggle-switch">
             <div class="toggle-custom switch clents-toogle-color">
-                <label for="toggle" class="clients-toogle">    
-                    <input id="s2" type="checkbox" onclick="switchClicked(this, 's2', '/partners');">
+                <label for="toggle" class="clients-toogle s2" onclick="switchClicked(this, 's2', '/partners');" >    
+                    <input type="checkbox">
                 </label>
                 <a href=""><span>For clients</span></a>
                 <a href="" onclick="switchClicked(this, 's2', '/partners');"><span>For parents</span></a>

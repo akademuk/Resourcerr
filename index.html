@@ -11,7 +11,7 @@
 </head>
   <body>
       <div class="starter">
-          <div class="starter-clients" onclick="">
+          <div class="starter-clients hover" onclick="">
          <div class="starter-wrapper">
           <h6 class="clients">For <span>clients</span></h6>
           <p>Get help with the search for <br> reliable lead generation contractor</p>
@@ -30,5 +30,22 @@
            </div>
           </div>
       </div>
+      
   </body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+  $( document ).ready(function() {
+    console.log( "ready!" );
+    if ($('.starter-clients').mouseover()) {
+    $('.starter-partners').removeClass('hover')
+     $('.starter-clients').addClass('hover')
+  }
+  if ($('.starter-partners').mouseover()) {
+    $('.starter-clients').removeClass('hover')
+    $('.starter-partners').addClass('hover')
+  }
+});
+ 
+  </script>
 </html>
