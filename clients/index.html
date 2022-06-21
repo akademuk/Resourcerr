@@ -40,14 +40,14 @@
                            <span class="modal_close">&times;</span>
                          </div>
                          <div class="modul-window-main">
-                             <form class="cmxform" id="myform" method="get" action="" class="clients">
+                             <form class="clients" >
                              <!------------------------>
                              <h3>Corporate details</h3>
-                             <label>Full name <input type="text" required></label>
-                             <label>Corporate email <input type="email" required></label>
+                             <label>Full name <input id="cname" name="name" minlength="2" type="text" required></label>
+                             <label>Corporate email <input type="email" required data-error="Email is required in you@domain.com"></label>
                              <label>Phone number <input type="text" required></label>
                              <label>Company name <input type="text" required></label>
-                             <label>Company website <input type="text" required></label>
+                             <label>Company website <input type="url" name="website" required pattern="https?://.+"></label>
                              <label>Brief company overview <textarea name="Brief-company" cols="30" rows="10" required></textarea></label>
                              <!------------------------>
                              <h3>Campaign  details</h3>
@@ -101,8 +101,10 @@
  <!--toggle-switch---------------------------------------------------->             
                      <div class="toggle-switch">
                          <div class="toggle-custom">
-                           <input id="s2" type="checkbox" onclick="switchClicked(this, 's2', '/partners');">
-                           <label for="toggle"></label>
+                          
+                           <label for="toggle" class="clients-toogle">
+                            <input id="s2" type="checkbox" onclick="switchClicked(this, 's2', '/partners');">
+                           </label>
                            <a href="#" ><span>For clients</span></a>
                            <a href="#" onclick="switchClicked(this, 's2', '/partners');"><span>For parents</span></a>
                          </div>

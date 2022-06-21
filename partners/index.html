@@ -86,8 +86,10 @@
 <!--toggle-switch---------------------------------------------------->             
                     <div class="toggle-switch">
                         <div class="toggle-custom">
-                          <input id="s1" type="checkbox" onclick="switchClicked(this, 's1', '/clients');">
-                          <label for="toggle"></label>
+                        
+                          <label for="toggle"  class="partners-toogle">
+                            <input id="s1" type="checkbox" onclick="switchClicked(this, 's1', '/clients');">
+                          </label>
                           <a href="#" onclick="switchClicked(this, 's1', '/clients');"><span>For clients</span></a>
                           <a href="#"><span>For parents</span></a>
                         </div>
@@ -112,7 +114,7 @@
               <label for="toggle" class="partners-toogle">
                 <input id="s1" type="checkbox" onclick="switchClicked(this, 's1', '/clients');">
               </label>
-              <a href="" onclick="switchClicked(this, 's1', '/clients');"><span>For clients</span></a>
+              <a onclick="switchClicked(this, 's1', '/clients');"><span>For clients</span></a>
               <a href=""><span>For parents</span></a>
             </div>
         </div>
@@ -482,7 +484,6 @@
         </div>
     </footer>
 
-  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="../script/switchToToggle.js"></script>
 <script src="../script/achievements-counter.js"></script>

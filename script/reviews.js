@@ -19,9 +19,17 @@ $(document).ready(function(){
 			  }
 			},
 			{
-				breakpoint: 700,
+				breakpoint: 900,
 				settings: {
 				  slidesToShow: 2,
+				  slidesToScroll: 1,
+				  dots:true,
+				}
+			  },
+			{
+				breakpoint: 700,
+				settings: {
+				  slidesToShow: 1,
 				  slidesToScroll: 1,
 				  dots:true,
 				}

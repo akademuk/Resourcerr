@@ -7,9 +7,12 @@ const modal = document.querySelector('.modal');
 function toggleModal(){
     if (modal.style.display === 'block') {
         modal.style.display = 'none';
+        document.querySelector("body").style.overflow = 'visible';
+        
     } else {
         modal.style.display = 'block';
-    }    
+        document.querySelector("body").style.overflow = 'hidden';
+    }  
 }
 
 myBtn.addEventListener('click', toggleModal);

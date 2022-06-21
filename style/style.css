@@ -43,26 +43,6 @@ body {
   overflow-x: hidden;
 }
 
-* {
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  /* Chrome/Safari/Opera */
-  /* Konqueror */
-  /* Firefox */
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently
-                                    not supported by any browser */
-}
-
-*::selection {
-  background-color: rgba(133, 224, 133, 0.3);
-}
-
-*::selection {
-  background-color: rgba(133, 224, 133, 0.3);
-}
-
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -108,6 +88,13 @@ h2 span {
 .partners input:hover, .partners textarea:hover {
   box-shadow: 0 1px 0 #29A9EE, inset 0 1px 0 #41E4F0;
   cursor: pointer;
+}
+
+input:required:valid {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAepJREFUeNrEk79PFEEUx9/uDDd7v/AAQQnEQokmJCRGwc7/QeM/YGVxsZJQYI/EhCChICYmUJigNBSGzobQaI5SaYRw6imne0d2D/bYmZ3dGd+YQKEHYiyc5GUyb3Y+77vfeWNpreFfhvXfAWAAJtbKi7dff1rWK9vPHx3mThP2Iaipk5EzTg8Qmru38H7izmkFHAF4WH1R52654PR0Oamzj2dKxYt/Bbg1OPZuY3d9aU82VGem/5LtnJscLxWzfzRxaWNqWJP0XUadIbSzu5DuvUJpzq7sfYBKsP1GJeLB+PWpt8cCXm4+2+zLXx4guKiLXWA2Nc5ChOuacMEPv20FkT+dIawyenVi5VcAbcigWzXLeNiDRCdwId0LFm5IUMBIBgrp8wOEsFlfeCGm23/zoBZWn9a4C314A1nCoM1OAVccuGyCkPs/P+pIdVIOkG9pIh6YlyqCrwhRKD3GygK9PUBImIQQxRi4b2O+JcCLg8+e8NZiLVEygwCrWpYF0jQJziYU/ho2TUuCPTn8hHcQNuZy1/94sAMOzQHDeqaij7Cd8Dt8CatGhX3iWxgtFW/m29pnUjR7TSQcRCIAVW1FSr6KAVYdi+5Pj8yunviYHq7f72po3Y9dbi7CxzDO1+duzCXH9cEPAQYAhJELY/AqBtwAAAAASUVORK5CYII=);
+  background-position: right top;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 0 green, inset 0 1px 0 green;
 }
 
 header {
@@ -412,7 +399,7 @@ header .logotype {
 
 @media (max-width: 767px) and (orientation: landscape) {
   .burger-module_logo {
-    top: 60px;
+    top: 50px;
   }
   #modul-window_open {
     top: 62px;
@@ -425,9 +412,12 @@ header .logotype {
     box-sizing: border-box;
   }
   #menu ul {
-    width: 30%;
+    width: 40%;
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+  #menu ul li {
+    margin-bottom: 20px;
   }
   #menu ul li a {
     font-size: 24px;
@@ -437,12 +427,28 @@ header .logotype {
     width: auto;
   }
   .menu-top {
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
     font-size: 13px;
   }
   .burger-module_logo a {
     width: 56px;
     height: 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  label br {
+    display: none;
+  }
+  .why-we-ar .wrapper h2 {
+    display: flex !important;
+  }
+  .why-we-ar .wrapper h2 span {
+    display: flex !important;
+    margin-left: 10px;
+  }
+  .why-we-ar .why-we-tittle-text br {
+    display: none;
   }
 }
 
@@ -584,7 +590,6 @@ header .logotype {
 .toggle-custom a {
   text-decoration: none;
   color: #fff;
-  opacity: 0.5;
   margin-right: 10px;
   transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
 }
@@ -2091,7 +2096,7 @@ h1 span::after {
   }
   .why-we-ar-flex .why-we-ar-container {
     position: relative;
-    height: calc(50vh + 50px);
+    height: calc(50vh + 100px);
   }
   .why-we-ar-flex .why-we-ar-container:nth-of-type(2) {
     margin-top: 0;
@@ -3537,10 +3542,12 @@ h3:nth-of-type(4)::before {
     width: 100%;
   }
   .get-in-touch-container_form form input {
-    width: 90%;
+    width: 100%;
+    box-sizing: border-box;
   }
   .get-in-touch-container_form form textarea {
-    width: 90%;
+    width: 100%;
+    box-sizing: border-box;
   }
   .get-in-touch-container_form .get-in-touch-submit {
     flex-direction: row-reverse;
@@ -3559,7 +3566,7 @@ h3:nth-of-type(4)::before {
     margin-right: 0;
   }
   .get-in-touch-submit p {
-    width: 75% !important;
+    width: 70% !important;
   }
   .get-in-touch-container_contact {
     width: 90%;
@@ -3880,6 +3887,9 @@ h3:nth-of-type(4)::before {
   }
   .question .wrapper h2 {
     margin-left: 20px;
+  }
+  .question .wrapper h2:before {
+    content: none;
   }
 }
 

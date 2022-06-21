@@ -254,10 +254,12 @@
     form {
         width:100%;
         input {
-            width: 90%;
+            width: 100%;
+            box-sizing: border-box;
         }
         textarea {
-            width: 90%;
+            width: 100%;
+            box-sizing: border-box;
         }
 }
 .get-in-touch-submit {
@@ -277,7 +279,7 @@
         margin-right: 0;
     }
     p {
-        width: 75% !important;
+        width: 70% !important;
     }
 }
 .get-in-touch-container_contact {

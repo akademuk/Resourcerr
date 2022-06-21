@@ -305,6 +305,9 @@
     .wrapper {
       h2 {
         margin-left: 20px;
+        &:before {
+          content: none;
+        }
       }
     }
   }
