@@ -998,6 +998,7 @@ h1 span::after {
     position: absolute;
     top: 15px;
     left: 35%;
+    z-index: 100;
   }
   h1 {
     margin-top: 0;
@@ -1974,7 +1975,7 @@ h1 span::after {
   }
   .why-we-ar .wrapper h2 {
     text-align: left !important;
-    font-size: 40px;
+    font-size: 38px;
     margin-left: 0;
   }
   .why-we-ar .wrapper h2 span {
@@ -2463,6 +2464,16 @@ h5 {
   }
   .how-it-works-container {
     margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .how-it-works-container-info {
+    width: 90%;
+  }
+  .how-it-works-container-info img {
+    width: 150px;
+    height: 125px;
   }
 }
 

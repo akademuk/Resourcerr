@@ -279,6 +279,15 @@ h5 {
     .how-it-works-container {
         margin-top: 50px;
     }
+@media (orientation: landscape) {
+    .how-it-works-container-info {
+        width: 90%;
+        img {
+            width: 150px;
+            height: 125px;
+        }
+    }
+}
 
 }
 
