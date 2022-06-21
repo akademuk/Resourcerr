@@ -254,8 +254,10 @@
             text-align: left !important;
             font-size: 38px;
             margin-left: 0;
+            display: block !important;
             span {
                 display: block !important;
+                margin-left: 0 !important;
             }
             &::before {
             content: none;

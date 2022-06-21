@@ -1977,9 +1977,11 @@ h1 span::after {
     text-align: left !important;
     font-size: 38px;
     margin-left: 0;
+    display: block !important;
   }
   .why-we-ar .wrapper h2 span {
     display: block !important;
+    margin-left: 0 !important;
   }
   .why-we-ar .wrapper h2::before {
     content: none;
