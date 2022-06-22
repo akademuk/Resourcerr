@@ -1,131 +1,59 @@
 /*Client------------------------------------------------------------------------------*/
 .tittle {
-    width: 90%;
     margin: 0 auto;
-    padding-top: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    .toggle-switch {
-        width: fit-content;
-        position: relative;
-        padding-bottom: 0;
-        padding-left: 54%;
-        height: max-content;
-        .toggle-custom {
-            #s1 {
-                position: absolute;
-                width: 20%;
-                left: 37%;
-                opacity: 0;
-                z-index: 1;
-                cursor: pointer ;
-                &:checked ~ span:last-of-type {
-                    color: $black;
-                    opacity: 1;
-                  }
-                  &:checked ~ span:first-of-type {
-                    color: $black;
-                    opacity: 0.5;
-                  }
-                
-            }
-            label {
-                border: 2px solid $black;
-                &::after {
-                    background: $black;
-                }
-            }
-            span {
-                color: $cod-gray;
-                opacity: 0.5;
-                order: 3;
-                transition: opacity 0.2s ease-in-out,
-                            color 0.2s ease-in-out;
-                &:first-of-type {
-                  padding-right: 10px;
-                 background:$cod-gray;
-                 -webkit-background-clip: text;
-                 -webkit-text-fill-color: transparent;
-                 background-clip: text;
-                  opacity: 1;
-                  order: 1;
-                }
-                &:nth-of-type(2) {
-                    margin-left: 10px;
-                }
-            }
+    padding-bottom: 120px;
+    .wrapper {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        .toggle-switch {
+            padding-left: 55%;
+            margin-bottom: 40px;
         }
     }
+}
+.tittle-container {
+    display: flex;
+    flex-direction: column;
 }
 h1 {
     font-weight: 800;
     font-size: 120px;
     line-height: 105%;
-    color: $cod-gray;
-    width: 100%;
-    margin-top: 70px;
-    position: relative;
-    span { 
-        background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
+    color: #151515;
+    span {
+        margin-left: 160px;
+        background: linear-gradient(90.96deg, #0EC4B5 0%,#51E689 99.64%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-clip: text;
-        margin-left: 150px;
         position: relative;
         &::after {
-            content: "";
-            background: url(../images/revenue.png);
+            content: '';
+            background:url(../../images/revenue.png);
             background-size: contain;
             background-repeat: no-repeat;
-            width: 110%;
+            width: 100%;
             height: 100%;
             position: absolute;
-            top: 10%;
-            left: -5%;    
-            filter: initial;
+            top: 25px;
+            left: 0;
             z-index: -1;
         }
-      
     }
 }
 .tittle-container-btn {
     display: flex;
-    position: absolute;
-    left: 54%;
-    bottom: -20vh;
+    margin-top: 50px;
+    padding-left: 55%;
     p {
-        font-weight: 400;
         font-size: 20px;
         line-height: 140%;
         display: flex;
         align-items: center;
-        color: $cod-gray;
+        color: #151515;
     }
 }
-.tittle-container{
-        display: flex;
-        align-items: flex-end;
-        position: relative;
-        width: 100%;
-}
-.tittle {
-    .toggle-switch {
-        .toggle-custom {
-            a {
-                &:hover {
-                   span {
-                    background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%) !important;
-                    -webkit-background-clip: text !important;
-                    -webkit-text-fill-color: transparent !important;
-                    background-clip: text !important;
-                   }
-                }
-            }
-        }
-    }
-}
-
 /*Partners------------------------------------------------------------------------------*/
 .tittle-container {
     h1 {
@@ -139,176 +67,84 @@ h1 {
         }
     }
 }
-@media (min-width: 1500px) {
-.tittle {
-    width: 1400px;
-}
-.tittle-container-btn {
-  left: 60%;
-}
-.tittle {
-    .toggle-switch {
-        padding-left: 60%;
-        
-    }
-}
-
-}
-/*@media (min-width: 991px) and (max-width: 1199px) --------------------------------------------*/ 
-@media (min-width: 991px) and (max-width: 1199px) {
+/*@media max-width: 1200px) --------------------------------------------*/ 
+@media (max-width: 1200px) {
 h1 {
-    font-size: 95px;
-    margin-bottom: 50px;
-    span {
-        margin-left: 0;
-    }
+    font-size: 10vw;
 }
+}
+/*@media (max-width: 992px) --------------------------------------------*/ 
+@media (max-width: 991px)  {
 .tittle-container-btn {
-    left: 60%;
+    padding-left: 40%;
 }
 .tittle {
-    .toggle-switch {
-        padding-left: 60%;
-    }
-}
-}
-/*@media (min-width: 768px) and (max-width: 991px) --------------------------------------------*/ 
-@media (min-width: 768px) and (max-width: 991px)  {
-.tittle-container-btn {
-    left: 40%;
-    bottom: -150px;
-}
-.tittle {
-    padding-top: 10vh;
-    .toggle-switch {
+    .wrapper {
+        .toggle-switch {
             padding-left: 40%;
-    }
-    h1 {
-        font-size: 104px;
-         span {
-        margin-left: 0;
-    }
-    }
-}
-@media (orientation: landscape) {
-    .tittle-container-btn {
-        left: 50%;
-        bottom: -30vh;
-    }
-    .tittle {
-    .toggle-switch {
-        padding-left: 50%;
-        margin-top: 20px;
-    }
-}
-h1 {
-    font-size: 60px !important;
-    margin-top: 10px;
-     span {
-        margin-left: 0;
-    }
-}
-.tittle-container-btn {
-    p {
-        font-size: 14px;
-    }
-}
-.tittle {
-    .tittle-container-btn {
-        .btn-send-request {
-            width: 88px;
-            height: 88px;
-            font-size: 12px;
         }
     }
-}
 }
 }
 /*@media min-width: 768px --------------------------------------------*/ 
 @media (max-width: 767px) {
-h1 {
-    margin-top: 20px;
-    font-size: 56px;
-     span {
-        margin-left: 0;
+.tittle-container-btn {
+    padding-left: 20%;
+    .btn-send-request {
+        width: 112px;
+        height: 112px;
+        font-size: 12px;
     }
 }
 .tittle {
-    .toggle-switch {
-        padding-left: 0;
-    }
-    .tittle-container {
-        .tittle-container-btn {
-            .btn-send-request {
-                width: 88px;
-                height: 88px;
-                font-size: 12px;
-            }
+    padding-bottom: 50px;
+    .wrapper {
+        .toggle-switch {
+            padding-left: 20%;
         }
     }
 }
+h1 {
+    span {
+        margin-left: 0;
+    }
+}
+@media (orientation: landscape) {
+.tittle {
+    .wrapper {
+        .toggle-switch {
+            margin-bottom: 10px;
+        }
+    }
+}
+}
+}
+/*@media max-width: 576px --------------------------------------------*/ 
+@media (max-width: 576px) {
 .tittle-container-btn {
-    left: 0;
+    padding-left: 0;
+    .btn-send-request {
+        width:88px;
+        height: 88px;
+        font-size: 12px;
+    }
     p {
         font-size: 14px;
     }
 }
-.logotype-text {
-    display: none;
-}
-@media (orientation: landscape) {
-    .tittle-container-btn {
-        left: 45%;
-        bottom: -25vh;
-    }
-    .tittle {
-    .toggle-switch {
-        padding-left: 0;
-        position: absolute;
-        top: 70px;
-        left: 45%;
-    }
-}
-h1 {
-    margin-top: 0;
-    padding-top: 50px;
-     span {
-        margin-left: 0;
-    }
-    br {
-        display: none;
-    }
-}
-#menuToggle {
-    top: 20px;
-    z-index: 5;
-}
-}
-
-
-
-}
-/*@media max-width: 576px --------------------------------------------*/ 
-@media (max-width: 576px) {
-    .tittle {
-        .tittle-container {
-            .tittle-container-btn {
-                .btn-send-request {
-                    width: 88px;
-                    height: 88px;
-                    font-size: 12px;
-                }
-            }
+.tittle {
+    .wrapper {
+        .toggle-switch {
+            padding-left: 0;
         }
     }
+}
 h1 {
-    font-size: 50px;
-    br {
-        &:nth-of-type(2) {
-            display: none;
+    span {
+        &:after {
+            top: 10px;
         }
     }
 }
 }
-
 

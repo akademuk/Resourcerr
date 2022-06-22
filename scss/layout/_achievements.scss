@@ -1,6 +1,5 @@
 .achievements {
     width: 100%;
-    margin-top: 290px;
     background: $cod-gray;
     padding: 100px 0;
     .wrapper {
@@ -78,7 +77,7 @@
         font-size: 14px;
     }
     .achievements {
-        margin-top: 230px;
+
         padding: 50px 0;
     }
 
@@ -90,7 +89,7 @@
             font-size: 14px;
         }
         .achievements {
-            margin-top: 200px;
+           
             padding: 50px 0;
         }
     } 
@@ -111,7 +110,7 @@
     }
     .achievements {
         padding: 50px 0 0 0 ;
-        margin-top: 200px;
+
         .wrapper {
             flex-wrap: wrap;
             justify-content: space-around;
@@ -122,7 +121,7 @@
     }
 @media (orientation: landscape) {
     .achievements{
-        margin-top: 140px;
+        
     }
 }
 }
