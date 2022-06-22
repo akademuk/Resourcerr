@@ -90,18 +90,6 @@ h1 {
     }
 }
 /*Partners------------------------------------------------------------------------------*/
-.tittle-container {
-    h1 {
-        .partners-blue {
-            &::after {
-                background: url(../images/partners/line-tittle.png);
-                background-repeat: no-repeat; 
-                background-size: contain;
-                z-index: -1;
-            }
-        }
-    }
-}
 /*@media max-width: 1200px) --------------------------------------------*/ 
 @media (max-width: 1200px) {
 h1 {
@@ -117,6 +105,13 @@ h1 {
     .wrapper {
         .toggle-switch {
             padding-left: 40%;
+        }
+    }
+}
+@media (orientation: landscape) {
+    h1 {
+        span {
+            margin-left: 100px !important;
         }
     }
 }

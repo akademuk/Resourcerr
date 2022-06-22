@@ -910,13 +910,6 @@ h1 span::after {
 }
 
 /*Partners------------------------------------------------------------------------------*/
-.tittle-container h1 .partners-blue::after {
-  background: url(../images/partners/line-tittle.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: -1;
-}
-
 /*@media max-width: 1200px) --------------------------------------------*/
 @media (max-width: 1200px) {
   h1 {
@@ -931,6 +924,12 @@ h1 span::after {
   }
   .tittle .wrapper .toggle-switch {
     padding-left: 40%;
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  h1 span {
+    margin-left: 100px !important;
   }
 }
 
@@ -1105,176 +1104,136 @@ h1 span::after {
 
 /*About Us client --------------------------------------------*/
 .about-us {
-  height: 100vh;
-  display: flex;
-  align-items: center;
+  padding-top: 100px;
 }
 
-.about-us .wrapper .about-us-container {
+.about-us .wrapper {
   display: flex;
-  width: 100%;
-  height: 90vh;
-  align-items: center;
+  height: 100%;
+  align-items: flex-start;
 }
 
-.about-us .wrapper .about-us-container .about-us_tittle {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.about-us .wrapper .about-us-container .about-us_img {
+.about-us .wrapper .about-us_img {
   width: 55%;
-  height: 80%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
 }
 
-.about-us .wrapper .about-us-container .about-us_img .about-us_img-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  position: relative;
+.about-us .wrapper .about-us_read-more {
+  width: 45%;
 }
 
-.about-us .wrapper .about-us-container .about-us_img .about-us_img-container .container {
-  background: url(../images/about-us.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.about-us .wrapper .about-us-container .about-us_img .about-us_img-container .container .object {
-  display: flex;
-  align-items: flex-end;
-  height: 70%;
-  width: 100%;
-}
-
-.about-us .wrapper .about-us-container .about-us_img .about-us_img-container .container .object img {
-  position: absolute;
-}
-
-.about-us .wrapper .about-us-container .about-us_img .about-us_img-container .container .object img:nth-of-type(1) {
-  left: 10%;
-  top: 65%;
-  width: 30px;
-  height: 30px;
-}
-
-.about-us .wrapper .about-us-container .about-us_img .about-us_img-container .container .object img:nth-of-type(2) {
-  left: 15%;
-  top: 35%;
-  width: 45px;
-  height: 45px;
-}
-
-.about-us .wrapper .about-us-container .about-us_img .about-us_img-container .container .object img:nth-of-type(3) {
-  left: 10%;
-  top: 10%;
-  width: 40px;
-  height: 40px;
-}
-
-.about-us .wrapper .about-us-container .about-us_img .about-us_img-container .container .object img:nth-of-type(4) {
-  left: 90%;
-  top: 60%;
-  width: 33px;
-  height: 33px;
-}
-
-.about-us .wrapper .about-us-container .about-us_img .about-us_img-container .container .object img:nth-of-type(5) {
-  left: 70%;
-  top: 30%;
-  width: 42px;
-  height: 42px;
-}
-
-.about-us .wrapper .about-us-container .about-us_img .about-us_img-container .container .object img:nth-of-type(6) {
-  left: 85%;
-  top: 10%;
-  width: 30px;
-  height: 30px;
-}
-
-.about-us_tittle .card {
-  width: 100%;
-  color: white;
-  margin: 2rem auto;
-  border-radius: 5px;
-}
-
-.about-us_tittle .card .card-contents h2 {
+.about-us .wrapper .about-us_read-more h2 {
   margin-top: 0;
+  margin-bottom: 40px;
   position: relative;
 }
 
-.about-us_tittle .card .card-contents h2 span {
-  filter: drop-shadow(4px 4px #151515);
+.about-us .wrapper .about-us_read-more h2 span {
+  filter: drop-shadow(2px 0px #151515);
 }
 
-.about-us_tittle .card .card-contents h2:before {
+.about-us .wrapper .about-us_read-more h2:before {
   content: "01";
   font-weight: 800;
   font-size: 24px;
   line-height: 110%;
-  color: #151515;
+  text-align: right;
   opacity: 0.5;
   position: absolute;
   top: 0;
   left: -40px;
 }
 
-.about-us_tittle .card .card-contents p {
+.about-us_static {
+  width: 100%;
+  object-fit: contain;
+}
+
+.about-us_read-more {
   font-size: 18px;
   line-height: 140%;
   color: #151515;
 }
 
-.about-us_tittle .card .card-contents p:nth-of-type(1) {
-  margin-bottom: 15px;
-}
-
-.card__read-more {
-  display: block;
-  opacity: 0;
-  height: 0;
-  transition: all 0.5s;
-}
-
-.card__read-more--open {
-  display: block;
-  opacity: 1;
-  height: 15rem;
-}
-
-.read-more-btn {
+.about-us_read-more button {
+  border: none;
+  background: transparent;
   font-weight: 600;
   font-size: 18px;
   line-height: 140%;
-  display: inline-block;
-  background: linear-gradient(90.96deg, #51E689 0%, #0EC4B5 99.64%);
+  background: linear-gradient(90.96deg, #0DC6B7 0%, #61F198 99.64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  position: relative;
-  z-index: 1;
-  transition: all 0.5s;
-  cursor: pointer;
+  margin-top: 20px;
 }
 
-.carousel-indicators {
+.read-more {
   display: none;
+  margin-top: 20px;
+}
+
+.about-us_img {
+  position: relative;
+}
+
+.about-us_img .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.about-us_img .container .object {
+  display: flex;
+  align-items: flex-end;
+  height: 70%;
+  width: 100%;
+}
+
+.about-us_img .container .object img {
+  position: absolute;
+}
+
+.about-us_img .container .object img:nth-of-type(1) {
+  left: 10%;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+}
+
+.about-us_img .container .object img:nth-of-type(2) {
+  left: 15%;
+  top: 35%;
+  width: 45px;
+  height: 45px;
+}
+
+.about-us_img .container .object img:nth-of-type(3) {
+  left: 10%;
+  top: 0%;
+  width: 40px;
+  height: 40px;
+}
+
+.about-us_img .container .object img:nth-of-type(4) {
+  left: 90%;
+  top: 60%;
+  width: 33px;
+  height: 33px;
+}
+
+.about-us_img .container .object img:nth-of-type(5) {
+  left: 70%;
+  top: 30%;
+  width: 42px;
+  height: 42px;
+}
+
+.about-us_img .container .object img:nth-of-type(6) {
+  left: 85%;
+  top: 10%;
+  width: 30px;
+  height: 30px;
 }
 
 /*About Us partners --------------------------------------------*/
@@ -1355,130 +1314,48 @@ h1 span::after {
   height: 40px;
 }
 
-@media (min-width: 1500px) {
-  .about-us {
-    height: 80vh;
+/*@media (max-width: 992px) --------------------------------------------*/
+@media (max-width: 992px) {
+  .about-us .wrapper {
+    justify-content: center;
+  }
+  .about-us .wrapper .about-us_img {
+    display: none;
+  }
+  .about-us .wrapper .about-us_read-more {
+    width: 60%;
   }
 }
 
-/*@media (min-width: 991px) and (max-width: 1199px) --------------------------------------------*/
-@media (min-width: 991px) and (max-width: 1199px) {
-  .about-us {
-    height: 100%;
-  }
-  .about-us .wrapper .about-us-container {
-    height: 50vh;
-    align-items: center;
-    padding-top: 50px;
-  }
-  .about-us .wrapper .about-us-container .about-us_img {
-    height: 75%;
-  }
-}
-
-/*@media (min-width: 768px) and (max-width: 991px) --------------------------------------------*/
-@media (min-width: 768px) and (max-width: 991px) {
-  .carousel-indicators {
-    display: block;
+@media (max-width: 992px) and (orientation: landscape) {
+  .about-us_read-more {
+    width: 80% !important;
   }
   .about-us {
     padding-top: 50px;
-    height: 100%;
   }
-  .about-us .wrapper .about-us-container {
-    height: 100%;
-    align-items: flex-start;
+}
+
+/*@media max-width: 768px --------------------------------------------*/
+@media (max-width: 768px) and (orientation: landscape) {
+  .about-us_read-more {
+    width: 80% !important;
   }
-  .about-us_img {
+  .about-us {
     padding-top: 50px;
   }
-  .card__read-more--open {
-    height: 20rem;
-  }
 }
 
-@media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
-  .about-us_img {
-    display: none !important;
+/*@media max-width: 576px --------------------------------------------*/
+@media (max-width: 576px) {
+  .about-us .wrapper .about-us_read-more {
+    width: 100%;
   }
-  .about-us .wrapper h2::before {
-    content: none !important;
+  .about-us .wrapper .about-us_read-more h2 {
+    font-size: 48px;
   }
-  .about-us_tittle {
-    width: 100% !important;
-  }
-  .card__read-more--open {
-    height: 10rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
-  .about-us_img {
-    height: 30vh !important;
-  }
-}
-
-/*@media max-width: 767px --------------------------------------------*/
-@media (max-width: 767px) {
-  .about-us {
-    height: 100%;
-    padding-top: 0;
-    padding-top: 80px;
-  }
-  .about-us .wrapper .about-us-container {
-    height: 100%;
-    justify-content: flex-start;
-    align-items: baseline;
-  }
-  .card-contents h2 {
-    font-size: 40px !important;
-    margin-bottom: 20px;
-  }
-  .card-contents h2 span {
-    font-size: 40px;
-  }
-  .card-contents h2::before {
-    content: none !important;
-  }
-  .card__read-more--open {
-    height: 15rem;
-  }
-  .about-us_tittle {
-    width: 100% !important;
-  }
-  .about-us_img-container {
-    display: none !important;
-  }
-  .about-us_img {
-    display: none !important;
-  }
-}
-
-@media (max-width: 767px) and (orientation: landscape) {
-  .about-us {
-    padding-top: 0;
-  }
-  .card__read-more--open {
-    height: 10rem;
-  }
-}
-
-/*@media max-width: 568px --------------------------------------------*/
-@media (max-width: 568px) {
-  .about-us {
-    padding-top: 20px;
-  }
-  .card-contents h2 span {
-    filter: drop-shadow(2px 0px #151515) !important;
-  }
-  .card__read-more--open {
-    height: 21rem;
-  }
-}
-
-@media (max-width: 568px) and (orientation: landscape) {
-  .card__read-more--open {
-    height: 12rem;
+  .about-us .wrapper .about-us_read-more h2:before {
+    content: none;
   }
 }
 
@@ -4094,6 +3971,9 @@ select {
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding-top: 50px;
+  }
   .footer .wrapper {
     flex-direction: column;
   }

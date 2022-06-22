@@ -1,8 +1,11 @@
-const btn = document.querySelector('.read-more-btn');
-const text = document.querySelector('.card__read-more');
+$( "button" ).click(function() {
+  $( ".read-more" ).slideToggle( "fast" );
+      var $this = $(this);
+        $this.toggleClass("open");
 
-btn.addEventListener('click', ()=>{
-  console.log("clicked");
-  text.classList.toggle('card__read-more--open');
-btn.textContent = btn.textContent.includes('Read more') ? 'Read less' : 'Read more';
-})
+        if ($this.hasClass("open")) {
+            $this.html("Less");
+        } else {
+            $this.html("Read more");
+        }
+});
