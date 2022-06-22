@@ -949,6 +949,9 @@ h1 span::after {
   .tittle .wrapper .toggle-switch {
     padding-left: 20%;
   }
+  h1 {
+    font-size: 12vw;
+  }
   h1 span {
     margin-left: 0;
   }
