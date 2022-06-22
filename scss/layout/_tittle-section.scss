@@ -140,6 +140,9 @@ h1 {
     }
 }
 @media (min-width: 1500px) {
+.tittle {
+    width: 1400px;
+}
 .tittle-container-btn {
   left: 60%;
 }
@@ -149,9 +152,7 @@ h1 {
         
     }
 }
-h1{
-    margin-left: 10%;
-}
+
 }
 /*@media (min-width: 991px) and (max-width: 1199px) --------------------------------------------*/ 
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -264,13 +265,13 @@ h1 {
     .toggle-switch {
         padding-left: 0;
         position: absolute;
-        top: 15px;
-        left: 35%;
-        z-index: 100;
+        top: 70px;
+        left: 45%;
     }
 }
 h1 {
     margin-top: 0;
+    padding-top: 50px;
      span {
         margin-left: 0;
     }
@@ -283,6 +284,9 @@ h1 {
     z-index: 5;
 }
 }
+
+
+
 }
 /*@media max-width: 576px --------------------------------------------*/ 
 @media (max-width: 576px) {

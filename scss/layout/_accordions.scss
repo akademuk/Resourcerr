@@ -178,8 +178,8 @@
                    height: 50px;
               }
               &:nth-of-type(4) {
-                 left: 50%;
-                   top: 30%;
+                 left: 40%;
+                   top: 35%;
                    width: 44px;
                    height: 44px;
               }
@@ -254,6 +254,28 @@
       }
     }
   }
+}
+/*@media (min-width: 992px) and (max-width: 1200px) --------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1200px) {
+@media (orientation:landscape) {
+  .question {
+    .wrapper {
+      .question-container {
+        .question-container-img  {
+          .partners-container {
+            background-size: cover;
+            background-position: center -13vh;
+            .object {
+              img {
+                object-fit: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 }
 /*@media (min-width: 768px) and (max-width: 991px) --------------------------------------------*/
 @media (min-width: 768px) and (max-width: 991px){

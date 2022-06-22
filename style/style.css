@@ -1,37 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap");
-.burger-module {
-  position: absolute;
-  top: 4.5vh;
-  left: 5%;
-  width: 70%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.burger-module_logo {
-  display: flex;
-  align-items: baseline;
-  position: absolute;
-  top: 7vh;
-  left: 10%;
-  z-index: 5;
-}
-
-.burger-module_logo a {
-  width: 72px;
-  height: 72px;
-}
-
-.burger-module_logo a img {
-  width: 100%;
-  height: 100%;
-}
-
-.burger-module_logo .logotype-text {
-  color: #fff;
-  text-align: left;
-}
-
 body {
   font-family: 'Sora', sans-serif;
   font-style: normal;
@@ -98,6 +65,10 @@ input:required:valid {
 }
 
 header {
+  max-width: 100vw;
+}
+
+header {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -108,6 +79,7 @@ header {
 
 header .wrapper {
   box-shadow: 0 4px 6px -6px #222;
+  position: relative;
 }
 
 header .logotype {
@@ -123,6 +95,39 @@ header .logotype {
   line-height: 120%;
   color: #151515;
   margin-left: 16px;
+}
+
+.burger-module {
+  position: absolute;
+  top: 4.5vh;
+  left: 5%;
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.burger-module_logo {
+  display: flex;
+  align-items: baseline;
+  position: absolute;
+  top: 40px;
+  left: 10%;
+  z-index: 5;
+}
+
+.burger-module_logo a {
+  width: 72px;
+  height: 72px;
+}
+
+.burger-module_logo a img {
+  width: 100%;
+  height: 100%;
+}
+
+.burger-module_logo .logotype-text {
+  color: #fff;
+  text-align: left;
 }
 
 /*@media max-width: 767px --------------------------------------------*/
@@ -149,7 +154,7 @@ header .logotype {
   height: 32px;
   position: absolute;
   top: -7px;
-  right: 5%;
+  right: 0;
   cursor: pointer;
   opacity: 0;
   z-index: 2;
@@ -166,7 +171,7 @@ header .logotype {
   height: 2px;
   margin-bottom: 5px;
   position: relative;
-  left: 92.5%;
+  left: 97.5%;
   background: #151515;
   border-radius: 3px;
   z-index: 1;
@@ -207,21 +212,16 @@ header .logotype {
 
 #menu {
   position: absolute;
-  width: 100vw;
+  left: -10%;
+  width: 150%;
   height: 100vh;
   margin: -100px 0 0 0;
-  padding-top: 125px;
-  text-align: center;
   background: #151515;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(0, -100%);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 #menu ul {
@@ -249,6 +249,18 @@ header .logotype {
   background-clip: text;
 }
 
+#menu .wrapper {
+  width: 100%;
+  height: 100vh;
+  margin-left: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
 .menu-top {
   display: none;
 }
@@ -261,6 +273,26 @@ header .logotype {
   line-height: 150%;
   color: white;
   opacity: 0.5;
+}
+
+@media (min-width: 1500px) {
+  #menu {
+    left: -45%;
+    width: 200%;
+    padding-top: 0;
+  }
+  #menu .wrapper {
+    height: 100%;
+    margin-left: 23%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #modul-window_open {
+    right: 10% !important;
+  }
 }
 
 /*@media (min-width: 991px) and (max-width: 1199px) --------------------------------------------*/
@@ -483,7 +515,7 @@ header .logotype {
   }
   #menu #modul-window_open {
     font-size: 0 !important;
-    right: 20%;
+    right: 40%;
     top: 68px;
   }
   #menu #modul-window_open:after {
@@ -886,14 +918,14 @@ h1 span::after {
 }
 
 @media (min-width: 1500px) {
+  .tittle {
+    width: 1400px;
+  }
   .tittle-container-btn {
     left: 60%;
   }
   .tittle .toggle-switch {
     padding-left: 60%;
-  }
-  h1 {
-    margin-left: 10%;
   }
 }
 
@@ -996,12 +1028,12 @@ h1 span::after {
   .tittle .toggle-switch {
     padding-left: 0;
     position: absolute;
-    top: 15px;
-    left: 35%;
-    z-index: 100;
+    top: 70px;
+    left: 45%;
   }
   h1 {
     margin-top: 0;
+    padding-top: 50px;
   }
   h1 span {
     margin-left: 0;
@@ -2775,7 +2807,7 @@ h4 {
   line-height: 150%;
   color: #fff;
   top: 65px;
-  right: 15%;
+  right: 30%;
   -webkit-appearance: none;
 }
 
@@ -2817,14 +2849,13 @@ h4 {
 }
 
 .modal_close {
-  color: #fff;
-  font-size: 2rem;
-  float: right;
-  margin-right: 0.5rem;
   cursor: pointer;
+  display: flex;
+  font-size: 1.5rem;
 }
 
 .modal_animation {
+  width: 100%;
   animation: fadeIn 0.5s 1;
 }
 
@@ -2867,27 +2898,24 @@ h4 {
 .modul-window-main {
   margin: 0 auto;
   width: 950px;
-  padding-top: 100px;
+  padding-top: 95px;
 }
 
 .modul-window-main form {
-  width: 950px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
+  width: 100%;
 }
 
 .modul-window-main form label {
   font-size: 16px;
   line-height: 140%;
-  color: white;
-  display: flex;
   text-align: right;
-  height: max-content;
+  width: 320px !important;
+  display: inline-block;
+  margin-right: 14px;
+  color: #8A8A8A;
 }
 
-.modul-window-main form label input, .modul-window-main form label textarea {
+.modul-window-main form input, .modul-window-main form textarea {
   width: 600px;
   height: 40px;
   background: transparent;
@@ -2895,15 +2923,14 @@ h4 {
   margin-bottom: 28px;
   border: 1px solid #8A8A8A;
   padding-left: 10px;
-  margin-left: 20px;
   font-weight: 600;
   font-size: 18px;
   line-height: 140%;
   color: white;
-  position: relative;
+  display: inline-block;
 }
 
-.modul-window-main form label input:focus, .modul-window-main form label textarea:focus {
+.modul-window-main form input:focus, .modul-window-main form textarea:focus {
   background: #262626;
   font-weight: 600;
   font-size: 18px;
@@ -2919,19 +2946,17 @@ textarea {
 }
 
 .modul-window-header {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
   height: 88px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #8A8A8A;
+  border-bottom: 1px solid #6D6D6D;
 }
 
 .modul-window-header p {
   font-size: 20px;
   line-height: 25px;
-  color: white;
 }
 
 h3 {
@@ -2942,7 +2967,7 @@ h3 {
   position: relative;
   text-align: left;
   margin-bottom: 40px;
-  width: 71%;
+  margin-left: 336px;
 }
 
 h3:before {
@@ -3005,19 +3030,13 @@ h3:nth-of-type(4)::before {
   left: -40px;
 }
 
-.form-submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 800px;
-  padding-bottom: 50px;
-  padding-top: 100px;
+.clients input:nth-of-type(3) {
+  width: 469px;
 }
 
-.form-submit input {
+.clients .submit-form {
   width: 112px;
   height: 112px;
-  background: white;
   border-radius: 50%;
   font-weight: 600;
   font-size: 16px;
@@ -3026,45 +3045,51 @@ h3:nth-of-type(4)::before {
   align-items: center;
   justify-content: center;
   color: #151515;
-  margin-right: 40px;
+  background: #fff;
+  padding: 0;
+  border: none;
+  margin-left: 336px;
+  display: inline-block;
 }
 
-.form-submit p {
+.submit-recommendation {
+  display: inline-block;
+  margin-left: 40px;
+  color: #D0D0D0;
   font-size: 18px;
   line-height: 140%;
-  display: flex;
-  flex-wrap: wrap;
-  width: 400px;
-  align-items: center;
-  color: white;
-  opacity: 0.8;
 }
 
-.form-submit p span {
-  display: flex;
-  margin-left: 5px;
-  align-items: center;
+.submit-recommendation span {
   background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.modal_content__header {
-  position: relative;
+select {
+  height: 40px;
+  background: transparent;
+  border-radius: 16px;
+  margin-bottom: 28px;
+  border: 1px solid #8A8A8A;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  color: #8A8A8A;
+  display: inline-block;
+  padding: 0 20px 0 16px;
+  width: 128px;
+  box-sizing: border-box;
 }
 
-.modal_content__header::after {
-  content: "";
-  width: 90%;
-  height: 1px;
-  background: #8A8A8A;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 200px;
-  left: 5%;
+.select-number {
+  background: transparent !important;
+  border-radius: 16px !important;
+  border: 1px solid #8A8A8A !important;
 }
 
-.partners-form label input:focus {
+.partners-form input:focus, .partners-form textarea:focus {
   box-shadow: 0 1px 0 #29A9EE, inset 0 1px 0 #41E4F0 !important;
 }
 
@@ -3079,232 +3104,303 @@ h3:nth-of-type(4)::before {
   background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
 }
 
-/*@media (min-width: 768px) and (max-width: 991px) --------------------------------------------*/
-@media (min-width: 768px) and (max-width: 991px) {
-  .modul-window-header p {
-    font-size: 20px;
-    line-height: 25px;
+.modal1 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logo-modal-message {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.logo-modal-message div {
+  display: flex;
+  align-items: center;
+}
+
+.logo-modal-message div a img {
+  width: 72px;
+  height: 72px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.logo-modal-message p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-top: 7px;
+}
+
+.modal-message {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(90.96deg, #0DC6B7 0%, #61F198 99.64%);
+  border-radius: 48px;
+  height: fit-content;
+}
+
+.modal-message_text {
+  width: 45%;
+  padding: 59px 0 39px 80px;
+}
+
+.modal-message_text p:nth-of-type(1) {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 115%;
+  color: #151515;
+  margin-bottom: 8px;
+}
+
+.modal-message_text p:nth-of-type(2) {
+  font-size: 18px;
+  line-height: 140%;
+  color: #151515;
+  margin-bottom: 42px;
+}
+
+.modal-message_text button {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background: #151515;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 115%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.modal-message_img {
+  width: 55%;
+}
+
+.modal-message_img img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.modal-content {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 25px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-message-manager {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.modal-message-manager p {
+  font-size: 16px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.modal-message-manager p a {
+  text-decoration: none;
+  background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 5px;
+}
+
+@media (max-width: 1300px) {
+  .modal-content {
+    width: 90% !important;
   }
-  .modal_content__header::after {
-    content: none;
+  .modal-message_text p:nth-of-type(1) {
+    font-size: 5vw !important;
   }
-  .modal {
-    width: 100vw;
-  }
-  h3 {
-    width: 90%;
-    font-size: 32px;
-    margin-bottom: 32x;
-    margin-top: 65px;
-  }
-  h3:before {
-    content: none !important;
-  }
-  h3:nth-of-type(1) {
-    margin-top: 0;
-  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
   .modul-window-main {
-    padding-top: 48px;
     width: 90%;
+    margin: 0 auto;
   }
-  .modul-window-main form {
-    align-items: flex-start;
-    max-width: 100%;
+  .modul-window-main .clients input, .modul-window-main .clients textarea {
+    width: 450px;
   }
-  .modul-window-main form label {
-    font-size: 16px;
-    line-height: 140%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  .clients input:nth-of-type(3) {
+    width: 319px;
   }
-  .modul-window-main form label input, .modul-window-main form label textarea {
-    width: 100%;
-    margin-left: 0;
-    box-sizing: border-box;
-    margin-top: 4px;
+  .clients .submit-form {
+    width: 112px !important;
+    height: 112px !important;
+    border-radius: 50%;
   }
-  .form-submit {
-    padding-top: 0;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 50px;
-    flex-direction: row;
-  }
-  .form-submit input {
-    width: 112px;
-    height: 112px;
-    font-size: 16px;
-    margin-right: 0;
-  }
-  .form-submit p {
+  .submit-recommendation {
+    font-size: 15px;
     margin-left: 20px;
-    font-size: 18px;
-    width: 70%;
-    word-wrap: break-word;
   }
-  .form-submit p span {
+}
+
+@media (max-width: 991px) {
+  .modul-window-main {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .modul-window-main .clients {
+    flex-direction: column;
+  }
+  .modul-window-main .clients input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 54px;
+  }
+  .modul-window-main .clients textarea {
+    width: 100%;
+    box-sizing: border-box;
+    height: 200px;
+  }
+  .modul-window-main .clients label {
+    width: max-content !important;
+    margin-bottom: 10px;
+  }
+  .modul-window-main h3 {
     margin-left: 0;
   }
-  .form-submit .partners label {
-    align-items: flex-start !important;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
-  .modul-window-header {
-    height: 50px;
-  }
-  .modul-window-main {
-    padding-top: 20px;
-  }
-  h3 {
-    margin-bottom: 20px;
-    font-size: 25px;
-  }
-}
-
-/*@media max-width: 767px --------------------------------------------*/
-@media (max-width: 767px) {
-  .modul-window-header p {
-    font-size: 20px;
-    line-height: 25px;
-  }
-  .modal_content__header::after {
+  .modul-window-main h3::before {
     content: none;
   }
-  .modal {
+  .clients input:nth-of-type(3) {
+    width: 78%;
+    margin-left: 1%;
+  }
+  .clients label {
+    font-size: 4vw !important;
+  }
+  .clients label:nth-of-type(3) {
+    display: block;
+  }
+  .clients .submit-form {
+    width: 112px !important;
+    height: 112px !important;
+    margin-left: 0;
+  }
+  select {
+    width: 20%;
+    height: 54px;
+  }
+  .modal_animation {
     width: 100vw;
-  }
-  h3 {
-    width: 90%;
-    font-size: 32px;
-    margin-bottom: 32x;
-    margin-top: 65px;
-  }
-  h3:before {
-    content: none !important;
-  }
-  h3:nth-of-type(1) {
-    margin-top: 0;
-  }
-  .modul-window-main {
-    padding-top: 48px;
-    width: 90%;
-  }
-  .modul-window-main form {
-    align-items: flex-start;
-    max-width: 100%;
-  }
-  .modul-window-main form label {
-    align-items: flex-start;
-    font-size: 16px;
-    line-height: 140%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .modul-window-main form label input, .modul-window-main form label textarea {
-    width: 100%;
-    margin-left: 0;
     box-sizing: border-box;
-    margin-top: 4px;
   }
-  .form-submit {
-    padding-top: 0;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    flex-direction: row;
-  }
-  .form-submit input {
-    width: 112px;
-    height: 112px;
-    font-size: 16px;
-    margin-right: 0;
-  }
-  .form-submit p {
-    margin-left: 20px;
-    font-size: 18px;
-    width: 70%;
-    word-wrap: break-word;
-  }
-  .form-submit p span {
-    margin-left: 0;
-  }
-}
-
-/*@media max-width: 576px --------------------------------------------*/
-@media (max-width: 576px) {
-  .modul-window-header p {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .modal_content__header::after {
-    content: none;
-  }
-  .modal {
-    width: 100vw;
-  }
-  h3 {
-    width: 90%;
-    font-size: 24px;
-    margin-bottom: 24px;
-    margin-top: 60px;
-  }
-  h3:before {
-    content: none !important;
-  }
-  h3:nth-of-type(1) {
-    margin-top: 0;
-  }
-  .modul-window-main {
-    padding-top: 48px;
-    width: 90%;
-  }
-  .modul-window-main form {
-    align-items: flex-start;
-    max-width: 100%;
-  }
-  .modul-window-main form label {
-    font-size: 14px;
-    line-height: 140%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-  }
-  .modul-window-main form label input, .modul-window-main form label textarea {
-    width: 100%;
-    margin-left: 0;
-    box-sizing: border-box;
-    margin-top: 4px;
-  }
-  .form-submit {
-    padding-top: 0;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    flex-direction: row-reverse;
-  }
-  .form-submit input {
+  .modal-message_text button {
     width: 88px;
     height: 88px;
     font-size: 12px;
-    margin-right: 0;
   }
-  .form-submit p {
+  #modul-window_open {
+    right: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 4.5vw;
+  }
+  .submit-recommendation {
+    font-size: 3vw !important;
+  }
+  .modul-window-main .clients .submit-form {
+    width: 88px !important;
+    height: 88px !important;
     font-size: 12px;
-    width: 70%;
-    word-wrap: break-word;
   }
-  .form-submit p span {
-    margin-left: 0;
+  .modal-message {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 50px 100px;
+    box-sizing: border-box;
   }
-  .partners-form label {
-    text-align: left !important;
+  .modal-message_text {
+    width: 100%;
+    padding: 0;
+  }
+  .modal-message_img {
+    width: 100%;
+  }
+  .modal-message-manager {
+    justify-content: center;
+  }
+  .modal-message-manager p {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .clients label {
+    font-size: 3vw !important;
+  }
+  .clients input {
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  select {
+    width: 30%;
+    font-size: 3vw;
+  }
+  .clients input:nth-of-type(3) {
+    width: 68%;
+  }
+  .modul-window-header p {
+    font-size: 3vw;
+  }
+  .submit-recommendation span {
+    display: block;
+  }
+  .modal-message {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 352px) {
+  select {
+    display: none;
+  }
+  .clients input:nth-of-type(3) {
+    width: 100%;
+  }
+  .modal-message {
+    padding: 20px;
   }
 }
 
@@ -3800,8 +3896,8 @@ h3:nth-of-type(4)::before {
 }
 
 .question .wrapper .question-container .question-container-img .container .object img:nth-of-type(4) {
-  left: 50%;
-  top: 30%;
+  left: 40%;
+  top: 35%;
   width: 44px;
   height: 44px;
 }
@@ -3862,6 +3958,17 @@ h3:nth-of-type(4)::before {
   .about-us .wrapper .about-us-container .about-us_img {
     width: 45%;
     height: 50%;
+  }
+}
+
+/*@media (min-width: 992px) and (max-width: 1200px) --------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1200px) and (orientation: landscape) {
+  .question .wrapper .question-container .question-container-img .partners-container {
+    background-size: cover;
+    background-position: center -13vh;
+  }
+  .question .wrapper .question-container .question-container-img .partners-container .object img {
+    object-fit: contain;
   }
 }
 
@@ -4089,7 +4196,7 @@ h3:nth-of-type(4)::before {
 
 @media (max-width: 992px) {
   .footer {
-    height: calc(15vh + 100px);
+    height: calc(25vh + 100px);
   }
   .footer-navigation .toggle-switch #modul-window_open {
     left: 0;
@@ -4119,7 +4226,7 @@ h3:nth-of-type(4)::before {
   .footer-navigation {
     position: absolute;
     top: 25%;
-    left: 13%;
+    left: 40%;
   }
   .footer-navigation nav ul a li {
     margin-bottom: 10px;

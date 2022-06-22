@@ -61,40 +61,40 @@ h6 {
 .starter-partners a {
     opacity: 0;
  }
-.starter-clients.hover {
+.starter-clients:hover {
     background: black;
     cursor: pointer;
 }
-.starter-clients.hover .starter-wrapper  .clients {
+.starter-clients:hover .starter-wrapper  .clients {
     color: white;
 }
-.starter-clients.hover .starter-wrapper  a {
+.starter-clients:hover .starter-wrapper  a {
     opacity: 1;
 }
-.starter-clients.hover .starter-wrapper  .clients span {
+.starter-clients:hover .starter-wrapper  .clients span {
     background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.starter-partners.hover a {
+.starter-partners:hover a {
     opacity: 1;
     outline: none;
 }
-.starter-partners.hover {
+.starter-partners:hover {
     background: black;
     cursor: pointer;
 }
-.starter-partners.hover .starter-wrapper  .partners {
+.starter-partners:hover .starter-wrapper  .partners {
     color: white;
 }
-.starter-partners.hover .starter-wrapper  .partners span {
+.starter-partners:hover .starter-wrapper  .partners span {
     background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.starter-partners.hover a {
+.starter-partners:hover a {
     opacity: 1;
     outline: none;
 }
