@@ -161,7 +161,7 @@
   height: auto;
   padding-bottom: 100px;
   ul {
-    margin-left: 200px;
+    
   }
   .toggle-switch {
     .toggle-custom {
@@ -174,7 +174,7 @@
 .menu-top-nav{
   position: absolute;
   top: 80px;
-  left: 49%;
+  left: 42%;
   font-size: 16px;
   line-height: 150%;
   color: white;
@@ -216,7 +216,7 @@
 }
 #menuToggle {
   .menuToggle-span {
-    left: 91.5%;
+    left: 95.5%;
   }
 }
 .burger-module_logo {
@@ -227,6 +227,12 @@
 }
 .menu-top-nav {
   display: none;
+}
+#menu  {
+  .wrapper {
+    justify-content: flex-start;
+    height: 100%;
+  }
 }
 @media (orientation: landscape) {
   .burger-module_logo {
@@ -240,6 +246,7 @@
       margin-top: 0;
       margin-bottom: 30px;
       li {
+        margin-bottom: 20px;
         a {
           font-size: 24px;
           line-height: 15px;
@@ -251,6 +258,12 @@
     margin-bottom: 15px;
     font-size: 13px;
   }
+}
+#menu {
+  .wrapper {
+    padding-top: 80px;
+  }
+  
 }
 }
   
@@ -303,7 +316,7 @@
 }
 #menuToggle {
   .menuToggle-span {
-    left: 90.5%;
+    left: 94.5%;
   }
 }
 @media (orientation: landscape) {
@@ -314,14 +327,16 @@
   top: 62px;
   right: 25% !important;
 }
+#modul-window_open {
+  right: 40% !important;
+}
+.logotype-text {
+  display: none !important;
+}
 #menu {
-  display: flex;
-  align-items: flex-start;
-  padding-left: 15%;
-  box-sizing: border-box;
   ul {
-    width: 40%;
-    margin-top: 20px;
+    width: 77%;
+    margin-top: 140px;
     margin-bottom: 30px;
     li {
       margin-bottom: 20px ;
@@ -332,7 +347,7 @@
     }
   }
   .toggle-switch {
-    width: auto;
+    width: 77%;
   }
 }
 .menu-top {
@@ -365,6 +380,14 @@ label {
 .why-we-tittle-text {
   br {
     display: none;
+  }
+}
+#menu  {
+  .wrapper {
+    justify-content: flex-start !important;
+    padding-top: 120px !important;
+    height: 100% !important;
+    align-items: flex-start !important;
   }
 }
 }
@@ -441,7 +464,14 @@ label {
 }
 #menuToggle {
   .menuToggle-span {
-    left: 86.5%;
+    left: 92.5%;
+  }
+}
+#menu  {
+  .wrapper {
+    justify-content: flex-start;
+    padding-top: 120px;
+    height: 100%;
   }
 }
 
