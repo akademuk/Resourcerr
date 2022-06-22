@@ -58,6 +58,9 @@
     form {
         display: flex;
         flex-direction: column;
+        input,textarea {
+            width: 100% !important;
+        }
     }
 }
 .get-in-touch-container_contact-icon {

@@ -72,3 +72,8 @@ h2 {
   header {
     max-width: 100vw;
   }
+  @media (min-width:1500px) {
+    .wrapper {
+        width: 1400px !important;
+    }
+  }
