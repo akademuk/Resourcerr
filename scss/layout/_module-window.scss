@@ -525,6 +525,28 @@ h3 {
     height: 40px;
   }
 }
+.modal-message {
+  flex-direction: row;
+  padding: 15px 25px;
+  .modal-message_text {
+    p {
+      &:nth-of-type(1) {
+        font-size: 4vw;
+      }
+      &:nth-of-type(2) {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+}
+.logo-modal-message {
+  margin-bottom: 0;
+}
+.close-modal-message {
+  width: 75px !important;
+  height: 75px !important;
 }
 }
 @media (max-width:576px) {
