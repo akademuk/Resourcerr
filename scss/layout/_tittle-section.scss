@@ -85,7 +85,7 @@ h1 {
         position: relative;
         &::after {
             content: '';
-            background:url(../../images/partners/line-tittle.png);
+            background:url(../images/partners/line-tittle.png);
             background-size: contain;
             background-repeat: no-repeat;
             width: 100%;
@@ -167,6 +167,11 @@ h1 {
     span {
         margin-left: 0;
     }
+.tittle-partners {
+    br {
+        display: none !important;
+    }
+}
 }
 @media (orientation: landscape) {
 .tittle {
@@ -209,6 +214,11 @@ h1 {
         &:after {
             top: 10px;
         }
+    }
+}
+.tittle-partners {
+    br {
+        display: none !important;
     }
 }
 }

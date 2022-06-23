@@ -18,7 +18,13 @@ $gradient: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
 
 
 
-
+.animated-show {
+    opacity: 0;
+    transition: opacity 2s ease-out;
+  }
+  .animated-show.animated-show-active {
+    opacity: 1;
+  }
 
 
 

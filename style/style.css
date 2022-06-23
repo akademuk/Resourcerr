@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap");
+.animated-show {
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+
+.animated-show.animated-show-active {
+  opacity: 1;
+}
+
 body {
   font-family: 'Sora', sans-serif;
   font-style: normal;
@@ -962,7 +971,7 @@ h1 .partners {
 
 h1 .partners::after {
   content: '';
-  background: url(../../images/partners/line-tittle.png);
+  background: url(../images/partners/line-tittle.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -1040,6 +1049,9 @@ h1 .partners::after {
   h1 span {
     margin-left: 0;
   }
+  h1 .tittle-partners br {
+    display: none !important;
+  }
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
@@ -1072,6 +1084,9 @@ h1 .partners::after {
   }
   h1 span:after {
     top: 10px;
+  }
+  .tittle-partners br {
+    display: none !important;
   }
 }
 

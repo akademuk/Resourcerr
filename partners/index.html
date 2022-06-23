@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="../style/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
+    
     <!--Module window --------------------------------------------------------->   
     <div class="module-window" id="modul-window">
         <div class="modal modal_animation">
@@ -204,14 +206,14 @@
             <div class="toggle-switch partners-toggle-switch">
                 <div class="toggle-custom switch clents-toogle-color">
                     <label for="toggle" class="clients-toogle s2" onclick="switchClicked(this, 's2', '/partners');" >    
-                        <input type="checkbox">
+                        <input type="checkbox" >
                     </label>
-                    <a href=""><span>For clients</span></a>
-                    <a href="" onclick="switchClicked(this, 's2', '/partners');"><span>For parents</span></a>
+                    <a href="../clients/index.html" onclick="switchClicked(this, 's1', '/clients')" class="transition"><span>For clients</span></a>
+                    <a href=""><span>For parents</span></a>
                 </div>
             </div>
             <div class="tittle-container">
-                <h1>Acquire new  <br> <span class="partners">clients</span> for your <br> lead generation <br>business</h1>
+                <h1 class="tittle-partners">Acquire new  <br> <span class="partners">clients</span> for your <br> lead generation <br>business</h1>
                 <div class="tittle-container-btn">
                 <p>Use additional source <br> to get new clients</p>
                 <button class="btn-send-request partners-btn-hover" onclick="toggleModal()">Find <br> clients</button>
@@ -589,6 +591,7 @@ fileInput.onchange = function() {
 }
 
 </script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="../script/switchToToggle.js"></script>
