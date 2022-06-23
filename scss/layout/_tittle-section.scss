@@ -76,6 +76,35 @@ h1 {
         }
     }
 }
+h1 {
+    .partners {
+        background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+        position: relative;
+        &::after {
+            content: '';
+            background:url(../../images/partners/line-tittle.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 5px;
+            left: 0;
+            z-index: -1;
+        } 
+    }
+}
+.partners {
+   &:hover {
+    background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+   }
+}
 .tittle-container-btn {
     display: flex;
     margin-top: 50px;

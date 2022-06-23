@@ -194,6 +194,37 @@ h3 {
     display: inline-block;
   }
 }
+.clients.partners-form {
+  input {
+    &:nth-of-type(3) {
+    width: 600px;
+    }
+  }
+}
+.partners-form {
+  input {
+    &:nth-of-type(4) {
+    width: 469px;
+    }
+  }
+  .submit-form {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 115%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #151515;
+    background: #fff;
+    padding: 0;
+    border: none;
+    margin-left: 336px;
+    display: inline-block;
+  }
+}
 .submit-recommendation {
   display: inline-block ;
   margin-left: 40px;
@@ -292,6 +323,9 @@ select {
   border-radius: 48px;
   height: fit-content;
 }
+.partners-modal {
+  background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
+}
 .modal-message_text {
   width: 45%;
   padding: 59px 0 39px 80px;
@@ -376,6 +410,85 @@ select {
     }
 
 }
+.partners-form {
+  input,textarea {
+    &:hover {
+      box-shadow: 0 1px 0 #29A9EE , inset 0 1px 0 #41E4F0;
+      cursor: pointer;
+    }
+    &:focus {
+      box-shadow: 0 1px 0 #29A9EE , inset 0 1px 0 #41E4F0;
+      cursor: pointer;
+    }
+  }
+}
+.file-upload {
+  display: flex;
+  font-size: 16px;
+  line-height: 140%;
+  color:#8A8A8A;
+  height: 40px;
+    align-items: flex-start;
+}
+.file-upload .file-upload-select {
+  width: 614px;
+	cursor: pointer;
+	text-align: left;
+	overflow: hidden;
+  padding-left: 14px;
+margin-left: 14px;
+  height: 40px;
+      background: transparent;
+      border-radius: 16px;
+      margin-bottom: 28px;
+      border:  1px solid #8A8A8A;
+      padding-left: 10px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 140%;
+      font-size: 16px;
+      line-height: 140%;
+      color:#8A8A8A;
+      &:hover {
+        box-shadow: 0 1px 0 #29A9EE , inset 0 1px 0 #41E4F0;
+        cursor: pointer;
+      }
+      &:focus {
+        box-shadow: 0 1px 0 #29A9EE , inset 0 1px 0 #41E4F0;
+        cursor: pointer;
+      }
+}
+.file-upload {
+  span {
+    display: flex;
+    text-align: right;
+  }
+}
+.file-upload .file-upload-select .file-select-button {
+  background: transparent;
+  display: inline-block;
+  width: 70px;
+  border-right: 1px solid #8A8A8A;
+  padding-left: 20px;
+    box-sizing: border-box;
+    img {
+      width: 18px;
+      height: 20px;
+      opacity: 0.5;
+    }
+
+}
+.file-upload .file-upload-select .file-select-name {
+	display: inline-block;
+	padding: 10px;
+}
+
+.file-upload .file-upload-select input[type="file"] {
+	display: none;
+}
+.submit-form {
+  margin-top: 50px;
+}
 @media (max-width: 1300px) {
 .modal-content {
   width: 90% !important; 
@@ -409,6 +522,25 @@ select {
     height: 112px !important;
     border-radius: 50%;
   } 
+}
+.clients.partners-form {
+  input {
+    &:nth-of-type(3) {
+    width: 450px;
+    }
+  }
+}
+.partners-form {
+  input {
+    &:nth-of-type(4) {
+    width: 319px;
+    }
+  }
+}
+.file-upload {
+  .file-upload-select {
+    width: 450px;
+  }
 }
 .submit-recommendation {
   font-size: 15px;
@@ -451,7 +583,7 @@ select {
     }
   }
     label {
-      font-size: 4vw !important;
+      font-size: 2vw !important;
     &:nth-of-type(3) {
     display: block;
     }
@@ -460,6 +592,27 @@ select {
     width: 112px !important;
     height: 112px !important;
     margin-left: 0;
+  }
+}
+.clients.partners-form {
+  input {
+    &:nth-of-type(3) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+.partners-form {
+  label {
+    &:nth-of-type(4) {
+      display: block;
+    }
+  }
+  input {
+    &:nth-of-type(4) {
+      width: 78%;
+      margin-left: 1%;
+    }
   }
 }
 select {
@@ -480,6 +633,22 @@ select {
 #modul-window_open {
   right: 35%;
 }
+.file-upload {
+  flex-direction: column;
+  height: max-content;
+  span {
+    font-size: 2vw;
+     margin-bottom: 10px;
+  }
+}
+.file-upload-select {
+  height: 54px !important;
+  display: flex;
+  align-items: center;
+  margin-left: 0 !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
 }
 @media (max-width:768px) {
 h3 {
@@ -487,6 +656,7 @@ h3 {
 }
 .submit-recommendation {
   font-size: 3vw !important;
+  margin-bottom: 10px;
 }
 .modul-window-main {
   .clients {
@@ -519,7 +689,7 @@ h3 {
 @media(orientation:landscape) {
 .clients {
   label {
-    font-size: 3vw !important;
+    font-size: 2vw !important;
   }
   input {
     height: 40px;
@@ -574,6 +744,13 @@ select {
 .modal-message {
   padding: 40px;
 }
+.partners-form  {
+  input {
+    &:nth-of-type(4) {
+      width: 68%;
+    }
+  }
+}
 }
 @media (max-width:352px) {
 select {
@@ -582,6 +759,13 @@ select {
 .clients {
   input{
     &:nth-of-type(3) {
+      width: 100%;
+    }
+  }
+}
+.partners-form  {
+  input {
+    &:nth-of-type(4) {
       width: 100%;
     }
   }

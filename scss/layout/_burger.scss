@@ -77,11 +77,12 @@
     }
   }
 }
+
 #menu {
   position: absolute;
   left: -10%;
   width: 150%;
-  height: 100vh;
+  height: calc(100vh + 100px);
   margin: -100px 0 0 0;
   background: #151515;
   list-style-type: none;

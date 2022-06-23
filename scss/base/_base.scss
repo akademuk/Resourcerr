@@ -20,6 +20,58 @@ html {
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
 }
+.partners-blue-hover {
+    &:hover {
+        background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    &:after {
+        background: url(../../images/partners/hover-icon.png) !important;
+        background-size: cover !important;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        margin-left: 10px;
+    }
+}
+}
+.partners-toggle-switch {
+    .toggle-custom {
+        label {
+            &:after {
+                left: inherit !important;
+                right: 4px !important;
+                background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+            }
+        }
+        a {
+            &:nth-of-type(1) {
+                span {
+                    
+                    background: linear-gradient(90.96deg, #151515 0%, #151515 99.64%) !important;
+                    -webkit-background-clip: text !important;
+                    -webkit-text-fill-color: transparent !important;
+                    background-clip: text !important;
+                    &:hover {
+                        background: linear-gradient(90.96deg, #0EC4B5 0%,#51E689 99.64%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                    }
+                }
+            }
+            &:nth-of-type(2) {
+                span {
+                    background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+                    -webkit-background-clip: text !important;
+                    -webkit-text-fill-color: transparent !important;
+                    background-clip: text !important;
+                }
+            }
+        }
+    }
+}
 .wrapper {
     width: 90%;
     margin: 0 auto;
