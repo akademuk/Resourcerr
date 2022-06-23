@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/starter.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap">
-    <title>Document</title>
+    <title></title>
 </head>
   <body>
       <div class="starter">
-          <div class="starter-clients hover" onclick="">
+          <div class="starter-clients red" onclick="">
          <div class="starter-wrapper">
           <h6 class="clients">For <span>clients</span></h6>
           <p>Get help with the search for <br> reliable lead generation contractor</p>
@@ -20,7 +20,7 @@
           </a>
          </div>
           </div>
-          <div class="starter-partners" onclick=""> 
+          <div class="starter-partners red" onclick=""> 
            <div class="starter-wrapper">
             <h6 class="partners">For <span>partners</span></h6>
             <p>Get new clients that need  lead <br> generation services</p>
@@ -33,19 +33,9 @@
       
   </body>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<!-- <script>
-  $( document ).ready(function() {
-    console.log( "ready!" );
-    if ($('.starter-clients').mouseover()) {
-    $('.starter-partners').removeClass('hover')
-     $('.starter-clients').addClass('hover')
-  }
-  if ($('.starter-partners').mouseover()) {
-    $('.starter-clients').removeClass('hover')
-    $('.starter-partners').addClass('hover')
-  }
+<script>
+  $(".red").hover( function (e) {
+    $(this).toggleClass('hover', e.type === 'mouseenter');
 });
- 
-  </script> -->
+</script>
 </html>

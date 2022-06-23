@@ -61,7 +61,10 @@ h6 {
 .starter-partners a {
     opacity: 0;
  }
-.starter-clients:hover {
+ .hover {
+    background: blue;
+ }
+.starter-clients.hover {
     background: black;
     cursor: pointer;
 }

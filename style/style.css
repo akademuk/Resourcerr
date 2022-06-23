@@ -2798,6 +2798,7 @@ h4 {
   display: inline-block;
   margin-right: 14px;
   color: #8A8A8A;
+  position: relative;
 }
 
 .modul-window-main form input, .modul-window-main form textarea {
@@ -3423,9 +3424,6 @@ select {
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
-  .clients label {
-    font-size: vw !important;
-  }
   .clients input {
     height: 40px;
   }
@@ -3471,6 +3469,9 @@ select {
   }
   .partners-form input:nth-of-type(4) {
     width: 68%;
+  }
+  .logotype-text {
+    display: none;
   }
 }
 
