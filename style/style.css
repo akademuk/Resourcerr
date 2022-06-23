@@ -977,6 +977,12 @@ h1 span::after {
   }
 }
 
+@media (max-width: 768px) {
+  h1 span {
+    margin-left: 50px !important;
+  }
+}
+
 /*@media max-width: 576px --------------------------------------------*/
 @media (max-width: 576px) {
   .tittle-container-btn {
@@ -1935,7 +1941,7 @@ h1 span::after {
   }
   .why-we-ar-flex .why-we-ar-container {
     position: relative;
-    height: calc(50vh + 100px);
+    height: calc(40vh + 100px);
   }
   .why-we-ar-flex .why-we-ar-container:nth-of-type(2) {
     margin-top: 0;

@@ -1,4 +1,4 @@
-$( "button" ).click(function() {
+$( ".read-more-btn" ).click(function() {
   $( ".read-more" ).slideToggle( "fast" );
       var $this = $(this);
         $this.toggleClass("open");
