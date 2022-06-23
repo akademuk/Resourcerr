@@ -564,7 +564,9 @@ margin-left: 14px;
       height: 200px;
     }
     label {
-      width: max-content !important;
+      font-size: 5vw !important;
+      width: auto !important;
+      text-align: left;
       margin-bottom: 10px;
     }
   }
@@ -583,7 +585,7 @@ margin-left: 14px;
     }
   }
     label {
-      font-size: 2vw !important;
+      font-size: 3vw !important;
     &:nth-of-type(3) {
     display: block;
     }
@@ -637,7 +639,8 @@ select {
   flex-direction: column;
   height: max-content;
   span {
-    font-size: 2vw;
+    text-align: left;
+    font-size: 5vw;
      margin-bottom: 10px;
   }
 }
@@ -648,6 +651,20 @@ select {
   margin-left: 0 !important;
   width: 100% !important;
   box-sizing: border-box;
+}
+@media (orientation:landscape) {
+  .modul-window-main  {
+    .clients  {
+      label {
+        font-size: 3vw !important;
+      }
+    }
+  }
+  .file-upload {
+    span {
+      font-size: 3vw;
+    }
+  }
 }
 }
 @media (max-width:768px) {
@@ -683,13 +700,13 @@ h3 {
 .modal-message-manager {
   justify-content: center;
   p {
-    font-size: 2vw;
+    font-size: 5vw;
   }
 }
 @media(orientation:landscape) {
 .clients {
   label {
-    font-size: 2vw !important;
+    font-size: vw !important;
   }
   input {
     height: 40px;
@@ -722,7 +739,7 @@ h3 {
 @media (max-width:576px) {
 select {
   width: 30%;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 .clients {
   input{
@@ -733,7 +750,7 @@ select {
 }
 .modul-window-header {
   p {
-    font-size: 3vw;
+    font-size: 5vw;
   }
 }
 .submit-recommendation {

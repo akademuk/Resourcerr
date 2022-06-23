@@ -3281,7 +3281,9 @@ select {
     height: 200px;
   }
   .modul-window-main .clients label {
-    width: max-content !important;
+    font-size: 5vw !important;
+    width: auto !important;
+    text-align: left;
     margin-bottom: 10px;
   }
   .modul-window-main h3 {
@@ -3295,7 +3297,7 @@ select {
     margin-left: 1%;
   }
   .clients label {
-    font-size: 2vw !important;
+    font-size: 3vw !important;
   }
   .clients label:nth-of-type(3) {
     display: block;
@@ -3337,7 +3339,8 @@ select {
     height: max-content;
   }
   .file-upload span {
-    font-size: 2vw;
+    text-align: left;
+    font-size: 5vw;
     margin-bottom: 10px;
   }
   .file-upload-select {
@@ -3347,6 +3350,15 @@ select {
     margin-left: 0 !important;
     width: 100% !important;
     box-sizing: border-box;
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  .modul-window-main .clients label {
+    font-size: 3vw !important;
+  }
+  .file-upload span {
+    font-size: 3vw;
   }
 }
 
@@ -3380,13 +3392,13 @@ select {
     justify-content: center;
   }
   .modal-message-manager p {
-    font-size: 2vw;
+    font-size: 5vw;
   }
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
   .clients label {
-    font-size: 2vw !important;
+    font-size: vw !important;
   }
   .clients input {
     height: 40px;
@@ -3417,13 +3429,13 @@ select {
 @media (max-width: 576px) {
   select {
     width: 30%;
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .clients input:nth-of-type(3) {
     width: 68%;
   }
   .modul-window-header p {
-    font-size: 3vw;
+    font-size: 5vw;
   }
   .submit-recommendation span {
     display: block;
