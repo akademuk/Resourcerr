@@ -126,14 +126,12 @@ toggle-switch.toggle-switch {
 }
   #s2 {
     position: absolute;
-    
-    opacity: 0;
+    opacity: 0 !important;
     z-index: 99 !important;
     cursor: pointer ;
   } 
   #s1 {
     position: absolute;
-    
     opacity: 0;
     z-index: 99 !important;
     cursor: pointer ;
