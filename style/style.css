@@ -19,6 +19,10 @@ body {
   overflow-x: hidden;
 }
 
+button {
+  outline: none !important;
+}
+
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -289,7 +293,7 @@ header .logotype {
 }
 
 #menu ul {
-  margin-top: 50px;
+  margin-top: 150px;
   text-align: left;
 }
 
@@ -463,6 +467,9 @@ header .logotype {
 
 /*@media max-width: 767px --------------------------------------------*/
 @media (max-width: 767px) {
+  .logotype-text {
+    display: none !important;
+  }
   #menu {
     margin: -100px 0 0 0;
     height: auto;
@@ -507,6 +514,9 @@ header .logotype {
   }
   #menuToggle .chec {
     left: 94.5%;
+  }
+  #menuToggle #menu ul li {
+    margin-bottom: 30px;
   }
 }
 
@@ -2916,6 +2926,10 @@ h3:nth-of-type(4)::before {
   left: -40px;
 }
 
+.partners-toggle-switch .toggle-custom label:after {
+  top: 1px !important;
+}
+
 .clients input:nth-of-type(3) {
   width: 469px;
 }
@@ -2942,8 +2956,8 @@ h3:nth-of-type(4)::before {
   width: 600px;
 }
 
-.partners-form input:nth-of-type(4) {
-  width: 469px;
+.iti.iti--allow-dropdown {
+  margin-bottom: 28px !important;
 }
 
 .partners-form .submit-form {
@@ -2993,6 +3007,14 @@ select {
   padding: 0 20px 0 16px;
   width: 128px;
   box-sizing: border-box;
+}
+
+.iti__country-list {
+  background: #151515 !important;
+}
+
+.iti__country-name {
+  color: white !important;
 }
 
 .select-number {

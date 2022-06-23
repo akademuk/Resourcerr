@@ -92,7 +92,7 @@
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 
   ul {
-    margin-top: 50px;
+    margin-top: 150px;
     text-align: left;
     li {
       transition: color 0.3s ease;
@@ -273,6 +273,9 @@
   
 /*@media max-width: 767px --------------------------------------------*/ 
 @media (max-width: 767px) {
+.logotype-text {
+    display: none !important;
+  }
 #menu {
   margin:-100px 0 0 0;
   height: auto;
@@ -326,6 +329,13 @@
 #menuToggle {
   .chec {
     left: 94.5%;
+  }
+  #menu {
+    ul {
+      li {
+        margin-bottom: 30px;
+      }
+    }
   }
 }
 @media (orientation: landscape) {
