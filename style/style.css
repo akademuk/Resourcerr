@@ -166,7 +166,7 @@ header .logotype {
   height: 32px;
   position: absolute;
   top: -7px;
-  right: 0;
+  left: 97.5%;
   cursor: pointer;
   opacity: 0;
   z-index: 2;
@@ -349,6 +349,9 @@ header .logotype {
   #menu .toggle-switch .toggle-custom a {
     margin-right: 10px;
   }
+  #menuToggle .chec {
+    left: 95.5%;
+  }
   .menu-top {
     font-size: 16px;
     line-height: 150%;
@@ -448,6 +451,9 @@ header .logotype {
     display: none;
   }
   #menuToggle .menuToggle-span {
+    left: 94.5%;
+  }
+  #menuToggle .chec {
     left: 94.5%;
   }
 }
@@ -580,6 +586,9 @@ header .logotype {
     display: none;
   }
   #menuToggle .menuToggle-span {
+    left: 87.5%;
+  }
+  #menuToggle .chec {
     left: 87.5%;
   }
   #menu .wrapper {
@@ -889,7 +898,7 @@ h1 span {
 
 h1 span::after {
   content: '';
-  background: url(../../images/revenue.png);
+  background: url(../images/revenue.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;

@@ -13,7 +13,7 @@
     height: 32px;
     position: absolute;
     top: -7px;
-    right: 0;
+    left: 97.5%;
     cursor: pointer;
     opacity: 0; 
     z-index: 2;
@@ -160,9 +160,6 @@
   margin:-100px 0 0 0;
   height: auto;
   padding-bottom: 100px;
-  ul {
-    
-  }
   .toggle-switch {
     .toggle-custom {
       a {
@@ -204,6 +201,11 @@
         margin-right: 10px;
       }
     }
+  }
+}
+#menuToggle {
+  .chec {
+    left: 95.5%;
   }
 }
 .menu-top {
@@ -317,6 +319,11 @@
 }
 #menuToggle {
   .menuToggle-span {
+    left: 94.5%;
+  }
+}
+#menuToggle {
+  .chec {
     left: 94.5%;
   }
 }
@@ -465,6 +472,11 @@ label {
 }
 #menuToggle {
   .menuToggle-span {
+    left: 87.5%;
+  }
+}
+#menuToggle {
+  .chec {
     left: 87.5%;
   }
 }
