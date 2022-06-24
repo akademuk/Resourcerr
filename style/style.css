@@ -2930,10 +2930,6 @@ h3:nth-of-type(4)::before {
   top: 1px !important;
 }
 
-.clients input:nth-of-type(3) {
-  width: 469px;
-}
-
 .clients .submit-form {
   width: 112px;
   height: 112px;
@@ -2950,10 +2946,6 @@ h3:nth-of-type(4)::before {
   border: none;
   margin-left: 336px;
   display: inline-block;
-}
-
-.clients.partners-form input:nth-of-type(3) {
-  width: 600px;
 }
 
 .iti.iti--allow-dropdown {
@@ -2991,22 +2983,6 @@ h3:nth-of-type(4)::before {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-select {
-  height: 40px;
-  background: transparent;
-  border-radius: 16px;
-  margin-bottom: 28px;
-  border: 1px solid #8A8A8A;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 140%;
-  color: #8A8A8A;
-  display: inline-block;
-  padding: 0 20px 0 16px;
-  width: 128px;
-  box-sizing: border-box;
 }
 
 .iti__country-list {
@@ -3288,19 +3264,10 @@ select {
   .modul-window-main .clients input, .modul-window-main .clients textarea {
     width: 450px;
   }
-  .clients input:nth-of-type(3) {
-    width: 319px;
-  }
   .clients .submit-form {
     width: 112px !important;
     height: 112px !important;
     border-radius: 50%;
-  }
-  .clients.partners-form input:nth-of-type(3) {
-    width: 450px;
-  }
-  .partners-form input:nth-of-type(4) {
-    width: 319px;
   }
   .file-upload .file-upload-select {
     width: 450px;
@@ -3341,35 +3308,10 @@ select {
   .modul-window-main h3::before {
     content: none;
   }
-  .clients input:nth-of-type(3) {
-    width: 78%;
-    margin-left: 1%;
-  }
-  .clients label {
-    font-size: 3vw !important;
-  }
-  .clients label:nth-of-type(3) {
-    display: block;
-  }
   .clients .submit-form {
     width: 112px !important;
     height: 112px !important;
     margin-left: 0;
-  }
-  .clients.partners-form input:nth-of-type(3) {
-    width: 100%;
-    margin-left: 0;
-  }
-  .partners-form label:nth-of-type(4) {
-    display: block;
-  }
-  .partners-form input:nth-of-type(4) {
-    width: 78%;
-    margin-left: 1%;
-  }
-  select {
-    width: 20%;
-    height: 54px;
   }
   .modal_animation {
     width: 100vw;
@@ -3400,6 +3342,12 @@ select {
     width: 100% !important;
     box-sizing: border-box;
   }
+  label {
+    display: block;
+  }
+  .iti {
+    width: 100%;
+  }
 }
 
 @media (max-width: 991px) and (orientation: landscape) {
@@ -3423,6 +3371,9 @@ select {
     width: 88px !important;
     height: 88px !important;
     font-size: 12px;
+  }
+  .iti__country-list {
+    border-radius: 12px !important;
   }
   .modal-message {
     flex-direction: column-reverse;
@@ -3473,13 +3424,6 @@ select {
 }
 
 @media (max-width: 576px) {
-  select {
-    width: 30%;
-    font-size: 4vw;
-  }
-  .clients input:nth-of-type(3) {
-    width: 68%;
-  }
   .modul-window-header p {
     font-size: 5vw;
   }
@@ -3489,24 +3433,12 @@ select {
   .modal-message {
     padding: 40px;
   }
-  .partners-form input:nth-of-type(4) {
-    width: 68%;
-  }
   .logotype-text {
     display: none;
   }
 }
 
 @media (max-width: 352px) {
-  select {
-    display: none;
-  }
-  .clients input:nth-of-type(3) {
-    width: 100%;
-  }
-  .partners-form input:nth-of-type(4) {
-    width: 100%;
-  }
   .modal-message {
     padding: 20px;
   }
@@ -3565,6 +3497,7 @@ select {
 .get-in-touch-container_contact p {
   font-size: 20px;
   margin-bottom: 45px;
+  line-height: 150%;
 }
 
 .get-in-touch-container_contact a {
