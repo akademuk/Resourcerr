@@ -12,7 +12,7 @@
 </head>
   <body>
       <div class="starter">
-          <div class="starter-clients red" onclick="">
+          <div class="starter-clients container-hover" onclick="parent.location='../clients'">
          <div class="starter-wrapper">
           <h6 class="clients">For <span>clients</span></h6>
           <p>Get help with the search for <br> reliable lead generation contractor</p>
@@ -21,7 +21,7 @@
           </a>
          </div>
           </div>
-          <div class="starter-partners red" onclick=""> 
+          <div class="starter-partners container-hover" onclick="parent.location='../partners'"> 
            <div class="starter-wrapper">
             <h6 class="partners">For <span>partners</span></h6>
             <p>Get new clients that need  lead <br> generation services</p>
@@ -35,8 +35,10 @@
   </body>
 
 <script>
+  
     $(document).ready(function() {
-        $(".red").hover(function (e) {
+      $( ".starter-clients" ).addClass( "hover" );
+        $(".container-hover").hover(function (e) {
             $(this).toggleClass('hover', e.type === 'mouseenter');
         });
     });

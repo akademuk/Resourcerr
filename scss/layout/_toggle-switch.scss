@@ -11,22 +11,47 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
+    position: relative;
     input {
       z-index: 99;
+      position: absolute;
+      opacity: 0;
+      width: 38px;
+      left: 37%;
+      cursor: pointer;
         &:checked + label {
-        border: 2px solid $white;
-        background: transparent;
+          
+          margin-bottom: 0;
+          background: transparent;
+          height: 23px;
             &:after {
-            left: 17px;
+                      background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+              -webkit-transform: translateX(60%);
+              -ms-transform: translateX(60%);
+              transform: translateX(60%);
+
             }
         }
-      &:checked ~ span:last-of-type {
-        color: $white;
-        opacity: 1;
-      }
-      &:checked ~ span:first-of-type {
-        color: $white;
-        opacity: 0.5;
+      &:checked ~ a 
+      {
+        &:nth-of-type(1) {
+          span {
+            background: linear-gradient(90.96deg, #151515 0%, #151515 99.64%) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            background-clip: text;
+            opacity: 1;
+          }
+        }
+        &:nth-of-type(2) {
+          span {
+            background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            opacity: 1;
+          }
+        }
       }
     }
 label {
@@ -39,6 +64,7 @@ label {
       border-radius: 20px;
       cursor: pointer;
       order: 2;
+      margin-bottom: 0;
       transition: all 0.2s ease-in-out;
       &::after {
         content: '';
@@ -49,7 +75,8 @@ label {
         left: 4px;
         border-radius: 50%;
         background-color: $white;
-        transition: all 0.2s ease-in-out;
+        -webkit-transition: .4s;
+        transition: .4s;
       }
     }
    a {
@@ -72,6 +99,16 @@ label {
     }
    }
 .clients-toogle {
+ a {
+  &:nth-of-type(1) {
+    span {
+        background: linear-gradient(90.96deg, #0EC4B5 0%,#51E689 99.64%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+    }
+ }
+  }
   input {
     width: 100%;
     height: 100%;
@@ -105,19 +142,43 @@ label {
     background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
   }
 }
-.clents-toogle-color {
-  a {
-    &:nth-of-type(1) {
-      span {
-        background: linear-gradient(90.96deg, #0EC4B5 0%,#51E689 99.64%) !important;
-        -webkit-background-clip: text !important;
-        -webkit-text-fill-color: transparent !important;
-        background-clip: text !important;
+
+.partners-toggle-switch {
+  .toggle-custom {
+    input {
+      z-index: 99;
+      position: absolute;
+      opacity: 0;
+      width: 38px;
+      left: 37%;
+      cursor: pointer;
+        &:checked + label {
+          margin-bottom: 0;
+          background: transparent;
+          height: 23px;
+            &:after {
+              background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%) !important;
+              -webkit-transform: translateX(-60%);
+              -ms-transform: translateX(-60%);
+              transform: translateX(-60%);
+
+            }
+        }
+      &:checked ~ a 
+      {
+        &:nth-of-type(1) {
+          span {
+            background: linear-gradient(90.96deg,#151515 0%,#151515 99.64%) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            background-clip: text !important;
+            opacity: 1;
+          }
+        }
       }
     }
   }
 }
-
 
 
 
@@ -142,3 +203,7 @@ toggle-switch.toggle-switch {
      padding-left: 0;
    }
  }
+
+
+
+

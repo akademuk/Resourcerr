@@ -678,29 +678,43 @@ header .logotype p {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
+  position: relative;
 }
 
 .toggle-custom input {
   z-index: 99;
+  position: absolute;
+  opacity: 0;
+  width: 38px;
+  left: 37%;
+  cursor: pointer;
 }
 
 .toggle-custom input:checked + label {
-  border: 2px solid #fff;
+  margin-bottom: 0;
   background: transparent;
+  height: 23px;
 }
 
 .toggle-custom input:checked + label:after {
-  left: 17px;
+  background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+  transform: translateX(60%);
 }
 
-.toggle-custom input:checked ~ span:last-of-type {
-  color: #fff;
+.toggle-custom input:checked ~ a:nth-of-type(1) span {
+  background: linear-gradient(90.96deg, #151515 0%, #151515 99.64%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text;
   opacity: 1;
 }
 
-.toggle-custom input:checked ~ span:first-of-type {
-  color: #fff;
-  opacity: 0.5;
+.toggle-custom input:checked ~ a:nth-of-type(2) span {
+  background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 1;
 }
 
 .toggle-custom label {
@@ -713,6 +727,7 @@ header .logotype p {
   border-radius: 20px;
   cursor: pointer;
   order: 2;
+  margin-bottom: 0;
   transition: all 0.2s ease-in-out;
 }
 
@@ -725,7 +740,7 @@ header .logotype p {
   left: 4px;
   border-radius: 50%;
   background-color: #fff;
-  transition: all 0.2s ease-in-out;
+  transition: .4s;
 }
 
 .toggle-custom a {
@@ -745,6 +760,13 @@ header .logotype p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.clients-toogle a:nth-of-type(1) span {
+  background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
 }
 
 .clients-toogle input {
@@ -776,11 +798,32 @@ header .logotype p {
   background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
 }
 
-.clents-toogle-color a:nth-of-type(1) span {
+.partners-toggle-switch .toggle-custom input {
+  z-index: 99;
+  position: absolute;
+  opacity: 0;
+  width: 38px;
+  left: 37%;
+  cursor: pointer;
+}
+
+.partners-toggle-switch .toggle-custom input:checked + label {
+  margin-bottom: 0;
+  background: transparent;
+  height: 23px;
+}
+
+.partners-toggle-switch .toggle-custom input:checked + label:after {
   background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%) !important;
+  transform: translateX(-60%);
+}
+
+.partners-toggle-switch .toggle-custom input:checked ~ a:nth-of-type(1) span {
+  background: linear-gradient(90.96deg, #151515 0%, #151515 99.64%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
+  opacity: 1;
 }
 
 toggle-switch.toggle-switch {

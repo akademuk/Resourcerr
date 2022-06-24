@@ -45,7 +45,9 @@
                     <input type="email" id="email" required>
 
                     <label for="tel">Phone number</label>
-                    <input type="text" id="phone" required/>
+                    <input type="text" id="phone" required
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    />
 
                     <label for="company-name">Company name</label>
                     <input type="text" id="company-name" required>
@@ -187,10 +189,10 @@
                         <!--toggle-switch---------------------------------------------------->             
                         <div class="toggle-switch">
                             <div class="toggle-custom">
-                            
-                            <label for="toggle" class="clients-toogle">
-                                <input  class="s1" type="checkbox" onclick="switchClicked(this, 's1', '/partners')" style="opacity:0">
-                            </label>
+                                <input type="checkbox" onclick="switchClicked(this, 's2', '/partners');">
+                                <label class="clients-toogle s2" for="toggle">    
+                                </label>
+                           
                             <a href="#" ><span>For clients</span></a>
                             <a href="../partners/index.html" onclick="switchClicked(this, 's2', '/partners');"><span>For parents</span></a>
                             </div>
@@ -212,11 +214,12 @@
     <div class="tittle">
         <div class="wrapper">
             <div class="toggle-switch">
-                <div class="toggle-custom switch clents-toogle-color">
-                    <label for="toggle" class="clients-toogle s2" onclick="switchClicked(this, 's2', '/partners');" >    
-                        <input type="checkbox">
+                <div class="toggle-custom switch clients-toogle ">
+                    <input type="checkbox" onclick="switchClicked(this, 's2', '/partners');">
+                    <label class="clients-toogle s2" for="toggle">    
                     </label>
-                    <a href=""><span>For clients</span></a>
+                    
+                    <a href="#"><span>For clients</span></a>
                     <a href="../partners/index.html" onclick="switchClicked(this, 's2', '/partners');"><span>For parents</span></a>
                 </div>
             </div>
