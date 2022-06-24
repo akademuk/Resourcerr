@@ -148,7 +148,7 @@
 }
 @media (max-width: 1200px) {
     h6 {
-        font-size: 60px;
+        font-size: 60px !important;
     }
     .starter-partners {
         padding-left: 80px;
@@ -165,7 +165,7 @@
 }
 @media (max-width: 992px) {
     h6 {
-        font-size: 50px;
+        font-size: 50px !important;
     }
     .starter-partners {
         padding-left: 60px;
@@ -185,7 +185,7 @@
 }
 @media (max-width: 768px) {
     h6 {
-        font-size: 35px;
+        font-size: 35px !important;
     }
     .starter-partners .starter-wrapper{
         align-items: baseline;
