@@ -2,9 +2,9 @@ var modal1 = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 var button = document.getElementsByClassName("close-modal-message")[0];
-btn.onclick = function() {
-modal1.style.display = "block";
-}
+// btn.onclick = function() {
+// modal1.style.display = "block";
+// }
 span.onclick = function() {
   modal1.style.display = "none";
 }
