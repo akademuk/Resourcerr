@@ -152,6 +152,10 @@ header .logotype {
   border-bottom: 1px solid #151515;
 }
 
+header .logotype p {
+  margin-bottom: 0;
+}
+
 .logotype-text {
   font-size: 12px;
   line-height: 120%;
@@ -717,7 +721,7 @@ header .logotype {
   width: 17px;
   height: 17px;
   position: absolute;
-  top: 3px;
+  top: 1px !important;
   left: 4px;
   border-radius: 50%;
   background-color: #fff;
@@ -3111,6 +3115,7 @@ h3:nth-of-type(4)::before {
 .modal-content {
   margin: 0 auto;
   width: 1200px;
+  background: transparent;
 }
 
 .close {
@@ -3435,6 +3440,12 @@ h3:nth-of-type(4)::before {
   }
   .logotype-text {
     display: none;
+  }
+  .modul-window-main {
+    padding-top: 50px;
+  }
+  h3 {
+    margin-top: 50px;
   }
 }
 

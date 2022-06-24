@@ -358,6 +358,7 @@ h3 {
 .modal-content {
   margin: 0 auto; 
   width: 1200px; 
+  background: transparent;
 }
 .close {
   color: #aaa;
@@ -712,6 +713,12 @@ h3 {
 }
 .logotype-text {
   display: none;
+}
+.modul-window-main {
+  padding-top: 50px;
+}
+h3 {
+  margin-top: 50px;
 }
 }
 @media (max-width:352px) {

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/starter.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title></title>
 </head>
   <body>
@@ -34,8 +35,10 @@
   </body>
 
 <script>
-  $(".red").hover( function (e) {
-    $(this).toggleClass('hover', e.type === 'mouseenter');
-});
+    $(document).ready(function() {
+        $(".red").hover(function (e) {
+            $(this).toggleClass('hover', e.type === 'mouseenter');
+        });
+    });
 </script>
 </html>

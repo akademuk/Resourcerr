@@ -17,6 +17,9 @@ header {
         display: flex;
         align-items: center;
         border-bottom: 1px solid #151515;
+        p {
+            margin-bottom: 0;
+        }
     }
 }
 .logotype-text {
