@@ -12,7 +12,7 @@
 </head>
   <body>
       <div class="starter">
-          <div class="starter-clients container-hover" onclick="parent.location='../clients'">
+          <div class="starter-clients container-hover first hover" onclick="parent.location='../clients'">
          <div class="starter-wrapper">
           <h6 class="clients">For <span>clients</span></h6>
           <p>Get help with the search for <br> reliable lead generation contractor</p>
@@ -21,7 +21,7 @@
           </a>
          </div>
           </div>
-          <div class="starter-partners container-hover" onclick="parent.location='../partners'"> 
+          <div class="starter-partners container-hover second" onclick="parent.location='../partners'"> 
            <div class="starter-wrapper">
             <h6 class="partners">For <span>partners</span></h6>
             <p>Get new clients that need  lead <br> generation services</p>
@@ -37,9 +37,16 @@
 <script>
   
     $(document).ready(function() {
-      $( ".starter-clients" ).addClass( "hover" );
-        $(".container-hover").hover(function (e) {
-            $(this).toggleClass('hover', e.type === 'mouseenter');
+     
+        $(".container-hover.first").hover(function (e) {
+          $(this).addClass('hover')
+          $(".container-hover.second").removeClass('hover') 
+            // $(this).toggleClass('hover', e.type === 'mouseenter');
+        });
+        $(".container-hover.second").hover(function (e) {
+          $(this).addClass('hover')
+          $(".container-hover.first").removeClass('hover') 
+            // $(this).toggleClass('hover', e.type === 'mouseenter');
         });
     });
 </script>
