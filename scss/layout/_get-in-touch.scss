@@ -5,8 +5,9 @@
         h2 {
             margin-top: 0;
             color: white;
-            margin-left: 55%;
+            margin-left: 50%;
             position: relative;
+            margin-bottom: 0;
             span {
                 filter: drop-shadow(2px 2px #fff);
             }
@@ -28,9 +29,9 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-top: 80px;
 }
 .get-in-touch-container_contact {
-    padding-top: 50px;
     width: 30%;
     line-height: 150%;
     color: white;
@@ -44,7 +45,7 @@
     }
     p {
         font-size: 20px;
-        margin-bottom: 45px;
+        margin-bottom: 40px;
         line-height: 150%;
     }
     a {
@@ -54,16 +55,6 @@
         margin-bottom: 45px;
     }
 }
-.get-in-touch-container_form {
-    width: 45%;
-    form {
-        display: flex;
-        flex-direction: column;
-        input,textarea {
-            width: 100% !important;
-        }
-    }
-}
 .get-in-touch-container_contact-icon {
     padding-top: 10px;
     display: flex;
@@ -71,7 +62,7 @@
         width: 60px;
         height: 60px;
         border: 2px solid #FFFFFF;
-        border-radius: 15px;
+        border-radius: 16px;
         padding: 5px;
         display: flex;
         align-items: center;
@@ -96,16 +87,18 @@
     }
 }
 .get-in-touch-container_form {
+    width: 50%;
    form {
-       margin-top: 50px;
+    display: flex;
+    flex-direction: column;
     input, textarea {
         width:80%;
-        height: 40px;
+        height: 55px;
         background: transparent;
         border-radius: 16px;
-        margin-bottom: 28px;
+        margin-bottom: 16px;
         border:  1px solid #8A8A8A;
-        padding-left: 10px;
+        padding-left: 15px;
         font-weight: 600;
         font-size: 18px;
         line-height: 140%;
@@ -120,33 +113,41 @@
           box-shadow: 0 1px 0 #51E589, inset 0 1px 0 #0EC3B5;
         }
    }
+   textarea {
+    height: 120px !important;
+    margin-bottom: 40px;
+   }
 }
+}
+.btn-send-request-white {
+    width: 112px;
+    height: 112px;
+    background:white !important;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 115%;
+    @include text-center;
+    color: #151515;
+    margin-right: 40px;
+    padding: 45px;
 }
 .get-in-touch-submit {
-    @include text-center;
-    width:80%;
-    button{
-      width: 112px;
-      height: 112px;
-      background: white;
-      border-radius: 50%;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 115%;
-      @include text-center;
-      color: #151515;
-      margin-right: 40px;
-      padding: 45px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width:100%;
     p {
-      font-size: 18px;
-      line-height: 140%;
-      display: flex;
-      flex-wrap: wrap;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 140%;
-      color: #FFFFFF;
+        width: 40%;
+        font-size: 18px;
+        line-height: 140%;
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-bottom: 0
     }
 }
 .partners-get-in-touch {

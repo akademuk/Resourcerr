@@ -1,21 +1,23 @@
 /*About Us client --------------------------------------------*/
 .about-us {
-    padding-top: 100px;
+    padding-top: 120px;
     .wrapper {
         display: flex;
         height: 100%;
         align-items: flex-start;
         .about-us_img {
-            width: 55%;
+            width: 50%;
         }
         .about-us_read-more {
-            width: 45%;
+            width: 50%;
             h2 {
                 margin-top: 0;
                 margin-bottom: 40px;
                 position: relative;
                 span {
-                    filter: drop-shadow(2px 0px #151515);
+                    filter: drop-shadow(3px 3px #151515);
+                    -webkit-text-stroke: 1px #151515;
+
                 }
                 &:before {
                     content: "01";
