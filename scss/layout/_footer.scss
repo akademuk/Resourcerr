@@ -158,7 +158,7 @@
 @media (max-width: 576px) {
     .footer-navigation {
         width: 95%;
-        padding-left: 5%;
+        padding-left: 0;
     }
 .footer-logo {
     margin-bottom: 30px;
@@ -167,20 +167,35 @@
     nav  {
         ul  {
             li  {
+                margin-bottom: 20px;
                 a {
-                    font-size: 3vw;
+                    font-size: 13px;
                 }
             }
         }
     }
 }
 .footer-module {
+    margin-left: 15%;
     .toggle-switch  {
         .toggle-custom {
             a {
-                font-size: 3vw;
+                font-size: 13px;
+                &:nth-of-type(1) {
+                    margin-bottom: 20px;
+                }
             }
         }
     }
+    button {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+}
+.footer {
+    padding-top: 35px;
+}
+.footer-text {
+    bottom: -80px;
 }
 }

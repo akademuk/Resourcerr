@@ -143,17 +143,17 @@
     }
 }
 }
-/*@media max-width: 568px --------------------------------------------*/
-@media (max-width: 568px){
+/*@media max-width: 576px --------------------------------------------*/
+@media (max-width: 576px){
 .send-request {
     height: 100%;
     position: static;
-    margin-top: 50px;
+    margin-top: 80px;
     .wrapper {
         height: auto;
-        padding: 40px 28px 50px 28px;
+        padding: 40px 28px 40px 28px;
         flex-direction: column;
-        margin-bottom: 50px;
+        margin-bottom: 0;
         img {
             &:nth-of-type(1) {
                 bottom: 10vh;
@@ -176,8 +176,8 @@
         }
         .send-request-text {
             font-size: 28px;
-            width: 90%;
-            margin-bottom: 50px;
+            width: 100%;
+            margin-bottom: 30px;
             word-wrap: break-word;
         }
         .btn-send-request {

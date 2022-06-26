@@ -129,6 +129,18 @@ header {
   }
 }
 
+@media (max-width: 576px) {
+  .wrapper {
+    width: 90% !important;
+  }
+  h2 {
+    font-size: 40px !important;
+  }
+  h2::before {
+    content: none !important;
+  }
+}
+
 header {
   width: 100%;
   height: 80px;
@@ -999,25 +1011,44 @@ h1 .partners::after {
 
 /*@media max-width: 576px --------------------------------------------*/
 @media (max-width: 576px) {
+  .tittle {
+    padding-bottom: 78px;
+  }
+  .tittle .wrapper {
+    padding-top: 117px;
+  }
+  .tittle .wrapper .toggle-switch {
+    margin-left: 0;
+  }
+  .tittle .wrapper .toggle-switch .toggle-custom a {
+    font-size: 14px;
+  }
+  .tittle-container {
+    margin-top: 35px;
+  }
+  h1 {
+    font-size: 56px;
+  }
+  h1 span {
+    margin-left: 28px;
+  }
+  h1 span:after {
+    top: 10px;
+  }
+  h1 br:nth-of-type(2) {
+    display: none;
+  }
   .tittle-container-btn {
-    padding-left: 15%;
+    padding-left: 0;
+    margin-top: 48px;
+  }
+  .tittle-container-btn p {
+    font-size: 14px;
   }
   .tittle-container-btn .btn-send-request {
     width: 88px;
     height: 88px;
     font-size: 12px;
-  }
-  .tittle-container-btn p {
-    font-size: 14px;
-  }
-  .tittle .wrapper .toggle-switch {
-    margin-left: 15%;
-  }
-  h1 span:after {
-    top: 10px;
-  }
-  .tittle-partners br {
-    display: none !important;
   }
 }
 
@@ -1150,6 +1181,31 @@ h1 .partners::after {
   }
   .achievements-text {
     font-size: 14px;
+  }
+}
+
+/*@media min-width: 576px --------------------------------------------*/
+@media (max-width: 576px) {
+  .achievements {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  .achievements .wrapper .achievements-section {
+    width: 45%;
+  }
+  .achievements .wrapper .achievements-section:nth-of-type(1) {
+    margin-right: 5%;
+  }
+  .achievements .wrapper .achievements-section:nth-of-type(2) {
+    margin-right: 0;
+  }
+  .achievements .wrapper .achievements-section:nth-of-type(3) {
+    margin-right: 5%;
+    margin-bottom: 0;
+  }
+  .achievements .wrapper .achievements-section:nth-of-type(4) {
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1386,14 +1442,25 @@ h1 .partners::after {
 
 /*@media max-width: 576px --------------------------------------------*/
 @media (max-width: 576px) {
+  .about-us {
+    padding-top: 80px;
+  }
   .about-us .wrapper .about-us_read-more {
     width: 100%;
   }
   .about-us .wrapper .about-us_read-more h2 {
     font-size: 48px;
+    margin-bottom: 20px;
   }
   .about-us .wrapper .about-us_read-more h2:before {
     content: none;
+  }
+  .about-us .wrapper .about-us_read-more p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .about-us_read-more button {
+    margin-top: 24px;
   }
 }
 
@@ -1531,18 +1598,18 @@ h1 .partners::after {
   }
 }
 
-/*@media max-width: 568px --------------------------------------------*/
-@media (max-width: 568px) {
+/*@media max-width: 576px --------------------------------------------*/
+@media (max-width: 576px) {
   .send-request {
     height: 100%;
     position: static;
-    margin-top: 50px;
+    margin-top: 80px;
   }
   .send-request .wrapper {
     height: auto;
-    padding: 40px 28px 50px 28px;
+    padding: 40px 28px 40px 28px;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
   .send-request .wrapper img:nth-of-type(1) {
     bottom: 10vh;
@@ -1564,8 +1631,8 @@ h1 .partners::after {
   }
   .send-request .wrapper .send-request-text {
     font-size: 28px;
-    width: 90%;
-    margin-bottom: 50px;
+    width: 100%;
+    margin-bottom: 30px;
     word-wrap: break-word;
   }
   .send-request .wrapper .btn-send-request {
@@ -1576,7 +1643,7 @@ h1 .partners::after {
   }
 }
 
-@media (max-width: 568px) and (orientation: landscape) {
+@media (max-width: 576px) and (orientation: landscape) {
   .send-request {
     margin-top: 50px !important;
   }
@@ -1933,111 +2000,40 @@ h1 .partners::after {
   .why-we-ar {
     margin-top: 80px;
   }
-  .why-we-ar .wrapper h2 {
-    text-align: left !important;
-    font-size: 40px;
-    margin-left: 0;
-  }
-  .why-we-ar .wrapper h2 span {
-    display: block !important;
-  }
-  .why-we-ar .wrapper h2::before {
-    content: none;
-  }
-  .why-we-tittle-text {
-    margin-left: 0 !important;
-    text-align: left !important;
-    font-size: 16px;
-  }
-  .slick-slide {
-    margin: 0 1px;
-  }
-  .slick-list {
-    margin: 0 -1px;
-  }
-  .why-we-ar-flex {
-    margin-top: 40px;
-    height: auto;
-  }
-  .why-we-ar-flex .why-we-ar-container {
-    position: relative;
-    height: calc(40vh + 100px);
-  }
-  .why-we-ar-flex .why-we-ar-container:nth-of-type(2) {
-    margin-top: 0;
-  }
-  .br {
-    display: none;
-  }
-  .why-we-ar-container_text {
-    font-size: 16px;
-    position: absolute;
-    bottom: 32px;
-    left: 5%;
-  }
-  .why-we-ar-container_img img {
-    height: auto !important;
-    object-fit: contain !important;
-  }
-}
-
-@media (max-width: 576px) and (orientation: landscape) {
   .why-we-ar .wrapper {
-    align-items: flex-start;
+    align-items: center;
   }
   .why-we-ar .wrapper h2 {
-    margin-left: 0;
-  }
-  .why-we-ar .wrapper h2:before {
-    content: none;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: left !important;
   }
   .why-we-ar .wrapper h2 span {
-    filter: drop-shadow(2px 0px #151515);
+    display: flex !important;
   }
   .why-we-ar .wrapper .why-we-tittle-text {
-    margin-left: 0;
-  }
-  .slick-slide {
-    margin: 0 2px;
-  }
-  .slick-list {
-    margin: 0 -2px;
+    font-size: 16px;
+    margin-bottom: 0;
   }
   .why-we-ar-flex {
-    margin-top: 40px;
-    height: 100%;
+    width: 280px;
   }
   .why-we-ar-flex .why-we-ar-container {
+    justify-content: space-between;
     display: flex !important;
-    flex-direction: row;
-    padding: 0;
-    height: 50vh;
+    height: 378px !important;
   }
-  .why-we-ar-flex .why-we-ar-container:nth-of-type(2) {
-    margin-top: 0;
+  .why-we-ar-flex .slick-dots {
+    bottom: -90px !important;
   }
-  .why-we-ar-flex .why-we-ar-container .why-we-ar-container_img {
-    height: 100% !important;
-    width: 90%;
+  .why-we-ar-container {
+    margin: 0 !important;
   }
-  .why-we-ar-flex .why-we-ar-container .why-we-ar-container_img img {
-    width: 100%;
-    height: 100% !important;
-    object-fit: cover !important;
-    border-radius: 24px 0 0 24px;
+  .why-we-ar-container .why-we-ar-container_img {
+    height: 242px !important;
   }
-  .why-we-ar-flex .why-we-ar-container_text {
-    position: static !important;
-    padding: 20px 20px 0 20px !important;
-  }
-}
-
-@media (max-width: 320px) {
-  .why-we-ar-flex .why-we-ar-container {
-    height: 70vh;
-  }
-  .why-we-ar-flex .why-we-ar-container .why-we-ar-container_text {
-    font-size: 14px;
+  .why-we-ar-container .why-we-ar-container_text {
+    font-size: 16px !important;
   }
 }
 
@@ -2353,15 +2349,29 @@ h5 {
 
 /*@media min-width: 576px --------------------------------------------*/
 @media (max-width: 576px) {
+  .how-it-works-container-info {
+    width: 100%;
+  }
   .how-it-works-container-info img {
     display: none;
+  }
+  .how-it-works-container-info:after {
+    content: none !important;
   }
   .how-it-works-container {
     margin-top: 50px;
   }
+  .how-it-works {
+    padding-bottom: 110px;
+  }
+  .how-it-works .wrapper {
+    align-items: flex-start;
+  }
   .how-it-works .wrapper h2 {
-    margin-top: 40px;
+    margin-top: 80px;
     font-size: 40px;
+    margin-left: 0;
+    margin-bottom: 48px;
   }
   .how-it-works .wrapper h2:before {
     content: none;
@@ -2369,20 +2379,21 @@ h5 {
   .how-it-works .wrapper h2 span {
     filter: drop-shadow(2px 0px #fff);
   }
+  h5 {
+    font-size: 28px;
+    margin-bottom: 13px;
+  }
+  .how-it-works-container-info_text {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
+  }
   .how-it-works-container {
     margin-top: 0;
   }
   .how-it-works-container-info {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin: 0 0 40px 0 !important;
   }
-}
-
-.s2.checked:after {
-  -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide 0.5s forwards;
-  animation-delay: 2s;
 }
 
 /*Reviews client --------------------------------------------*/
@@ -2593,20 +2604,24 @@ h4 {
 @media (max-width: 576px) {
   .reviews {
     height: 100%;
-    padding-top: 50px;
+    padding-top: 80px;
   }
-  .reviews h2 {
+  .reviews .wrapper h2 {
     font-size: 40px;
     margin-left: 0;
-    padding-left: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
-  .reviews h2::before {
-    content: none;
-  }
-  .reviews h2 span {
+  .reviews .wrapper h2 span {
     font-size: 40px;
     filter: drop-shadow(2px 2px #151515);
+  }
+  .reviews .wrapper .slider {
+    margin-top: 40px;
+  }
+  .reviews .wrapper .slider .slick-list .slider__item {
+    justify-content: flex-start;
+    padding: 40px 28px 33px 28px;
+    height: 100% !important;
   }
   .slick-next,
   .slick-prev {
@@ -2620,12 +2635,14 @@ h4 {
   }
   .slider .slider__item h4 {
     font-size: 18px;
+    margin-bottom: 16px;
   }
   .slider .slider__item h4::before {
     content: none !important;
   }
   .slider .slider__item p {
     font-size: 13px;
+    margin-bottom: 65px;
   }
   .slider .slider__item span {
     font-size: 13px;
@@ -2748,17 +2765,6 @@ h4 {
 .modul-window-main form {
   width: 100%;
   margin-bottom: 120px;
-}
-
-.modul-window-main form label {
-  font-size: 16px;
-  line-height: 140%;
-  text-align: right;
-  width: 320px !important;
-  display: inline-block;
-  margin-right: 14px;
-  color: #8A8A8A;
-  position: relative;
 }
 
 .modul-window-main form input, .modul-window-main form textarea {
@@ -3311,12 +3317,6 @@ h3:nth-of-type(4)::before {
     box-sizing: border-box;
     height: 200px;
   }
-  .modul-window-main .clients label {
-    font-size: 5vw !important;
-    width: auto !important;
-    text-align: left;
-    margin-bottom: 10px;
-  }
   .modul-window-main h3 {
     margin-left: 0;
   }
@@ -3440,7 +3440,7 @@ h3:nth-of-type(4)::before {
 
 @media (max-width: 576px) {
   .modul-window-header p {
-    font-size: 5vw;
+    font-size: 14px;
   }
   .submit-recommendation span {
     display: block;
@@ -3455,13 +3455,59 @@ h3:nth-of-type(4)::before {
     padding-top: 50px;
   }
   h3 {
-    margin-top: 50px;
+    margin-top: 0 !important;
+    font-size: 24px;
+    margin-bottom: 24px;
   }
-}
-
-@media (max-width: 352px) {
-  .modal-message {
-    padding: 20px;
+  .form-row {
+    height: auto !important;
+    justify-content: flex-start;
+    margin-right: 0 !important;
+    margin-bottom: 20px !important;
+    margin-left: 0 !important;
+  }
+  .form-row label {
+    font-size: 14px !important;
+    height: auto !important;
+    margin-bottom: 4px !important;
+  }
+  .form-row input {
+    margin-left: 0;
+    height: 42px !important;
+    margin-bottom: 0 !important;
+  }
+  .form-row textarea {
+    height: 96px !important;
+    margin-left: 0 !important;
+  }
+  .iti.iti--allow-dropdown {
+    margin-left: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .clients .form-row:nth-of-type(6) {
+    margin-bottom: 80px !important;
+  }
+  .clients .form-row:nth-of-type(12) {
+    margin-bottom: 80px !important;
+  }
+  .clients .form-row:nth-of-type(16) {
+    margin-bottom: 80px !important;
+  }
+  .clients .form-row:nth-of-type(21) {
+    margin-bottom: 30px !important;
+  }
+  .submit-recommendation {
+    font-size: 12px !important;
+    margin-left: 24px;
+  }
+  .modul-window-main form {
+    margin-bottom: 40px;
+  }
+  .form-row .invalid-feedback {
+    top: -2px;
+    left: 75%;
+    width: 27%;
+    font-size: 8px;
   }
 }
 
@@ -3705,7 +3751,7 @@ h3:nth-of-type(4)::before {
 /*@media min-width: 576px --------------------------------------------*/
 @media (max-width: 576px) {
   .get-in-touch {
-    padding: 50px 0;
+    padding: 80px 0;
   }
   .get-in-touch .wrapper {
     padding-left: 0;
@@ -3720,16 +3766,23 @@ h3:nth-of-type(4)::before {
   .get-in-touch .wrapper h2 span {
     filter: drop-shadow(2px 0px #fff);
   }
+  .get-in-touch .wrapper .get-in-touch-container {
+    margin-top: 32px;
+  }
   .get-in-touch-container_form form {
     width: 100%;
+    margin-bottom: 84px;
   }
   .get-in-touch-container_form form input {
+    height: 47px;
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 12px;
   }
   .get-in-touch-container_form form textarea {
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 28px;
   }
   .get-in-touch-container_form .get-in-touch-submit {
     flex-direction: row-reverse;
@@ -3758,10 +3811,16 @@ h3:nth-of-type(4)::before {
   }
   .get-in-touch-container_contact p, .get-in-touch-container_contact a {
     font-size: 16px;
+    margin-bottom: 20px;
   }
   .get-in-touch-container_contact-icon a {
     width: 46px;
     height: 46px;
+    margin-bottom: 0;
+  }
+  .get-in-touch-container_contact-icon a svg {
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -4000,6 +4059,27 @@ h3:nth-of-type(4)::before {
   .question-container-accordions h2::before {
     content: none;
   }
+  .question {
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+  .question .wrapper {
+    align-items: flex-start;
+  }
+  .question .wrapper h2 {
+    margin-left: 0;
+  }
+  .question .wrapper .question-container {
+    margin-top: 32px;
+  }
+  .accordion__button {
+    padding: 20px 50px 20px 0;
+  }
+  .accordion-panel__content {
+    padding: 0 50px 20px 0;
+    margin-bottom: 0;
+    font-size: 13px;
+  }
 }
 
 .footer {
@@ -4169,16 +4249,35 @@ h3:nth-of-type(4)::before {
 @media (max-width: 576px) {
   .footer-navigation {
     width: 95%;
-    padding-left: 5%;
+    padding-left: 0;
   }
   .footer-logo {
     margin-bottom: 30px;
   }
+  .footer-navigation nav ul li {
+    margin-bottom: 20px;
+  }
   .footer-navigation nav ul li a {
-    font-size: 3vw;
+    font-size: 13px;
+  }
+  .footer-module {
+    margin-left: 15%;
   }
   .footer-module .toggle-switch .toggle-custom a {
-    font-size: 3vw;
+    font-size: 13px;
+  }
+  .footer-module .toggle-switch .toggle-custom a:nth-of-type(1) {
+    margin-bottom: 20px;
+  }
+  .footer-module button {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .footer {
+    padding-top: 35px;
+  }
+  .footer-text {
+    bottom: -80px;
   }
 }
 /*# sourceMappingURL=style.css.map */

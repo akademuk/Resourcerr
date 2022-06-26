@@ -213,17 +213,27 @@
 /*@media max-width: 576px --------------------------------------------*/
 @media (max-width: 576px) {
 .about-us  {
+    padding-top: 80px;
     .wrapper  {
         .about-us_read-more {
             width: 100%;
             h2 { 
                 font-size: 48px; 
+                margin-bottom: 20px;
                 &:before {
                     content: none;
                 } 
             }
+            p {
+                font-size: 16px;
+                margin-bottom: 0;
+            }
         }
     }
 }
-
+.about-us_read-more  {
+    button {
+        margin-top: 24px;
+    }
+}
 }

@@ -127,3 +127,14 @@ h2 {
         box-sizing: border-box;
     }
   }
+  @media (max-width:576px) {
+    .wrapper {
+        width: 90% !important;
+    }
+    h2 {
+        font-size: 40px !important;
+        &::before {
+            content: none !important;
+        }
+    }
+  }

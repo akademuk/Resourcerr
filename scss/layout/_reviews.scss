@@ -190,18 +190,26 @@ h4 {
 @media (max-width: 576px) {
 .reviews {
     height: 100%;
-    padding-top: 50px;
-    h2 {
-        font-size: 40px;
-        margin-left: 0;
-        padding-left: 30px;
-        margin-bottom: 30px;
-        &::before {
-            content: none;
-        }
-        span {
+    padding-top: 80px;
+  .wrapper {
+        h2 {
             font-size: 40px;
-            filter: drop-shadow(2px 2px #151515);
+            margin-left: 0;
+            margin-bottom: 0;
+            span {
+                font-size: 40px;
+                filter: drop-shadow(2px 2px #151515);
+            }
+        }
+        .slider  {
+            margin-top: 40px;
+            .slick-list  {
+                .slider__item {
+                    justify-content: flex-start;
+                    padding: 40px 28px 33px 28px;
+                    height: 100% !important;
+                }
+            }
         }
     }
 }
@@ -219,12 +227,14 @@ h4 {
     .slider__item {
         h4 {
             font-size: 18px;
+            margin-bottom: 16px;
             &::before {
                 content: none !important;
             }
         }
         p {
             font-size: 13px;
+            margin-bottom: 65px;
         }
         span {
             font-size: 13px;
