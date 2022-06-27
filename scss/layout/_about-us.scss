@@ -16,7 +16,7 @@
                 position: relative;
                 span {
                     filter: drop-shadow(3px 3px #151515);
-
+                    -webkit-text-stroke: 1px #151515;
                 }
                 &:before {
                     content: "01";

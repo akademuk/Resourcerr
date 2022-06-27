@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Sora:wght@400;600;700;800&display=swap');
+
 
 body {
     font-family: 'Sora', sans-serif;
@@ -86,12 +88,14 @@ html {
     }
 }
 h2 {
+    font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-size: 64px;
     line-height: 120%;
     color: $cod-gray;
     margin-top: 40px;
     span {
+        font-family: 'Poppins', sans-serif;
         background: linear-gradient(90.96deg, #0EC4B5 0%,#51E689 99.64%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

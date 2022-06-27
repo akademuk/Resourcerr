@@ -85,7 +85,8 @@ h4 {
         margin-top: 0;
         position: relative;
         span {
-              filter: drop-shadow(4px 4px #151515);
+            filter: drop-shadow(3px 3px #151515);
+            -webkit-text-stroke: 1px #151515;
         }
         &::before {
             content: "04";

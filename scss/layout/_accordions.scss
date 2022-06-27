@@ -19,6 +19,10 @@
         top: 0;
         left: -47px !important;
     }
+    span {
+      filter: drop-shadow(3px 3px #151515);
+      -webkit-text-stroke: 1px #151515;
+    }
     }
     .question-container-img {
       width: 50%;

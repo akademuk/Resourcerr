@@ -9,7 +9,8 @@
             position: relative;
             margin-bottom: 0;
             span {
-                filter: drop-shadow(2px 2px #fff);
+                filter: drop-shadow(3px 3px #fff);
+                    -webkit-text-stroke: 1px #151515;
             }
             &::before {
                 content: "05";

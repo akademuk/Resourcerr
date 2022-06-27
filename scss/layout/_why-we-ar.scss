@@ -10,7 +10,8 @@
             position: relative;
             margin-top: 0;
             span {
-                filter: drop-shadow(3px 2px #151515);
+                filter: drop-shadow(3px 3px #151515);
+                -webkit-text-stroke: 1px #151515;
             }
             &:before {
                 content: "02";
