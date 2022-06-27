@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadReCaptchaInvisible&render=explicit" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
@@ -36,7 +37,8 @@
                     </span>
                 </div>
                 <div class="modul-window-main">
-                    <form class="clients partners-form">
+
+               <form id="form-requirements-of-the-project" class="clients partners-form needs-validation" novalidate action="https://resourcerr.io/api/client/requirements/" method="POST" >
                     <label for="name">Full name</label>
                     <input type="name" id="name" required>
 
@@ -91,7 +93,8 @@
                         <input type="file" name="file-upload-input" id="file-upload-input">
                         </div>
                     </div>
-
+                   <div id="recaptcha1"></div>
+                   <input type="hidden" name="captcha" value="idCaptcha1">
                     <input type="submit" value="Submit" class="submit-form" id="myBtn">                          
                     <p class="submit-recommendation">Click to Submit I agree to the <span> Terms of Use</span></p>
                     </form>
@@ -465,11 +468,13 @@
                 </div>
             </div>
             <div class="get-in-touch-container_form">
-                <form class="partners-form">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <input type="text" id="phone" placeholder="Phone" />
+                <form id="get-in-touch" class="partners-form needs-validation" novalidate action="https://resourcerr.io/api/partner/get-in-touch/" method="POST" >
+                    <input name="full_name" type="text"  placeholder="Name">
+                    <input name="email" type="email" placeholder="Email">
+                    <input name="phone" type="phone" placeholder="Phone"/>
                     <textarea cols="30" rows="10" placeholder="Your question"></textarea>
+                    <div id="recaptcha2"></div>
+                    <input type="hidden" name="captcha" value="idCaptcha2">
                     <div class="get-in-touch-submit">
                         <button class="btn-send-request-white">Send <br> request</button>
                         <p>Send a request and our consultants will contact you within an hour</p>
@@ -600,7 +605,7 @@ fileInput.onchange = function() {
 </script>
 
 
-
+<script src="../env.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
 
 <script src="../script/phone-number.js"></script>
@@ -613,5 +618,7 @@ fileInput.onchange = function() {
 <script src="../script/reviews.js"></script>
 <script src="../script/accordions.js"></script>
 <script src="../script/paralax.js"></script>
+<script src="../script/recaptcha.js"></script>
+<script src="../script/form.js"></script>
 </body>
 </html>

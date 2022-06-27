@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadReCaptchaInvisible&render=explicit" async defer></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -38,7 +39,7 @@
                     </span>
                 </div>
                 <div class="modul-window-main">
-                    <form id="form-requirements-of-the-project" class="clients needs-validation" novalidate action="http://resourcerr.io/api/client/requirements/" method="POST" >
+                    <form id="form-requirements-of-the-project" class="clients needs-validation" novalidate action="https://resourcerr.io/api/client/requirements/" method="POST" >
 
                     <!------------------------>
                     <h3>Corporate details</h3>
@@ -172,8 +173,8 @@
 
                     <div class="form-row">
                         <label for="conversion">Calls to deals closed conversion</label>
-                        <input type="text" id="conversion" name="product_overview[Calls_to_deals_closed_conversion]"
-                        autocomplete="Calls_to_deals_closed_conversion" class="form-control" 
+                        <input type="text" id="conversion" name="product_overview[calls_to_deals_closed_conversion]"
+                        autocomplete="calls_to_deals_closed_conversion" class="form-control"
                         pattern="^[A-Za-z\-\s]{3,50}$" required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
@@ -220,7 +221,9 @@
                         pattern="^[A-Za-z\-\s]{3,50}$" required></textarea>
                         <div class="invalid-feedback">This field is required</div>
                     </div>
-                    <!------------------------>
+                        <div id="recaptcha1"></div>
+                        <input type="hidden" name="captcha" value="idCaptcha1">
+                        <!------------------------>
                     <input type="submit" value="Submit" class="submit-form" id="myBtn">
                     <p class="submit-recommendation">Click to Submit I agree to the <span> Terms of Use</span></p>
                     </form>
@@ -592,11 +595,13 @@
                 </div>
             </div>
             <div class="get-in-touch-container_form">
-                <form action="get" class="clients">
-                    <input type="text">
-                    <input type="email" placeholder="Email">
-                    <input type="tel" placeholder="Phone"/>
+                <form id="get-in-touch" class="clients needs-validation" novalidate action="https://resourcerr.io/api/client/get-in-touch/" method="POST" >
+                    <input name="full_name" type="text"  placeholder="Name">
+                    <input name="email" type="email" placeholder="Email">
+                    <input name="phone" type="tel" placeholder="Phone"/>
                     <textarea cols="30" rows="10" placeholder="Your question"></textarea>
+                    <div id="recaptcha2"></div>
+                    <input type="hidden" name="captcha" value="idCaptcha2">
                     <div class="get-in-touch-submit">
                         <button class="btn-send-request-white">Send</button>
                         <p>Send a request and our consultants will contact you within an hour</p>
@@ -710,7 +715,7 @@
             <p class="footer-text">© 2022 Resorcerr. All rights reserved.</p>
         </div>
     </footer>
-
+<script src="../env.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
 <script src="../script/phone-number.js"></script>
 <script src="../script/switchToToggle.js"></script>
@@ -723,6 +728,7 @@
 <script src="../script/accordions.js"></script>
 <script src="../script/paralax.js"></script>
 <script src="../script/read-more.js"></script>
+<script src="../script/recaptcha.js"></script>
 <script src="../script/form.js"></script>
 </body>
 </html>

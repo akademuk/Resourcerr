@@ -12,11 +12,18 @@
                     event.stopPropagation();
                 } else {
 
-                    //do your ajax submition here
-                    let callbackResult = new RequirementsOfTheProject
-                    submitAjaxForm(form, callbackResult.callbackSuccess, callbackResult.callbackFail);
                     event.preventDefault();
                     event.stopPropagation();
+                    let formParams = new FormEventParams
+
+                    //captcha
+                    let idCaptcha = $("[name='captcha']",$(form)).val()
+
+                    grecaptcha.execute(window[idCaptcha]) // todo: check window[idCaptcha]
+                        .then(function (token) {
+                            //do your ajax submition here
+                            submitAjaxForm(form, formParams.callbackSuccess, formParams.callbackFail, token);
+                        });
 
                     return true;
                 }
@@ -27,7 +34,7 @@
 })();
 
 
-class RequirementsOfTheProject{
+class FormEventParams{
      callbackSuccess(){
          //show modal
          var modal1 = document.getElementById("myModal");
@@ -40,26 +47,28 @@ class RequirementsOfTheProject{
 }
 
 
-function submitAjaxForm(form, callbackSuccess, callbackFail) {
+function submitAjaxForm(form, callbackSuccess, callbackFail, gToken) {
     $(document).ready(function () {
         let action = form.getAttribute("action")
-        let formData = $(form).serializeArray().reduce(function(obj, item) {
+        let formData = $(form).serializeArray().reduce(function (obj, item) {
             obj[item.name] = item.value;
             return obj;
         }, {});
         try{
-            $.ajax({
-                type: "POST",
-                url: action,
-                data: formData,
-                dataType: "json",
-                encode: true,
-            }).done(function (data) {
-                callbackSuccess()
-            })
-            //     .error(function() {
-            //     callbackFail() //todo: check
-            // })
+        formData['g-recaptcha-response'] = gToken;
+
+        $.ajax({
+            type: "POST",
+            url: action,
+            data: formData,
+            dataType: "json",
+            encode: true,
+        }).done(function (data) {
+            callbackSuccess()
+        })
+        //     .error(function() {
+        //     callbackFail() //todo: check
+        // })
         }
         catch (e){
             alert(e);
