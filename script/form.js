@@ -47,7 +47,7 @@ function submitAjaxForm(form, callbackSuccess, callbackFail) {
             obj[item.name] = item.value;
             return obj;
         }, {});
-
+        try{
             $.ajax({
                 type: "POST",
                 url: action,
@@ -60,6 +60,11 @@ function submitAjaxForm(form, callbackSuccess, callbackFail) {
             //     .error(function() {
             //     callbackFail() //todo: check
             // })
+        }
+        catch (e){
+            alert(e);
+        }
+
 
     })
 }
