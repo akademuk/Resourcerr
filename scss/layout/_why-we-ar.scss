@@ -123,24 +123,14 @@
 }
 
 }
-/*@media (min-width: 992px) and (max-width: 1200px)  --------------------------------------------*/
-@media (min-width: 992px) and (max-width: 1200px) {
-@media (orientation:landscape) {
-    .why-we-ar-flex {
-        .why-we-ar-container {
-            height: 50vh;
-            .why-we-ar-container_img {
-                height: 50%;
-                img {
-                    height: 100%;
-                }
-            }
-            .why-we-ar-container_text {
-                padding: 15px 15px;
-            }
+@media (max-width:1200px) {
+.why-we-ar-flex {
+    .why-we-ar-container  {
+        .why-we-ar-container_img {
+            height: 200px;
         }
-}
     }
+}
 }
 /*@media max-width: 992px --------------------------------------------*/
 @media (max-width: 992px) {

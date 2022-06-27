@@ -1703,19 +1703,9 @@ h1 span i {
   }
 }
 
-/*@media (min-width: 992px) and (max-width: 1200px)  --------------------------------------------*/
-@media (min-width: 992px) and (max-width: 1200px) and (orientation: landscape) {
-  .why-we-ar-flex .why-we-ar-container {
-    height: 50vh;
-  }
+@media (max-width: 1200px) {
   .why-we-ar-flex .why-we-ar-container .why-we-ar-container_img {
-    height: 50%;
-  }
-  .why-we-ar-flex .why-we-ar-container .why-we-ar-container_img img {
-    height: 100%;
-  }
-  .why-we-ar-flex .why-we-ar-container .why-we-ar-container_text {
-    padding: 15px 15px;
+    height: 200px;
   }
 }
 
