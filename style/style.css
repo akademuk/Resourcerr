@@ -3125,82 +3125,13 @@ h3:nth-of-type(4)::before {
   }
 }
 
-@media (max-width: 991px) {
-  .modul-window-main {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .modul-window-main .clients {
-    flex-direction: column;
-  }
-  .modul-window-main .clients input {
-    width: 100%;
-    box-sizing: border-box;
-    height: 54px;
-  }
-  .modul-window-main .clients textarea {
-    width: 100%;
-    box-sizing: border-box;
-    height: 200px;
-  }
-  .modul-window-main h3 {
-    margin-left: 0;
-  }
-  .modul-window-main h3::before {
-    content: none;
-  }
-  .clients .submit-form {
-    width: 112px !important;
-    height: 112px !important;
-    margin-left: 0;
-  }
-  .modal_animation {
-    width: 100vw;
-    box-sizing: border-box;
-  }
-  .modal-message_text button {
-    width: 88px;
-    height: 88px;
-    font-size: 12px;
-  }
-  #modul-window_open {
-    right: 10%;
-  }
-  .file-upload {
-    flex-direction: column;
-    height: max-content;
-  }
-  .file-upload span {
-    text-align: left;
-    font-size: 5vw;
-    margin-bottom: 10px;
-  }
-  .file-upload-select {
-    height: 54px !important;
-    display: flex;
-    align-items: center;
-    margin-left: 0 !important;
-    width: 100% !important;
-    box-sizing: border-box;
-  }
-  label {
-    display: block;
-  }
-  .iti {
-    width: 100%;
+@media (max-width: 1024px) {
+  .form-row .invalid-feedback {
+    left: 33% !important;
   }
 }
 
-@media (max-width: 991px) and (orientation: landscape) {
-  .modul-window-main .clients label {
-    font-size: 3vw !important;
-  }
-  .file-upload span {
-    font-size: 3vw;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   h3 {
     font-size: 32px;
     margin-bottom: 32px;
@@ -3270,7 +3201,7 @@ h3:nth-of-type(4)::before {
   }
 }
 
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 992px) and (orientation: landscape) {
   .clients input {
     height: 40px;
   }
@@ -3287,7 +3218,7 @@ h3:nth-of-type(4)::before {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .logo-modal-message {
     margin-bottom: 0;
   }
