@@ -764,7 +764,7 @@ h3 {
   label {
     font-size: 14px !important;
     height: auto !important;
-    margin-bottom: 4px !important;
+    margin-bottom: 25px !important;
   }
   input {
     margin-left: 0;
@@ -797,7 +797,7 @@ h3 {
   }
 }
 .submit-recommendation {
-  font-size: 12px !important;
+  font-size: 10px !important;
   margin-left: 24px;
 }
 .modul-window-main  {
@@ -807,10 +807,9 @@ h3 {
 }
 .form-row  {
   .invalid-feedback {
-    top: -2px;
-    left: 75%;
-    width: 27%;
-    font-size: 8px;
+    top: 14px;
+    left: 0%;
+    
   }
 }
 }

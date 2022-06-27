@@ -73,72 +73,21 @@
 }
 
 /*@media (min-width: 768px) and (max-width: 991px) --------------------------------------------*/
-@media (min-width: 768px) and (max-width: 991px) {
+
+
+/*@media max-width: 768px --------------------------------------------*/
+@media (max-width: 768px) {
 .send-request {
+    margin-top: 120px;
     .wrapper {
-        padding: 72px 48px;
+        padding: 72px 40px 72px 48px;
+        box-sizing: border-box;
+        margin-bottom: 120px;
         .send-request-text {
-            font-size: 32px;
-            width: 76%;
-            word-wrap: break-word;
+            font-size: 27px;
         }
         .btn-send-request {
-            width: 144px;
-            height: 144px;
-            font-size: 18px;
-            
-        }
-    }
-}
-.send-request {
-    .wrapper {
-        img {
-            &:nth-of-type(2) {
-                top: inherit;
-                bottom: 0;
-            }
-        }
-    }
-}
-@media (orientation: landscape) {
-.send-request {
-    .wrapper {
-        padding: 50px;
-        margin-bottom: 50px;
-    }
-}
-}
-}
-/*@media max-width: 767px --------------------------------------------*/
-@media (max-width: 767px) {
-.btn-send-request {
-    width: 144px;
-    height: 144px;
-    font-size: 18px;
-}
-.send-request {
-    .wrapper {
-        padding: 72px 48px;
-        .send-request-text {
-            width: 60%;
-            font-size: 32px;
-            word-wrap: break-word;
-        }
-    }
-}
-@media (orientation: landscape) {
-    .send-request {
-        .wrapper {
-            padding: 50px;
-            margin-bottom: 50px;
-            .send-request-text {
-                font-size: 23px;
-            }
-            .btn-send-request {
-                width: 112px;
-                height: 112px;
-                font-size: 12px;
-            }
+            margin-left: 20px;
         }
     }
 }
@@ -151,7 +100,7 @@
     margin-top: 80px;
     .wrapper {
         height: auto;
-        padding: 40px 28px 40px 28px;
+        padding: 40px 28px 40px 28px !important;
         flex-direction: column;
         margin-bottom: 0;
         img {

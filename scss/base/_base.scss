@@ -127,9 +127,15 @@ h2 {
         box-sizing: border-box;
     }
   }
+  @media (max-width:768px) {
+    h2 {
+        font-size: 56px;
+    }
+  }
   @media (max-width:576px) {
     .wrapper {
         width: 90% !important;
+        padding-left: 0 !important;
     }
     h2 {
         font-size: 40px !important;

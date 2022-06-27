@@ -16,7 +16,6 @@
                 position: relative;
                 span {
                     filter: drop-shadow(3px 3px #151515);
-                    -webkit-text-stroke: 1px #151515;
 
                 }
                 &:before {
@@ -201,13 +200,22 @@
 }
 /*@media max-width: 768px --------------------------------------------*/
 @media (max-width: 768px) {
-@media (orientation:landscape) {
-.about-us_read-more {
-    width: 80% !important;
-}
 .about-us {
-    padding-top: 50px;
+    padding-top: 120px;
+    .wrapper {
+        padding-left: 16%;
+        justify-content: flex-start;
+    }
 }
+.about-us_read-more {
+    width: 73% !important;
+    h2 {
+        margin-bottom: 32px !important;
+    }
+    p {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
 }
 }
 /*@media max-width: 576px --------------------------------------------*/

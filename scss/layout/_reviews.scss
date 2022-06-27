@@ -186,6 +186,34 @@ h4 {
 }
 }
 }
+/*@media min-width: 768px --------------------------------------------*/
+@media (max-width: 768px) {
+.reviews {
+    padding-top: 120px;
+    .wrapper {
+        padding-left: 16%;
+        h2 {
+            margin-left: 0;
+            margin-bottom: 44px;
+        }
+        .slider {
+            .slick-list {
+                .slider__item {
+                    padding: 56px 56px 40px 48px;
+                    height: 100% !important;
+                    p {
+                        margin-bottom: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
+.slick-next,
+    .slick-prev {
+        display: none !important;
+}  
+}
 /*@media min-width: 576px --------------------------------------------*/
 @media (max-width: 576px) {
 .reviews {

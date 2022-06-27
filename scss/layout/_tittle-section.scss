@@ -106,46 +106,45 @@ h1 {
 }
 /*@media max-width: 768px --------------------------------------------*/ 
 @media (max-width: 768px) {
+.tittle  {
+    .wrapper {
+        padding-top: 156px;
+        .toggle-switch {
+            margin-left: 16%;
+            .toggle-custom {
+                a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+.tittle-container {
+    margin-top: 56px;
+    h1 {
+        font-size: 104px;
+        margin-top: 0;
+        span {
+            margin-left: 64px;
+        }
+        br {
+            &:nth-of-type(2) {
+                display: none;
+            }
+        }
+    }
+}
 .tittle-container-btn {
-    padding-left: 30%;
-    .btn-send-request {
-        width: 112px;
-        height: 112px;
-        font-size: 12px;
+    margin-top: 64px;
+    padding-left: 16%;
+    p {
+        font-size: 18px;
     }
-}
-.tittle {
-    padding-bottom: 50px;
-    .wrapper {
-        .toggle-switch {
-            margin-left: 30%;
-        }
-    }
-}
-h1 {
-    font-size: 11vw;
-    span {
-        margin-left: 0;
-    }
-.tittle-partners {
-    br {
-        display: none !important;
-    }
-}
-}
-@media (orientation: landscape) {
-.tittle {
-    .wrapper {
-        .toggle-switch {
-            margin-bottom: 10px;
-        }
-    }
-}
-}
-h1 {
-   
-    span {
-        margin-left: 50px !important;
+    button {
+        width: 112px !important;
+        height: 112px !important;
+        padding: 0 !important; 
+        font-size: 16px !important;
     }
 }
 }
@@ -167,21 +166,22 @@ h1 {
 }
 .tittle-container {
     margin-top: 35px;
-}
-h1 {
-    font-size: 56px;
-    span {
-        margin-left: 28px;
-        &:after {
-            top:10px;
+    h1 {
+        font-size: 56px;
+        span {
+            margin-left: 28px;
+            &:after {
+                top:10px;
+            }
+        }
+        br {
+            &:nth-of-type(2) {
+                display: none;
+            }
         }
     }
-    br {
-        &:nth-of-type(2) {
-            display: none;
-        }
-    }
 }
+
 .tittle-container-btn {
     padding-left: 0;
     margin-top: 48px;
@@ -193,6 +193,9 @@ h1 {
         height: 88px;
         font-size: 12px;
     }
+}
+.tittle-partners {
+    font-size: 48px;
 }
 }
 
