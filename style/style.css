@@ -1791,6 +1791,7 @@ h1 .partners::after {
   }
   .why-we-ar-flex {
     width: 280px;
+    padding-left: 10%;
   }
   .why-we-ar-flex .why-we-ar-container {
     justify-content: space-between;
