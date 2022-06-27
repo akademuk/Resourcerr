@@ -142,24 +142,28 @@
 }
 @media (max-width: 768px) {
 .footer {
-    padding-top: 50px;
+    padding-top: 78px;
     .wrapper {
         flex-direction: column;
     }
 }
-.footer-navigation {
-    width: 70%;
-    padding-left: 30%;
-}
 .footer-logo {
+    margin-bottom: 70px;
+}
+.footer-navigation {
+    padding-left: 16%;
     width: 100%;
+}
+.footer-text {
+    bottom: -100px;
+    margin-bottom: 50px;
 }
 }
 @media (max-width: 576px) {
-    .footer-navigation {
-        width: 95%;
-        padding-left: 0;
-    }
+.footer-navigation {
+    width: 95%;
+    padding-left: 0;
+}
 .footer-logo {
     margin-bottom: 30px;
     }

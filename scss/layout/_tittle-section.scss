@@ -25,6 +25,7 @@ h1 {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         position: relative;
+        filter: drop-shadow(3px 3px #151515);
         &::after {
             content: '';
             background:url(../images/revenue.png);

@@ -418,7 +418,7 @@ header .logotype p {
 }
 
 /*@media (min-width: 768px) and (max-width: 991px) --------------------------------------------*/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
   #menu {
     margin: -100px 0 0 0;
     height: auto;
@@ -472,7 +472,7 @@ header .logotype p {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+@media (min-width: 769px) and (max-width: 991px) and (orientation: landscape) {
   .burger-module_logo {
     top: 40px;
   }
@@ -496,16 +496,16 @@ header .logotype p {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
   #menu .wrapper {
     padding-top: 120px;
   }
 }
 
 /*@media max-width: 767px --------------------------------------------*/
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .logotype-text {
-    display: none !important;
+    margin-left: 10px;
   }
   #menu {
     margin: -100px 0 0 0;
@@ -555,11 +555,14 @@ header .logotype p {
     left: 94.5%;
   }
   #menuToggle #menu ul li {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+  }
+  #menuToggle #menu .wrapper {
+    padding-top: 200px;
   }
 }
 
-@media (max-width: 767px) and (orientation: landscape) {
+@media (max-width: 768px) and (orientation: landscape) {
   .burger-module_logo {
     top: 50px;
   }
@@ -598,7 +601,7 @@ header .logotype p {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   label br {
     display: none;
   }
@@ -901,6 +904,7 @@ h1 span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
+  filter: drop-shadow(3px 3px #151515);
 }
 
 h1 span::after {
@@ -3378,19 +3382,49 @@ h3:nth-of-type(4)::before {
 
 @media (max-width: 768px) {
   h3 {
-    font-size: 4.5vw;
+    font-size: 32px;
+    margin-bottom: 32px;
   }
   .submit-recommendation {
-    font-size: 3vw !important;
+    font-size: 18px !important;
     margin-bottom: 10px;
   }
+  .modul-window-main {
+    padding-top: 72px;
+  }
   .modul-window-main .clients .submit-form {
-    width: 88px !important;
-    height: 88px !important;
-    font-size: 12px;
+    width: 112px !important;
+    height: 112px !important;
+    font-size: 16px;
+  }
+  .burger-module_logo {
+    left: 3%;
   }
   .iti__country-list {
     border-radius: 12px !important;
+  }
+  .iti.iti--allow-dropdown {
+    margin: 0 !important;
+  }
+  .form-row {
+    justify-content: flex-start;
+    margin-bottom: 28px;
+    height: max-content !important;
+  }
+  .form-row label {
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 25px !important;
+    height: max-content !important;
+  }
+  .form-row input {
+    margin: 0 !important;
+  }
+  .form-row textarea {
+    margin: 0 !important;
+  }
+  .form-row .invalid-feedback {
+    left: 0;
   }
   .modal-message {
     flex-direction: column-reverse;
@@ -3410,6 +3444,9 @@ h3:nth-of-type(4)::before {
   }
   .modal-message-manager p {
     font-size: 2vw;
+  }
+  .modul-window-main form {
+    margin-bottom: 60px !important;
   }
 }
 
@@ -3727,23 +3764,24 @@ h3:nth-of-type(4)::before {
 
 /*@media min-width: 768px --------------------------------------------*/
 @media (max-width: 768px) {
+  .get-in-touch {
+    padding: 120px 0;
+  }
   .get-in-touch .wrapper {
-    padding-left: 50px;
+    padding-left: 16%;
   }
   .get-in-touch .wrapper h2 {
     margin-left: 0;
   }
   .get-in-touch .wrapper .get-in-touch-container {
+    margin-top: 56px;
     flex-direction: column-reverse;
+  }
+  .get-in-touch .wrapper .get-in-touch-container .get-in-touch-container_form {
     width: 100%;
   }
-  .get-in-touch-container_form {
-    width: 100%;
-  }
-  .get-in-touch-container_form form {
-    width: 80%;
-  }
-  .get-in-touch-container_contact {
+  .get-in-touch .wrapper .get-in-touch-container .get-in-touch-container_contact {
+    margin-top: 96px;
     width: 50%;
   }
 }
@@ -4049,6 +4087,26 @@ h3:nth-of-type(4)::before {
   }
 }
 
+@media (max-width: 768px) {
+  .question {
+    margin-top: 120px;
+    padding-bottom: 120px;
+  }
+  .question .wrapper {
+    padding-left: 16%;
+  }
+  .question .wrapper h2 {
+    margin-left: 0;
+  }
+  .question .wrapper .question-container {
+    margin-top: 64px;
+    width: 100%;
+  }
+  .question .wrapper .question-container .question-container-accordions {
+    width: 100%;
+  }
+}
+
 @media (max-width: 576px) {
   .question-container-accordions {
     width: 100% !important;
@@ -4232,17 +4290,21 @@ h3:nth-of-type(4)::before {
 
 @media (max-width: 768px) {
   .footer {
-    padding-top: 50px;
+    padding-top: 78px;
   }
   .footer .wrapper {
     flex-direction: column;
   }
-  .footer-navigation {
-    width: 70%;
-    padding-left: 30%;
-  }
   .footer-logo {
+    margin-bottom: 70px;
+  }
+  .footer-navigation {
+    padding-left: 16%;
     width: 100%;
+  }
+  .footer-text {
+    bottom: -100px;
+    margin-bottom: 50px;
   }
 }
 

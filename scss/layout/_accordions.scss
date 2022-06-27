@@ -192,6 +192,26 @@
   }
 }
 }
+@media (max-width:768px) {
+  .question {
+    margin-top: 120px;
+    padding-bottom: 120px;
+    .wrapper {
+      padding-left: 16%; 
+        h2 {
+          margin-left: 0;
+        }
+        .question-container {
+          margin-top: 64px; 
+            width: 100%;
+            .question-container-accordions {
+              width: 100%;
+            }
+         
+        }
+    }
+  }
+}
 @media (max-width:576px) {
 .question-container-accordions {
   width: 100% !important;

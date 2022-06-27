@@ -663,23 +663,52 @@ label {
 }
 @media (max-width:768px) {
 h3 {
-  font-size: 4.5vw;
+  font-size: 32px;
+  margin-bottom: 32px;
 }
 .submit-recommendation {
-  font-size: 3vw !important;
+  font-size: 18px !important;
   margin-bottom: 10px;
 }
 .modul-window-main {
+  padding-top: 72px;
   .clients {
     .submit-form {
-      width: 88px !important;
-      height: 88px !important;
-      font-size: 12px;
+      width: 112px !important;
+      height: 112px !important;
+      font-size: 16px;
     }
   }
+}.burger-module_logo {
+  left: 3%;
 }
 .iti__country-list {
   border-radius: 12px !important;
+}
+.iti.iti--allow-dropdown {
+  margin: 0 !important;
+}
+.form-row {
+  justify-content: flex-start;
+  margin-bottom: 28px;
+  height: max-content !important;
+  label {
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 25px !important;
+    height: max-content !important;
+  }
+  input {
+    margin: 0 !important;
+  }
+  textarea {
+    margin: 0 !important;
+  }
+}
+.form-row  {
+  .invalid-feedback {
+    left: 0;
+  }
 }
 .modal-message {
   flex-direction: column-reverse;
@@ -698,6 +727,11 @@ h3 {
   justify-content: center;
   p {
     font-size: 2vw;
+  }
+}
+.modul-window-main {
+  form {
+    margin-bottom: 60px !important;
   }
 }
 @media(orientation:landscape) {

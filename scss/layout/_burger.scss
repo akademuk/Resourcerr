@@ -192,7 +192,7 @@
 }
   
 /*@media (min-width: 768px) and (max-width: 991px) --------------------------------------------*/ 
-@media (min-width: 768px) and (max-width: 991px)  {
+@media (min-width: 769px) and (max-width: 991px)  {
 #menu {
   margin:-100px 0 0 0;
   height: auto;
@@ -286,9 +286,9 @@
 }
   
 /*@media max-width: 767px --------------------------------------------*/ 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 .logotype-text {
-    display: none !important;
+    margin-left: 10px;
   }
 #menu {
   margin:-100px 0 0 0;
@@ -349,8 +349,13 @@
   #menu {
     ul {
       li {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
+    }
+  }
+  #menu  {
+    .wrapper {
+      padding-top: 200px;
     }
   }
 }
