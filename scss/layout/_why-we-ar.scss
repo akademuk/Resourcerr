@@ -12,6 +12,7 @@
             span {
                 filter: drop-shadow(3px 3px #151515);
                 -webkit-text-stroke: 1px #151515;
+               
             }
             &:before {
                 content: "02";
@@ -170,6 +171,7 @@
 }
 
 }
+
 /*@media min-width: 576px --------------------------------------------*/
 @media (max-width: 576px) {
 .why-we-ar {
