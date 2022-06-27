@@ -178,33 +178,14 @@
 
 /*@media (max-width: 992px) --------------------------------------------*/
 @media (max-width: 992px) {
-.about-us  {
-    .wrapper  {
-       justify-content: center;
-        .about-us_img {
-            display: none;
-        }
-        .about-us_read-more {
-            width: 60%;
-        }
-    }
-}
-@media (orientation:landscape) {
-.about-us_read-more {
-    width: 80% !important;
-}
-.about-us {
-    padding-top: 50px;
-}
-}
-}
-/*@media max-width: 768px --------------------------------------------*/
-@media (max-width: 768px) {
 .about-us {
     padding-top: 120px;
     .wrapper {
         padding-left: 16%;
         justify-content: flex-start;
+        .about-us_img {
+            display: none;
+        }
     }
 }
 .about-us_read-more {

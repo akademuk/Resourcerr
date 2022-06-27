@@ -88,25 +88,9 @@ h1 {
     }
 }
 /*Partners------------------------------------------------------------------------------*/
-/*@media max-width: 1200px) --------------------------------------------*/ 
-@media (max-width: 1200px) {
-h1 {
-    font-size: 10vw;
-}
-}
-/*@media (max-width: 992px) --------------------------------------------*/ 
-@media (max-width: 991px)  {
 
-@media (orientation: landscape) {
-    h1 {
-        span {
-            margin-left: 100px !important;
-        }
-    }
-}
-}
-/*@media max-width: 768px --------------------------------------------*/ 
-@media (max-width: 768px) {
+/*@media max-width: 992px --------------------------------------------*/ 
+@media (max-width:992px) {
 .tittle  {
     .wrapper {
         padding-top: 156px;

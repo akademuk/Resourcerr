@@ -164,31 +164,6 @@ h4 {
 /*@media min-width: 992px --------------------------------------------*/
 @media (max-width: 992px) {
 .reviews {
-    height: 100%;
-    padding-bottom: 50px;
-    }
-    .slick-dots {
-        bottom: -10px !important;
-    }
-@media (orientation:landscape) {
-    .slick-next,
-    .slick-prev {
-        display: none !important;
-    }  
-.reviews {
-    padding-top: 50px;
-    h2 {
-        margin-bottom: 30px;
-        &::before {
-            content: none;
-        }
-    }
-}
-}
-}
-/*@media min-width: 768px --------------------------------------------*/
-@media (max-width: 768px) {
-.reviews {
     padding-top: 120px;
     .wrapper {
         padding-left: 16%;
@@ -212,7 +187,10 @@ h4 {
 .slick-next,
     .slick-prev {
         display: none !important;
-}  
+}
+h4 {
+    margin-bottom: 24px;
+} 
 }
 /*@media min-width: 576px --------------------------------------------*/
 @media (max-width: 576px) {
