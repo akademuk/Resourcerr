@@ -437,6 +437,15 @@ label {
   
 /*@media max-width: 576px --------------------------------------------*/ 
 @media (max-width: 576px) {
+#menuToggle {
+  #menu {
+    ul {
+      li {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
 #menu {
   margin:-100px 0 0 0;
   height: auto;
@@ -444,7 +453,6 @@ label {
     ul {
       margin-top: 0;
       width: 73%;
-      margin-bottom: 50px !important;
       li {
         margin-bottom: 20px;
         a {

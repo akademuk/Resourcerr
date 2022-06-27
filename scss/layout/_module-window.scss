@@ -603,7 +603,7 @@ h3 {
 .form-row {
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-start !important;
   margin-bottom: 28px;
   height: max-content !important;
   label {

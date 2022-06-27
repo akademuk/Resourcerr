@@ -628,6 +628,9 @@ header .logotype p {
 
 /*@media max-width: 576px --------------------------------------------*/
 @media (max-width: 576px) {
+  #menuToggle #menu ul li {
+    margin-bottom: 20px;
+  }
   #menu {
     margin: -100px 0 0 0;
     height: auto;
@@ -636,7 +639,6 @@ header .logotype p {
   #menu ul {
     margin-top: 0;
     width: 73%;
-    margin-bottom: 50px !important;
   }
   #menu ul li {
     margin-bottom: 20px;
@@ -3142,7 +3144,7 @@ h3:nth-of-type(4)::before {
   .form-row {
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-start !important;
     margin-bottom: 28px;
     height: max-content !important;
   }
