@@ -394,6 +394,16 @@ h5 {
 .how-it-works-container-info {
    margin: 0 0 40px 0 !important;
 }
+.how-it-works {
+    .wrapper{
+        .how-it-works-container{
+            .how-it-works-container-info {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
+    }
+}
 }
 
 

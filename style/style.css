@@ -697,7 +697,7 @@ header .logotype p {
   }
   #menu .wrapper {
     justify-content: flex-start;
-    padding-top: 120px;
+    padding-top: 120px !important;
     height: 100%;
   }
   .toggle-custom-burger .toggle-custom a {
@@ -1410,7 +1410,7 @@ h1 .partners::after {
     padding-top: 80px;
   }
   .about-us .wrapper .about-us_read-more {
-    width: 100%;
+    width: 100% !important;
   }
   .about-us .wrapper .about-us_read-more h2 {
     font-size: 48px;
@@ -1770,17 +1770,20 @@ h1 .partners::after {
 @media (max-width: 576px) {
   .why-we-ar {
     margin-top: 80px;
+    padding-bottom: 0;
   }
   .why-we-ar .wrapper {
     align-items: center;
   }
   .why-we-ar .wrapper h2 {
+    display: flex !important;
+    flex-direction: column;
     margin-bottom: 0;
     width: 100%;
     text-align: left !important;
   }
   .why-we-ar .wrapper h2 span {
-    display: flex !important;
+    margin-left: 0;
   }
   .why-we-ar .wrapper .why-we-tittle-text {
     font-size: 16px;
@@ -2210,6 +2213,10 @@ h5 {
   }
   .how-it-works-container-info {
     margin: 0 0 40px 0 !important;
+  }
+  .how-it-works .wrapper .how-it-works-container .how-it-works-container-info {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 
@@ -3355,7 +3362,7 @@ h3:nth-of-type(4)::before {
     margin-bottom: 40px;
   }
   .form-row .invalid-feedback {
-    top: 14px;
+    top: 20px;
     left: 0%;
   }
 }
@@ -3579,9 +3586,12 @@ h3:nth-of-type(4)::before {
   .get-in-touch .wrapper .get-in-touch-container {
     margin-top: 32px;
   }
+  .get-in-touch .wrapper .get-in-touch-container .get-in-touch-container_contact {
+    margin-top: 50px;
+  }
   .get-in-touch-container_form form {
     width: 100%;
-    margin-bottom: 84px;
+    margin-bottom: 0;
   }
   .get-in-touch-container_form form input {
     height: 47px;
@@ -4066,6 +4076,7 @@ h3:nth-of-type(4)::before {
   }
   .footer-logo {
     margin-bottom: 30px;
+    width: 100%;
   }
   .footer-navigation nav ul li {
     margin-bottom: 20px;

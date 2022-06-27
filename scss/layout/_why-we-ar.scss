@@ -183,14 +183,17 @@
 @media (max-width: 576px) {
 .why-we-ar {
     margin-top: 80px;
+    padding-bottom: 0;
     .wrapper {
         align-items: center;
         h2 {
+            display: flex !important;
+            flex-direction: column;
             margin-bottom: 0;
             width: 100%;
             text-align: left !important;
             span {
-                display: flex !important;
+                  margin-left: 0;
             }
         }
         .why-we-tittle-text {
