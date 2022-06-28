@@ -723,6 +723,22 @@ h3 {
     margin-bottom: 60px !important;
   }
 }
+.modal-message_img {
+  .container {
+    .object  {
+      img {
+        &:nth-of-type(2) {
+          right: 10%;
+          top: 80%;
+        }
+        &:nth-of-type(3) {
+          right: 0%;
+          top: 0%;
+        }
+      }
+    }
+  }
+}
 }
 @media (max-width:576px) {
 .modul-window-header {
