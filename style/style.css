@@ -3277,6 +3277,8 @@ h3:nth-of-type(4)::before {
     line-height: 140%;
     margin-bottom: 25px !important;
     height: max-content !important;
+    text-align: left !important;
+    width: max-content !important;
   }
   .form-row input {
     margin: 0 !important;
@@ -3285,6 +3287,10 @@ h3:nth-of-type(4)::before {
   .form-row textarea {
     margin: 0 !important;
     width: 100% !important;
+  }
+  .file-upload {
+    display: flex;
+    flex-direction: column;
   }
   .form-row .invalid-feedback {
     top: 20px !important;

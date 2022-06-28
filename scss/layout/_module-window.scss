@@ -677,6 +677,8 @@ h3 {
     line-height: 140%;
     margin-bottom: 25px !important;
     height: max-content !important;
+    text-align: left !important;
+    width: max-content !important;
   }
   input {
     margin: 0 !important;
@@ -686,6 +688,10 @@ h3 {
     margin: 0 !important;
     width: 100% !important;
   }
+}
+.file-upload {
+ display: flex;
+ flex-direction: column;
 }
 .form-row  {
   .invalid-feedback {
