@@ -1726,6 +1726,7 @@ h1 span i {
   .why-we-ar .wrapper .why-we-ar-flex {
     margin-top: 48px;
     width: 94%;
+    padding-left: 5%;
   }
   .why-we-ar .wrapper .why-we-ar-flex .why-we-ar-container {
     height: 364px;
@@ -1758,26 +1759,26 @@ h1 span i {
   }
   .why-we-ar .wrapper h2 {
     display: flex !important;
-    flex-direction: column;
     margin-bottom: 0;
     width: 100%;
     text-align: left !important;
   }
   .why-we-ar .wrapper h2 span {
-    margin-left: 0;
+    margin: 0 5px;
   }
   .why-we-ar .wrapper .why-we-tittle-text {
     font-size: 16px;
     margin-bottom: 0;
   }
   .why-we-ar-flex {
-    width: 280px;
-    padding-left: 10%;
+    width: 60% !important;
+    padding-left: 0 !important;
   }
   .why-we-ar-flex .why-we-ar-container {
     justify-content: space-between;
     display: flex !important;
     height: 378px !important;
+    margin: 0 1% !important;
   }
   .why-we-ar-flex .slick-dots {
     bottom: -90px !important;
@@ -2052,7 +2053,7 @@ h5 {
 /*@media min-width: 992px --------------------------------------------*/
 @media (max-width: 992px) {
   .how-it-works {
-    margin-top: 220px;
+    margin-top: 0;
     padding-bottom: 60px;
   }
   .how-it-works .wrapper h2 {
@@ -2799,7 +2800,7 @@ h3:nth-of-type(4)::before {
 }
 
 .modal1 {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -2811,29 +2812,53 @@ h3:nth-of-type(4)::before {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.logo-modal-message {
-  margin-bottom: 50px;
+.modal-message_img {
   position: relative;
 }
 
-.logo-modal-message div {
-  display: flex;
-  align-items: center;
+.modal-message_img .container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
-.logo-modal-message div a img {
-  width: 72px;
-  height: 72px;
-  max-width: 100%;
-  object-fit: contain;
+.modal-message_img .container .object {
+  height: 100%;
+}
+
+.modal-message_img .container .object img {
+  position: absolute;
+  width: 100px;
+  height: 28px;
+}
+
+.modal-message_img .container .object img:nth-of-type(1) {
+  right: 80%;
+  top: 49%;
+}
+
+.modal-message_img .container .object img:nth-of-type(2) {
+  right: 30%;
+  top: 65%;
+}
+
+.modal-message_img .container .object img:nth-of-type(3) {
+  right: 15%;
+  top: 20%;
+}
+
+.logo-modal-message {
+  height: 80px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #414141;
+  margin-bottom: 50px;
 }
 
 .logo-modal-message p {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 120%;
-  color: #FFFFFF;
-  margin-top: 7px;
+  font-size: 20px;
+  margin-bottom: 0;
 }
 
 .modal-message {
@@ -2884,11 +2909,12 @@ h3:nth-of-type(4)::before {
 
 .modal-message_img {
   width: 55%;
+  display: flex;
 }
 
 .modal-message_img img {
   max-width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -3229,10 +3255,12 @@ h3:nth-of-type(4)::before {
     left: 0 !important;
   }
   .modal-message {
+    width: 70%;
     flex-direction: column-reverse;
     align-items: center;
-    padding: 50px 100px;
+    padding: 0 50px 100px 50px;
     box-sizing: border-box;
+    margin: 0 auto;
   }
   .modal-message_text {
     width: 100%;
@@ -3242,40 +3270,17 @@ h3:nth-of-type(4)::before {
     width: 100%;
   }
   .modal-message-manager {
+    margin-top: 50px;
     justify-content: center;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0 auto;
   }
   .modal-message-manager p {
     font-size: 2vw;
   }
   .modul-window-main form {
     margin-bottom: 60px !important;
-  }
-}
-
-@media (max-width: 992px) and (orientation: landscape) {
-  .clients input {
-    height: 40px;
-  }
-  .modal-message {
-    flex-direction: row;
-    padding: 15px 25px;
-  }
-  .modal-message .modal-message_text p:nth-of-type(1) {
-    font-size: 4vw;
-  }
-  .modal-message .modal-message_text p:nth-of-type(2) {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 992px) {
-  .logo-modal-message {
-    margin-bottom: 0;
-  }
-  .close-modal-message {
-    width: 75px !important;
-    height: 75px !important;
   }
 }
 
@@ -3347,6 +3352,30 @@ h3:nth-of-type(4)::before {
   .form-row .invalid-feedback {
     top: 20px;
     left: 0%;
+  }
+  .modal-message_text p:nth-of-type(1) {
+    font-size: 28px;
+  }
+  .modal-message_text p:nth-of-type(2) {
+    font-size: 14px;
+  }
+  .modal-message_text button {
+    width: 88px;
+    height: 88px;
+    font-size: 12px;
+  }
+  .modal-message {
+    width: 100%;
+  }
+  .modal-message {
+    padding-bottom: 50px;
+  }
+  .modal-message_img .container .object img:nth-of-type(2) {
+    top: 85%;
+  }
+  .modal-message_img .container .object img:nth-of-type(3) {
+    right: 0%;
+    top: 0%;
   }
 }
 
