@@ -1,4 +1,4 @@
-var input = document.querySelector("#phone");
+var input = document.querySelector(".phone");
 intlTelInput(input, {
   initialCountry: "auto",
   nationalMode: false,

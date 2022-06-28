@@ -2964,21 +2964,20 @@ h3:nth-of-type(4)::before {
   font-size: 16px;
   line-height: 140%;
   color: #8A8A8A;
-  height: 40px;
-  align-items: flex-start;
+  height: 55px;
+  align-items: center;
 }
 
 .file-upload .file-upload-select {
-  width: 614px;
+  width: 600px;
   cursor: pointer;
   text-align: left;
   overflow: hidden;
   padding-left: 14px;
   margin-left: 14px;
-  height: 40px;
+  height: 55px;
   background: transparent;
   border-radius: 16px;
-  margin-bottom: 28px;
   border: 1px solid #8A8A8A;
   padding-left: 10px;
   font-weight: 600;
@@ -2999,9 +2998,16 @@ h3:nth-of-type(4)::before {
   cursor: pointer;
 }
 
+.file-upload {
+  margin-bottom: 50px;
+}
+
 .file-upload span {
   display: flex;
   text-align: right;
+  color: #A1A1A1;
+  font-size: 16px;
+  line-height: 140%;
 }
 
 .file-upload .file-upload-select .file-select-button {
@@ -3045,6 +3051,7 @@ h3:nth-of-type(4)::before {
 .form-row label {
   height: 55px !important;
   margin: 0 !important;
+  color: #A1A1A1 !important;
 }
 
 .form-row input {
@@ -3092,8 +3099,64 @@ h3:nth-of-type(4)::before {
   margin-bottom: 0;
 }
 
-.clients .form-row textarea + .invalid-feedback {
+.form-row textarea + .invalid-feedback {
   top: 70px;
+}
+
+.partners-form .form-row:nth-of-type(6) {
+  height: 55px;
+  margin-bottom: 28px;
+}
+
+.partners-form .form-row:nth-of-type(7) {
+  align-items: flex-start;
+  height: 160px;
+  margin-bottom: 28px;
+}
+
+.partners-form .form-row:nth-of-type(7) .invalid-feedback {
+  top: 20px;
+}
+
+.partners-form .form-row:nth-of-type(10) {
+  align-items: flex-start;
+}
+
+.partners-form .form-row:nth-of-type(12) {
+  align-items: flex-start;
+  height: 160px;
+  margin-bottom: 28px;
+}
+
+.partners-form .form-row:nth-of-type(12) .invalid-feedback {
+  top: 25px;
+}
+
+.partners-form .form-row:nth-of-type(13) {
+  align-items: flex-start;
+  height: 55px;
+  margin-bottom: 28px;
+}
+
+.partners-form .form-row:nth-of-type(14) {
+  align-items: flex-start;
+}
+
+.partners-form .form-row:nth-of-type(14) .invalid-feedback {
+  top: 40px;
+}
+
+.partners-form .form-row:nth-of-type(15) {
+  align-items: flex-start;
+}
+
+.partners-form .form-row:nth-of-type(15) .invalid-feedback {
+  top: 25px;
+}
+
+.partners-form .form-row label {
+  width: 20%;
+  text-align: right;
 }
 
 @media (max-width: 1300px) {

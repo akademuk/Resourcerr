@@ -39,49 +39,131 @@
                 <div class="modul-window-main">
 
                <form id="form-requirements-of-the-project" class="clients partners-form needs-validation" novalidate action="https://resourcerr.io/api/client/requirements/" method="POST" >
+                    
+                <div class="form-row">
                     <label for="name">Full name</label>
-                    <input type="name" id="name" required>
+                    <input type="name" id="name" name="partners_form[full_name]"
+                    autocomplete="full_name" class="form-control" 
+                    pattern="^[A-Za-z\-\s]{3,50}$" required />
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
 
+                <div class="form-row">
                     <label for="tittle">Title</label>
-                    <input type="text" id="tittle" required>
-
+                    <input type="text" id="tittle" name="partners_form[tittle]"
+                    autocomplete="tittle" class="form-control" 
+                    pattern="^[A-Za-z\-\s]{3,50}$" required />
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
+                
+                <div class="form-row">
                     <label for="email">Corporate email</label>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email"  name="partners_form[corporate_email]"
+                    autocomplete="corporate_email" class="form-control" 
+                    required />
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
 
+                <div class="form-row">
                     <label for="tel">Phone number</label>
-                    <input type="text" id="phone" />
+                    <input type="text" id="phone" name="partners_form[phone]"
+                    autocomplete="phone" class="form-control" 
+                    required />
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
 
+                <div class="form-row">
                     <label for="company-name">Company name</label>
-                    <input type="text" id="company-name" required>
+                    <input type="text" id="company-name" name="partners_form[company_name]"
+                    autocomplete="company_name" class="form-control" 
+                    required />
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
+
+                <div class="form-row">
                     <label for="website">Company website</label>
-                    <input type="url" id="website" required>
+                    <input type="text" id="website" name="partners_form[company_website]"
+                    autocomplete="company_website" class="form-control" 
+                    required />
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
 
+                <div class="form-row">
                     <label for="brief-company">Brief company overview</label>
-                    <textarea name="Brief-company" id='brief-company'cols="30" rows="10" required></textarea>
-                  
+                    <textarea id='brief-company'cols="30" rows="10" 
+                    name="partners_form[brief_company]"
+                    autocomplete="brief_company" class="form-control" 
+                    required></textarea>
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
+                
+                <div class="form-row">
                     <label for="number-of-employees">Number of employees</label>
-                    <input type="text" id="number-of-employees">
-
+                    <input type="text" id="number-of-employees" name="partners_form[number_of_employees]"
+                    autocomplete="number_of_employees" class="form-control" 
+                    required />
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
+                
+                <div class="form-row">
                     <label for="location">Location</label>
-                    <input type="text" id="location">
+                    <input type="text" id="location" name="partners_form[location]"
+                    autocomplete="location" class="form-control" 
+                    required />
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
 
+                <div class="form-row">
                     <label for="possible">Possible Languages for Communication/Outreach</label>
-                    <input type="text" id="possible">
-
+                    <input type="text" id="possible" name="partners_form[possible]"
+                    autocomplete="possible" class="form-control" 
+                    required />
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
+                    
+                <div class="form-row">
                     <label for="pricing-options">Pricing options</label>
-                    <input type="text" id="pricing-options">
+                    <input type="text" id="pricing-options" name="partners_form[pricing_options]"
+                    autocomplete="pricing_options" class="form-control" 
+                    required />
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
 
+                <div class="form-row">
                     <label for="describe">Describe your main value proposition</label>
-                    <textarea name="describe" cols="30" rows="10" id="describe"></textarea>
-
+                    <textarea cols="30" rows="10" id="describe"
+                    name="partners_form[describe]"
+                    autocomplete="describe" class="form-control" 
+                    required></textarea>
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
+                    
+                <div class="form-row">
                     <label for="number-appointments">What is the min. pilot period you can go for?</label>
-                    <input type="text" id="number-appointments">
+                    <input type="text" id="number-appointments" 
+                    name="partners_form[number_appointments]"
+                    autocomplete="number_appointments" class="form-control" 
+                    required></textarea>
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
 
-                    <label for="language">How many contacts your team can provide per month (min & max)?</label>
-                    <input type="text" id="language">
+                <div class="form-row">
+                    <label for="many-contacts">How many contacts your team can provide per month (min & max)?</label>
+                    <input type="text" id="many-contacts"
+                    name="partners_form[many_contacts]"
+                    autocomplete="many_contacts" class="form-control" 
+                    required />
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
 
+                <div class="form-row">
                     <label for="average">What countries are you working with?</label>
-                    <input type="text" id="average">
+                    <input type="text" id="average"
+                    name="partners_form[average]"
+                    autocomplete="average" class="form-control" 
+                    required />
+                    <div class="invalid-feedback">This field is required</div>
+                </div>
                    
                     <div class="file-upload">
                        <span> Provide presentation (link or attachment) </span>

@@ -47,7 +47,6 @@
                             <label for="name">Full name</label>
                             <input type="text" id="name" name="corporate_details[full_name]"
                                    autocomplete="full_name" class="form-control"
-                                   pattern="^[A-Za-z\-\s]{3,50}$"
                                    required
                             />
                             <div class="invalid-feedback">This field is required</div>
@@ -62,7 +61,7 @@
 
                         <div class="form-row">
                             <label for="phone">Phone number</label>
-                            <input type="text" id="phone" name="corporate_details[phone_number]" autocomplete="phone"
+                            <input type="text" id="phone" class="phone" name="corporate_details[phone_number]" autocomplete="phone"
                                    class="form-control"
                                    pattern="^[0-9\-()+\s]+$" required
                             />
@@ -73,13 +72,13 @@
                             <label for="company-name">Company name</label>
                             <input type="text" id="company-name" name="corporate_details[company_name]"
                             autocomplete="company_name" class="form-control" 
-                            pattern="^[A-Za-z\-\s]{3,50}$" required />
+                            required />
                             <div class="invalid-feedback">This field is required</div>
                         </div>
                         
                         <div class="form-row">
-                            <label for="website">Company website</label>
-                            <input type="url" id="website" name="corporate_details[company_website]"
+                            <label for="company-website">Company website</label>
+                            <input type="text" id="company-website" name="corporate_details[company_website]"
                             autocomplete="company_website" class="form-control" required />
                             <div class="invalid-feedback">This field is required</div>
                         </div>
@@ -88,7 +87,7 @@
                             <label for="brief-company">Brief company overview</label>
                             <textarea name="corporate_details[brief_company]" id='brief-company' cols="30" rows="10" 
                             autocomplete="brief_company" class="form-control" 
-                            pattern="^[A-Za-z\-\s]{3,50}$" required ></textarea>
+                            required ></textarea>
                             <div class="invalid-feedback">This field is required</div>
                         </div>
 
@@ -100,7 +99,7 @@
                         <label for="budget">Budget</label>
                         <input type="text" id="budget" name="campaign_details[budget]"
                         autocomplete="budget" class="form-control" 
-                        pattern="^[A-Za-z\-\s]{3,50}$" required />
+                        required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
 
@@ -108,7 +107,7 @@
                         <label for="pilot">Max pilot period</label>
                         <input type="text" id="pilot" name="campaign_details[max_pilot_period]"
                         autocomplete="max_pilot_period" class="form-control" 
-                        pattern="^[A-Za-z\-\s]{3,50}$" required />
+                        required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
 
@@ -116,7 +115,7 @@
                         <label for="number-contacts">Number of contacts / monts</label>
                         <input type="text" id="number-contacts" name="campaign_details[number_contacts]"
                         autocomplete="number_contacts" class="form-control" 
-                        pattern="^[A-Za-z\-\s]{3,50}$" required />
+                        required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
 
@@ -124,7 +123,7 @@
                         <label for="number-appointments">Number of appointments / monts</label>
                         <input type="text" id="number-appointments" name="campaign_details[number_appointments]"
                         autocomplete="number_appointments" class="form-control" 
-                        pattern="^[A-Za-z\-\s]{3,50}$" required />
+                        required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
 
@@ -132,7 +131,7 @@
                         <label for="language">Preferable outreach language</label>
                         <input type="text" id="language" name="campaign_details[preferable_outreach_language]"
                         autocomplete="preferable_outreach_language" class="form-control" 
-                        pattern="^[A-Za-z\-\s]{3,50}$" required />
+                        required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
 
@@ -141,7 +140,7 @@
                         <textarea cols="30" rows="10" id="additional-criteria"
                         name="campaign_details[additional_criteria]"
                         autocomplete="additional_criteria" class="form-control" 
-                        pattern="^[A-Za-z\-\s]{3,50}$" required></textarea>
+                        required></textarea>
                         <div class="invalid-feedback">This field is required</div>
                     </div>
                     <!------------------------>
@@ -151,7 +150,7 @@
                         <label for="average">Average Deal Value ($ MRR)</label>
                         <input type="text" id="average" name="product_overview[average_deal_value]"
                         autocomplete="average_deal_value" class="form-control" 
-                        pattern="^[A-Za-z\-\s]{3,50}$" required />
+                        required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
 
@@ -159,7 +158,7 @@
                         <label for="sales">Average Sales Cycle</label>
                         <input type="text" id="sales" name="product_overview[average_sales_cycle]"
                         autocomplete="average_sales_cycle" class="form-control" 
-                        pattern="^[A-Za-z\-\s]{3,50}$" required />
+                        required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
 
@@ -167,7 +166,7 @@
                         <label for="average-number">Average number of calls/months</label>
                         <input type="text" id="average-number" name="product_overview[average_number_of_calls]"
                         autocomplete="average_number_of_calls" class="form-control" 
-                        pattern="^[A-Za-z\-\s]{3,50}$" required />
+                        required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
 
@@ -175,7 +174,7 @@
                         <label for="conversion">Calls to deals closed conversion</label>
                         <input type="text" id="conversion" name="product_overview[calls_to_deals_closed_conversion]"
                         autocomplete="calls_to_deals_closed_conversion" class="form-control"
-                        pattern="^[A-Za-z\-\s]{3,50}$" required />
+                        required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
                     <!------------------------>
@@ -185,7 +184,7 @@
                         <label for='industry'>Industry</label>
                         <input type="text" id="industry" name="ideal_customer_profile[industry]"
                         autocomplete="industry" class="form-control" 
-                        pattern="^[A-Za-z\-\s]{3,50}$" required />
+                        required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
 
@@ -193,7 +192,7 @@
                         <label for="location">Location</label>
                         <input type="text" id="location" name="ideal_customer_profile[location]"
                         autocomplete="location" class="form-control" 
-                        pattern="^[A-Za-z\-\s]{3,50}$" required />
+                        required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
 
@@ -201,7 +200,7 @@
                         <label for="titles">Titles</label>
                         <input type="text" id="titles" name="ideal_customer_profile[titles]"
                         autocomplete="titles" class="form-control" 
-                        pattern="^[A-Za-z\-\s]{3,50}$" required />
+                        required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
 
@@ -209,7 +208,7 @@
                         <label for="number-of-employees">Number of employees</label>
                         <input type="text" id="number-of-employees" name="ideal_customer_profile[number_of_employees]"
                         autocomplete="number_of_employees" class="form-control" 
-                        pattern="^[A-Za-z\-\s]{3,50}$" required />
+                        required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
                     
@@ -218,7 +217,7 @@
                         <textarea id="additional-requirements" cols="30" rows="10"
                         name="ideal_customer_profile[additional_requirements]"
                         autocomplete="additional_requirements" class="form-control" 
-                        pattern="^[A-Za-z\-\s]{3,50}$" required></textarea>
+                        required></textarea>
                         <div class="invalid-feedback">This field is required</div>
                     </div>
                         <div id="recaptcha1"></div>
@@ -598,7 +597,7 @@
                 <form id="get-in-touch" class="clients needs-validation" novalidate action="https://resourcerr.io/api/client/get-in-touch/" method="POST" >
                     <input name="full_name" type="text"  placeholder="Name">
                     <input name="email" type="email" placeholder="Email">
-                    <input name="phone" type="tel" placeholder="Phone"/>
+                    <input name="phone" type="tel" class="phone" placeholder="Phone"/>
                     <textarea cols="30" rows="10" placeholder="Your question"></textarea>
                     <div id="recaptcha2"></div>
                     <input type="hidden" name="captcha" value="idCaptcha2">
