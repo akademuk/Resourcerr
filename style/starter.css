@@ -1,6 +1,7 @@
 .starter-clients.hover {
     background: #151515;
     cursor: pointer;
+    transition: all .1s ease-in-out;
 }
 .starter-clients.hover .starter-wrapper .clients {
     color: white;
@@ -22,6 +23,7 @@
 .starter-partners.hover {
     background: #151515;
     cursor: pointer;
+    transition: all .1s ease-in-out;
 }
 .starter-partners.hover .starter-wrapper  .partners {
     color: white;
@@ -36,16 +38,6 @@
     opacity: 1;
     outline: none;
 }
-
-
-
-
-
-
-
-
-
-
 
 .starter {
     width: 100%;
@@ -62,8 +54,7 @@
     justify-content: center;
     padding-right: 120px;
     box-sizing: border-box;
-    -webkit-transition: all 2s; /* For Safari 3.0 to 6.0 */
-    transition: all 2s; /* For modern browsers */
+    transition: all .1s ease-in-out;
 }
 .starter-clients h6 {
     font-family: 'Sora', sans-serif;
@@ -75,10 +66,7 @@
     margin-bottom: 24px;
 }
 .starter-clients h6 span {
-    background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+   color: #151515;
 }
 
 .starter-clients p {
@@ -92,7 +80,7 @@
     margin-bottom: 120px;
 }
 .starter-clients a {
-     opacity: 1;
+    opacity: 0;
     outline: none;
 }
 .starter-partners {
@@ -103,8 +91,7 @@
     justify-content: center;
     padding-left: 120px;
     box-sizing: border-box; 
-    -webkit-transition: all 1s; /* For Safari 3.0 to 6.0 */
-    transition: all 1s; /* For modern browsers */
+    transition: all .1s ease-in-out;
 }
 .starter-partners h6 {
     font-family: 'Sora', sans-serif;
@@ -116,10 +103,7 @@
     margin-bottom: 24px;
  }
  .starter-partners h6 span{
-    background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #151515;
  }
 .starter-partners p {
     font-family: 'Sora';
@@ -255,3 +239,6 @@ img {
     height: 100%;
 }
 }
+
+
+

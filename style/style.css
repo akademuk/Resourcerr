@@ -1080,6 +1080,106 @@ h1 span i {
   }
 }
 
+#myDiv {
+  display: none;
+}
+
+#loader {
+  width: 100%;
+  height: 100vh;
+  background: #151515;
+  position: relative;
+}
+
+#loader .loader-container {
+  padding-top: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFFFFF;
+  border: 1px solid #151515;
+  border-radius: 24px;
+  height: 200px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader-container-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader-container-logo p {
+  margin-top: 10px;
+  color: #151515;
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.loader-container-logo img {
+  width: 67px;
+  height: 55px;
+}
+
+.gooey {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 142px;
+  height: 40px;
+  margin: -20px 0 0 -71px;
+  background: white;
+  filter: contrast(10);
+}
+
+.gooey .dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  filter: blur(4px);
+  background: #000;
+  border-radius: 50%;
+  transform: translateX(0);
+  animation: dot 2.8s infinite;
+}
+
+.gooey .dots {
+  transform: translateX(0);
+  margin-top: 12px;
+  margin-left: 31px;
+  animation: dots 2.8s infinite;
+}
+
+.gooey .dots span {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  filter: blur(4px);
+  background: #000;
+  border-radius: 50%;
+}
+
+@keyframes dot {
+  50% {
+    transform: translateX(96px);
+  }
+}
+
+@keyframes dots {
+  50% {
+    transform: translateX(-31px);
+  }
+}
+
 .achievements {
   width: 100%;
   background: #151515;
@@ -2171,6 +2271,9 @@ h5 {
     font-size: 18px;
     margin-bottom: 0;
   }
+  .how-it-works .wrapper .how-it-works-container .how-it-works-container-info:nth-of-type(5)::after {
+    content: none;
+  }
   .how-it-works .wrapper .how-it-works-container .how-it-works-container-info:nth-of-type(6) {
     padding-right: 16%;
   }
@@ -2184,21 +2287,6 @@ h5 {
   }
   .how-it-works .wrapper .how-it-works-container .how-it-works-container-info:nth-of-type(6)::after {
     content: none;
-  }
-}
-
-@media (max-width: 992px) and (orientation: landscape) {
-  .how-it-works {
-    margin-top: 0 !important;
-  }
-}
-
-@media (max-width: 992px) {
-  .why-we-ar .wrapper {
-    padding-left: 0;
-  }
-  .why-we-ar .wrapper .why-we-ar-flex {
-    width: 100%;
   }
 }
 

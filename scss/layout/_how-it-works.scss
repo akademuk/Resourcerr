@@ -252,7 +252,6 @@ h5 {
     .wrapper {
         h2 {
             margin-left: 16%;
-            
             margin-bottom: 0;
         }
         .how-it-works-container {
@@ -327,6 +326,9 @@ h5 {
                             margin-bottom: 0;
                         }
                     }
+                    &::after {
+                        content: none;
+                    }
                 }
                 &:nth-of-type(6) {
                     padding-right: 16%;
@@ -343,21 +345,6 @@ h5 {
                     }
                 }
             }
-        }
-    }
-}
-}
-@media (max-width:992px) {
-@media (orientation:landscape) {
-    .how-it-works {
-        margin-top: 0 !important;
-    }
-}
-.why-we-ar  {
-    .wrapper {
-        padding-left: 0;
-        .why-we-ar-flex {
-            width: 100%;
         }
     }
 }
