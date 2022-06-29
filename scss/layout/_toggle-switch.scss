@@ -17,11 +17,28 @@
       left: 0;
       cursor: pointer;
         &:checked + label {
-          &:after {
-          -webkit-transform: translateX(75%);
-          -ms-transform: translateX(75%);
-          transform: translateX(75%);
-        }
+          position: relative;
+          background: white;
+          border: none;
+          transition: .2s;
+            &:after {
+              content: '';
+              background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
+              transition: .2s;
+              -webkit-transform: translateX(75%);
+              -ms-transform: translateX(75%);
+              transform: translateX(75%);
+            }
+            &::before {
+              position: absolute;
+              top: -2px; bottom: -2px;
+              left: -2px; right: -2px;
+              background: linear-gradient(#0EC4B5, #51E689);
+              content: '';
+              z-index: -1;
+              border-radius: 40px;
+              transition: .2s;
+            }
       }
     }
   }
@@ -81,7 +98,7 @@
         border: 1px solid #fff;
         &::after {
           content: '';
-          background: linear-gradient(90.96deg, #0DC6B7 0%, #61F198 99.64%);
+          background: white;
         }
       }
     }
@@ -99,11 +116,28 @@
     .toggle-custom-container {
     input {
       &:checked + label {
-        &:after {
-          -webkit-transform: translateX(-75%);
-          -ms-transform: translateX(-75%);
-          transform: translateX(-75%);
-        }
+        position: relative;
+        background: white;
+        border: none;
+        transition: .2s;
+          &:after {
+            content: '';
+            background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
+            transition: .2s;
+            -webkit-transform: translateX(-75%);
+            -ms-transform: translateX(-75%);
+            transform: translateX(-75%);
+          }
+          &::before {
+            position: absolute;
+            top: -2px; bottom: -2px;
+            left: -2px; right: -2px;
+            background: linear-gradient(#29A9EE, #41E4F0);
+            content: '';
+            z-index: -1;
+            border-radius: 40px;
+            transition: .2s;
+          }
       }
     }
     }
@@ -128,7 +162,7 @@
     .toggle-custom-container {
       label {
         &::after {
-          background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+          background: white;
           right: 4px !important;
           left: auto;
         }
@@ -159,7 +193,12 @@
   }
   a {
     &:nth-of-type(1) {
-      opacity: 0.5;
+      &:hover {
+         background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+      }
     }
     &:nth-of-type(2) {
       opacity: 1;
@@ -167,7 +206,133 @@
   }
 }
 
+.tittle {
+  .wrapper {
+    .partners-toogle {
+      .toggle-custom {
+        .toggle-custom-container {
+          input {
+            &:hover {
+              ~ label {
+            position: relative;
+            background: white;
+            border: none;
+            transition: .2s;
+              &:after {
+                content: '';
+                background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
+                transition: .2s;
+              }
+              &::before {
+                position: absolute;
+                top: -2px; bottom: -2px;
+                left: -2px; right: -2px;
+                background: linear-gradient(#29A9EE, #41E4F0);
+                content: '';
+                z-index: -1;
+                border-radius: 40px;
+                transition: .2s;
+              }
+            }
+           
+            }
+           
+          }
+        }
+      }
+    }
+  }
+}
 
+.toggle-custom-burger.toggle-partners {
+      .toggle-custom {
+        .toggle-custom-container {
+          input {
+            &:hover {
+              ~ label {
+              &:after {
+                content: '';
+                background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
+                transition: .2s;
+              }
+            }
+           
+            }
+           
+          }
+        }
+      }
+    }
+
+    .tittle {
+      .wrapper {
+        .toggle-switch {
+          .clients-toogle {
+            .toggle-custom-container {
+              input {
+                &:hover {
+                  ~ label {
+                position: relative;
+                background: white;
+                border: none;
+                transition: .2s;
+                  &:after {
+                    content: '';
+                    background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
+                    transition: .2s;
+                  }
+                  &::before {
+                    position: absolute;
+                    top: -2px; bottom: -2px;
+                    left: -2px; right: -2px;
+                    background: linear-gradient(#0EC4B5, #51E689);
+                    content: '';
+                    z-index: -1;
+                    border-radius: 40px;
+                    transition: .2s;
+                  }
+                }
+               
+                }
+               
+              }
+            }
+            a {
+              &:hover {
+                &:nth-of-type(2) {
+                  background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .toggle-custom-burger.clients-toogle {
+          .toggle-custom {
+            .toggle-custom-container {
+              input {
+                &:hover {
+                  ~ label {
+                  &:after {
+                    content: '';
+                    background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
+                    transition: .2s;
+                  }
+                }
+               
+                }
+               
+              }
+            }
+          }
+        }
+    
 
 
 
