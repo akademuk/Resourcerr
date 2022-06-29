@@ -217,17 +217,16 @@
 @media (max-width: 576px) {
 .why-we-ar {
     margin-top: 80px;
-    padding-bottom: 0;
+    padding-bottom: 50px;
     .wrapper {
         align-items: center;
         h2 {
-            display: flex !important;
-           
+            display: inline-block !important;
             margin-bottom: 0;
             width: 100%;
             text-align: left !important;
             span {
-                 
+                 display: inline !important;
                   margin: 0 5px;
             }
         }
@@ -238,7 +237,7 @@
     }
 }
 .why-we-ar-flex {
-    width: 60% !important;
+    width: 80% !important;
     padding-left: 0!important;
     .why-we-ar-container {
         justify-content: space-between;
@@ -246,8 +245,14 @@
         height: 378px !important; 
         margin: 0 1% !important;
     }
-    .slick-dots {
-        bottom: -90px !important;
+}
+.why-we-ar  {
+    .wrapper  {
+        .why-we-ar-flex  {
+            .slick-dots {
+                bottom: -10px !important;
+            }
+        }
     }
 }
 .why-we-ar-container {
@@ -257,6 +262,7 @@
     }
     .why-we-ar-container_text {
         font-size: 16px !important;
+        padding-top: 20px;
     }
 }
 }

@@ -44,17 +44,18 @@
     height: 100vh;
     background: #151515;
     position: relative;
+    display: block;
     .loader-container {
         padding-top: 10px;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-        background: #FFFFFF;
-        border: 1px solid #151515;
+        background: #151515;
+        border: 1px solid #fff;
         border-radius: 24px;
-        height: 200px;
-        width: 150px;
+        height: 160px;
+        width: 160px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -66,7 +67,7 @@
     align-items: center;
     p {
         margin-top: 10px;
-        color: #151515;
+        color: #fff;
         font-weight: 800;
         font-size: 16px;
         margin-bottom: 0;
@@ -88,7 +89,7 @@
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background: #151515;
+    background: #fff;
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
   }
   .b div:nth-child(1) {
@@ -131,4 +132,103 @@
       transform: translate(24px, 0);
     }
   }
+
+
+  @keyframes pulse {
+    0% {
+      transform: translate(-50%,-50%) scale(0.5);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%,-50%)  scale(1);
+      opacity: 0;
+    }
+  }
   
+  $dot-size: 80px;
+  $button-size: 70px;
+  
+  .dot {
+    width: $dot-size;
+    height: $dot-size;
+    position: absolute;
+    top: -$dot-size / 2;
+    left: -$dot-size / 2;
+    pointer-events: none;
+    transform: rotate(-90deg) scale(#{ $button-size/ ($dot-size/3)});
+    z-index: 1;
+  
+    &.button-hover {
+      svg {
+        transform: rotate(-90deg) scale(#{ $button-size/ ($dot-size/3)});
+      }
+    }
+  
+    svg {
+      width: 100%;
+      position: absolute;
+      transform: rotate(-90deg);
+      transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
+  
+      path {
+        width: 20px;
+        height: 20px;
+         fill: url(#paint0_linear_869_11840);
+        transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
+      }
+    }
+  }
+  
+  .button {
+    position: absolute;
+    width: $button-size;
+    height: $button-size;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    cursor: pointer;
+    
+    &:after {
+      content: "";
+      position: absolute;
+      background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%) !important;
+      width: calc(100% - 2px);
+      height: calc(100% - 2px);
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+    }
+  
+    &:before {
+      content: "";
+      position: absolute;
+      width: 150%;
+      height: 150%;
+      border-radius: 50%;
+    left: 50%;
+      top: 50%;
+      background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%) !important;
+      transform: translate(-50%, -50%) scale(0);
+      transform-origin: 50% 50%;
+    }
+    
+    &.pulse {
+      span {
+        color: #000;
+      }
+      &:before {
+      animation: pulse 1000ms forwards cubic-bezier(0.23, 1, 0.32, 1);
+      }
+    }
+  
+    span {
+      font-size: 10px;
+      color: #fff;
+      white-space: nowrap;
+      transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  }

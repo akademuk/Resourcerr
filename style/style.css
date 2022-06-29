@@ -639,6 +639,7 @@ header .logotype p {
   #menu ul {
     margin-top: 0;
     width: 73%;
+    margin-bottom: 50px;
   }
   #menu ul li {
     margin-bottom: 20px;
@@ -1009,6 +1010,7 @@ header .logotype p {
   height: 100vh;
   background: #151515;
   position: relative;
+  display: block;
 }
 
 #loader .loader-container {
@@ -1017,11 +1019,11 @@ header .logotype p {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: #FFFFFF;
-  border: 1px solid #151515;
+  background: #151515;
+  border: 1px solid #fff;
   border-radius: 24px;
-  height: 200px;
-  width: 150px;
+  height: 160px;
+  width: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1035,7 +1037,7 @@ header .logotype p {
 
 .loader-container-logo p {
   margin-top: 10px;
-  color: #151515;
+  color: #fff;
   font-weight: 800;
   font-size: 16px;
   margin-bottom: 0;
@@ -1059,7 +1061,7 @@ header .logotype p {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: #151515;
+  background: #fff;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 
@@ -1108,6 +1110,99 @@ header .logotype p {
   100% {
     transform: translate(24px, 0);
   }
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+
+.dot {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  pointer-events: none;
+  transform: rotate(-90deg) scale(2.625);
+  z-index: 1;
+}
+
+.dot.button-hover svg {
+  transform: rotate(-90deg) scale(2.625);
+}
+
+.dot svg {
+  width: 100%;
+  position: absolute;
+  transform: rotate(-90deg);
+  transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.dot svg path {
+  width: 20px;
+  height: 20px;
+  fill: url(#paint0_linear_869_11840);
+  transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%) !important;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%) !important;
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: 50% 50%;
+}
+
+.button.pulse span {
+  color: #000;
+}
+
+.button.pulse:before {
+  animation: pulse 1000ms forwards cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button span {
+  font-size: 10px;
+  color: #fff;
+  white-space: nowrap;
+  transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /*Client------------------------------------------------------------------------------*/
@@ -2049,18 +2144,19 @@ h1 span i {
 @media (max-width: 576px) {
   .why-we-ar {
     margin-top: 80px;
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
   .why-we-ar .wrapper {
     align-items: center;
   }
   .why-we-ar .wrapper h2 {
-    display: flex !important;
+    display: inline-block !important;
     margin-bottom: 0;
     width: 100%;
     text-align: left !important;
   }
   .why-we-ar .wrapper h2 span {
+    display: inline !important;
     margin: 0 5px;
   }
   .why-we-ar .wrapper .why-we-tittle-text {
@@ -2068,7 +2164,7 @@ h1 span i {
     margin-bottom: 0;
   }
   .why-we-ar-flex {
-    width: 60% !important;
+    width: 80% !important;
     padding-left: 0 !important;
   }
   .why-we-ar-flex .why-we-ar-container {
@@ -2077,8 +2173,8 @@ h1 span i {
     height: 378px !important;
     margin: 0 1% !important;
   }
-  .why-we-ar-flex .slick-dots {
-    bottom: -90px !important;
+  .why-we-ar .wrapper .why-we-ar-flex .slick-dots {
+    bottom: -10px !important;
   }
   .why-we-ar-container {
     margin: 0 !important;
@@ -2088,6 +2184,7 @@ h1 span i {
   }
   .why-we-ar-container .why-we-ar-container_text {
     font-size: 16px !important;
+    padding-top: 20px;
   }
 }
 
@@ -2752,7 +2849,7 @@ h4 {
   }
   .slider .slider__item p {
     font-size: 13px;
-    margin-bottom: 65px;
+    margin-bottom: 65px !important;
   }
   .slider .slider__item span {
     font-size: 13px;
