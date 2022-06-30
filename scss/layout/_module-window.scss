@@ -79,6 +79,24 @@
   90% {opacity: 0.9}
   100% {opacity: 1}
 }
+.form-control {
+  &:focus {
+    background: #151515 !important;
+    outline: none;
+    box-shadow: unset;
+  }
+}
+.clients {
+  .form-row {
+    input, textarea {
+      &:hover, 
+      &:focus {
+        border: 2px solid#2ED7AB;
+        cursor: pointer;
+      }
+    }
+  }
+}
 .modul-window-main {
   margin: 0 auto;
   width: 900px;
@@ -92,21 +110,13 @@
       background: transparent;
       border-radius: 16px;
       margin-bottom: 28px;
-      border:  1px solid #8A8A8A;
+      border:  2px solid #8A8A8A;
       padding-left: 15px;
       font-weight: 600;
       font-size: 18px;
       line-height: 140%;
       color:  white;
       display: inline-block;
-      &:focus {
-        background: #262626;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 140%;
-        color: white;
-        box-shadow: 0 1px 0 #51E589, inset 0 1px 0 #0EC3B5;
-      }
     }
   }
 }
@@ -235,13 +245,7 @@ h3 {
   border-radius: 16px !important;
   border: 1px solid #8A8A8A !important;
 }
-.partners-form {
-  input,textarea {
-    &:focus {
-      box-shadow: 0 1px 0 #29A9EE, inset 0 1px 0 #41E4F0 !important;
-    }
-  }
-}
+
 .partners-hover {
   li {
     a {
@@ -407,11 +411,9 @@ h3 {
     .partners-toggle-switch {
       .toggle-custom {
         label {
-           
             input {
               opacity: 0;
             }
-           
         }
         a {
         &:nth-of-type(1) {
@@ -430,11 +432,11 @@ h3 {
 .partners-form {
   input,textarea {
     &:hover {
-      box-shadow: 0 1px 0 #29A9EE , inset 0 1px 0 #41E4F0;
+      border: 2px solid #35C5F0;
       cursor: pointer;
     }
     &:focus {
-      box-shadow: 0 1px 0 #29A9EE , inset 0 1px 0 #41E4F0;
+      border: 2px solid #35C5F0;
       cursor: pointer;
     }
   }
@@ -457,7 +459,7 @@ h3 {
   height: 55px;
       background: transparent;
       border-radius: 16px;
-      border:  1px solid #8A8A8A;
+      border:  2px solid #8A8A8A;
       padding-left: 10px;
       font-weight: 600;
       font-size: 18px;
@@ -466,11 +468,11 @@ h3 {
       line-height: 140%;
       color:#8A8A8A;
       &:hover {
-        box-shadow: 0 1px 0 #29A9EE , inset 0 1px 0 #41E4F0;
+        border: 2px solid #35C5F0;
         cursor: pointer;
       }
       &:focus {
-        box-shadow: 0 1px 0 #29A9EE , inset 0 1px 0 #41E4F0;
+        border: 2px solid #35C5F0;
         cursor: pointer;
       }
 }
@@ -628,7 +630,7 @@ h3 {
     }
     &:after {
       content: '';
-      background: url(../../images/partners/file.png);
+      background: url(../images/partners/file.png);
       background-repeat: no-repeat;
       background-size: cover;
       position: absolute;

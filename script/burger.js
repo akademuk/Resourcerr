@@ -11,6 +11,6 @@ var listener = function( e ) {
 checkbox.addEventListener( 'click', function(){
   if( this.checked ) {
     document.addEventListener( 'click', listener );
-    document.querySelector("body").style.overflow = 'hidden';
+ 
   } 
 });

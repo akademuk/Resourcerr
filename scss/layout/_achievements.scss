@@ -14,11 +14,7 @@
                 }
                 cursor: pointer;
                 .achievements-counter {
-                   background:linear-gradient(90.96deg, #51E589 0%, #0EC3B5 99.64%);
-                   -webkit-background-clip: text;
-                   -webkit-text-stroke: 1px transparent;
-                  
-                  
+                    -webkit-text-stroke: 1px #2ED7AB;
                 }
             }
         margin-right: 5%;
@@ -56,10 +52,7 @@
             &:hover {
                 cursor: pointer;
                 .achievements-counter {
-                    background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
-                    -webkit-background-clip: text;
-                    -webkit-text-stroke: 1px transparent;
-                    text-shadow: 0px 0px 2px rgba(21, 21, 21, 1);
+                    -webkit-text-stroke: 1px #35C5F0
                 }
                 svg {
                    path {

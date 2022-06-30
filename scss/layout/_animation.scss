@@ -19,6 +19,7 @@
 
 body {
   overflow: hidden;
+   
 }
 
 body.loaded {
@@ -27,7 +28,7 @@ body.loaded {
 }
 
 #loader {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
     background: #151515;
@@ -125,125 +126,7 @@ body.loaded {
 
 
 
-  @keyframes pulse {
-    0% {
-      transform: translate(-50%,-50%) scale(0.5);
-      opacity: 1;
-    }
-    100% {
-      transform: translate(-50%,-50%)  scale(1);
-      opacity: 0;
-    }
-  }
-  
-  $dot-size: 112px;
-  $button-size: 112px;
-  
-  .dot {
-    max-width: 90vw !important;
-    max-height: 90vh !important;
-    width: $dot-size;
-    height: $dot-size;
-    position: absolute;
-    top: -$dot-size / 2;
-    left: -$dot-size / 2;
-    pointer-events: none;
-    transform: rotate(-90deg) scale(#{ $button-size/ ($dot-size/3)});
-    z-index: 1;
-  
-    &.button-hover {
-      svg {
-        transform: rotate(-90deg) scale(#{ $button-size/ ($dot-size/3)});
-      }
-    }
-  
-    svg {
-      width: 100%;
-      position: absolute;
-      transform: rotate(-90deg);
-      transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
-  
-      path {
-        width: 20px;
-        height: 20px;
-        fill: url(#paint0_linear_869_11840);
-        transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
-      }
-    }
-  }
-  
-  .button {
-    border: none;
-    max-width: 100vw;
-    max-height: 100vh;
-    width: $button-size;
-    height: $button-size;
-    border-radius: 50%;
-    background: #151515;
-    transform: translate(30%, 0%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 115%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #FFFFFF;
-    &:after {
-      content: "";
-      position: absolute;
-      width: calc(100% - 2px);
-      height: calc(100% - 2px);
-      border-radius: 50%;
-      top: 0;
-      left: 0;
-    }
-  
-    &:before {
-      content: "";
-      position: absolute;
-      width: 150%;
-      height: 150%;
-      border-radius: 50%;
-        left: 50%;
-      top: 50%;
-      background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
-      transform: translate(-50%, -50%) scale(0);
-      transform-origin: 50% 50%;
-    }
-    
-    &.pulse {
-        background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
-        color: #fff;
-      span {
-        color: #fff;
-      }
-      &:before {
-      animation: pulse 1000ms forwards cubic-bezier(0.23, 1, 0.32, 1);
-      }
-    }
-  
-    span {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 115%;
-         display: block;
-        color: #fff;
-        white-space: nowrap;
-        transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
-    }
-  }
-  @media (max-width:992px) {
-    .dot {
-      display: none;
-    }
-  }
+
     @media (max-width:576px) {
       .tittle-container-btn {
         .button {
@@ -254,3 +137,67 @@ body.loaded {
       }
     
   }
+  $icon-size    : 60px;
+$border-radius: 0.5;//15% = 0.15, 50% = 0.50 etc.
+
+$background   : #2d2c3e;
+$background-b : #2d2c3e;
+
+// Icon Colors
+$green        : #16A085;
+$red          : #C82647;
+$green-l      : #8CC63F;
+$orange       : #EB9532;
+$purple       : #7E3661;
+
+// Text
+$white      : #FFFFFF;
+  .icon{
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &::before{
+      content: 'Find';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transition: all 0.25s ease;
+      border-radius: $icon-size*$border-radius;
+    }
+    &::after{
+      content: 'clients';
+      position: absolute;
+      top: 20px;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transition: all 0.25s ease;
+      border-radius: $icon-size*$border-radius;
+    }
+
+  }
+  
+  .icon-expand{
+
+    &::before{
+      background: $red;
+      box-shadow: inset 0 0 0 $icon-size #2ED7AB;
+      
+    }
+    &:hover::before{
+      box-shadow: inset 0 0 0 1px #2ED7AB;
+    }
+    &:hover{
+      span {
+        color: black;
+      }
+    }
+  }
+  
