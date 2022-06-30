@@ -25,19 +25,9 @@
               content: '';
               background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
               transition: .2s;
-              -webkit-transform: translateX(120%);
-              -ms-transform: translateX(120%);
-              transform: translateX(120%);
-            }
-            &::before {
-              position: absolute;
-              top: -2px; bottom: -2px;
-              left: -2px; right: -2px;
-              background: linear-gradient(#0EC4B5, #51E689);
-              content: '';
-              z-index: -1;
-              border-radius: 40px;
-              transition: .2s;
+              -webkit-transform: translateX(100%);
+              -ms-transform: translateX(100%);
+              transform: translateX(100%);
             }
       }
     }
@@ -54,6 +44,9 @@
       width: 38px;
       height: 20px;
       cursor: pointer;
+      background: url(../../images/border.png);
+      background-size: contain;
+      background-repeat: no-repeat;
       order: 2;
       transition: all 0.2s ease-in-out;
       margin-bottom: 0;
@@ -68,20 +61,6 @@
         border-radius: 50%;
         -webkit-transition: .4s;
         transition: .4s;
-      }
-      &::before {
-        height: 21px;
-        width: 40px;
-        border: 1px solid #151515;
-      border-radius: 40px;
-        position: absolute;
-        top: -2px; bottom: -2px;
-        left: -2px; right: -2px;
-        background: linear-gradient(#0EC4B5, #51E689);
-        content: '';
-        z-index: -1;
-        border-radius: 40px;
-        transition: .2s;
       }
     }
   }
@@ -107,7 +86,9 @@
   .toggle-custom {
     .toggle-custom-container {
       label {
-        border: 1px solid #fff;
+        background: url(../../images/border-white.png);
+        background-size: contain;
+        background-repeat: no-repeat;
         &::after {
           content: '';
           background: white;
@@ -136,19 +117,9 @@
             content: '';
             background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
             transition: .2s;
-            -webkit-transform: translateX(-120%);
-            -ms-transform: translateX(-120%);
-            transform: translateX(-120%);
-          }
-          &::before {
-            position: absolute;
-            top: -2px; bottom: -2px;
-            left: -2px; right: -2px;
-            background: linear-gradient(#29A9EE, #41E4F0);
-            content: '';
-            z-index: -1;
-            border-radius: 40px;
-            transition: .2s;
+            -webkit-transform: translateX(-80%);
+            -ms-transform: translateX(-80%);
+            transform: translateX(-80%);
           }
       }
     }
@@ -175,7 +146,7 @@
       label {
         &::after {
           background: white;
-          right: 2px !important;
+          right: 6px !important;
           left: auto;
         }
       }
@@ -197,7 +168,7 @@
     .toggle-custom-container {
       label {
         &::after {
-          right: 2px !important;
+          right: 6px !important;
           left: auto;
         }
       }
@@ -224,10 +195,17 @@
       .toggle-custom {
         .toggle-custom-container {
           input {
+            &:checked + label {
+              background: url(../images/partners/partners-border.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
             &:hover {
               ~ label {
             position: relative;
-            background: white;
+            background: url(../images/partners/partners-border.png);
+            background-size: contain;
+            background-repeat: no-repeat;
             border: none;
             transition: .2s;
               &:after {
@@ -235,17 +213,7 @@
                 background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
                 transition: .2s;
               }
-              &::before {
-               border: none;
-                position: absolute;
-                top: -2px; bottom: -2px;
-                left: -2px; right: -2px;
-                background: linear-gradient(#29A9EE, #41E4F0);
-                content: '';
-                z-index: -1;
-                border-radius: 40px;
-                transition: .2s;
-              }
+             
             }
            
             }
@@ -263,6 +231,12 @@
           input {
             &:hover {
               ~ label {
+                position: relative;
+                background: url(../images/partners/partners-border.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                border: none;
+                transition: .2s;
               &:after {
                 content: '';
                 background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
@@ -283,30 +257,25 @@
           .clients-toogle {
             .toggle-custom-container {
               input {
+                &:checked + label {
+                  background: url(../images/client-border.png);
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                }
                 &:hover {
                   ~ label {
-                position: relative;
-                background: white;
-                border: none;
-                transition: .2s;
+                    position: relative;
+                  background: url(../images/client-border.png);
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  border: none;
+                  transition: .2s;
                   &:after {
                     content: '';
                     background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
                     transition: .2s;
                   }
-                  &::before {
-                    height: 18px;
-                    width: 36px;
-                    border: 1px solid transparent;
-                    position: absolute;
-                    top: -2px; bottom: -2px;
-                    left: -2px; right: -2px;
-                    background: linear-gradient(#0EC4B5, #51E689);
-                    content: '';
-                    z-index: -1;
-                    border-radius: 40px;
-                    transition: .2s;
-                  }
+              
                 }
                
                 }
@@ -335,6 +304,14 @@
               input {
                 &:hover {
                   ~ label {
+                    
+                      position: relative;
+                      background: url(../images/client-border.png);
+                      background-size: contain;
+                      background-repeat: no-repeat;
+                      border: none;
+                      transition: .2s;
+                    
                   &:after {
                     content: '';
                     background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);

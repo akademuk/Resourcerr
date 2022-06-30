@@ -81,7 +81,7 @@
 }
 .modul-window-main {
   margin: 0 auto;
-  width: 950px;
+  width: 900px;
   padding-top: 104px;
   form {
     width: 100%;
@@ -136,7 +136,7 @@ h3 {
   position: relative;
   text-align: left;
   margin-bottom: 48px;
-  margin-left: 336px;
+  margin-left: 300px;
   &:before {
     content: "01";
     @include form-tittle;
@@ -216,7 +216,8 @@ h3 {
   color: #D0D0D0;
   font-size: 18px;
   line-height: 140%;
-  span {
+  a {
+    text-decoration: none;
     background: linear-gradient(90.96deg, #0EC4B5 0%,#51E689 99.64%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -503,7 +504,7 @@ h3 {
   .invalid-feedback {
     position: absolute;
     top: 30px;
-    left: 23%;
+    left: 18%;
     width: max-content;
   }
 }

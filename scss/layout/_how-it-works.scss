@@ -169,7 +169,8 @@ h5 {
                     }
                 }
                 &:nth-of-type(2) {
-                    &::before {
+                    &::after {
+                        content: "";
                         background: url(../images/partners/works-line1.png);
                         background-size: contain;
                         background-repeat: no-repeat;
@@ -184,7 +185,8 @@ h5 {
                     }
                 }
                 &:nth-of-type(4) {
-                    &::before {
+                    &::after {
+                        content: "";
                         background: url(../images/partners/works-line3.png);
                         background-size: contain;
                         background-repeat: no-repeat;
@@ -192,6 +194,7 @@ h5 {
                 }
                 &:nth-of-type(5) {
                     &::before {
+                        content: "";
                         background: url(../images/partners/works-line4.png);
                         background-size: contain;
                         background-repeat: no-repeat;

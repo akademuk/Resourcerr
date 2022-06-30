@@ -26,7 +26,7 @@
           <div class="b"><div></div><div></div><div></div><div></div></div>
         </div>
       </div>
-<div style="display:none;" id="myDiv" class="animate-bottom">
+<div class="animate-bottom">
     <div class="dot">
 
         <svg viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -86,10 +86,11 @@
                     </div>
     
                     <div class="form-row">
-                        <label for="tel">Phone number</label>
-                        <input type="text" id="phone" name="partners_form[phone]"
-                        autocomplete="phone" class="form-control" 
-                        required />
+                        <label for="phone">Phone number</label>
+                        <input type="text" id="phone" class="phone" name="corporate_details[phone_number]" autocomplete="phone"
+                               class="form-control"
+                               pattern="^[0-9\-()+\s]+$" required
+                        />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
     
@@ -198,7 +199,7 @@
                        <div id="recaptcha1"></div>
                        <input type="hidden" name="captcha" value="idCaptcha1">
                         <input type="submit" value="Submit" class="submit-form" id="myBtn">                          
-                        <p class="submit-recommendation">Click to Submit I agree to the <span> Terms of Use</span></p>
+                        <p class="submit-recommendation">Click to Submit I agree to the <a href="#"> Terms of Use</a></p>
                         </form>
                     </div>
                 </div>
@@ -397,7 +398,7 @@
         <div class="about-us" id="about">
             <div class="wrapper">
                 <div class="about-us_img partners-container" >
-                    <img src="../images/partners/about-us.png" srcset="../images/about-us-retina.png 2x" alt="" class="about-us_static">
+                    <img src="../images/partners/about-us.png" srcset="../images/partners/about-us-retina.png 2x" alt="" class="about-us_static">
                     <div class="container">
                         <div class="object" data-value="3">
                             <img src="../images/maney1.png" class="object" data-value="-2" alt="">
@@ -411,7 +412,6 @@
                             <img src="../images/contact3.png" class="object" data-value="-4" alt="">
                         </div>
                     </div>
-                   
                 </div>
                 <div class="about-us_read-more">
                     <h2>About<span class="partners-blue"> us</span></h2>
@@ -422,11 +422,11 @@
         <!--Send request----------------------------------------------------------->
         <div class="send-request partners-send-request">
          <div class="wrapper">
-            <img src="../images/path104-2.png" alt="">
-            <img src="../images/path104-1.png" alt="">
-            <img src="../images/path104.png" alt="">
+            <img src="../images/partners/path104.png" alt="send request">
+            <img src="../images/partners/path2.png" alt="send request">
+            <img src="../images/partners/path3.png" alt="send request">
             <p class="send-request-text">Fill out the application form so that we add you to the list of our partners and and start growing your sales pipeline</p>
-            <button class="btn-send-request partners-btn-hover" onclick="toggleModal()">Send <br> request</button>
+            <button class="button" onclick="toggleModal()"><span>Send</span>request</button>
         </div>
         </div>
         <!--Why we ar----------------------------------------------------------->
@@ -437,29 +437,29 @@
                 <div class="why-we-ar-flex slickNavigator">
                     <div class="why-we-ar-container ">
                         <div class="why-we-ar-container_img">
-                            <img src="../images/partners/resourcer1.png" alt="">
-                            <img src="../images/partners/resourcer1-hover.png" alt="">
+                            <img src="../images/partners/resourcer1.png" srcset="../images/partners/resourcer-retina.png 2x" alt="No need to spend money">
+                            <img src="../images/partners/resourcer1-hover.png" srcset="../images/partners/resourcer-retina-hover.png 2x" alt="No need to spend money">
                         </div>
                         <p class="why-we-ar-container_text">No need to spend money and time on the search and communication with the prospects</p>
                     </div>
                     <div class="why-we-ar-container ">
                         <div class="why-we-ar-container_img">
-                            <img src="../images/partners/resourcer2.png" alt="">
-                            <img src="../images/partners/resourcer2-hover.png" alt="">
+                            <img src="../images/partners/resourcer2.png" srcset="../images/partners/resourcer-retina2.png 2x" alt="Increase customer">
+                            <img src="../images/partners/resourcer2-hover.png" srcset="../images/partners/resourcer-retina2-hover.png 2x" alt="Increase customer">
                         </div>
                         <p class="why-we-ar-container_text">Increase customer lifetime and satisfaction score being the best match</p>
                     </div>
                     <div class="why-we-ar-container ">
                            <div class="why-we-ar-container_img">
-                            <img src="../images/partners/resourcer3.png" alt="">
-                            <img src="../images/partners/resourcer3-hover.png" alt="">
+                            <img src="../images/partners/resourcer3.png" srcset="../images/partners/resourcer-retina3.png 2x" alt="Get the clients">
+                            <img src="../images/partners/resourcer3-hover.png" srcset="../images/partners/resourcer-retina3-hover.png 2x" alt="Get the clients">
                             </div>
                            <p class="why-we-ar-container_text">Get the clients you choose and can provide the best results with</p>
                     </div>
                     <div class="why-we-ar-container ">
                            <div class="why-we-ar-container_img">
-                            <img src="../images/partners/resourcer4.png" alt="">
-                            <img src="../images/partners/resourcer4-hover.png" alt="">           
+                            <img src="../images/partners/resourcer4.png" srcset="../images/partners/resourcer-retina4.png 2x" alt="Immediate project">
+                            <img src="../images/partners/resourcer4-hover.png" srcset="../images/partners/resourcer-retina4-hover 2x" alt="Immediate project">           
                             </div>
                            <p class="why-we-ar-container_text">Immediate project launch as the client is ready to cooperate with you</p>
                     </div>
@@ -577,14 +577,37 @@
                 </div>
                 <div class="get-in-touch-container_form">
                     <form id="get-in-touch" class="partners-form needs-validation" novalidate action="https://resourcerr.io/api/partner/get-in-touch/" method="POST" >
-                        <input name="full_name" type="text"  placeholder="Name">
-                        <input name="email" type="email" placeholder="Email">
-                        <input name="phone" type="phone" placeholder="Phone"/>
-                        <textarea cols="30" rows="10" placeholder="Your question"></textarea>
+                        <div class="form-row">
+                            <input type="text"  placeholder="Name"  name="partners_form[full_name]"
+                            autocomplete="full_name" class="form-control" 
+                            required />
+                            <div class="invalid-feedback">This field is required</div>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" placeholder="Email"
+                            name="partners_form[email]"
+                            autocomplete="email" class="form-control" 
+                            required />
+                            <div class="invalid-feedback">This field is required</div>
+                        </div>
+                        <div class="form-row">
+                            <input type="text" name="partners_form[phone_number]" autocomplete="phone"
+                            class="form-control" placeholder="Phone"
+                            pattern="^[0-9\-()+\s]+$" required
+                            />
+                            <div class="invalid-feedback">This field is required</div>
+                        </div>
+                        <div class="form-row">
+                        <textarea cols="30" rows="10" placeholder="Your question"
+                        name="partners_form[your_question]"
+                        autocomplete="your_question" class="form-control" 
+                        required></textarea>
+                        <div class="invalid-feedback">This field is required</div>
+                        </div>
                         <div id="recaptcha2"></div>
                         <input type="hidden" name="captcha" value="idCaptcha2">
                         <div class="get-in-touch-submit">
-                            <button class="btn-send-request-white">Send <br> request</button>
+                            <button class="button bg-white"><span>Send</span>request</button>
                             <p>Send a request and our consultants will contact you within an hour</p>
                         </div>
                     </form>
@@ -719,8 +742,8 @@
   $(window).on("mousemove", function(e) {
     loaded = true;
     if (!hovered) {
-      x = e.pageX + 25;
-      y = e.pageY + 25;
+      x = e.pageX + 15;
+      y = e.pageY + 35;
     }
   });
 
@@ -822,7 +845,7 @@
     <script src="../script/loader.js"></script>
     <script src="../env.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
-    <script src="../script/phone-number.js"></script>
+    <!-- <script src="../script/phone-number.js"></script> -->
     <script src="../script/switchToToggle.js"></script>
     <script src="../script/achievements-counter.js"></script>
     <script src="../script/burger.js"></script>

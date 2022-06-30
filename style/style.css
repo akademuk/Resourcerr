@@ -746,20 +746,7 @@ header .logotype p {
   content: '';
   background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%);
   transition: .2s;
-  transform: translateX(120%);
-}
-
-.toggle-custom .toggle-custom-container input:checked + label::before {
-  position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
-  background: linear-gradient(#0EC4B5, #51E689);
-  content: '';
-  z-index: -1;
-  border-radius: 40px;
-  transition: .2s;
+  transform: translateX(100%);
 }
 
 .toggle-custom .toggle-custom-container {
@@ -774,6 +761,9 @@ header .logotype p {
   width: 38px;
   height: 20px;
   cursor: pointer;
+  background: url(../../images/border.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   order: 2;
   transition: all 0.2s ease-in-out;
   margin-bottom: 0;
@@ -789,23 +779,6 @@ header .logotype p {
   left: 2px;
   border-radius: 50%;
   transition: .4s;
-}
-
-.toggle-custom .toggle-custom-container label::before {
-  height: 21px;
-  width: 40px;
-  border: 1px solid #151515;
-  border-radius: 40px;
-  position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
-  background: linear-gradient(#0EC4B5, #51E689);
-  content: '';
-  z-index: -1;
-  border-radius: 40px;
-  transition: .2s;
 }
 
 .toggle-custom a {
@@ -829,7 +802,9 @@ header .logotype p {
 }
 
 .toggle-custom-burger .toggle-custom .toggle-custom-container label {
-  border: 1px solid #fff;
+  background: url(../../images/border-white.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .toggle-custom-burger .toggle-custom .toggle-custom-container label::after {
@@ -858,21 +833,7 @@ header .logotype p {
   content: '';
   background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
   transition: .2s;
-  transform: translateX(-120%);
-}
-
-.toggle-partners .toggle-custom .toggle-custom-container input:checked + label::before,
-.partners-toogle .toggle-custom .toggle-custom-container input:checked + label::before {
-  position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
-  background: linear-gradient(#29A9EE, #41E4F0);
-  content: '';
-  z-index: -1;
-  border-radius: 40px;
-  transition: .2s;
+  transform: translateX(-80%);
 }
 
 .clients-toogle .toggle-custom a:nth-of-type(2):hover {
@@ -884,7 +845,7 @@ header .logotype p {
 
 .toggle-partners .toggle-custom .toggle-custom-container label::after {
   background: white;
-  right: 2px !important;
+  right: 6px !important;
   left: auto;
 }
 
@@ -896,7 +857,7 @@ header .logotype p {
 }
 
 .partners-toogle .toggle-custom .toggle-custom-container label::after {
-  right: 2px !important;
+  right: 6px !important;
   left: auto;
 }
 
@@ -911,9 +872,17 @@ header .logotype p {
   opacity: 1;
 }
 
+.tittle .wrapper .partners-toogle .toggle-custom .toggle-custom-container input:checked + label {
+  background: url(../images/partners/partners-border.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .tittle .wrapper .partners-toogle .toggle-custom .toggle-custom-container input:hover ~ label {
   position: relative;
-  background: white;
+  background: url(../images/partners/partners-border.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   border: none;
   transition: .2s;
 }
@@ -924,17 +893,12 @@ header .logotype p {
   transition: .2s;
 }
 
-.tittle .wrapper .partners-toogle .toggle-custom .toggle-custom-container input:hover ~ label::before {
+.toggle-custom-burger.toggle-partners .toggle-custom .toggle-custom-container input:hover ~ label {
+  position: relative;
+  background: url(../images/partners/partners-border.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   border: none;
-  position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
-  background: linear-gradient(#29A9EE, #41E4F0);
-  content: '';
-  z-index: -1;
-  border-radius: 40px;
   transition: .2s;
 }
 
@@ -944,9 +908,17 @@ header .logotype p {
   transition: .2s;
 }
 
+.tittle .wrapper .toggle-switch .clients-toogle .toggle-custom-container input:checked + label {
+  background: url(../images/client-border.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .tittle .wrapper .toggle-switch .clients-toogle .toggle-custom-container input:hover ~ label {
   position: relative;
-  background: white;
+  background: url(../images/client-border.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   border: none;
   transition: .2s;
 }
@@ -957,28 +929,21 @@ header .logotype p {
   transition: .2s;
 }
 
-.tittle .wrapper .toggle-switch .clients-toogle .toggle-custom-container input:hover ~ label::before {
-  height: 18px;
-  width: 36px;
-  border: 1px solid transparent;
-  position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
-  background: linear-gradient(#0EC4B5, #51E689);
-  content: '';
-  z-index: -1;
-  border-radius: 40px;
-  transition: .2s;
-}
-
 .tittle .wrapper .toggle-switch .clients-toogle a:hover:nth-of-type(2) {
   background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   opacity: 1;
+}
+
+.toggle-custom-burger.clients-toogle .toggle-custom .toggle-custom-container input:hover ~ label {
+  position: relative;
+  background: url(../images/client-border.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  transition: .2s;
 }
 
 .toggle-custom-burger.clients-toogle .toggle-custom .toggle-custom-container input:hover ~ label:after {
@@ -1006,16 +971,23 @@ header .logotype p {
   transform: scale(1);
 }
 
-#myDiv {
-  display: none;
+body {
+  overflow: hidden;
+}
+
+body.loaded {
+  overflow-x: hidden;
 }
 
 #loader {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
   background: #151515;
-  position: relative;
+  position: fixed;
+  overflow: hidden;
   display: block;
+  z-index: 999999999;
 }
 
 #loader .loader-container {
@@ -1128,8 +1100,8 @@ header .logotype p {
 }
 
 .dot {
-  max-width: 100vw;
-  max-height: 100vh;
+  max-width: 90vw !important;
+  max-height: 90vh !important;
   width: 112px;
   height: 112px;
   position: absolute;
@@ -1302,11 +1274,11 @@ h1 span i {
   background: url(../images/partners/line-tittle.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 107%;
   height: 100%;
   position: absolute;
-  top: 25px;
-  left: 0;
+  top: 13px;
+  left: -11px;
   z-index: -1;
 }
 
@@ -1582,7 +1554,7 @@ h1 span i {
 .about-us .wrapper {
   display: flex;
   height: 100%;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .about-us .wrapper .about-us_img {
@@ -1832,7 +1804,7 @@ h1 span i {
 
 .send-request .wrapper {
   position: relative;
-  background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%);
+  background: linear-gradient(90.96deg, #0DC6B7 0%, #61F198 99.64%);
   border-radius: 48px;
   padding: 80px 120px 80px 96px;
   display: flex;
@@ -2424,7 +2396,8 @@ h5 {
   background-clip: text;
 }
 
-.partners-how-it-works .wrapper .how-it-works-container .how-it-works-container-info:nth-of-type(2)::before {
+.partners-how-it-works .wrapper .how-it-works-container .how-it-works-container-info:nth-of-type(2)::after {
+  content: "";
   background: url(../images/partners/works-line1.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -2437,13 +2410,15 @@ h5 {
   background-repeat: no-repeat;
 }
 
-.partners-how-it-works .wrapper .how-it-works-container .how-it-works-container-info:nth-of-type(4)::before {
+.partners-how-it-works .wrapper .how-it-works-container .how-it-works-container-info:nth-of-type(4)::after {
+  content: "";
   background: url(../images/partners/works-line3.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .partners-how-it-works .wrapper .how-it-works-container .how-it-works-container-info:nth-of-type(5)::before {
+  content: "";
   background: url(../images/partners/works-line4.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -3008,7 +2983,7 @@ h4 {
 
 .modul-window-main {
   margin: 0 auto;
-  width: 950px;
+  width: 900px;
   padding-top: 104px;
 }
 
@@ -3070,7 +3045,7 @@ h3 {
   position: relative;
   text-align: left;
   margin-bottom: 48px;
-  margin-left: 336px;
+  margin-left: 300px;
 }
 
 h3:before {
@@ -3188,7 +3163,8 @@ h3:nth-of-type(4)::before {
   line-height: 140%;
 }
 
-.submit-recommendation span {
+.submit-recommendation a {
+  text-decoration: none;
   background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -3485,7 +3461,7 @@ h3:nth-of-type(4)::before {
 .form-row .invalid-feedback {
   position: absolute;
   top: 30px;
-  left: 23%;
+  left: 18%;
   width: max-content;
 }
 
@@ -3961,6 +3937,24 @@ h3:nth-of-type(4)::before {
   left: -40px;
 }
 
+.get-in-touch-container_form form .form-row {
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+
+.get-in-touch-container_form form .form-row input, .get-in-touch-container_form form .form-row textarea {
+  margin-left: 0;
+}
+
+.get-in-touch-container_form form .form-row .invalid-feedback {
+  top: 60px;
+  left: 0;
+}
+
+.get-in-touch-container_form form .form-row:nth-of-type(4) .invalid-feedback {
+  top: 120px;
+}
+
 .get-in-touch-container {
   display: flex;
   justify-content: space-between;
@@ -4080,6 +4074,7 @@ h3:nth-of-type(4)::before {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  margin-top: 50px;
 }
 
 .get-in-touch-submit p {
@@ -4104,6 +4099,17 @@ h3:nth-of-type(4)::before {
 
 .partners-form form input:focus, .partners-form form textarea:focus {
   box-shadow: 0 1px 0 #29A9EE, inset 0 1px 0 #41E4F0;
+}
+
+.bg-white {
+  background: #fff;
+  color: #151515;
+  transform: translate(0%, 0%);
+  margin-right: 25px;
+}
+
+.bg-white span {
+  color: #151515;
 }
 
 /*@media min-width: 992px --------------------------------------------*/

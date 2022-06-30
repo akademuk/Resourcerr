@@ -17,16 +17,23 @@
 
 
 
+body {
+  overflow: hidden;
+}
 
-#myDiv {
-    display: none;
-  }
+body.loaded {
+  overflow-x: hidden;
+}
+
 #loader {
     width: 100%;
     height: 100vh;
+   overflow: hidden;
     background: #151515;
-    position: relative;
+    position: fixed;
+    overflow: hidden;
     display: block;
+    z-index: 999999999;
     .loader-container {
         position: absolute;
         left: 50%;
@@ -132,8 +139,8 @@
   $button-size: 112px;
   
   .dot {
-    max-width: 100vw;
-    max-height: 100vh;
+    max-width: 90vw !important;
+    max-height: 90vh !important;
     width: $dot-size;
     height: $dot-size;
     position: absolute;
@@ -166,14 +173,12 @@
   
   .button {
     border: none;
-   max-width: 100vw;
-   max-height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
     width: $button-size;
     height: $button-size;
     border-radius: 50%;
-   
     background: #151515;
-    
     transform: translate(30%, 0%);
     display: flex;
     flex-direction: column;
