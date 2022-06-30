@@ -761,7 +761,7 @@ header .logotype p {
   width: 38px;
   height: 20px;
   cursor: pointer;
-  background: url(../../images/border.png);
+  background: url(../images/border.png);
   background-size: contain;
   background-repeat: no-repeat;
   order: 2;
@@ -802,7 +802,7 @@ header .logotype p {
 }
 
 .toggle-custom-burger .toggle-custom .toggle-custom-container label {
-  background: url(../../images/border-white.png);
+  background: url(../images/border-white.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1200,6 +1200,23 @@ body.loaded {
   color: #fff;
   white-space: nowrap;
   transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@media (max-width: 992px) {
+  .dot {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .tittle-container-btn .button {
+    width: 104px !important;
+    height: 104px !important;
+    font-size: 16px !important;
+  }
+  .send-request .wrapper .button {
+    transform: translate(100%, 0%);
+  }
 }
 
 /*Client------------------------------------------------------------------------------*/

@@ -239,4 +239,24 @@ body.loaded {
         transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
     }
   }
-  
+  @media (max-width:992px) {
+    .dot {
+      display: none;
+    }
+  }
+    @media (max-width:576px) {
+      .tittle-container-btn {
+        .button {
+          width: 104px !important;
+          height: 104px !important;
+          font-size: 16px !important;
+        }
+      }
+      .send-request {
+        .wrapper {
+          .button {
+            transform: translate(100%, 0%);
+          }
+        }
+      }
+  }

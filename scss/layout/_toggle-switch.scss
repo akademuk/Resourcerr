@@ -44,7 +44,7 @@
       width: 38px;
       height: 20px;
       cursor: pointer;
-      background: url(../../images/border.png);
+      background: url(../images/border.png);
       background-size: contain;
       background-repeat: no-repeat;
       order: 2;
@@ -86,7 +86,7 @@
   .toggle-custom {
     .toggle-custom-container {
       label {
-        background: url(../../images/border-white.png);
+        background: url(../images/border-white.png);
         background-size: contain;
         background-repeat: no-repeat;
         &::after {
