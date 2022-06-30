@@ -977,6 +977,7 @@ body {
 
 body.loaded {
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 #loader {
