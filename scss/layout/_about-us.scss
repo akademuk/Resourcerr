@@ -7,9 +7,12 @@
         align-items: flex-start;
         .about-us_img {
             width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .about-us_read-more {
-            width: 50%;
+            width: 550px;
             h2 {
                 margin-top: 0;
                 margin-bottom: 40px;
@@ -34,7 +37,7 @@
     }
 }
 .about-us_static {
-    width: 100%;
+    width: 552px;
     object-fit: contain;
 }
 .about-us_read-more {

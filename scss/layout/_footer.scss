@@ -127,7 +127,23 @@
         background-clip: text !important;
     }
 }
-
+.client-hover {
+    &:hover {
+        background: linear-gradient(90.96deg, #0EC4B5 0%,#51E689 99.64%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+.module-hover-client {
+    &:hover {
+        &::after {
+            content: "";
+            background: url(../images/module-hover.png);
+            background-size: contain;
+        }
+    }
+}
 @media (max-width: 992px) {
 .footer {
     padding-top: 78px;

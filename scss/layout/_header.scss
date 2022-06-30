@@ -12,12 +12,13 @@ header {
     }
     .logotype {
         width: 100%;
-        height: 100%;
+        height: 80px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         border-bottom: 1px solid #151515;
         p {
             margin-bottom: 0;
+            margin-top: 22px;
         }
     }
 }

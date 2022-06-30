@@ -18,7 +18,7 @@
     box-sizing: border-box;
     overflow-x: hidden;
     margin-right: 20px;
-    height: 400px !important;
+    height: auto !important;
     box-sizing: border-box;
     display: flex !important;
     justify-content: space-between;
@@ -155,13 +155,22 @@ h4 {
 
 /*Reviews partners --------------------------------------------*/
 .partners-reviews {
-    h2 {
-        span {
-            @include partners-gradient;
+    .wrapper {
+        .slider {
+            .slick-prev,
+            .slick-next {
+                &:hover {
+                    &:before {
+                        background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+                        -webkit-background-clip: text !important;
+                        -webkit-text-fill-color: transparent !important;
+                        background-clip: text !important;
+                    }
+                }
+            }
         }
     }
 }
-
 /*@media min-width: 992px --------------------------------------------*/
 @media (max-width: 992px) {
 .reviews {
