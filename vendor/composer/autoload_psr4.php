@@ -7,4 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'ReCaptcha\\' => array($vendorDir . '/google/recaptcha/src/ReCaptcha'),
+    'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
+    'Backend\\Service\\' => array($baseDir . '/backend/service'),
 );
