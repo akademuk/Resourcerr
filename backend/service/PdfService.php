@@ -6,7 +6,7 @@ use FPDF;
 class PdfService
 {
 
-    public static function make(){
+    public static function make($data){
         $pdf=new FPDF();
         //Add a new page
         $pdf->AddPage();

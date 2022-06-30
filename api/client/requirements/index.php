@@ -13,7 +13,7 @@ if (is_readable($init)) {
 
 //backend
 $path = dirname(__FILE__);
-$backend = $path . '/../../../backend/index.php';
+$backend = $path . '/../../../backend/api.php';
 if (is_readable($backend)) {
     require_once $backend;
 }else{
