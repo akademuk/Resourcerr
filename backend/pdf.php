@@ -47,7 +47,7 @@ class createPDF {
             return $s;
     }
 
-    function run() {
+    function run($asAttach = true) {
         // change some win codes, and xhtml into html
         $str=array(
             '<br />' => '<br>',
@@ -65,7 +65,7 @@ class createPDF {
         foreach ($str as $_from => $_to) $this->html = str_replace($_from,$_to,$this->html);
 
         $pdf=new PDF('P','mm','A4',$this->title,$this->articleurl,false);
-        $pdf->SetCreator("Script by Radek HULAN, http://hulan.info/blog/");
+//        $pdf->SetCreator("Script by Radek HULAN, http://hulan.info/blog/");
         $pdf->SetDisplayMode('real');
         $pdf->SetTitle($this->_convert($this->title));
         $pdf->SetAuthor($this->author);
@@ -75,8 +75,10 @@ class createPDF {
         $pdf->PutMainTitle($this->_convert($this->title));
         $pdf->PutMinorHeading('Article URL');
         $pdf->PutMinorTitle($this->articleurl,$this->articleurl);
-        $pdf->PutMinorHeading('Author');
-        $pdf->PutMinorTitle($this->_convert($this->author));
+        if($this->author){
+            $pdf->PutMinorHeading('Author');
+            $pdf->PutMinorTitle($this->_convert($this->author));
+        }
         $pdf->PutMinorHeading("Published: ".@date("F j, Y, g:i a",$this->date));
         $pdf->PutLine();
         $pdf->Ln(10);
@@ -85,10 +87,14 @@ class createPDF {
         $pdf->WriteHTML($this->_convert(stripslashes($this->html)),$this->bi);
 
         // output
-        $pdf->Output();
 
-        // stop processing
-        exit;
+        if($asAttach){
+            return $pdf->Output('', 'S');
+        }else{
+            $pdf->Output();
+            // stop processing
+            exit;
+        }
     }
 }
 
@@ -339,7 +345,7 @@ class PDF extends FPDF
         $this->SetTextColor(0,0,0);
         $this->Cell(0,4,'Page '.$this->PageNo().'/{nb}',0,1,'C');
         $this->SetTextColor(0,0,180);
-        $this->Cell(0,4,'Created by HTML2PDF / FPDF',0,0,'C',0,'http://hulan.info/blog/');
+//        $this->Cell(0,4,'Created by HTML2PDF / FPDF',0,0,'C',0,'http://hulan.info/blog/'); // bottom
         $this->mySetTextColor(-1);
     }
 

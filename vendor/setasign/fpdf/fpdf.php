@@ -238,7 +238,9 @@ function SetTitle($title, $isUTF8=false)
 function SetAuthor($author, $isUTF8=false)
 {
 	// Author of document
-	$this->metadata['Author'] = $isUTF8 ? $author : utf8_encode($author);
+	if($author){
+		$this->metadata['Author'] = $isUTF8 ? $author : utf8_encode($author);
+	}
 }
 
 function SetSubject($subject, $isUTF8=false)

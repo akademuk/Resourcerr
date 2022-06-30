@@ -1,25 +1,51 @@
 <?php
 namespace Backend\Service;
 
-use FPDF;
+use createPDF;
 
 class PdfService
 {
 
     public static function make($data){
-        $pdf=new FPDF();
-        //Add a new page
-        $pdf->AddPage();
+        $title = 'none';
+        if (isset($data['corporate_details'])) {
+            $title = 'Requirements of the project';
 
-        // Set the font for the text
-        $pdf->SetFont('Arial', 'B', 18);
+        } elseif (isset($data['clients'])) {
+            $title = 'Get in touch [Client]';
 
-        // Prints a cell with given text
-        $pdf->Cell(60,20,'Requirements');
+        }
+
+        if(isset($data['partners_form'])){
+            $title = 'Data for partnership';
+            if(count($data)==6){
+                $title = 'Get in touch [Partner]';
+            }
+        }
 
 
-        // return the generated output
-        return $pdf->Output('', 'S');
+
+        $html = '';
+        if(isset($data['captcha']) ) {unset($data['captcha']);}
+        if(isset($data['g-recaptcha-response']) ) {unset($data['g-recaptcha-response']);}
+
+        foreach ($data as $key => $value){
+            if(is_array($value)){
+                foreach($value as $k => $v){
+                    if(is_string($k) && is_string($v) ){
+                        $html .= sprintf('<b>%s</b>: %s <br><br><br>', ucfirst(str_replace('_', ' ',$k)), $v);
+                    }
+
+                }
+            }else{
+                if(is_string($key) && is_string($value) ) {
+                    $html .= sprintf('<b>%s</b>: %s <br><br><br>', ucfirst(str_replace('_', ' ',$key)), $value);
+                }
+            }
+        }
+        $pdf =  new createPDF($html, $title, APP_URL,'',   time());
+
+        return $pdf->run();
 
     }
 }
