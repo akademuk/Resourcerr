@@ -1,2 +1,4 @@
 .idea
 .ftpquota
+env.js
+.env.php
