@@ -124,34 +124,9 @@ body.loaded {
     }
   }
 
-
-
-
-    @media (max-width:576px) {
-      .tittle-container-btn {
-        .button {
-          width: 104px !important;
-          height: 104px !important;
-          font-size: 16px !important;
-        }
-      }
-    
-  }
-  $icon-size    : 60px;
-$border-radius: 0.5;//15% = 0.15, 50% = 0.50 etc.
-
-$background   : #2d2c3e;
-$background-b : #2d2c3e;
-
-// Icon Colors
-$green        : #16A085;
-$red          : #C82647;
-$green-l      : #8CC63F;
-$orange       : #EB9532;
-$purple       : #7E3661;
-
-// Text
-$white      : #FFFFFF;
+$icon-size:60px;
+$border-radius:0.5;
+$white:#FFFFFF;
   .icon{
     cursor: pointer;
     position: relative;
@@ -160,9 +135,8 @@ $white      : #FFFFFF;
     height: 112px;
     border-radius: 50%;
     overflow: hidden;
-
-    &::before{
-      content: 'Find';
+    &:before{
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
@@ -171,8 +145,8 @@ $white      : #FFFFFF;
       transition: all 0.25s ease;
       border-radius: $icon-size*$border-radius;
     }
-    &::after{
-      content: 'clients';
+    &:after{
+      content: '';
       position: absolute;
       top: 20px;
       left: 0;
@@ -181,23 +155,24 @@ $white      : #FFFFFF;
       transition: all 0.25s ease;
       border-radius: $icon-size*$border-radius;
     }
-
+    span {
+      position: absolute;
+      top: 30%;
+      left: 25%;
+      z-index: 2;
+      font-size: 16px; 
+      color: #fff;
+    }
   }
-  
   .icon-expand{
-
     &::before{
-      background: $red;
-      box-shadow: inset 0 0 0 $icon-size $background;
-      
+      border-radius: 50%;
+      background: #35C5F0;
+      box-shadow: inset 0 0 0 $icon-size #151515;
     }
     &:hover::before{
-      box-shadow: inset 0 0 0 1px #2ED7AB;
-    }
-    &:hover{
-      span {
-        color: black;
-      }
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 1px #35C5F0;
     }
   }
   

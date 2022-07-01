@@ -216,8 +216,12 @@ h3 {
     background: #fff;
     padding: 0;
     border: none;
-    margin-left: 336px;
+    margin-left: 300px;
     display: inline-block;
+    &:hover {
+      background:#35C5F0;
+     color: #fff;
+    }
   }
 }
 .submit-recommendation {
@@ -430,14 +434,16 @@ h3 {
 }
 }
 .partners-form {
-  input,textarea {
-    &:hover {
-      border: 2px solid #35C5F0;
-      cursor: pointer;
-    }
-    &:focus {
-      border: 2px solid #35C5F0;
-      cursor: pointer;
+  .form-row {
+    input,textarea {
+      &:hover {
+        border: 2px solid #35C5F0;
+        cursor: pointer;
+      }
+      &:focus {
+        border: 2px solid #35C5F0;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -506,29 +512,50 @@ h3 {
   .invalid-feedback {
     position: absolute;
     top: 30px;
-    left: 18%;
+    left: 18.5%;
     width: max-content;
   }
 }
 .clients {
   .form-row {
     &:nth-of-type(6) {
+      align-items: flex-start;
       height: 160px;
       margin-bottom: 120px;
+      label {
+        margin-top: 10px !important;
+      }
+      .invalid-feedback {
+        top: 30px
+      }
       textarea {
         margin-bottom: 0;
       }
     }
     &:nth-of-type(12) {
+      align-items: flex-start;
       height: 160px;
       margin-bottom: 120px;
+      label {
+        margin-top: 10px !important;
+      }
+      .invalid-feedback {
+        top: 30px
+      }
       textarea {
         margin-bottom: 0;
       }
     }
     &:nth-of-type(21) {
+      align-items: flex-start;
       height: 160px;
       margin-bottom: 55px;
+      label {
+        margin-top: 10px !important;
+      }
+      .invalid-feedback {
+        top: 30px
+      }
       textarea {
         margin-bottom: 0;
       }
@@ -562,7 +589,7 @@ h3 {
       height: 160px;
       margin-bottom: 28px;
       .invalid-feedback {
-        top: 25px;
+        top: 30px;
       }
     }
     &:nth-of-type(13) {
@@ -594,7 +621,6 @@ h3 {
     align-items: center;
     height: 55px;
     text-align: right;
-    margin-bottom: 50px;
     input {
       padding-left: 80px;
       margin-bottom: 0;
@@ -824,6 +850,11 @@ h3 {
   }
 .partners-form {
   .form-row {
+    &:nth-of-type(6) {
+      .invalid-feedback {
+        top: 94px !important;
+      }
+    }
       &:nth-of-type(7) {
         align-items: flex-start;
         height: 160px;
@@ -843,6 +874,25 @@ h3 {
       }
     }
 }
+.clients {
+  .form-row {
+    &:nth-of-type(6) {
+      .invalid-feedback {
+        top: 205px !important;
+      }
+    }
+    &:nth-of-type(12) {
+      .invalid-feedback {
+        top: 205px !important;
+      }
+    }
+    &:nth-of-type(21) {
+      .invalid-feedback {
+        top: 205px !important;
+      }
+    }
+  }
+}
 }
 @media (max-width:576px) {
 .modul-window-header {
@@ -850,9 +900,25 @@ h3 {
     font-size: 14px;
   }
 }
+.submitform {
+  display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    input {
+      width: 88px !important;
+      height: 88px !important;
+      font-size: 12px !important;
+    }
+}
 .submit-recommendation {
-  span {
+  font-size: 12px !important;
+  margin: 0 24px 0 0 !important;
+  a {
     display: block;
+    text-align:right;
   }
 }
 .modal-message {
@@ -910,9 +976,24 @@ h3 {
     }
   }
 }
-.submit-recommendation {
-  font-size: 10px !important;
-  margin-left: 24px;
+.clients {
+  .form-row {
+    &:nth-of-type(6) {
+      .invalid-feedback {
+        top: 140px !important;
+      }
+    }
+    &:nth-of-type(12) {
+      .invalid-feedback {
+        top: 140px !important;
+      }
+    }
+    &:nth-of-type(21) {
+      .invalid-feedback {
+        top: 140px !important;
+      }
+    }
+  }
 }
 .modul-window-main  {
   form {
@@ -990,7 +1071,11 @@ h3 {
       }
     }
 }
-
+.partners-form  {
+  .file-upload {
+    margin-bottom: 0;
+  }
+}
 }
 
 

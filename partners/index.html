@@ -51,7 +51,7 @@
                     </div>
                     <div class="modul-window-main">
     
-                   <form id="form-requirements-of-the-project" class="clients partners-form needs-validation" novalidate action="https://resourcerr.io/api/client/requirements/" method="POST" >
+                   <form id="form-requirements-of-the-project" class="partners-form needs-validation" novalidate action="https://resourcerr.io/api/client/requirements/" method="POST" >
                         
                     <div class="form-row">
                         <label for="name">Full name</label>
@@ -190,8 +190,10 @@
                         </div>
                        <div id="recaptcha1"></div>
                        <input type="hidden" name="captcha" value="idCaptcha1">
-                        <input type="submit" value="Submit" class="submit-form" id="myBtn">                          
-                        <p class="submit-recommendation">Click to Submit I agree to the <a href="#"> Terms of Use</a></p>
+                        <div class="submitform">
+                            <input type="submit" value="Submit" class="submit-form" id="myBtn">                          
+                            <p class="submit-recommendation">Click to Submit I agree to the <a href="#"> Terms of Use</a></p>
+                        </div>
                         </form>
                     </div>
                 </div>
@@ -312,7 +314,7 @@
                     <h1 class="tittle-partners partners-tittle">Acquire new  <br> <span> <i>clients</i></span> for your <br> lead generation <br>business</h1>
                     <div class="tittle-container-btn">
                     <p>Use additional source <br> to get new clients</p>
-                    <button class="icon icon-expand" onclick="toggleModal()"> <span>Find</span> clients</button>
+                    <button class="icon icon-expand" onclick="toggleModal()"> <span>Find <br> clients</span></button>
                 </div>
                 </div>
 
@@ -419,7 +421,7 @@
             <img src="../images/partners/path2.png" alt="send request">
             <img src="../images/partners/path3.png" alt="send request">
             <p class="send-request-text">Fill out the application form so that we add you to the list of our partners and and start growing your sales pipeline</p>
-            <button class="button" onclick="toggleModal()"><span>Send</span>request</button>
+            <button class="icon icon-expand" onclick="toggleModal()"> <span>Find <br> clients</span></button>
         </div>
         </div>
         <!--Why we ar----------------------------------------------------------->
@@ -600,7 +602,7 @@
                         <div id="recaptcha2"></div>
                         <input type="hidden" name="captcha" value="idCaptcha2">
                         <div class="get-in-touch-submit">
-                            <button class="button bg-white"><span>Send</span>request</button>
+                            <button class="icon icon-expand" onclick="toggleModal()"><span>Send</span></button>
                             <p>Send a request and our consultants will contact you within an hour</p>
                         </div>
                     </form>
