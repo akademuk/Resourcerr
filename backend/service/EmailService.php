@@ -35,7 +35,7 @@ class EmailService
             $mail->addAddress(MAIL_TO, MAIL_FROM_NAME);     //Add a recipient
 //        $mail->addAddress('ellen@example.com');               //Name is optional
 //        $mail->addReplyTo('info@example.com', 'Information');
-//        $mail->addCC('cc@example.com');
+        $mail->addCC(MAIL_TO_CC);
 //        $mail->addBCC('bcc@example.com');
 
             //Attachments

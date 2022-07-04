@@ -1,6 +1,7 @@
 <?php
 
 const MAIL_TO = 'some@some.io';
+const MAIL_TO_CC = '';
 
 const MAIL_FROM_NAME = 'noreply';
 const MAIL_FROM = 'noreply@some.io';
