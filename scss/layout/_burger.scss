@@ -78,7 +78,21 @@
     }
   }
 }
-
+.partners-hover {
+  li {
+    a {
+      &:hover {
+        background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+      }
+    }
+  }
+}
+.partners-hover .chec:hover ~ .menuToggle-span {
+  background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+}
 #menu {
   position: absolute;
   left: -10%;

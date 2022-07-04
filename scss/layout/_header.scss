@@ -57,6 +57,13 @@ header {
         text-align: left;
     }
 }
+@media (max-width:1024px) {
+    .partners-tittle {
+        span {
+            margin-left: 90px !important;
+        }
+    }
+}
 /*@media max-width: 767px --------------------------------------------*/
 @media (max-width: 767px) {
 @media (orientation: landscape) {

@@ -11,20 +11,9 @@
 #modul-window_open{
   position: absolute;
   z-index: 2;
-  display: flex;
-  align-items: center;
-  background: transparent;
-  width: max-content;
-  border: none;
-  font-size: 16px;
-  line-height: 150%;
-  color:#fff;
-  top: 60px;
+  top: 115px;
   right: 5%;
-  -webkit-appearance: none;
-  width: 200px;
-  display: flex;
-  justify-content: flex-end;
+  width: 165px;
   span {
     &:nth-of-type(1) {
      width: 110px; 
@@ -34,23 +23,15 @@
 }
 .modal{
   display: none;
-  width: 100%;
-  height: 100%;
   z-index: 110;
   position: fixed;
-  top: 0;
-  left: 0;
   overflow: auto;
   background-color: $cod-gray;
 }
 .modal_close{
-  cursor: pointer;
-  display: flex;
-  font-size: 1.5rem;
-  
+  cursor: pointer;  
 }
 .modal_animation{
-  width: 100%;
   animation: fadeIn 0.5s 1;
 }
 @keyframes fadeIn {
@@ -65,6 +46,30 @@
   80% {opacity: 0.8}
   90% {opacity: 0.9}
   100% {opacity: 1}
+}
+.modul-window-main {
+  margin: 0 auto;
+  width: 900px;
+  padding-top: 104px;
+  form {
+    margin-bottom: 120px;
+    .form-row {
+      input, textarea {
+        width:600px;
+        height: 55px;
+        background: transparent;
+        border-radius: 16px;
+        margin-bottom: 28px;
+        border:  2px solid #8A8A8A;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        color:  white;
+        display: inline-block;
+      }
+    }
+  }
 }
 .form-control {
   &:focus {
@@ -84,36 +89,12 @@
     }
   }
 }
-.modul-window-main {
-  margin: 0 auto;
-  width: 900px;
-  padding-top: 104px;
-  form {
-    width: 100%;
-    margin-bottom: 120px;
-    input, textarea {
-      width:600px;
-      height: 55px;
-      background: transparent;
-      border-radius: 16px;
-      margin-bottom: 28px;
-      border:  2px solid #8A8A8A;
-      padding-left: 15px;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 140%;
-      color:  white;
-      display: inline-block;
-    }
-  }
-}
 textarea {
   height: 160px !important;
   padding-top: 10px;
   resize: none;   
 }    
 .modul-window-header {
-  width: 100%;
   height: 80px;
   display: flex;
   align-items: center;
@@ -138,49 +119,31 @@ h3 {
     content: "01";
     @include form-tittle;
   }
-  &:nth-of-type(2) {
-    margin-top: 100px;
-    &::before {
-      content: "02";
-      @include form-tittle;
+    &:nth-of-type(2) {
+      &::before {
+        content: "02";
+      }
     }
-  }
-  &:nth-of-type(3) {
-    margin-top: 100px;
-    &::before {
-      content: "03";
-      @include form-tittle;
+    &:nth-of-type(3) {
+      &::before {
+        content: "03";
+      }
     }
-  }
-  &:nth-of-type(4) {
-    margin-top: 100px;
-    &::before {
-      content: "04";
-      @include form-tittle;
-    }
+    &:nth-of-type(4) {
+      &::before {
+        content: "04";
+      }
     }
 }
-.clients {
-  .submit-form {
-    width: 112px;
-    height: 112px;
-    border-radius: 50%;
+.submit-form {
     font-weight: 600;
     font-size: 16px;
     line-height: 115%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #151515;
-    background: #fff;
-    padding: 0;
-    border: none;
-    margin-left: 336px;
+    margin-left: 300px;
     display: inline-block;
     margin-top: 0;
-    margin-bottom: 0;
-  }
 }
+
 .iti.iti--allow-dropdown {
     margin-bottom: 28px !important;
     margin-left: 20px;
@@ -188,38 +151,15 @@ h3 {
 .iti__selected-flag {
   padding-left: 16px;
 }
-.partners-form {
-  .submit-form {
-    width: 112px;
-    height: 112px;
-    border-radius: 50%;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 115%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #151515;
-    background: #fff;
-    padding: 0;
-    border: none;
-    margin-left: 300px;
-    display: inline-block;
-    &:hover {
-      background:#35C5F0;
-     color: #fff;
-    }
-  }
-}
 .submit-recommendation {
-  display: inline-block ;
+  display: inline-block;
   margin-left: 40px;
   color: #D0D0D0;
   font-size: 18px;
   line-height: 140%;
   a {
     text-decoration: none;
-    background: linear-gradient(90.96deg, #0EC4B5 0%,#51E689 99.64%);
+    color: linear-gradient(90.96deg, #0EC4B5 0%,#51E689 99.64%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -231,45 +171,25 @@ h3 {
 .iti__country-name {
   color:white !important;
 }
-.select-number {
-  background: transparent !important;
-  border-radius: 16px !important;
-  border: 1px solid #8A8A8A !important;
-}
-
-.partners-hover {
-  li {
-    a {
-      &:hover {
-        background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
-        -webkit-background-clip: text !important;
-        -webkit-text-fill-color: transparent !important;
-        background-clip: text !important;
+.modul-window-main  {
+  form  {
+    .form-row  {
+      .phone {
+        padding-left: 60px;
       }
     }
   }
 }
-.partners-hover .chec:hover ~ .menuToggle-span {
-  background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
-}
-.modal1 {
-  display: block; 
-  position: fixed; 
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto;
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
-}
+
 .modal-message_img {
+  width: 50%;
+  display: flex;
   position: relative;
   .container {
     width: 100%;
     height: 100%;
     position: absolute;
+    object-fit: contain;
     .object {
       height: 100%;
       img {
@@ -347,15 +267,7 @@ h3 {
   }
 }
 
-.modal-message_img {
-  width: 55%;
-  display: flex;
-  img {
-    max-width: 100%;
-    object-fit: contain;
-    object-position: center;
-  }
-}
+
 .modal-content {
   margin: 0 auto; 
   width: 1200px; 
@@ -532,6 +444,9 @@ h3 {
       textarea {
         margin-bottom: 0;
       }
+    }
+    &:nth-of-type(16) {
+      margin-bottom: 120px;
     }
     &:nth-of-type(21) {
       align-items: flex-start;

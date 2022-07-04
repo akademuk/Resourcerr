@@ -39,6 +39,7 @@
 .about-us_static {
     width: 552px;
     object-fit: contain;
+    max-width: 100%;
 }
 .about-us_read-more {
     font-size: 18px;
@@ -100,7 +101,7 @@
                 height: 33px;
             }
             &:nth-of-type(5) {
-                left: 70%;
+                left: 77%;
                 top: 30%;
                 width: 42px;
                 height: 42px;
@@ -178,7 +179,34 @@
         }
     }
 }
-
+@media (max-width: 1024px) {
+    .about-us_img {
+       .container {
+        .object {
+            img {
+                width: 35px !important;
+                height: 35px !important;
+                &:nth-of-type(6) {
+                    left: 76%;
+                    top: 3%;
+                }
+                &:nth-of-type(7) {
+                    left: 87%;
+                    top: 39%;
+                }
+                &:nth-of-type(8) {
+                    left: 81%;
+                    top: 24%;
+                
+                }
+                &:nth-of-type(9) {
+                    top: 25%;
+                }
+            }
+        }
+       }
+}
+}
 /*@media (max-width: 992px) --------------------------------------------*/
 @media (max-width: 992px) {
 .about-us {

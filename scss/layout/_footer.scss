@@ -62,12 +62,13 @@
 .footer-module {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     margin-left: 30%;
     .toggle-switch {
         padding-left: 0;
         margin-left: 0;
+        height: 98%;
          .toggle-custom {
             display: flex;
             flex-direction: column;
@@ -90,8 +91,23 @@
     }
   
 }
+.part {
+    padding-top: 50px;
+    .toggle-custom {
+        a {
+            &:hover {
+                &:nth-of-type(1) {
+                    background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+            }
+        }
+    }
+}
 .partners-blue-hover{
-  
+    margin-top: -51px;
         background: transparent;
         color: #fff;
         
@@ -145,6 +161,22 @@
         span {
             color: #2ED7AB !important;
             transition: all 1s;
+        }
+    }
+}
+.client-link {
+    nav {
+        ul {
+            li {
+                a {
+                    &:hover {
+                        background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
+                        -webkit-background-clip: text !important;
+                        -webkit-text-fill-color: transparent !important;
+                        background-clip: text !important;
+                    }
+                }
+            }
         }
     }
 }
