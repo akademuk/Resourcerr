@@ -716,6 +716,12 @@ header .logotype p {
     left: 92.5%;
     width: 29px;
   }
+  .partners-header .wrapper #menuToggle #modul-window_open {
+    top: 72px !important;
+  }
+  .partners-header .wrapper #menu .burger-module_logo {
+    top: 14px;
+  }
   #menuToggle .chec {
     left: 88%;
     width: 48px;
@@ -744,6 +750,9 @@ header .logotype p {
   }
   #menuToggle #menu .wrapper {
     padding-bottom: 60px;
+  }
+  .toogle-partners {
+    top: -44px !important;
   }
 }
 
@@ -1436,6 +1445,9 @@ h1 span i {
   .tittle-partners {
     font-size: 48px !important;
   }
+  .partners-tittle span {
+    margin-left: 28px !important;
+  }
 }
 
 .achievements {
@@ -2040,6 +2052,9 @@ h1 span i {
     font-size: 16px !important;
     top: 30px !important;
     left: 21px !important;
+  }
+  .send-request .partners-send-request .wrapper .icon span {
+    left: 24px !important;
   }
 }
 
@@ -2726,7 +2741,7 @@ h5 {
     padding-right: 0 !important;
   }
   .how-it-works-container-info:nth-of-type(5)::before {
-    content: none;
+    content: none !important;
   }
 }
 
@@ -4329,7 +4344,7 @@ form:focus {
     margin-right: 0;
   }
   .get-in-touch-submit p {
-    width: 64% !important;
+    width: 50% !important;
   }
   .get-in-touch-container_contact {
     width: 90%;

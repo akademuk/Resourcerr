@@ -535,6 +535,20 @@ label {
     width: 29px;
   }
 }
+.partners-header {
+  .wrapper {
+    #menuToggle {
+      #modul-window_open {
+        top: 72px !important;
+      }
+    }
+    #menu {
+      .burger-module_logo {
+        top: 14px;
+      }
+    }
+  }
+}
 #menuToggle {
   .chec {
     left: 88%;
@@ -580,6 +594,10 @@ label {
     }
   }
 }
+.toogle-partners {
+    top: -44px !important;
+  }
+
 }
 
 

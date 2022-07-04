@@ -412,7 +412,7 @@ h5 {
 .how-it-works-container-info {
     &:nth-of-type(5) {
         &::before {
-            content: none;
+            content: none !important;
         }
     }
 }
