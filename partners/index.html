@@ -14,13 +14,13 @@
     <link rel="stylesheet" type="text/css" href="../style/slick-theme.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
-    <title>Resourcer</title>
+    <title>resourcer-retina</title>
 </head>
 <body>
     <div id="loader">
         <div class="loader-container">
           <div class="loader-container-logo">
-              <img src="../images/loader.png" alt="logo">
+              <img src="../images/loader.png" srcset="../images/loader-retina.png 2x" alt="logo">
               <p>resourcerr</p>
           </div>
           <div class="b"><div></div><div></div><div></div><div></div></div>
@@ -168,17 +168,7 @@
                         autocomplete="many_contacts" class="form-control" 
                         required />
                         <div class="invalid-feedback">This field is required</div>
-                    </div>
-
-                    <div class="form-row">
-                        <label for="many-contacts">How many contacts your team can provide per month (min & max)?</label>
-                        <input type="file" id="file"
-                        name="partners_form[file]"
-                        autocomplete="file" class="form-control" multiple
-                        required />
-                        <div class="invalid-feedback">This field is required</div>
-                    </div>
-                    
+                    </div>                 
                     
                     <div class="form-row">
                         <label for="average">What countries are you working with?</label>
@@ -188,16 +178,24 @@
                         required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
+
+                    <div class="form-row">
+                        <label for="link-presentation">Link to presentation (optional)</label>
+                        <input type="text" id="link-presentation"
+                        name="partners_form[link-presentation]"
+                        autocomplete="link-presentation"
+                        required />
+                    </div>         
+
+                    <div class="form-row">
+                        <label for="average">Attach presentation (optional)</label>
+                        <input type="file" id="file"
+                        name="partners_form[file]"
+                        autocomplete="file" 
+                        required />
+                    </div>
                        
-                        <div class="file-upload">
-                           <span> Provide presentation <br> (link or attachment) </span>
-                          
-                                <input type="text" name="text">
-                                <div class="file-select-button" >
-                                    <input type="file" id="file" name="file" multiple>
-                                </div>
-                           
-                        </div>
+                        
                        <div id="recaptcha1"></div>
                        <input type="hidden" name="captcha" value="idCaptcha1">
                         <div class="submitform">
@@ -276,7 +274,7 @@
                             <ul>
                                 <li class="menu-top">Menu</li>
                                 <li><a href="#about" class="partners">About us</a></li>
-                                <li><a href="#why-we" class="partners">Why resourcer?</a></li>
+                                <li><a href="#why-we" class="partners">Why resourcerr?</a></li>
                                 <li><a href="#how-it-works" class="partners">How it works</a></li>
                                 <li><a href="#reviews" class="partners">Reviews</a></li>
                                 <li><a href="#contact" class="partners">Contacts</a></li>
@@ -442,7 +440,7 @@
         <!--Why we ar----------------------------------------------------------->
         <div class="why-we-ar" id="why-we">
             <div class="wrapper">
-               <h2>Why <span class="partners-blue">resourcer</span>?</h2>
+               <h2>Why <span class="partners-blue">resourcerr</span>?</h2>
                <p class="why-we-tittle-text">We can become your business <br> development manager that will provide you <br> with new clients</p>
                 <div class="why-we-ar-flex slickNavigator">
                     <div class="why-we-ar-container ">
@@ -482,42 +480,42 @@
             <h2>How<span> it </span>works</h2>
             <div class="how-it-works-container">
                   <div class="how-it-works-container-info">
-                      <img src="../images/partners/it-works1.png" alt="">
+                      <img src="../images/partners/it-works1.png" srcset="../images/partners/01.png 2x" alt="">
                       <div class="how-it-works-container-info_text">
                           <h5>01</h5>
                           <p>You fill out the application form describing your terms and experience</p>
                       </div>
                   </div> 
                   <div class="how-it-works-container-info">
-                    <img src="../images/partners/it-works2.png" alt="">
+                    <img src="../images/partners/it-works2.png" srcset="../images/partners/02.png 2x" alt="">
                     <div class="how-it-works-container-info_text">
                         <h5>02</h5>
                         <p>We verify the information and add you to the list of our partners</p>
                     </div>
                 </div>   
                 <div class="how-it-works-container-info">
-                    <img src="../images/partners/it-works3.png" alt="">
+                    <img src="../images/partners/it-works3.png" srcset="../images/partners/03.png 2x" alt="">
                     <div class="how-it-works-container-info_text">
                         <h5>03</h5>
                         <p>Once you match the general client’s requirements, we send you the form that can help us understand if your company is suitable for the very project</p>
                     </div>
                 </div>   
                 <div class="how-it-works-container-info">
-                    <img src="../images/partners/it-works4.png" alt="">
+                    <img src="../images/partners/it-works4.png" srcset="../images/partners/04.png 2x" alt="">
                     <div class="how-it-works-container-info_text">
                         <h5>04</h5>
                         <p>We have an interview with you discussing the details</p>
                     </div>
                 </div>  
                 <div class="how-it-works-container-info">
-                    <img src="../images/partners/it-works5.png" alt="">
+                    <img src="../images/partners/it-works5.png" srcset="../images/partners/05.png 2x" alt="">
                     <div class="how-it-works-container-info_text">
                         <h5>05</h5>
                         <p>If you’re a 100% match, we send your proposal to the client</p>
                     </div>
                 </div>    
                 <div class="how-it-works-container-info">
-                    <img src="../images/partners/it-works6.png" alt="">
+                    <img src="../images/partners/it-works6.png" srcset="../images/partners/06.png 2x" alt="">
                     <div class="how-it-works-container-info_text">
                         <h5>06</h5>
                         <p>If the client chooses you, we arrange an intro meeting</p>
@@ -565,7 +563,7 @@
                     <a href="mailto:info@resourcerr.io">info@resourcerr.io</a>
                     <span>Social links</span>
                     <div class="get-in-touch-container_contact-icon get-partners-icon">
-                        <a href="#"> 
+                        <a href="https://www.linkedin.com/company/resourcerr/" target="_blank"> 
                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.36597 8.0383H12.4298V10.0626C13.0152 8.89834 14.5164 7.85228 16.7716 7.85228C21.0948 7.85228 22.1211 10.1698 22.1211 14.4218V22.2968H17.7443V15.3902C17.7443 12.9687 17.1589 11.6032 15.6686 11.6032C13.6017 11.6032 12.7428 13.0749 12.7428 15.3891V22.2968H8.36597V8.0383ZM0.860875 22.1108H5.23766V7.85228H0.860875V22.1108ZM5.86463 3.20304C5.8648 3.5699 5.79204 3.93313 5.6506 4.27162C5.50915 4.61011 5.30184 4.91712 5.0407 5.17479C4.51155 5.70068 3.7953 5.99505 3.04927 5.99324C2.30455 5.99274 1.58995 5.69912 1.06002 5.17588C0.799831 4.91733 0.593219 4.60999 0.452021 4.27145C0.310824 3.93291 0.237816 3.56984 0.237183 3.20304C0.237183 2.46227 0.532616 1.75323 1.06111 1.23021C1.59058 0.70626 2.30548 0.412514 3.05036 0.412842C3.7966 0.412842 4.51221 0.707181 5.0407 1.23021C5.56811 1.75323 5.86463 2.46227 5.86463 3.20304Z" fill="white"/>
                             </svg>                            
@@ -709,7 +707,7 @@
                     <nav>
                         <ul>
                             <li><a href="#about" class="footer-link partners">About us</a></li>
-                            <li><a href="#why-we" class="footer-link partners">Why resourcer?</a></li>
+                            <li><a href="#why-we" class="footer-link partners">Why resourcerr?</a></li>
                             <li><a href="#how-it-works" class="footer-link partners">How it works</a></li>
                             <li><a href="#reviews" class="footer-link partners">Reviews</a></li>
                             <li><a href="#contact" class="footer-link partners">Contacts</a></li>

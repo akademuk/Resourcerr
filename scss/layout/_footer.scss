@@ -122,6 +122,32 @@
        
    
 }
+.client-ho {
+    width: 165px !important;
+    span {
+       &:nth-of-type(1) {
+        width: 110px;
+        margin-right: 15px;
+       }
+    }
+    &:hover {
+        .icon-expand {
+            &:before {
+                content: '';
+                background:#2ED7AB !important;
+                box-shadow: inset 0 0 0 1px #151515;
+                width: 36px;
+                height: 36px;
+                background-size: cover;
+               
+            }
+        }
+        span {
+            color: #2ED7AB !important;
+            transition: all 1s;
+        }
+    }
+}
 .partners-blue-hover {
     display: flex;
     align-items: center;

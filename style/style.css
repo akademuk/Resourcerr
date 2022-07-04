@@ -1080,7 +1080,7 @@ body.loaded {
   left: 0;
   height: 100%;
   width: 100%;
-  transition: all 1s ease;
+  transition: all .5s ease;
   border-radius: 30px;
 }
 
@@ -1091,7 +1091,7 @@ body.loaded {
   left: 0;
   height: 100%;
   width: 100%;
-  transition: all 1s ease;
+  transition: all .5s ease;
   border-radius: 30px;
 }
 
@@ -1113,6 +1113,21 @@ body.loaded {
 .icon-expand:hover::before {
   border-radius: 50%;
   box-shadow: inset 0 0 0 1px #35C5F0;
+}
+
+.client-animation span {
+  left: 22%;
+}
+
+.client-animation::before {
+  border-radius: 50%;
+  background: #2ED7AB;
+  box-shadow: inset 0 0 0 60px #151515;
+}
+
+.client-animation:hover::before {
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px #2ED7AB;
 }
 
 /*Client------------------------------------------------------------------------------*/
@@ -1803,6 +1818,31 @@ h1 span i {
 .partners-send-request .wrapper .icon-expand:hover::before {
   border-radius: 50%;
   box-shadow: inset 0 0 0 15px #fff !important;
+}
+
+.send-request .wrapper .icon {
+  width: 144px !important;
+  height: 144px !important;
+}
+
+.send-request .wrapper .icon span {
+  font-size: 18px !important;
+  top: 33% !important;
+  left: 25% !important;
+}
+
+.send-request .wrapper .icon-expand:before {
+  background: #fff;
+  box-shadow: inset 0 0 0 75px #151515 !important;
+}
+
+.send-request .wrapper .icon-expand:hover::before {
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 15px #fff !important;
+}
+
+.send-request .wrapper .icon-expand:hover span {
+  color: #151515;
 }
 
 /*@media (min-width: 768px) and (max-width: 991px) --------------------------------------------*/
@@ -3501,117 +3541,42 @@ h3:nth-of-type(4)::before {
   text-align: right;
 }
 
-.partners-form .file-upload {
+.partners-form input[type="file"] {
   position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 55px;
-  text-align: right;
+  padding-top: 12px;
+  color: #8A8A8A;
+  padding-left: 0;
 }
 
-.partners-form .file-upload input {
-  position: relative;
-  padding-left: 80px;
-  margin-bottom: 0;
-  margin-left: 15px;
-}
-
-.partners-form .file-upload input:hover {
-  border: 2px solid #35C5F0;
-  cursor: pointer;
-}
-
-.partners-form .file-upload input:hover .file-select-button input:after {
-  content: '';
-  background: url(../../images/upload-hover.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  left: 33%;
-  top: 27%;
-  width: 18px;
-  height: 21px;
-  transition: all 0.5s;
-}
-
-.partners-form .file-upload input:focus {
-  border: 2px solid #35C5F0;
-  cursor: pointer;
-}
-
-.partners-form .file-upload span {
-  color: #A1A1A1 !important;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-}
-
-.partners-form .file-select-button {
-  position: absolute;
-  left: 34%;
-  top: 6%;
-  width: 68px;
-  height: 50px;
-  display: flex;
-  border: 1px solid yellowgreen;
-  cursor: pointer;
-}
-
-.partners-form .file-select-button input {
-  width: 68px !important;
-  height: 100%;
-  border-radius: 16px 0 0 16px;
-  opacity: 1;
-  border: none;
-  border-right: 1px solid #414141;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-  position: relative;
-}
-
-.partners-form .file-select-button input:hover {
-  box-shadow: none;
-  border: none;
-}
-
-.partners-form .file-select-button input:hover:after {
-  content: '';
-  background: url(../../images/upload-hover.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  left: 33%;
-  top: 27%;
-  width: 18px;
-  height: 21px;
-  transition: all 0.5s;
-}
-
-.partners-form .file-select-button input:after {
+.partners-form input[type="file"]:after {
   content: '';
   background: url(../images/partners/file.png);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  left: 33%;
+  left: 5%;
   top: 27%;
   width: 18px;
   height: 21px;
 }
 
-.partners-form .file-select-button input:focus {
-  box-shadow: none !important;
-  background: transparent !important;
-}
-
-.partners-form .file-select-button img {
-  object-fit: none;
+.partners-form input[type="file"]:hover:after {
+  content: '';
+  background: url(../../images/upload-hover.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 5%;
+  top: 27%;
+  width: 18px;
+  height: 21px;
+  transition: all 0.5s;
 }
 
 .partners-form input[type=file]::-webkit-file-upload-button {
   border: none;
-  padding: .2em .4em;
+  width: 75px;
+  padding: .2em .1em;
   border-radius: .2em;
   background-color: transparent;
   transition: 1s;
@@ -4051,12 +4016,15 @@ h3:nth-of-type(4)::before {
   flex-direction: column;
 }
 
+.get-in-touch-container_form form .form-row {
+  margin-bottom: 16px;
+}
+
 .get-in-touch-container_form form input, .get-in-touch-container_form form textarea {
   width: 80%;
   height: 55px;
   background: transparent;
   border-radius: 16px;
-  margin-bottom: 16px;
   border: 2px solid #8A8A8A;
   padding-left: 15px;
   font-weight: 600;
@@ -4104,7 +4072,7 @@ form:focus {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .get-in-touch-submit p {
@@ -4125,10 +4093,6 @@ form:focus {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-.partners-form form input:focus, .partners-form form textarea:focus {
-  box-shadow: 0 1px 0 #29A9EE, inset 0 1px 0 #41E4F0;
 }
 
 .bg-white {
@@ -4169,6 +4133,35 @@ form:focus {
 .partners-form .get-in-touch-submit .icon-expand:hover:before {
   border-radius: 50%;
   box-shadow: inset 0 0 0 1px #35C5F0;
+}
+
+.clients .get-in-touch-submit .icon {
+  background: #fff;
+}
+
+.clients .get-in-touch-submit .icon span {
+  top: 40%;
+  left: 31%;
+  color: #151515;
+}
+
+.clients .get-in-touch-submit .icon:hover span {
+  color: #fff;
+}
+
+.clients .get-in-touch-submit p {
+  margin-left: 40px;
+}
+
+.clients .get-in-touch-submit .icon-expand::before {
+  background: #2ED7AB;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 60px #fff;
+}
+
+.clients .get-in-touch-submit .icon-expand:hover:before {
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px #2ED7AB;
 }
 
 /*@media min-width: 992px --------------------------------------------*/
@@ -4688,6 +4681,29 @@ form:focus {
   height: 36px;
   left: 2px;
   top: 2px;
+}
+
+.client-ho {
+  width: 165px !important;
+}
+
+.client-ho span:nth-of-type(1) {
+  width: 110px;
+  margin-right: 15px;
+}
+
+.client-ho:hover .icon-expand:before {
+  content: '';
+  background: #2ED7AB !important;
+  box-shadow: inset 0 0 0 1px #151515;
+  width: 36px;
+  height: 36px;
+  background-size: cover;
+}
+
+.client-ho:hover span {
+  color: #2ED7AB !important;
+  transition: all 1s;
 }
 
 .partners-blue-hover {
