@@ -169,7 +169,17 @@
                         required />
                         <div class="invalid-feedback">This field is required</div>
                     </div>
-    
+
+                    <div class="form-row">
+                        <label for="many-contacts">How many contacts your team can provide per month (min & max)?</label>
+                        <input type="file" id="file"
+                        name="partners_form[file]"
+                        autocomplete="file" class="form-control" multiple
+                        required />
+                        <div class="invalid-feedback">This field is required</div>
+                    </div>
+                    
+                    
                     <div class="form-row">
                         <label for="average">What countries are you working with?</label>
                         <input type="text" id="average"
@@ -284,7 +294,12 @@
                                 </div>
                             </div>
                             <p class="menu-top-nav">Menu</p>
-                            <button id="modul-window_open" class="partners-blue-hover">Send request</button>
+                            <button class="footer-link partners-blue-hover" id="modul-window_open">
+                                <span>Send request</span>
+                              <span class="icon icon-expand"><img src="../images/module-form.png" alt="module message"></span>
+                              
+                            </button>
+                         
                             <div class="burger-module_logo">
                                 <a href="#">
                                     <img src="../images/logo.png" alt="resourcer">
@@ -549,7 +564,7 @@
                     <span>Email</span>
                     <a href="mailto:info@resourcerr.io">info@resourcerr.io</a>
                     <span>Social links</span>
-                    <div class="get-in-touch-container_contact-icon">
+                    <div class="get-in-touch-container_contact-icon get-partners-icon">
                         <a href="#"> 
                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.36597 8.0383H12.4298V10.0626C13.0152 8.89834 14.5164 7.85228 16.7716 7.85228C21.0948 7.85228 22.1211 10.1698 22.1211 14.4218V22.2968H17.7443V15.3902C17.7443 12.9687 17.1589 11.6032 15.6686 11.6032C13.6017 11.6032 12.7428 13.0749 12.7428 15.3891V22.2968H8.36597V8.0383ZM0.860875 22.1108H5.23766V7.85228H0.860875V22.1108ZM5.86463 3.20304C5.8648 3.5699 5.79204 3.93313 5.6506 4.27162C5.50915 4.61011 5.30184 4.91712 5.0407 5.17479C4.51155 5.70068 3.7953 5.99505 3.04927 5.99324C2.30455 5.99274 1.58995 5.69912 1.06002 5.17588C0.799831 4.91733 0.593219 4.60999 0.452021 4.27145C0.310824 3.93291 0.237816 3.56984 0.237183 3.20304C0.237183 2.46227 0.532616 1.75323 1.06111 1.23021C1.59058 0.70626 2.30548 0.412514 3.05036 0.412842C3.7966 0.412842 4.51221 0.707181 5.0407 1.23021C5.56811 1.75323 5.86463 2.46227 5.86463 3.20304Z" fill="white"/>
@@ -570,7 +585,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="get-in-touch-container_form">
+                <div class="get-in-touch-container_form partners-get">
                     <form id="get-in-touch" class="partners-form needs-validation" novalidate action="https://resourcerr.io/api/partner/get-in-touch/" method="POST" >
                         <div class="form-row">
                             <input type="text"  placeholder="Name"  name="partners_form[full_name]"
@@ -602,7 +617,7 @@
                         <div id="recaptcha2"></div>
                         <input type="hidden" name="captcha" value="idCaptcha2">
                         <div class="get-in-touch-submit">
-                            <button class="icon icon-expand" onclick="toggleModal()"><span>Send</span></button>
+                            <button class="icon icon-expand"><span>Send</span></button>
                             <p>Send a request and our consultants will contact you within an hour</p>
                         </div>
                     </form>
@@ -707,7 +722,11 @@
                               <a href="#" class="link-none">For parents</a>
                             </div>
                         </div> 
-                        <button onclick="toggleModal()" class="footer-link partners-blue-hover"><span>Send </span> request</button>
+                        <button onclick="toggleModal()" class="footer-link partners-blue-hover">
+                            <span>Find clients</span>
+                          <span class="icon icon-expand"><img src="../images/module-icon.png" alt="module message"></span>
+                          
+                        </button>
                     </div>
                 </div>
                 <p class="footer-text">© 2022 Resorcerr. All rights reserved.</p>
@@ -719,7 +738,7 @@
     <script src="../script/loader.js"></script>
     <script src="../env.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
-  <script src="../script/phone-number.js"></script>
+    <script src="../script/phone-number.js"></script>
     <script src="../script/switchToToggle.js"></script>
     <script src="../script/achievements-counter.js"></script>
     <script src="../script/burger.js"></script>

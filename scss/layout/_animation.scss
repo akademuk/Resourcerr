@@ -142,7 +142,7 @@ $white:#FFFFFF;
       left: 0;
       height: 100%;
       width: 100%;
-      transition: all 0.25s ease;
+      transition: all 1s ease;
       border-radius: $icon-size*$border-radius;
     }
     &:after{
@@ -152,7 +152,7 @@ $white:#FFFFFF;
       left: 0;
       height: 100%;
       width: 100%;
-      transition: all 0.25s ease;
+      transition: all 1s ease;
       border-radius: $icon-size*$border-radius;
     }
     span {

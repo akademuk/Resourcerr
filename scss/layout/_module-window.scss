@@ -19,29 +19,16 @@
   font-size: 16px;
   line-height: 150%;
   color:#fff;
-  top: 65px;
-  right: 10%;
+  top: 60px;
+  right: 5%;
   -webkit-appearance: none;
-  &:after {
-    content: "";
-    background: url(../images/contact-us.png);
-    background-size: contain;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    margin-left: 10px;
-  }
-  &:hover {
-    background: linear-gradient(90.96deg, #51E689 0%, #0EC4B5 99.64%);
-    background-image: linear-gradient(90.96deg, #51E689 0%, #0EC4B5 99.64%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    &::after {
-      background: url(../images/module-hover.png);
-      background-size: contain;
-      width: 40px;
-      height: 40px;
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+  span {
+    &:nth-of-type(1) {
+     width: 110px; 
+      margin-right: 15px;
     }
   }
 }
@@ -622,9 +609,34 @@ h3 {
     height: 55px;
     text-align: right;
     input {
+      position: relative;
       padding-left: 80px;
       margin-bottom: 0;
       margin-left: 15px;
+      &:hover {
+        border: 2px solid #35C5F0;
+        cursor: pointer;
+        .file-select-button {
+          input {
+            &:after {
+              content: '';
+              background: url(../../images/upload-hover.png);
+              background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: 33%;
+            top: 27%;
+            width: 18px;
+            height: 21px;
+              transition: all 0.5s;
+            }
+          }
+        }
+      }
+      &:focus {
+        border: 2px solid #35C5F0;
+        cursor: pointer;
+      }
     }
     span {
       color: #A1A1A1 !important;
@@ -634,14 +646,14 @@ h3 {
     }
   }
 .file-select-button {
-
   position: absolute;
-  left: 38%;
-  top: 22%;
-  width: 58px;
-  height: 33px;
+  left: 34%;
+  top: 6%;
+  width: 68px;
+  height: 50px;
   display: flex;
-
+  border: 1px solid yellowgreen;
+  cursor: pointer;
   input {
      width: 68px !important;
     height: 100%;
@@ -650,18 +662,32 @@ h3 {
     border: none;
     border-right: 1px solid #414141;
     padding-left: 0 !important;
-  margin-left: 0 !important;
+    margin-left: 0 !important;
+    position: relative;
     &:hover {
       box-shadow: none;
+      border: none;
+      &:after {
+        content: '';
+        background: url(../../images/upload-hover.png);
+        background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      left: 33%;
+      top: 27%;
+      width: 18px;
+      height: 21px;
+        transition: all 0.5s;
+      }
     }
     &:after {
       content: '';
       background: url(../images/partners/file.png);
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       position: absolute;
-      left: 0;
-      top: 15%;
+      left: 33%;
+      top: 27%;
       width: 18px;
       height: 21px;
     }

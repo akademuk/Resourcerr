@@ -36,22 +36,6 @@ html {
   background-clip: text !important;
 }
 
-.partners-blue-hover:hover {
-  background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
-}
-
-.partners-blue-hover:hover:after {
-  background: url(../images/partners/hover-icon.png) !important;
-  background-size: cover !important;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  margin-left: 10px;
-}
-
 .partners-toggle-switch .toggle-custom label:after {
   left: inherit !important;
   right: 4px !important;
@@ -1096,7 +1080,7 @@ body.loaded {
   left: 0;
   height: 100%;
   width: 100%;
-  transition: all 0.25s ease;
+  transition: all 1s ease;
   border-radius: 30px;
 }
 
@@ -1107,7 +1091,7 @@ body.loaded {
   left: 0;
   height: 100%;
   width: 100%;
-  transition: all 0.25s ease;
+  transition: all 1s ease;
   border-radius: 30px;
 }
 
@@ -1852,6 +1836,7 @@ h1 span i {
     padding: 40px 28px 40px 28px !important;
     flex-direction: column;
     margin-bottom: 0;
+    align-items: flex-end;
   }
   .send-request .wrapper img:nth-of-type(1) {
     bottom: 10vh;
@@ -1862,7 +1847,7 @@ h1 span i {
   .send-request .wrapper img:nth-of-type(2) {
     width: 100px;
     top: inherit;
-    bottom: 18vh;
+    bottom: 15vh;
     left: 30vw;
   }
   .send-request .wrapper img:nth-of-type(3) {
@@ -2843,34 +2828,17 @@ h4 {
   font-size: 16px;
   line-height: 150%;
   color: #fff;
-  top: 65px;
-  right: 10%;
+  top: 60px;
+  right: 5%;
   -webkit-appearance: none;
-}
-
-#modul-window_open:after {
-  content: "";
-  background: url(../images/contact-us.png);
-  background-size: contain;
-  width: 40px;
-  height: 40px;
+  width: 200px;
   display: flex;
-  margin-left: 10px;
+  justify-content: flex-end;
 }
 
-#modul-window_open:hover {
-  background: linear-gradient(90.96deg, #51E689 0%, #0EC4B5 99.64%);
-  background-image: linear-gradient(90.96deg, #51E689 0%, #0EC4B5 99.64%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-#modul-window_open:hover::after {
-  background: url(../images/module-hover.png);
-  background-size: contain;
-  width: 40px;
-  height: 40px;
+#modul-window_open span:nth-of-type(1) {
+  width: 110px;
+  margin-right: 15px;
 }
 
 .modal {
@@ -3543,9 +3511,33 @@ h3:nth-of-type(4)::before {
 }
 
 .partners-form .file-upload input {
+  position: relative;
   padding-left: 80px;
   margin-bottom: 0;
   margin-left: 15px;
+}
+
+.partners-form .file-upload input:hover {
+  border: 2px solid #35C5F0;
+  cursor: pointer;
+}
+
+.partners-form .file-upload input:hover .file-select-button input:after {
+  content: '';
+  background: url(../../images/upload-hover.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 33%;
+  top: 27%;
+  width: 18px;
+  height: 21px;
+  transition: all 0.5s;
+}
+
+.partners-form .file-upload input:focus {
+  border: 2px solid #35C5F0;
+  cursor: pointer;
 }
 
 .partners-form .file-upload span {
@@ -3557,11 +3549,13 @@ h3:nth-of-type(4)::before {
 
 .partners-form .file-select-button {
   position: absolute;
-  left: 38%;
-  top: 22%;
-  width: 58px;
-  height: 33px;
+  left: 34%;
+  top: 6%;
+  width: 68px;
+  height: 50px;
   display: flex;
+  border: 1px solid yellowgreen;
+  cursor: pointer;
 }
 
 .partners-form .file-select-button input {
@@ -3573,20 +3567,35 @@ h3:nth-of-type(4)::before {
   border-right: 1px solid #414141;
   padding-left: 0 !important;
   margin-left: 0 !important;
+  position: relative;
 }
 
 .partners-form .file-select-button input:hover {
   box-shadow: none;
+  border: none;
+}
+
+.partners-form .file-select-button input:hover:after {
+  content: '';
+  background: url(../../images/upload-hover.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 33%;
+  top: 27%;
+  width: 18px;
+  height: 21px;
+  transition: all 0.5s;
 }
 
 .partners-form .file-select-button input:after {
   content: '';
   background: url(../images/partners/file.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: absolute;
-  left: 0;
-  top: 15%;
+  left: 33%;
+  top: 27%;
   width: 18px;
   height: 21px;
 }
@@ -4016,7 +4025,7 @@ h3:nth-of-type(4)::before {
 .get-in-touch-container_contact-icon a {
   width: 60px;
   height: 60px;
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   border-radius: 16px;
   padding: 5px;
   display: flex;
@@ -4029,7 +4038,7 @@ h3:nth-of-type(4)::before {
   background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%);
 }
 
-.get-in-touch-partners .get-in-touch-container_contact-icon a:hover {
+.get-partners-icon a:hover {
   background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
 }
 
@@ -4057,18 +4066,21 @@ h3:nth-of-type(4)::before {
   position: relative;
 }
 
-.get-in-touch-container_form form input:focus, .get-in-touch-container_form form textarea:focus {
-  background: #262626;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 140%;
-  color: white;
-  box-shadow: 0 1px 0 #51E589, inset 0 1px 0 #0EC3B5;
-}
-
 .get-in-touch-container_form form textarea {
   height: 120px !important;
   margin-bottom: 40px;
+}
+
+form {
+  color: #fff !important;
+}
+
+form:focus {
+  color: #fff !important;
+}
+
+.form-control:focus {
+  color: #fff;
 }
 
 .btn-send-request-white {
@@ -4181,6 +4193,12 @@ h3:nth-of-type(4)::before {
     margin-top: 96px;
     width: 50%;
   }
+  .partners-get .partners-form .form-row .invalid-feedback {
+    top: 60px !important;
+  }
+  .partners-get .partners-form .form-row:nth-of-type(4) .invalid-feedback {
+    top: 125px !important;
+  }
 }
 
 /*@media min-width: 576px --------------------------------------------*/
@@ -4223,7 +4241,7 @@ h3:nth-of-type(4)::before {
     margin-bottom: 28px;
   }
   .get-in-touch-container_form .get-in-touch-submit {
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
   }
   .get-in-touch-container_form .get-in-touch-submit p {
@@ -4259,6 +4277,18 @@ h3:nth-of-type(4)::before {
   .get-in-touch-container_contact-icon a svg {
     width: 18px;
     height: 18px;
+  }
+  .partners-get .partners-form .form-row .invalid-feedback {
+    top: 45px !important;
+  }
+  .partners-get .partners-form .form-row:nth-of-type(4) .invalid-feedback {
+    top: 125px !important;
+  }
+  .get-in-touch-submit {
+    margin-top: 0;
+  }
+  .partners-form .get-in-touch-submit .icon span {
+    font-size: 12px;
   }
 }
 
@@ -4634,36 +4664,60 @@ h3:nth-of-type(4)::before {
   opacity: 1;
 }
 
-.footer-module button {
+.partners-blue-hover {
+  background: transparent;
+  color: #fff;
+}
+
+.partners-blue-hover span:nth-of-type(2) {
+  width: 40px;
+  height: 40px;
+}
+
+.partners-blue-hover span:nth-of-type(2) img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+
+.partners-blue-hover .icon:before {
+  width: 36px;
+  height: 36px;
+  left: 2px;
+  top: 2px;
+}
+
+.partners-blue-hover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.partners-blue-hover span {
+  display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 150%;
   color: #FFFFFF;
-  border: none;
-  background: transparent;
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  width: 100px;
 }
 
-.footer-module button:after {
-  content: "";
-  background: url(../images/contact-us.png);
-  background-size: contain;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  margin-left: 10px;
+.partners-blue-hover:hover .icon-expand:before {
+  content: '';
+  background: #35C5F0;
+  box-shadow: inset 0 0 0 1px #151515;
+  width: 36px;
+  height: 36px;
+  background-size: cover;
 }
 
-.footer-module button span {
-  margin: 0 5px 0 0;
-}
-
-.footer-link:hover {
-  background: linear-gradient(90.96deg, #0EC4B5 0%, #51E689 99.64%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.partners-blue-hover:hover span {
+  color: #35C5F0;
+  transition: all 1s;
 }
 
 .link-none:hover {

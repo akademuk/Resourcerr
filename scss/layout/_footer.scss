@@ -88,35 +88,69 @@
             }
          }
     }
-    button {
+  
+}
+.partners-blue-hover{
+  
+        background: transparent;
+        color: #fff;
+        
+            span {
+                &:nth-of-type(2) {
+                width: 40px;
+                height: 40px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 6;
+                }
+            }
+            }
+            
+            .icon {
+                &:before {
+                    width: 36px;
+                    height: 36px;
+                    left: 2px;
+                    top: 2px;
+                }
+            }
+        
+       
+   
+}
+.partners-blue-hover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    span {
+        display: flex;
+        align-items: center;
         font-size: 16px;
         line-height: 150%;
         color: #FFFFFF;
-        border: none;
-        background: transparent;
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        &:after {
-            content: "";
-            background: url(../images/contact-us.png);
-            background-size: contain;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            margin-left: 10px;
+        width: 100px;
+    }
+    &:hover {
+        .icon-expand {
+            &:before {
+                content: '';
+                background:#35C5F0;
+                box-shadow: inset 0 0 0 1px #151515;
+                width: 36px;
+                height: 36px;
+                background-size: cover;
+               
+            }
         }
         span {
-            margin: 0 5px 0 0;
+            color: #35C5F0;
+            transition: all 1s;
         }
-    }
-}
-.footer-link {
-    &:hover {
-        background: linear-gradient(90.96deg, #0EC4B5 0%,#51E689 99.64%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
     }
 }
 .link-none {

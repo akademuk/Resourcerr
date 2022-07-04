@@ -83,7 +83,7 @@
     a {
         width: 60px;
         height: 60px;
-        border: 1px solid #FFFFFF;
+        border: 2px solid #FFFFFF;
         border-radius: 16px;
         padding: 5px;
         display: flex;
@@ -99,15 +99,15 @@
         }
     }
 }
-.get-in-touch-partners {
-    .get-in-touch-container_contact-icon {
+
+    .get-partners-icon {
         a {
             &:hover {
                 background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
             }
         }
     }
-}
+
 .get-in-touch-container_form {
     width: 50%;
    form {
@@ -126,20 +126,23 @@
         line-height: 140%;
         color:  white;
         position: relative;
-        &:focus {
-          background: #262626;
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 140%;
-          color: white;
-          box-shadow: 0 1px 0 #51E589, inset 0 1px 0 #0EC3B5;
-        }
    }
    textarea {
     height: 120px !important;
     margin-bottom: 40px;
    }
 }
+}
+form {
+    color: #fff !important;
+    &:focus {
+        color: #fff !important;
+    }
+}
+.form-control {
+    &:focus {
+        color: #fff;
+    }
 }
 .btn-send-request-white {
     width: 112px;
@@ -255,7 +258,20 @@
         }
     }
 }
-
+.partners-get {
+    .partners-form  {
+        .form-row {
+            .invalid-feedback {
+                top: 60px !important;
+            }
+            &:nth-of-type(4) {
+               .invalid-feedback {
+                top: 125px !important;
+               }
+            }
+        }
+    }
+}
 }
 
 /*@media min-width: 576px --------------------------------------------*/
@@ -299,7 +315,7 @@
         }
 }
 .get-in-touch-submit {
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     p {
         font-size: 14px;
@@ -341,5 +357,30 @@
         }
     }
 }
-
+.partners-get {
+    .partners-form  {
+        .form-row {
+            .invalid-feedback {
+                top: 45px !important;
+            }
+            &:nth-of-type(4) {
+               .invalid-feedback {
+                top: 125px !important;
+               }
+            }
+        }
+    }
+}
+.get-in-touch-submit {
+    margin-top: 0;
+}
+.partners-form  {
+    .get-in-touch-submit {
+        .icon  {
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+}
 }

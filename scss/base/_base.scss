@@ -26,22 +26,7 @@ html {
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
 }
-.partners-blue-hover {
-    &:hover {
-        background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
-    &:after {
-        background: url(../images/partners/hover-icon.png) !important;
-        background-size: cover !important;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        margin-left: 10px;
-    }
-}
-}
+
 .partners-toggle-switch {
     .toggle-custom {
         label {
