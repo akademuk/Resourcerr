@@ -867,6 +867,10 @@ header .logotype p {
   transition: .2s;
 }
 
+.partners-toogle .toggle-custom a:nth-of-type(1) {
+  opacity: 0.5;
+}
+
 .toggle-custom-burger.toggle-partners .toggle-custom .toggle-custom-container input:hover ~ label {
   position: relative;
   background: url(../images/partners/partners-border.png);
@@ -1080,7 +1084,7 @@ body.loaded {
   left: 0;
   height: 100%;
   width: 100%;
-  transition: all .5s ease;
+  transition: all .2s ease;
   border-radius: 30px;
 }
 
@@ -1091,7 +1095,7 @@ body.loaded {
   left: 0;
   height: 100%;
   width: 100%;
-  transition: all .5s ease;
+  transition: all .2s ease;
   border-radius: 30px;
 }
 
@@ -1128,6 +1132,27 @@ body.loaded {
 .client-animation:hover::before {
   border-radius: 50%;
   box-shadow: inset 0 0 0 1px #2ED7AB;
+}
+
+.clien .icon-expand:before {
+  box-shadow: inset 0 0 0 60px #fff !important;
+  background: #2ED7AB !important;
+}
+
+.clien .icon-expand span {
+  color: #151515 !important;
+}
+
+.clien .icon-expand:hover::before {
+  box-shadow: inset 0 0 0 1px #2ED7AB !important;
+}
+
+.clien .icon-expand:hover span {
+  color: #fff !important;
+}
+
+.clien .icon span {
+  top: 38% !important;
 }
 
 /*Client------------------------------------------------------------------------------*/
@@ -3571,6 +3596,30 @@ h3:nth-of-type(4)::before {
   width: 18px;
   height: 21px;
   transition: all 0.5s;
+}
+
+.partners-form .submitform .icon-expand:before {
+  box-shadow: inset 0 0 0 60px #fff;
+}
+
+.partners-form .submitform .icon-expand span {
+  color: #151515;
+}
+
+.partners-form .submitform .icon-expand:hover::before {
+  box-shadow: inset 0 0 0 1px #35C5F0;
+}
+
+.partners-form .submitform .icon-expand:hover span {
+  color: #fff;
+}
+
+.partners-form .submitform .icon span {
+  top: 38%;
+}
+
+.partners-form .submit-recommendation {
+  margin-bottom: 0;
 }
 
 .partners-form input[type=file]::-webkit-file-upload-button {
