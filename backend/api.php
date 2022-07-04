@@ -15,8 +15,7 @@ try {
     if ($reCaptchaService->isSuccess()) {
         $result = [];
         //send email
-
-        if(!EmailService::send(PdfService::make($_POST), $result)){
+        if(!EmailService::send(PdfService::make($_POST), $result, $_POST)){
             throw new Exception($result['message']);
         }
         // success

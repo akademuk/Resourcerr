@@ -2,11 +2,12 @@
 
 namespace Backend\Service;
 
+use Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 
 class EmailService
 {
-    public static function send($pdf = '', &$result = []){
+    public static function send($pdf = '', &$result = [], $data = []){
         //Create an instance; passing `true` enables exceptions
         $mail = new PHPMailer(true);
 
@@ -40,13 +41,13 @@ class EmailService
             //Attachments
 //        $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
 //        $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
-            $mail->addStringAttachment($pdf, 'my-doc.pdf');
+            $mail->addStringAttachment($pdf, self::getTitle($data).'.pdf');
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->Subject = 'Here is the subject';
-            $mail->Body    = 'This is the HTML message body <b>in bold! #2</b>';
-            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+            $mail->Subject = self::getTitle($data);
+            $mail->Body    = self::getHtml($data);
+            $mail->AltBody = self::getHtml($data);
 
             $mail->send();
 //        echo 'Message has been sent';
@@ -57,5 +58,57 @@ class EmailService
             return false;
         }
     }
+
+    public static function getTitle($data){
+        $title = 'none';
+        if (isset($data['corporate_details'])) {
+            $title = 'Requirements of the project';
+
+        } elseif (isset($data['clients'])) {
+            $title = 'Get in touch [Client]';
+
+        }
+
+        if(isset($data['partners_form'])){
+            $title = 'Data for partnership';
+            if(count($data)==6){
+                $title = 'Get in touch [Partner]';
+            }
+        }
+
+        return $title;
+    }
+
+    public static function getHtml($data){
+        $html = '<div style="max-width: 500px">';
+        if(isset($data['captcha']) ) {unset($data['captcha']);}
+        if(isset($data['g-recaptcha-response']) ) {unset($data['g-recaptcha-response']);}
+
+        $lastKeyMultiArray = null;
+        foreach ($data as $key => $value){
+            if(is_array($value)){
+                if($lastKeyMultiArray === null || $lastKeyMultiArray != $key){
+                    $lastKeyMultiArray = $key;
+                    $html .= sprintf('<h3>%s</h3> ', ucfirst(str_replace('_', ' ',$key)));
+                }
+
+
+                foreach($value as $k => $v){
+                    if(is_string($k) && is_string($v) ){
+                        $html .= sprintf('<div style="color: #797979">%s <div style="color: #151515"><b>%s</b> </div></div><br>', ucfirst(str_replace('_', ' ',$k)), $v);
+                    }
+
+                }
+            }else{
+                if(is_string($key) && is_string($value) ) {
+                    $html .= sprintf('<div style="color: #797979">%s <div style="color: #151515"><b>%s</b> </div></div><br>', ucfirst(str_replace('_', ' ',$key)), $value);
+                }
+            }
+        }
+        $html .= '</div>';
+
+        return $html;
+    }
+
 
 }

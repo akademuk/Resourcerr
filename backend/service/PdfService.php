@@ -7,6 +7,12 @@ class PdfService
 {
 
     public static function make($data){
+        $pdf =  new createPDF(self::getHtml($data), self::getTitle($data), APP_URL,'',   time());
+        return $pdf->run();
+    }
+
+
+    public static function getTitle($data){
         $title = 'none';
         if (isset($data['corporate_details'])) {
             $title = 'Requirements of the project';
@@ -23,8 +29,10 @@ class PdfService
             }
         }
 
+        return $title;
+    }
 
-
+    public static function getHtml($data){
         $html = '';
         if(isset($data['captcha']) ) {unset($data['captcha']);}
         if(isset($data['g-recaptcha-response']) ) {unset($data['g-recaptcha-response']);}
@@ -34,7 +42,7 @@ class PdfService
             if(is_array($value)){
                 if($lastKeyMultiArray === null || $lastKeyMultiArray != $key){
                     $lastKeyMultiArray = $key;
-                        $html .= sprintf('<h3>%s</h3>  <br><br><br><br>', ucfirst(str_replace('_', ' ',$key)));
+                    $html .= sprintf('<h3>%s</h3>  <br><br><br><br>', ucfirst(str_replace('_', ' ',$key)));
                 }
 
 
@@ -50,9 +58,7 @@ class PdfService
                 }
             }
         }
-        $pdf =  new createPDF($html, $title, APP_URL,'',   time());
 
-        return $pdf->run();
-
+        return $html;
     }
 }
