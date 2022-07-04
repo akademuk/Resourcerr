@@ -72,22 +72,21 @@ class createPDF {
         $pdf->AddPage();
 
         // header
-        $pdf->PutMainTitle($this->_convert($this->title));
-        $pdf->PutMinorHeading('Article URL');
-        $pdf->PutMinorTitle($this->articleurl,$this->articleurl);
+//        $pdf->PutMainTitle($this->_convert($this->title));
+//        $pdf->PutMinorHeading('Article URL');
+//        $pdf->PutMinorTitle($this->articleurl,$this->articleurl);
         if($this->author){
             $pdf->PutMinorHeading('Author');
             $pdf->PutMinorTitle($this->_convert($this->author));
         }
-        $pdf->PutMinorHeading("Published: ".@date("F j, Y, g:i a",$this->date));
-        $pdf->PutLine();
-        $pdf->Ln(10);
+//        $pdf->PutMinorHeading("Published: ".@date("F j, Y, g:i a",$this->date));
+//        $pdf->PutLine();
+//        $pdf->Ln(10);
 
         // html
         $pdf->WriteHTML($this->_convert(stripslashes($this->html)),$this->bi);
 
         // output
-
         if($asAttach){
             return $pdf->Output('', 'S');
         }else{
@@ -107,9 +106,11 @@ class PDF extends FPDF
     protected $I;
     protected $U;
     protected $HREF;
+    protected $PRE;
     protected $fontList;
     protected $issetfont;
     protected $issetcolor;
+    protected $bi;
 
     function __construct($orientation='P',$unit='mm',$format='A4',$_title,$_url,$_debug=false)
     {
@@ -119,8 +120,8 @@ class PDF extends FPDF
         $this->U=0;
         $this->HREF='';
         $this->PRE=false;
-        $this->SetFont('Times','',12);
-        $this->fontlist=array('Times','Courier');
+        $this->SetFont('Arial','',12);
+        $this->fontlist=array('Arial','Courier');
         $this->issetfont=false;
         $this->issetcolor=false;
         $this->articletitle=$_title;
@@ -134,9 +135,9 @@ class PDF extends FPDF
         //remove all unsupported tags
         $this->bi=$bi;
         if ($bi)
-            $html=strip_tags($html,"<a><img><p><br><font><tr><blockquote><h1><h2><h3><h4><pre><red><blue><ul><li><hr><b><i><u><strong><em>");
+            $html=strip_tags($html,"<a><img><p><br><font><tr><blockquote><h1><h2><h3><h4><pre><red><blue><grey><ul><li><hr><b><i><u><strong><em>");
         else
-            $html=strip_tags($html,"<a><img><p><br><font><tr><blockquote><h1><h2><h3><h4><pre><red><blue><ul><li><hr>");
+            $html=strip_tags($html,"<a><img><p><br><font><tr><blockquote><h1><h2><h3><h4><pre><red><blue><grey><ul><li><hr>");
         $html=str_replace("\n",' ',$html); //replace carriage returns with spaces
         // debug
         if ($this->debug) { echo $html; exit; }
@@ -191,35 +192,44 @@ class PDF extends FPDF
     function OpenTag($tag,$attr)
     {
         //Opening tag
-        switch($tag){
+        switch(strtoupper($tag)){
             case 'STRONG':
             case 'B':
-                if ($this->bi)
+                if ($this->bi){
                     $this->SetStyle('B',true);
+                    $this->SetTextColor(0,0,0);
+                    $this->SetFontSize(12);
+                }
+
                 else
                     $this->SetStyle('U',true);
                 break;
             case 'H1':
                 $this->Ln(5);
-                $this->SetTextColor(150,0,0);
+                $this->SetTextColor(0,0,0);
+                $this->SetStyle('B',false);
                 $this->SetFontSize(22);
                 break;
             case 'H2':
                 $this->Ln(5);
                 $this->SetFontSize(18);
-                $this->SetStyle('U',true);
+                $this->SetTextColor(0,0,0);
+                $this->SetStyle('B',false);
+//                $this->SetStyle('U',true);
                 break;
             case 'H3':
                 $this->Ln(5);
                 $this->SetFontSize(16);
-                $this->SetStyle('U',true);
+                $this->SetTextColor(21,21,21);
+                $this->SetStyle('B',true);
+//                $this->SetStyle('U',true);
                 break;
             case 'H4':
                 $this->Ln(5);
-                $this->SetTextColor(102,0,0);
-                $this->SetFontSize(14);
+                $this->SetTextColor(21,21,21);
+                $this->SetFontSize(13);
                 if ($this->bi)
-                    $this->SetStyle('B',true);
+                    $this->SetStyle('B',false);
                 break;
             case 'PRE':
                 $this->SetFont('Courier','',11);
@@ -234,6 +244,11 @@ class PDF extends FPDF
             case 'BLOCKQUOTE':
                 $this->mySetTextColor(100,0,45);
                 $this->Ln(3);
+                break;
+            case 'GREY':
+                $this->SetFontSize(12);
+                $this->SetStyle('B',false);
+                $this->SetTextColor(122,122,122);
                 break;
             case 'BLUE':
                 $this->SetTextColor(0,0,255);
@@ -297,18 +312,18 @@ class PDF extends FPDF
         //Closing tag
         if ($tag=='H1' || $tag=='H2' || $tag=='H3' || $tag=='H4'){
             $this->Ln(6);
-            $this->SetFont('Times','',12);
+            $this->SetFont('Arial','',12);
             $this->SetFontSize(12);
             $this->SetStyle('U',false);
             $this->SetStyle('B',false);
             $this->mySetTextColor(-1);
         }
         if ($tag=='PRE'){
-            $this->SetFont('Times','',12);
+            $this->SetFont('Arial','',12);
             $this->SetFontSize(12);
             $this->PRE=false;
         }
-        if ($tag=='RED' || $tag=='BLUE')
+        if ($tag=='RED' || $tag=='BLUE'|| $tag=='GREY')
             $this->mySetTextColor(-1);
         if ($tag=='BLOCKQUOTE'){
             $this->mySetTextColor(0,0,0);
@@ -329,7 +344,7 @@ class PDF extends FPDF
                 $this->SetTextColor(0,0,0);
             }
             if ($this->issetfont) {
-                $this->SetFont('Times','',12);
+                $this->SetFont('Arial','',12);
                 $this->issetfont=false;
             }
         }
@@ -340,7 +355,7 @@ class PDF extends FPDF
         //Go to 1.5 cm from bottom
         $this->SetY(-15);
         //Select Arial italic 8
-        $this->SetFont('Times','',8);
+        $this->SetFont('Arial','',8);
         //Print centered page number
         $this->SetTextColor(0,0,0);
         $this->Cell(0,4,'Page '.$this->PageNo().'/{nb}',0,1,'C');
@@ -353,7 +368,7 @@ class PDF extends FPDF
     {
         //Select Arial bold 15
         $this->SetTextColor(0,0,0);
-        $this->SetFont('Times','',10);
+        $this->SetFont('Arial','',10);
         $this->Cell(0,10,$this->articletitle,0,0,'C');
         $this->Ln(4);
         $this->Cell(0,10,$this->articleurl,0,0,'C');
@@ -361,7 +376,7 @@ class PDF extends FPDF
         $this->Line($this->GetX(),$this->GetY(),$this->GetX()+187,$this->GetY());
         //Line break
         $this->Ln(12);
-        $this->SetFont('Times','',12);
+        $this->SetFont('Arial','',12);
         $this->mySetTextColor(-1);
     }
 
