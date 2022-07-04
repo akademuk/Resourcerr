@@ -621,7 +621,7 @@ h3 {
     &:hover {
       &:after {
         content: '';
-        background: url(../../images/upload-hover.png);
+        background: url(../images/upload-hover.png);
         background-repeat: no-repeat;
       background-size: contain;
       position: absolute;
@@ -723,6 +723,14 @@ input[type=file]::-webkit-file-upload-button {
 .form-control.is-valid, .was-validated .form-control:valid {
   border-color:#4F4F4F;
   background-image: none;
+}
+.partners-link {
+  a {
+    background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
 }
 @media (max-width: 1300px) {
 .modal-content {
