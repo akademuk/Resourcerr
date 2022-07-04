@@ -57,6 +57,9 @@ function submitAjaxForm(form, callbackSuccess, callbackFail, gToken) {
         try{
         formData['g-recaptcha-response'] = gToken;
 
+        $("body").removeClass("loaded");
+        $('#loader').fadeIn();
+
         $.ajax({
             type: "POST",
             url: action,
@@ -65,6 +68,8 @@ function submitAjaxForm(form, callbackSuccess, callbackFail, gToken) {
             encode: true,
         }).done(function (data) {
             callbackSuccess()
+            $("body").addClass("loaded"); //loader
+            $('#loader').fadeOut(); //end loader
         })
         //     .error(function() {
         //     callbackFail() //todo: check
