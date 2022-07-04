@@ -89,19 +89,19 @@ class EmailService
             if(is_array($value)){
                 if($lastKeyMultiArray === null || $lastKeyMultiArray != $key){
                     $lastKeyMultiArray = $key;
-                    $html .= sprintf('<h3>%s</h3> ', ucfirst(str_replace('_', ' ',$key)));
+                    $html .= sprintf('<h3>%s</h3> ', ucfirst(str_replace('_', ' ',htmlentities($key, ENT_QUOTES | ENT_IGNORE, "UTF-8"))));
                 }
 
 
                 foreach($value as $k => $v){
                     if(is_string($k) && is_string($v) ){
-                        $html .= sprintf('<div style="color: #797979">%s <div style="color: #151515"><b>%s</b> </div></div><br>', ucfirst(str_replace('_', ' ',$k)), $v);
+                        $html .= sprintf('<div style="color: #797979">%s <div style="color: #151515"><b>%s</b> </div></div><br>', ucfirst(str_replace('_', ' ',htmlentities($k, ENT_QUOTES | ENT_IGNORE, "UTF-8"))), htmlentities($v, ENT_QUOTES | ENT_IGNORE, "UTF-8"));
                     }
 
                 }
             }else{
                 if(is_string($key) && is_string($value) ) {
-                    $html .= sprintf('<div style="color: #797979">%s <div style="color: #151515"><b>%s</b> </div></div><br>', ucfirst(str_replace('_', ' ',$key)), $value);
+                    $html .= sprintf('<div style="color: #797979">%s <div style="color: #151515"><b>%s</b> </div></div><br>', ucfirst(str_replace('_', ' ',htmlentities($key, ENT_QUOTES | ENT_IGNORE, "UTF-8"))), htmlentities($value, ENT_QUOTES | ENT_IGNORE, "UTF-8"));
                 }
             }
         }
