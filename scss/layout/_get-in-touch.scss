@@ -361,11 +361,13 @@ form {
             width: 100%;
             box-sizing: border-box;
             margin-bottom: 12px;
+            border-radius: 12px !important;
         }
         textarea {
             width: 100%;
             box-sizing: border-box;
             margin-bottom: 28px;
+            border-radius: 12px !important;
         }
 }
 .get-in-touch-submit {
@@ -385,7 +387,7 @@ form {
         margin-right: 0;
     }
     p {
-        width: 70% !important;
+        width: 64% !important;
     }
 }
 .get-in-touch-container_contact {
@@ -432,7 +434,20 @@ form {
     .get-in-touch-submit {
         .icon  {
             span {
-                font-size: 12px;
+                top: 36px !important;
+                left: 27px !important;
+                font-size: 12px !important;
+            }
+        }
+    }
+}
+.clients  {
+    .get-in-touch-submit  {
+        .icon  {
+            span {
+                top: 36px !important;
+                left: 27px !important;
+                font-size: 12px !important;
             }
         }
     }

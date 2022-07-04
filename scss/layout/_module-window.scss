@@ -927,6 +927,15 @@ h3 {
     }
   }
 }
+.partners-form {
+  .submitform {
+    .icon {
+      span {
+        top: 34px !important;
+      }
+    }
+  }
+}
 .modul-window-main  {
   .clients  {
     margin-top: 7px;
@@ -958,6 +967,11 @@ h3 {
         top: 88px !important;
       }
     }
+    &:nth-of-type(15) {
+      .invalid-feedback {
+        top: 72px !important;
+      }
+    }
   }
 }
 .partners-form  {
@@ -975,6 +989,11 @@ h3 {
         height: 17px;
       }
     }
+  }
+}
+.modul-window-main {
+  form {
+    margin-bottom: 40px;
   }
 }
 }

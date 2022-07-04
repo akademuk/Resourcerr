@@ -160,9 +160,9 @@ h1 {
 /*@media max-width: 576px --------------------------------------------*/ 
 @media (max-width: 576px) {
 .tittle {
-    padding-bottom: 78px;
+    padding-bottom: 76px;
     .wrapper {
-        padding-top: 117px;
+        padding-top: 84px;
         .toggle-switch {
             margin-left: 0;
             .toggle-custom {
@@ -180,7 +180,9 @@ h1 {
         span {
             margin-left: 28px;
             &:after {
+                width: 108%;
                 top:10px;
+                left: -10px;
             }
         }
         br {
@@ -190,12 +192,21 @@ h1 {
         }
     }
 }
-
+.tittle-container-btn  {
+    button {
+        width: 88px !important;
+        height: 88px !important;
+        span {
+            font-size: 12px !important;
+        }
+    }
+}
 .tittle-container-btn {
     padding-left: 0;
     margin-top: 48px;
     p {
         font-size: 14px;
+        width: 39%;
     }
     .btn-send-request {
         width: 88px;

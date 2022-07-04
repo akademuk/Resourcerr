@@ -194,7 +194,7 @@
             &:nth-of-type(2) {
                 width: 100px;
                 top: inherit;
-                bottom: 15vh;
+                bottom: 27vh;
                 left: 30vw;
             }
             &:nth-of-type(3) {
@@ -210,11 +210,15 @@
             margin-bottom: 30px;
             word-wrap: break-word;
         }
-        .btn-send-request {
-            width: 104px;
-            height: 104px;
-            font-size: 16px;
-           margin-left: 70%;
+        .icon {
+            width: 104px !important;
+            height: 104px !important;
+            margin-left: 70%;
+            span {
+                font-size: 16px !important;
+                top: 30px !important;
+                left: 21px !important;
+            }
         }
     }
 }
