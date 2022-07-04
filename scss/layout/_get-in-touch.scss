@@ -35,7 +35,7 @@
                 margin-left: 0;
             }
             .invalid-feedback {
-                top: 60px;
+                top: 53px;
                 left: 0;
             }
             &:nth-of-type(4) {
@@ -46,6 +46,10 @@
             }
         }
     }
+}
+.form-control.is-valid:focus, .was-validated .form-control:valid:focus {
+    box-shadow: none;
+    border-color:#4F4F4F;
 }
 .get-in-touch-container {
     display: flex;
@@ -114,7 +118,7 @@
     display: flex;
     flex-direction: column;
     .form-row {
-        margin-bottom: 16px;
+        margin-bottom: 25px;
     }
     input, textarea {
         width:80%;

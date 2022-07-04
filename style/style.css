@@ -3657,6 +3657,11 @@ h3:nth-of-type(4)::before {
   padding-bottom: 100px;
 }
 
+.form-control.is-valid, .was-validated .form-control:valid {
+  border-color: #4F4F4F;
+  background-image: none;
+}
+
 @media (max-width: 1300px) {
   .modal-content {
     width: 90% !important;
@@ -4032,12 +4037,17 @@ h3:nth-of-type(4)::before {
 }
 
 .get-in-touch-container_form form .form-row .invalid-feedback {
-  top: 60px;
+  top: 53px;
   left: 0;
 }
 
 .get-in-touch-container_form form .form-row:nth-of-type(4) .invalid-feedback {
   top: 120px;
+}
+
+.form-control.is-valid:focus, .was-validated .form-control:valid:focus {
+  box-shadow: none;
+  border-color: #4F4F4F;
 }
 
 .get-in-touch-container {
@@ -4110,7 +4120,7 @@ h3:nth-of-type(4)::before {
 }
 
 .get-in-touch-container_form form .form-row {
-  margin-bottom: 16px;
+  margin-bottom: 25px;
 }
 
 .get-in-touch-container_form form input, .get-in-touch-container_form form textarea {
