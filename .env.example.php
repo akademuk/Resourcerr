@@ -1,7 +1,17 @@
 <?php
-const MAIL_TO = 'noreply@yourdomain.com';
+
+const MAIL_TO = 'some@some.io';
+
+const MAIL_FROM_NAME = 'noreply';
+const MAIL_FROM = 'noreply@some.io';
+
 const RE_CAPTCHA_SECRET_V2 = '';
 const RE_CAPTCHA_SECRET_v3 = 'your_private_code'; //invisible
 const APP_URL = 'yourdomain.com';
-//6LdNhKMgAAAAADvM_vnMKcoKSiToQpCXYKhk_BH6 // Используйте этот ключ в HTML-коде, который ваш сайт передает на устройства пользователей.
-//your_private_code //Используйте этот секретный ключ для обмена данными между сайтом и сервисом reCAPTCHA
+
+const MAIL_MAILER = 'smtp';
+const MAIL_HOST = 'smtp.gmail.com';
+const MAIL_PORT = 465;
+const MAIL_USERNAME = '';
+const MAIL_PASSWORD = '';
+const MAIL_ENCRYPTION = 'ssl';

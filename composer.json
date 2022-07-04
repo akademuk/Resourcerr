@@ -1,5 +1,13 @@
 {
     "require": {
-        "google/recaptcha": "^1.2"
+        "google/recaptcha": "^1.2",
+        "setasign/fpdf": "^1.8",
+        "phpmailer/phpmailer": "^6.6"
+    },
+    "autoload": {
+
+        "psr-4": {
+            "Backend\\Service\\": "backend/service/"
+        }
     }
 }
