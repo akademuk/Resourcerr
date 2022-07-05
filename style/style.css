@@ -174,7 +174,7 @@ header .logotype p {
   display: flex;
   align-items: baseline;
   position: absolute;
-  top: 40px;
+  top: 8px;
   left: -1%;
   z-index: 5;
 }
@@ -268,6 +268,10 @@ header .logotype p {
   transform: none;
 }
 
+#menuToggle .toogle-partners {
+  top: -12px !important;
+}
+
 #menuToggle .menuToggle-span {
   display: block;
   width: 32px;
@@ -327,9 +331,10 @@ header .logotype p {
 
 #menu {
   position: absolute;
+  top: 0;
   left: -10%;
   width: 150%;
-  overflow-y: auto;
+  height: calc(100vh + 100px);
   margin: -100px 0 0 0;
   background: #151515;
   list-style-type: none;
@@ -383,7 +388,7 @@ header .logotype p {
 
 .menu-top-nav {
   position: absolute;
-  top: 76px;
+  top: 40px;
   left: 49%;
   font-size: 16px;
   line-height: 150%;
@@ -479,7 +484,7 @@ header .logotype p {
     left: 95.5%;
   }
   .burger-module_logo {
-    top: 45px;
+    top: 0;
   }
   .menu-top {
     display: block;
@@ -582,13 +587,17 @@ header .logotype p {
     margin-bottom: 40px;
   }
   #menuToggle #menu .wrapper {
-    padding-top: 200px;
+    padding-top: 75px;
+  }
+  #menuToggle #modul-window_open {
+    width: auto !important;
+    right: 15% !important;
   }
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
   .burger-module_logo {
-    top: 24px;
+    top: 58px;
   }
   .logotype-text {
     display: none !important;
@@ -603,7 +612,7 @@ header .logotype p {
     top: -30px;
   }
   #modul-window_open {
-    top: 83px !important;
+    top: 118px !important;
     width: auto !important;
     right: 10% !important;
   }
@@ -612,7 +621,7 @@ header .logotype p {
   }
   #menu ul {
     width: 77%;
-    margin-top: 95px;
+    margin-top: 130px;
     margin-bottom: 30px;
   }
   #menu ul li {
@@ -691,9 +700,9 @@ header .logotype p {
   }
   #menu #modul-window_open {
     font-size: 0 !important;
-    right: 37%;
+    right: 35% !important;
     width: auto !important;
-    top: 88px;
+    top: 30px !important;
   }
   #menu #modul-window_open:after {
     width: 30px;
@@ -701,7 +710,7 @@ header .logotype p {
     background-repeat: no-repeat;
   }
   #menu .burger-module_logo {
-    top: 27px;
+    top: -27px;
   }
   #menu .burger-module_logo a {
     width: 50px;
@@ -733,10 +742,10 @@ header .logotype p {
     width: 29px;
   }
   .partners-header .wrapper #menuToggle #modul-window_open {
-    top: 72px !important;
+    top: 106px !important;
   }
   .partners-header .wrapper #menu .burger-module_logo {
-    top: 14px;
+    top: 47px;
   }
   #menuToggle .chec {
     left: 88%;
@@ -3027,7 +3036,7 @@ h4 {
 #modul-window_open {
   position: absolute;
   z-index: 2;
-  top: 115px;
+  top: 85px;
   right: 5%;
   width: 165px;
 }
@@ -3360,6 +3369,16 @@ h3:nth-of-type(4)::before {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin: 0 5px;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  height: calc(100vh + 100px);
+}
+
+#menu .wrapper {
+  height: 85%;
 }
 
 #menu .wrapper .partners-toggle-switch .toggle-custom label input {
