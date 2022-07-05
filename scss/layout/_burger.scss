@@ -97,8 +97,8 @@
   position: absolute;
   left: -10%;
   width: 150%;
-  height: 100vh;
-  margin: -100px 0 0 0;
+  overflow-y: auto;
+  margin: -100% 0 0 0;
   background: #151515;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
