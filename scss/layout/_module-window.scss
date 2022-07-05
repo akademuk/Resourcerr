@@ -1,19 +1,11 @@
-@mixin form-tittle {
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 110%;
-  color: #FFFFFF;
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  left: -40px;
-} 
+
 #modul-window_open{
   position: absolute;
   z-index: 2;
-  top: 85px;
+  top: 0;
   right: 5%;
   width: 165px;
+  margin-top: 0;
   span {
     &:nth-of-type(1) {
      width: 110px; 
@@ -21,12 +13,17 @@
     }
   }
 }
+.submitform {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
 .modal{
   display: none;
   z-index: 110;
   position: fixed;
   overflow: auto;
-  background-color: $cod-gray;
+  background-color: #151515;
 }
 .modal_close{
   cursor: pointer;  
@@ -117,7 +114,14 @@ h3 {
   margin-left: 300px;
   &:before {
     content: "01";
-    @include form-tittle;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 110%;
+    color: #FFFFFF;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: -40px;
   }
     &:nth-of-type(2) {
       &::before {
@@ -304,10 +308,10 @@ h3 {
 }
 #menu {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   height: calc(100vh + 100px);
   .wrapper {
-    height: 85%;
+
     .partners-toggle-switch {
       .toggle-custom {
         label {
@@ -351,6 +355,7 @@ h3 {
   height: 55px;
   align-items: center;
 }
+
 .file-upload .file-upload-select {
   width: 600px;
 	cursor: pointer;
@@ -378,21 +383,19 @@ h3 {
         cursor: pointer;
       }
 }
-.submit-form {
-  margin-top: 50px;
-}
+
 .form-row {
   display: flex;
   height: 55px;
   justify-content: flex-end;
-  align-items: center;
+  align-items: baseline;
   margin-bottom: 28px;
   position: relative;
   max-width: 100%;
   margin-right: 0 !important;
   margin-left: 0 !important;
   label {
-    height: 55px !important;
+    height: auto !important;
     margin: 0 !important;
     color: #A1A1A1 !important;
   }
@@ -565,7 +568,7 @@ h3 {
     }
     .icon {
       span {
-        top: 38%;
+        top: 47px !important;
       }
     }
   }
@@ -1012,6 +1015,9 @@ h3 {
   form {
     margin-bottom: 40px;
   }
+}
+#menu .wrapper  {
+  top: -46px !important;
 }
 }
 

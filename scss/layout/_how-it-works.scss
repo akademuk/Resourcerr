@@ -1,6 +1,6 @@
 /*How it works client --------------------------------------------*/
 .how-it-works {
-    background: $cod-gray;
+    background: #151515;
     margin-top: 150px;
     padding-bottom: 90px;
    .wrapper {
@@ -148,7 +148,7 @@ h5 {
     font-weight: 800;
     font-size: 32px;
     line-height: 110%;
-    background: $gradient;
+    background: linear-gradient(90.96deg,#0EC4B5 0%,#51E689 99.64%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -158,14 +158,20 @@ h5 {
     .wrapper {
         h2 {
             span {
-                @include partners-gradient;
+                background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
             }
         }
         .how-it-works-container {
             .how-it-works-container-info {
                 .how-it-works-container-info_text {
                     h5 {
-                        @include partners-gradient;
+                        background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
                     }
                 }
                 &:nth-of-type(2) {
@@ -249,6 +255,17 @@ h5 {
 
 /*@media min-width: 992px --------------------------------------------*/
 @media (max-width: 992px) {
+.partners-how-it-works  {
+    .wrapper {
+        .how-it-works-container  {
+            .how-it-works-container-info {
+                &:before {
+                    content: none !important;
+                }
+            }
+        }
+    }
+}
 .how-it-works {
     margin-top: 0;
     padding-bottom: 60px;

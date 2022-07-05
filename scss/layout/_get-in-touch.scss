@@ -1,5 +1,5 @@
 .get-in-touch {
-    background: $cod-gray;
+    background: #151515;
     padding: 120px 0;
     .wrapper {
         h2 {
@@ -159,7 +159,7 @@ form {
     font-weight: 600;
     font-size: 16px;
     line-height: 115%;
-    @include text-center;
+  
     color: #151515;
     margin-right: 40px;
     padding: 45px;
@@ -187,7 +187,10 @@ form {
     .wrapper {
         h2 {
             span {
-                @include partners-gradient;
+                background: linear-gradient(90.96deg, #29A9EE 0%, #41E4F0 99.64%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
             }
         }
     }

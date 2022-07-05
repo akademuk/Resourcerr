@@ -12,12 +12,12 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    margin-bottom: 160px;
+    margin-bottom: 0;
     .send-request-text {
         font-weight: 700;
         font-size: 38px;
         line-height: 120%;
-        color: $cod-gray;
+        color: #151515;
         width: 80%;
     }
     .btn-send-request {

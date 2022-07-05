@@ -1,5 +1,6 @@
 /*Send Request client --------------------------------------------*/
 .why-we-ar {
+    padding-top: 160px;
     .wrapper {
     display: flex;
     align-items: baseline;
@@ -19,7 +20,7 @@
                 font-weight: 800;
                 font-size: 24px;
                 line-height: 110%;
-                color: $cod-gray;
+                color: #151515;
                 opacity: 0.5;
                 position: absolute;
                 top: 0;
@@ -31,7 +32,7 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 140%;
-            color: $cod-gray;
+            color: #151515;
             margin-top: 20px;  
         }   
     }
@@ -56,7 +57,7 @@
         .why-we-ar-container_text {
             font-size: 18px;
             line-height: 140%;
-            color: $cod-gray;
+            color:#151515;
             padding: 0 24px 32px 24px;
             margin-bottom: 0;
         }  
