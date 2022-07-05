@@ -1016,8 +1016,10 @@ h3 {
     margin-bottom: 40px;
   }
 }
-#menu .wrapper  {
-  top: -46px !important;
+#menuToggle  {
+  .menuToggle-span {
+    top: 5px;
+  }
 }
 }
 
