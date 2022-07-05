@@ -10,10 +10,12 @@
                 if (form.checkValidity() === false) {
                     event.preventDefault();
                     event.stopPropagation();
+                    // invalid
+                    scrollToInvalid(form)
                 } else {
-
                     event.preventDefault();
                     event.stopPropagation();
+                    // valid
                     let formParams = new FormEventParams
 
                     //captcha
@@ -83,4 +85,10 @@ function submitAjaxForm(form, callbackSuccess, callbackFail, gToken) {
 
 
     })
+}
+
+function scrollToInvalid(form) {
+    const invalidInputs = Array.from($(':invalid',form));    // set up so you can use any custom invalid classes you're adding to your elements, as well
+    invalidInputs.sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);                      // sort inputs by offset from top of viewport (handles issues with multi-column layouts, where the first element in the markup isn't necessarily the highest on the page)
+    invalidInputs[0].scrollIntoView({ block: 'center', behavior: 'smooth' });                                         // scroll first (top) input into center of view, using smooth animation
 }
