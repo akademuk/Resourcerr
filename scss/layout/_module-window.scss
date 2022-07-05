@@ -957,6 +957,16 @@ h3 {
         top: 188px !important;
       }
     }
+    &:nth-of-type(10) {
+      .invalid-feedback {
+        top: 86px !important;
+      }
+    }
+     &:nth-of-type(13) {
+      .invalid-feedback {
+        top: 87px !important;
+      }
+    }
     &:nth-of-type(12) {
       .invalid-feedback {
         top: 188px !important;
@@ -971,6 +981,9 @@ h3 {
       .invalid-feedback {
         top: 72px !important;
       }
+    }
+    .invalid-feedback {
+      top: 73px !important;
     }
   }
 }

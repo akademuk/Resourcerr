@@ -68,7 +68,9 @@ header {
 @media (max-width: 767px) {
 @media (orientation: landscape) {
 header {
+    height: 50px;
     .logotype {
+        height: 50px;
         svg {
             width: 56px;
             height: 56px;
