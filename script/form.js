@@ -35,10 +35,12 @@
 
 
 class FormEventParams{
-     callbackSuccess(){
+     callbackSuccess(form){
          //show modal
          var modal1 = document.getElementById("myModal");
          modal1.style.display = "block";
+         $(form)[0].reset();
+         closeModal()
     }
 
     callbackFail(){
@@ -67,7 +69,7 @@ function submitAjaxForm(form, callbackSuccess, callbackFail, gToken) {
             dataType: "json",
             encode: true,
         }).done(function (data) {
-            callbackSuccess()
+            callbackSuccess(form)
             $("body").addClass("loaded"); //loader
             $('#loader').fadeOut(); //end loader
         })
