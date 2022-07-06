@@ -15,6 +15,9 @@
                 -webkit-text-stroke: 1px #151515;
                
             }
+            br {
+                display: none;
+            }
             &:before {
                 content: "02";
                 font-weight: 800;
@@ -51,7 +54,6 @@
         border: 1px solid #151515;
         border-radius: 24px;
         height: 428px;
-        cursor: pointer;
         margin-right: 1.5% !important;
         justify-content: space-between;
         .why-we-ar-container_text {
@@ -130,6 +132,15 @@
     .why-we-ar-container  {
         .why-we-ar-container_img {
             height: 200px;
+        }
+    }
+}
+.why-we-ar {
+    .wrapper  {
+        h2 {
+            br {
+                display: block;
+            }
         }
     }
 }

@@ -12,7 +12,6 @@
                         fill:url(#paint0_linear_434_2740);
                     }
                 }
-                cursor: pointer;
                 .achievements-counter {
                     -webkit-text-stroke: 1px #2ED7AB;
                 }
@@ -50,7 +49,6 @@
     .wrapper {
         .partners-achievements{
             &:hover {
-                cursor: pointer;
                 .achievements-counter {
                     -webkit-text-stroke: 1px #35C5F0
                 }

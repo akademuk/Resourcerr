@@ -14,6 +14,10 @@ function toggleModal(){
         document.querySelector("body").style.overflow = 'hidden';
     }  
 }
+function openModal(){
+    modal.style.display = 'block';
+        document.querySelector("body").style.overflow = 'hidden';
+}
 function closeModal(){
     modal.style.display = 'none';
     document.querySelector("body").style.overflow = 'visible';

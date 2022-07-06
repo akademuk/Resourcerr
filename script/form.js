@@ -7,6 +7,7 @@
         // Loop over them and prevent submission
         var validation = Array.prototype.filter.call(forms, function (form) {
             form.addEventListener('submit', function (event) {
+                phoneValidation(form)
                 if (form.checkValidity() === false) {
                     event.preventDefault();
                     event.stopPropagation();
@@ -50,6 +51,11 @@ class FormEventParams{
     }
 }
 
+$(document).ready(function () {
+   if (window.location.hash === "#form") { //modal show form if has hash
+    openModal();
+   }
+});
 
 function submitAjaxForm(form, callbackSuccess, callbackFail, gToken) {
     $(document).ready(function () {
@@ -91,4 +97,17 @@ function scrollToInvalid(form) {
     const invalidInputs = Array.from($(':invalid',form));    // set up so you can use any custom invalid classes you're adding to your elements, as well
     invalidInputs.sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);                      // sort inputs by offset from top of viewport (handles issues with multi-column layouts, where the first element in the markup isn't necessarily the highest on the page)
     invalidInputs[0].scrollIntoView({ block: 'center', behavior: 'smooth' });                                         // scroll first (top) input into center of view, using smooth animation
+}
+
+function phoneValidation(form) {
+    // let form = $(this).get(0);
+    $(form).addClass('was-validated');
+ 
+    //Need to display invalid feedback explicitly on submit for input fields due to plugin changing structure
+    $('.tel-input', form).each(function() {
+        let telInput = $(this).get(0);
+        if($(this).prop('required') && !telInput.checkValidity()) {
+          $(this).parents('.form-row').find('.invalid-feedback').show();
+        }
+      });
 }

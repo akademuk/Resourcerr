@@ -28,15 +28,15 @@ h1 {
             background:url(../images/revenue.png);
             background-size: contain;
             background-repeat: no-repeat;
-            width: 100%;
+            width: 106%;
             height: 100%;
             position: absolute;
             top: 25px;
-            left: 0;
+            left: -18px;
             z-index: -1;
         }
        i {
-        background: linear-gradient(90.96deg, #0EC4B5 0%,#51E689 99.64%);
+        background: linear-gradient(90.96deg, #11C7B5 0%,#58ED9B 99.64%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px #151515;
@@ -97,6 +97,7 @@ h1 {
         color: #151515;
         margin-bottom: 0;
         margin-right: 28px;
+        width: 226px;
     }
     .btn-send-request {
         width: 144px;
@@ -105,7 +106,7 @@ h1 {
     }
 }
 /*Partners------------------------------------------------------------------------------*/
-@media (min-width:1280px) {
+@media (min-width:1281px) {
     h1 {
         font-size: 120px;
     }
@@ -148,6 +149,7 @@ h1 {
     padding-left: 16%;
     p {
         font-size: 18px;
+        width: 226px;
     }
     button {
         width: 112px !important;
@@ -220,6 +222,14 @@ h1 {
 .partners-tittle  {
     span {
         margin-left: 28px !important;
+    }
+}
+.tittle-container-btn  {
+    button  {
+        span {
+            top: 28px !important;
+            left: 24px !important;
+        }
     }
 }
 }

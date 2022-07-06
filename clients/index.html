@@ -9,14 +9,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
-    <link rel="stylesheet" href="../style/reset.css?v1.04">
-    <link rel="stylesheet" href="../style/style.css?v1.04">
+    <link rel="stylesheet" href="../style/reset.css?v1.05">
+    <link rel="stylesheet" href="../style/style.css?v1.05">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="../style/slick-theme.css?v1.04"/>
+    <link rel="stylesheet" type="text/css" href="../style/slick-theme.css?v1.05"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
     <title>Resourcerr</title>
-
+    <style>
+.was-validated :invalid~.invalid-feedback,
+.invalid-feedback {
+  font-size: 11px !important;
+  line-height: 140% !important;
+  color:#FF005E !important;
+}
+.phone-style {
+  padding-left: 60px !important;
+}
+    </style>
 </head>
 <body>
     <div id="loader">
@@ -53,7 +63,7 @@
                         <!------------------------>
                         <h3>Corporate details</h3>
                             <div class="form-row">
-                                <label for="name">full name</label>
+                                <label for="name">Full name</label>
                                 <input type="text" id="name" name="corporate_details[full_name]"
                                        autocomplete="full_name" class="form-control"
                                        required
@@ -62,23 +72,25 @@
                             </div>
     
                             <div class="form-row">
-                                <label for="email">corporate email</label>
+                                <label for="email">Corporate email</label>
                                 <input type="email" id="email" name="corporate_details[corporate_email]"
                                        autocomplete="email" required class="form-control"/>
                                 <div class="invalid-feedback">This field is required</div>
                             </div>
     
                             <div class="form-row">
-                                <label for="phone">phone number</label>
-                                <input type="text" id="phone" class="phone" name="corporate_details[phone_number]" autocomplete="phone"
-                                       class="form-control"
-                                       pattern="^[0-9\-()+\s]+$" required
+                                <label for="email">Phone number</label>
+                                <input type="text" id="tel-input" name="corporate_details[phone_number]" autocomplete="phone"
+                                class="form-control tel-input phone-style" required="required"
+                                pattern="^[0-9\-()+\s]+$" placeholder="+(201) 555-0123"
                                 />
                                 <div class="invalid-feedback">This field is required</div>
+    
+                              
                             </div>
                         
                             <div class="form-row">
-                                <label for="company-name">company name</label>
+                                <label for="company-name">Company name</label>
                                 <input type="text" id="company-name" name="corporate_details[company_name]"
                                 autocomplete="company_name" class="form-control" 
                                 required />
@@ -86,14 +98,14 @@
                             </div>
                             
                             <div class="form-row">
-                                <label for="company-website">company website</label>
+                                <label for="company-website">Company website</label>
                                 <input type="text" id="company-website" name="corporate_details[company_website]"
                                 autocomplete="company_website" class="form-control" required />
                                 <div class="invalid-feedback">This field is required</div>
                             </div>
     
                             <div class="form-row">
-                                <label for="brief-company">brief company overview</label>
+                                <label for="brief-company">Brief company overview</label>
                                 <textarea name="corporate_details[brief_company]" id='brief-company' cols="30" rows="10" 
                                 autocomplete="brief_company" class="form-control" 
                                 required ></textarea>
@@ -105,7 +117,7 @@
                         <h3>Campaign details</h3>
     
                         <div class="form-row">
-                            <label for="budget">budget</label>
+                            <label for="budget">Budget</label>
                             <input type="text" id="budget" name="campaign_details[budget]"
                             autocomplete="budget" class="form-control" 
                             required />
@@ -113,7 +125,7 @@
                         </div>
     
                         <div class="form-row">
-                            <label for="pilot">max pilot period</label>
+                            <label for="pilot">Max pilot period</label>
                             <input type="text" id="pilot" name="campaign_details[max_pilot_period]"
                             autocomplete="max_pilot_period" class="form-control" 
                             required />
@@ -121,7 +133,7 @@
                         </div>
     
                         <div class="form-row">
-                            <label for="number-contacts">number of contacts / month</label>
+                            <label for="number-contacts">Number of contacts / month</label>
                             <input type="text" id="number-contacts" name="campaign_details[number_contacts]"
                             autocomplete="number_contacts" class="form-control" 
                             required />
@@ -129,7 +141,7 @@
                         </div>
     
                         <div class="form-row">
-                            <label for="number-appointments">number of appointments / month</label>
+                            <label for="number-appointments">Number of appointments / month</label>
                             <input type="text" id="number-appointments" name="campaign_details[number_appointments]"
                             autocomplete="number_appointments" class="form-control" 
                             required />
@@ -137,7 +149,7 @@
                         </div>
     
                         <div class="form-row">
-                            <label for="language">preferable outreach language</label>
+                            <label for="language">Preferable outreach language</label>
                             <input type="text" id="language" name="campaign_details[preferable_outreach_language]"
                             autocomplete="preferable_outreach_language" class="form-control" 
                             required />
@@ -145,7 +157,7 @@
                         </div>
     
                         <div class="form-row">
-                            <label for="additional-criteria">additional criteria (optional)</label>
+                            <label for="additional-criteria">Additional criteria (optional)</label>
                             <textarea cols="30" rows="10" id="additional-criteria"
                             name="campaign_details[additional_criteria]"
                             autocomplete="additional_criteria" class="form-control" 
@@ -155,7 +167,7 @@
                         <h3>Product overview</h3>
     
                         <div class="form-row">
-                            <label for="average">average deal value ($ mrr)</label>
+                            <label for="average">Average deal value ($ mrr)</label>
                             <input type="text" id="average" name="product_overview[average_deal_value]"
                             autocomplete="average_deal_value" class="form-control" 
                             required />
@@ -163,7 +175,7 @@
                         </div>
     
                         <div class="form-row">
-                            <label for="sales">average sales cycle</label>
+                            <label for="sales">Average sales cycle</label>
                             <input type="text" id="sales" name="product_overview[average_sales_cycle]"
                             autocomplete="average_sales_cycle" class="form-control" 
                             required />
@@ -171,7 +183,7 @@
                         </div>
     
                         <div class="form-row">
-                            <label for="average-number">average number of calls/month</label>
+                            <label for="average-number">Average number of calls/month</label>
                             <input type="text" id="average-number" name="product_overview[average_number_of_calls]"
                             autocomplete="average_number_of_calls" class="form-control" 
                             required />
@@ -179,7 +191,7 @@
                         </div>
     
                         <div class="form-row">
-                            <label for="conversion">calls to deals closed conversion</label>
+                            <label for="conversion">Calls to deals closed conversion</label>
                             <input type="text" id="conversion" name="product_overview[calls_to_deals_closed_conversion]"
                             autocomplete="calls_to_deals_closed_conversion" class="form-control"
                             required />
@@ -189,7 +201,7 @@
                         <h3>Ideal customer profile</h3>
     
                         <div class="form-row">
-                            <label for='industry'>industry</label>
+                            <label for='industry'>Industry</label>
                             <input type="text" id="industry" name="ideal_customer_profile[industry]"
                             autocomplete="industry" class="form-control" 
                             required />
@@ -197,7 +209,7 @@
                         </div>
     
                         <div class="form-row">
-                            <label for="location">location</label>
+                            <label for="location">Location</label>
                             <input type="text" id="location" name="ideal_customer_profile[location]"
                             autocomplete="location" class="form-control" 
                             required />
@@ -205,7 +217,7 @@
                         </div>
     
                         <div class="form-row">
-                            <label for="titles">titles</label>
+                            <label for="titles">Titles</label>
                             <input type="text" id="titles" name="ideal_customer_profile[titles]"
                             autocomplete="titles" class="form-control" 
                             required />
@@ -213,7 +225,7 @@
                         </div>
     
                         <div class="form-row">
-                            <label for="number-of-employees">number of employees</label>
+                            <label for="number-of-employees">Number of employees</label>
                             <input type="text" id="number-of-employees" name="ideal_customer_profile[number_of_employees]"
                             autocomplete="number_of_employees" class="form-control" 
                             required />
@@ -221,7 +233,7 @@
                         </div>
                         
                         <div class="form-row">
-                            <label for="additional-requirements">aditional requirements (optional)</label>
+                            <label for="additional-requirements">Aditional requirements (optional)</label>
                             <textarea id="additional-requirements" cols="30" rows="10"
                             name="ideal_customer_profile[additional_requirements]"
                             autocomplete="additional_requirements" class="form-control" 
@@ -362,7 +374,7 @@
                                         </label>
                                     </div>
                                 <a href="#">For clients</a>
-                                <a href="../partners/index.html" onclick="switchClicked(this, 's2', '/partners');">For parents</a>
+                                <a href="../partners/index.html" onclick="switchClicked(this, 's2', '/partners');">For partners</a>
                                 </div>
                             </div>
                             <button class="footer-link partners-blue-hover client-ho" id="modul-window_open">
@@ -372,7 +384,7 @@
                             </button>
                             <div class="burger-module_logo">
                                 <a href="#">
-                                    <img src="../images/logo.png" alt="">
+                                    <img src="../images/logo-white.png" srcset="../images/logo-white-retina.png 2x" alt="Resourcerr">
                                 </a>
                             <p class="logotype-text">looking for a 100% <br> business match</p>    
                             </div>
@@ -392,7 +404,7 @@
                             </label>
                         </div>
                         <a href="#">For clients</a>
-                        <a href="../partners/index.html" onclick="switchClicked(this, 's2', '/partners');">For parents</a>
+                        <a href="../partners/index.html" onclick="switchClicked(this, 's2', '/partners');">For partners</a>
                     </div>
                 </div>
                 <div class="tittle-container">
@@ -408,20 +420,6 @@
         <div class="achievements">
             <div class="wrapper">
                 <div class="achievements-section">
-    
-                    <svg width="22" height="24" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="0.5">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.6667C12.8409 6.6667 14.3333 5.1743 14.3333 3.33333C14.3333 1.49238 12.8409 0 11 0C9.15906 0 7.66663 1.49238 7.66663 3.33333C7.66663 5.1743 9.15906 6.6667 11 6.6667ZM11 5.6667C12.2887 5.6667 13.3333 4.622 13.3333 3.33333C13.3333 2.04467 12.2887 1 11 1C9.71126 1 8.66663 2.04467 8.66663 3.33333C8.66663 4.622 9.71126 5.6667 11 5.6667Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 5.5C6.5 6.8807 5.38071 8 4 8C2.61929 8 1.5 6.8807 1.5 5.5C1.5 4.11929 2.61929 3 4 3C5.38071 3 6.5 4.11929 6.5 5.5ZM5.5 5.5C5.5 6.3284 4.82843 7 4 7C3.17157 7 2.5 6.3284 2.5 5.5C2.5 4.67157 3.17157 4 4 4C4.82843 4 5.5 4.67157 5.5 5.5Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 14V12C0.5 10.067 2.067 8.5 4 8.5C5.22483 8.5 6.3027 9.1292 6.92809 10.0819C7.64816 8.5559 9.2008 7.5 11 7.5C12.7992 7.5 14.3518 8.5559 15.0719 10.0819C15.6973 9.1292 16.7752 8.5 18 8.5C19.933 8.5 21.5 10.067 21.5 12V14C21.5 14.2761 21.2761 14.5 21 14.5H1C0.72386 14.5 0.5 14.2761 0.5 14ZM1.5 12C1.5 10.6193 2.61929 9.5 4 9.5C5.38071 9.5 6.5 10.6193 6.5 12V13.5H1.5V12ZM20.5 13.5V12C20.5 10.6193 19.3807 9.5 18 9.5C16.6193 9.5 15.5 10.6193 15.5 12V13.5H20.5ZM14.5 13.5V12C14.5 10.067 12.933 8.5 11 8.5C9.067 8.5 7.5 10.067 7.5 12V13.5H14.5Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 5.5C20.5 6.8807 19.3807 8 18 8C16.6193 8 15.5 6.8807 15.5 5.5C15.5 4.11929 16.6193 3 18 3C19.3807 3 20.5 4.11929 20.5 5.5ZM19.5 5.5C19.5 6.3284 18.8284 7 18 7C17.1716 7 16.5 6.3284 16.5 5.5C16.5 4.67157 17.1716 4 18 4C18.8284 4 19.5 4.67157 19.5 5.5Z" fill="white"/>
-                        </g>
-                    </svg>
-                 <p class="achievements-counter"><span class="number">200</span>+</p>
-                 <p class="achievements-text">Total number <br> of clients</p>
-                </div>
-            
-                <div class="achievements-section">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.5">
                         <path d="M12 4.6875C11.7413 4.6875 11.5312 4.89752 11.5312 5.15625C11.5312 5.41498 11.7413 5.625 12 5.625C12.2587 5.625 12.4688 5.41498 12.4688 5.15625C12.4688 4.89752 12.2587 4.6875 12 4.6875Z" fill="white"/>
@@ -431,26 +429,20 @@
                         <path d="M12 15H4.21875C3.95984 15 3.75 15.2098 3.75 15.4688C3.75 15.7277 3.95984 15.9375 4.21875 15.9375H12C12.2589 15.9375 12.4688 15.7277 12.4688 15.4688C12.4688 15.2098 12.2589 15 12 15Z" fill="white"/>
                         <path d="M19.7812 4.6875H13.875C13.6161 4.6875 13.4062 4.89734 13.4062 5.15625C13.4062 5.41516 13.6161 5.625 13.875 5.625H19.7812C20.0402 5.625 20.25 5.41516 20.25 5.15625C20.25 4.89734 20.0402 4.6875 19.7812 4.6875Z" fill="white"/>
                         </g>
-    
                     </svg>
                         
                  <p class="achievements-counter"><span class="number">5</span>K+</p>
                  <p class="achievements-text">Meetings arranged <br></p>
                 </div>
-            
                 <div class="achievements-section">
                     <svg width="22" height="24" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.5">
                         <path d="M21.56 2.71998C21.4876 2.66426 21.4038 2.62542 21.3145 2.60631C21.2252 2.58721 21.1328 2.58833 21.044 2.60958L18.7424 3.19998C17.8928 3.15198 15.1832 2.11038 13.64 1.44798L13.6088 1.43598C11.5592 0.699184 9.78556 0.864784 8.30236 1.91598C6.32956 1.24158 3.80236 2.66478 3.02236 3.15198L0.948757 2.61918C0.860152 2.59601 0.767406 2.59351 0.677682 2.61188C0.587958 2.63025 0.503657 2.669 0.431289 2.72513C0.358921 2.78126 0.300423 2.85328 0.260312 2.93561C0.220202 3.01795 0.199552 3.1084 0.199957 3.19998V11.6C0.199957 11.7591 0.263171 11.9117 0.375693 12.0242C0.488215 12.1368 0.640827 12.2 0.799957 12.2H2.07436L7.52956 16.5008C7.73893 16.7022 7.99395 16.8499 8.27283 16.9314C8.55171 17.0128 8.84616 17.0256 9.13103 16.9685C9.4159 16.9114 9.68273 16.7863 9.90871 16.6037C10.1347 16.4211 10.3131 16.1865 10.4288 15.92C10.7006 16.0757 11.0082 16.1584 11.3216 16.16C11.6733 16.1601 12.0173 16.0572 12.3112 15.864C12.605 15.6708 12.8359 15.3957 12.9752 15.0728C13.2465 15.2298 13.5544 15.3125 13.868 15.3128C14.2193 15.3125 14.5628 15.2094 14.8562 15.0162C15.1496 14.823 15.38 14.5482 15.5192 14.2256C15.7962 14.3829 16.1102 14.4637 16.4288 14.4595C16.7474 14.4554 17.0591 14.3666 17.332 14.2022C17.6049 14.0377 17.8292 13.8036 17.9817 13.5239C18.1342 13.2441 18.2096 12.9289 18.2 12.6104L19.484 12.2H21.2C21.3591 12.2 21.5117 12.1368 21.6242 12.0242C21.7367 11.9117 21.8 11.7591 21.8 11.6V3.19998C21.8003 3.10677 21.7788 3.01477 21.7371 2.9314C21.6954 2.84803 21.6348 2.77561 21.56 2.71998ZM1.39996 3.96798L2.47276 4.24398L2.04316 8.23998L1.74556 11H1.39996V3.96798ZM16.8368 13.0784C16.7227 13.1884 16.5704 13.2498 16.412 13.2498C16.2535 13.2498 16.1012 13.1884 15.9872 13.0784L15.14 12.2312L11.7464 8.83518C11.6323 8.73267 11.4834 8.67769 11.3301 8.68154C11.1768 8.68539 11.0309 8.74777 10.9221 8.85588C10.8134 8.964 10.7502 9.10963 10.7455 9.26289C10.7408 9.41614 10.7949 9.56539 10.8968 9.67998L14.2928 13.0808C14.4019 13.1941 14.4622 13.3457 14.4606 13.5031C14.459 13.6604 14.3957 13.8108 14.2843 13.9219C14.1729 14.033 14.0223 14.0959 13.865 14.097C13.7076 14.0981 13.5562 14.0374 13.4432 13.928L12.5936 13.0784L10.04 10.532C9.98417 10.4762 9.91794 10.4319 9.84506 10.4018C9.77217 10.3716 9.69405 10.356 9.61516 10.356C9.53626 10.356 9.45814 10.3716 9.38526 10.4018C9.31237 10.4319 9.24614 10.4762 9.19036 10.532C9.13457 10.5878 9.09032 10.654 9.06013 10.7269C9.02994 10.7998 9.0144 10.8779 9.0144 10.9568C9.0144 11.0357 9.02994 11.1138 9.06013 11.1867C9.09032 11.2596 9.13457 11.3258 9.19036 11.3816L11.7464 13.928C11.8036 13.9834 11.8492 14.0497 11.8805 14.1229C11.9119 14.1962 11.9283 14.2749 11.9289 14.3546C11.9295 14.4343 11.9142 14.5132 11.8839 14.5869C11.8536 14.6606 11.809 14.7276 11.7526 14.7838C11.6961 14.8401 11.6291 14.8845 11.5553 14.9146C11.4815 14.9446 11.4025 14.9597 11.3228 14.9589C11.2432 14.9581 11.1645 14.9414 11.0913 14.9099C11.0182 14.8784 10.952 14.8326 10.8968 14.7752L8.35996 12.2312C8.30443 12.1754 8.23842 12.1311 8.16572 12.1009C8.09303 12.0707 8.01508 12.0551 7.93636 12.0551C7.85763 12.0551 7.77968 12.0707 7.70699 12.1009C7.6343 12.1311 7.56829 12.1754 7.51276 12.2312C7.45682 12.2863 7.4125 12.3521 7.38241 12.4247C7.35232 12.4972 7.33707 12.575 7.33756 12.6536C7.33729 12.7324 7.35263 12.8106 7.38269 12.8835C7.41276 12.9564 7.45697 13.0226 7.51276 13.0784L9.20956 14.7752C9.32182 14.8881 9.38484 15.0408 9.38484 15.2C9.38484 15.3592 9.32182 15.5119 9.20956 15.6248C9.09493 15.7337 8.94286 15.7944 8.78476 15.7944C8.62665 15.7944 8.47459 15.7337 8.35996 15.6248C8.34352 15.6075 8.32587 15.5915 8.30716 15.5768L2.91436 11.3336L3.51676 5.76798L3.69196 4.14558C4.45516 3.66558 5.94556 2.92398 7.18156 2.94558C6.81423 3.3697 6.48571 3.82593 6.19996 4.30878C5.93525 4.75983 5.85098 5.29431 5.96405 5.80492C6.07713 6.31553 6.37918 6.76446 6.80956 7.06158C7.65916 7.64238 9.20956 8.18238 11.1296 6.52398L16.8368 12.2288C16.9484 12.342 17.0111 12.4946 17.0111 12.6536C17.0111 12.8126 16.9484 12.9652 16.8368 13.0784ZM17.78 11.4872C17.7507 11.4503 17.7195 11.415 17.6864 11.3816L11.9744 5.66958C12.2144 5.39598 12.4544 5.09118 12.6944 4.74558C12.7489 4.68229 12.7896 4.6083 12.8139 4.52835C12.8382 4.4484 12.8456 4.36425 12.8355 4.28131C12.8254 4.19836 12.798 4.11844 12.7553 4.04666C12.7125 3.97489 12.6552 3.91284 12.587 3.86449C12.5189 3.81614 12.4414 3.78257 12.3595 3.76591C12.2776 3.74925 12.1931 3.74988 12.1115 3.76776C12.0299 3.78564 11.9529 3.82037 11.8855 3.86972C11.818 3.91908 11.7617 3.98198 11.72 4.05438C10.6544 5.56398 9.06076 7.13838 7.49596 6.07038C7.31828 5.94384 7.19487 5.75493 7.15038 5.54138C7.10589 5.32783 7.14359 5.10535 7.25596 4.91838C7.6449 4.2235 8.15351 3.60277 8.75836 3.08478C8.77781 3.07091 8.79626 3.05567 8.81356 3.03918C10.0136 2.07918 11.4536 1.93278 13.2008 2.55918C13.6544 2.75118 16.676 4.03038 18.26 4.33518L18.788 11.1728L17.78 11.4872ZM20.6 11H19.9568L19.436 4.25838L20.6 3.96798V11Z" fill="white"/>
                     </g>
-                    </svg>
-                        
-                  
-                        
+                    </svg>       
                  <p class="achievements-counter"><span class="number">40</span>+</p>
                  <p class="achievements-text">Partners already <br> cooperate with us</p>
                 </div>
-            
                 <div class="achievements-section">
                     <svg width="24" height="24" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.5">
@@ -466,6 +458,18 @@
                         
                  <p class="achievements-counter"><span class="number">6</span>+</p>
                  <p class="achievements-text">Months our <br> cooperation cycle</p>
+                </div>
+                <div class="achievements-section">
+                    <svg width="22" height="24" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.5">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.6667C12.8409 6.6667 14.3333 5.1743 14.3333 3.33333C14.3333 1.49238 12.8409 0 11 0C9.15906 0 7.66663 1.49238 7.66663 3.33333C7.66663 5.1743 9.15906 6.6667 11 6.6667ZM11 5.6667C12.2887 5.6667 13.3333 4.622 13.3333 3.33333C13.3333 2.04467 12.2887 1 11 1C9.71126 1 8.66663 2.04467 8.66663 3.33333C8.66663 4.622 9.71126 5.6667 11 5.6667Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 5.5C6.5 6.8807 5.38071 8 4 8C2.61929 8 1.5 6.8807 1.5 5.5C1.5 4.11929 2.61929 3 4 3C5.38071 3 6.5 4.11929 6.5 5.5ZM5.5 5.5C5.5 6.3284 4.82843 7 4 7C3.17157 7 2.5 6.3284 2.5 5.5C2.5 4.67157 3.17157 4 4 4C4.82843 4 5.5 4.67157 5.5 5.5Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 14V12C0.5 10.067 2.067 8.5 4 8.5C5.22483 8.5 6.3027 9.1292 6.92809 10.0819C7.64816 8.5559 9.2008 7.5 11 7.5C12.7992 7.5 14.3518 8.5559 15.0719 10.0819C15.6973 9.1292 16.7752 8.5 18 8.5C19.933 8.5 21.5 10.067 21.5 12V14C21.5 14.2761 21.2761 14.5 21 14.5H1C0.72386 14.5 0.5 14.2761 0.5 14ZM1.5 12C1.5 10.6193 2.61929 9.5 4 9.5C5.38071 9.5 6.5 10.6193 6.5 12V13.5H1.5V12ZM20.5 13.5V12C20.5 10.6193 19.3807 9.5 18 9.5C16.6193 9.5 15.5 10.6193 15.5 12V13.5H20.5ZM14.5 13.5V12C14.5 10.067 12.933 8.5 11 8.5C9.067 8.5 7.5 10.067 7.5 12V13.5H14.5Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 5.5C20.5 6.8807 19.3807 8 18 8C16.6193 8 15.5 6.8807 15.5 5.5C15.5 4.11929 16.6193 3 18 3C19.3807 3 20.5 4.11929 20.5 5.5ZM19.5 5.5C19.5 6.3284 18.8284 7 18 7C17.1716 7 16.5 6.3284 16.5 5.5C16.5 4.67157 17.1716 4 18 4C18.8284 4 19.5 4.67157 19.5 5.5Z" fill="white"/>
+                        </g>
+                    </svg>
+                 <p class="achievements-counter"><span class="number">200</span>+</p>
+                 <p class="achievements-text">Total number <br> of clients</p>
                 </div>
             </div>
         </div>
@@ -508,7 +512,7 @@
         <!--Why we ar----------------------------------------------------------->
         <div class="why-we-ar" id="why-we">
             <div class="wrapper">
-               <h2>Why<span> resourcerr </span> ?</h2>
+               <h2>Why <br><span> resourcerr </span> ?</h2>
                <p class="why-we-tittle-text">We know who can provide the best results <br class="br"> according to your requirements</p>
                 <div class="why-we-ar-flex slickNavigator">
                     <div class="why-we-ar-container ">
@@ -661,9 +665,9 @@
                             <div class="invalid-feedback">This field is required</div>
                         </div>
                         <div class="form-row">
-                            <input type="text" name="clients[phone_number]" autocomplete="phone"
-                            class="form-control" placeholder="Phone"
-                            pattern="^[0-9\-()+\s]+$"
+                            <input type="text" id="tel-input-get" name="clients[phone_number]" autocomplete="phone"
+                            class="form-control phone-style" placeholder="Phone"
+                            pattern="^[0-9\-()+\s]+$" 
                             />
                         </div>
                         <div class="form-row">
@@ -779,7 +783,7 @@
                         <div class="toggle-switch">
                             <div class="toggle-custom">
                               <a href="#">For clients</a>
-                              <a href="../partners/index.html" onclick="switchClicked(this, 's2', '/partners');" class="client-hover">For parents</a>
+                              <a href="../partners/index.html" onclick="switchClicked(this, 's2', '/partners');" class="client-hover">For partners</a>
                             </div>
                         </div> 
                         <button onclick="toggleModal()" class="footer-link partners-blue-hover client-ho">
@@ -793,23 +797,23 @@
             </div>
         </footer>
 
-     
-    <script src="../script/loader.js?v1.04"></script>
-    <script src="../env.js?v1.04"></script>
+      
+    <script src="../script/loader.js?v1.05"></script>
+    <script src="../env.js?v1.05"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
-    <script src="../script/phone-number.js?v1.04"></script>
-    <script src="../script/switchToToggle.js?v1.04"></script>
-    <script src="../script/achievements-counter.js?v1.04"></script>
-    <script src="../script/burger.js?v1.04"></script>
-    <script src="../script/modal-message.js?v1.04"></script>
-    <script src="../script/modal-window.js?v1.04"></script>
+    <script src="../script/phone.js"></script>
+    <script src="../script/switchToToggle.js?v1.05"></script>
+    <script src="../script/achievements-counter.js?v1.05"></script>
+    <script src="../script/burger.js?v1.05"></script>
+    <script src="../script/modal-message.js?v1.05"></script>
+    <script src="../script/modal-window.js?v1.05"></script>
     <script src="../script/slick.min.js"></script>
-    <script src="../script/reviews.js?v1.04"></script>
-    <script src="../script/accordions.js?v1.04"></script>
-    <script src="../script/paralax.js?v1.04"></script>
-    <script src="../script/read-more.js?v1.04"></script>
-    <script src="../script/recaptcha.js?v1.04"></script>
-    <script src="../script/form.js?v1.04"></script>
+    <script src="../script/reviews.js?v1.05"></script>
+    <script src="../script/accordions.js?v1.05"></script>
+    <script src="../script/paralax.js?v1.05"></script>
+    <script src="../script/read-more.js?v1.05"></script>
+    <script src="../script/recaptcha.js?v1.05"></script>
+    <script src="../script/form.js?v1.05"></script>
 
 </body>
 </html>

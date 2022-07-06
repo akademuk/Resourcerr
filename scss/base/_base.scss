@@ -19,6 +19,10 @@ body {
 }
 button {
     outline: none !important;
+    font-weight: 600 !important;
+    span {
+        font-weight: 600 !important;
+    }
 }
 html {
     scroll-behavior: smooth;
@@ -85,6 +89,7 @@ h2 {
     color: $cod-gray;
     margin-top: 40px;
     span {
+        font-weight: 700;
         font-family: 'Poppins', sans-serif;
         background: linear-gradient(90.96deg, #0EC4B5 0%,#51E689 99.64%);
         -webkit-background-clip: text;

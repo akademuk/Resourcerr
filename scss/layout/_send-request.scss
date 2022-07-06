@@ -68,8 +68,8 @@
             height: 144px !important;
            span {
             font-size: 18px !important;
-            top: 33% !important;
-            left: 25% !important;
+            top: 49px !important;
+            left: 36px !important;
            }
         }
         .icon-expand {
@@ -145,29 +145,52 @@
             }
         }
     }
-.send-request  {
-    .wrapper  {
-        .icon  {
-            span {
-                left: 23% !important;
-            }
+}
+
+@media (max-width: 992px) {
+.send-request {
+    margin-top: 120px;
+    .wrapper {
+        padding: 72px 30px 72px 48px;
+        box-sizing: border-box;
+        .send-request-text {
+            font-size: 32px;
+        }
+        .btn-send-request {
+            margin-left: 20px;
         }
     }
 }
 }
-/*@media max-width: 768px --------------------------------------------*/
 @media (max-width: 768px) {
-.send-request {
-    margin-top: 120px;
-    .wrapper {
-        padding: 72px 30px 72px 38px;
-        box-sizing: border-box;
-        margin-bottom: 120px;
-        .send-request-text {
-            font-size: 27px;
+    .send-request {
+        margin-top: 120px;
+        .wrapper {
+            padding: 72px 30px 72px 48px;
+            box-sizing: border-box;
+            .send-request-text {
+                font-size: 27px;
+            }
+            .btn-send-request {
+                margin-left: 20px;
+            }
+            .icon {
+                width: 112px !important;
+                height: 112px !important;
+                span {
+                    font-size: 14px !important;
+                    top: 37px !important;
+                    left: 27px !important;
+                }
+            }
         }
-        .btn-send-request {
-            margin-left: 20px;
+    }
+.partners-send-request {
+    .wrapper {
+        .icon { 
+            span {
+                left: 32px !important;
+            }
         }
     }
 }
@@ -186,15 +209,15 @@
         align-items: flex-end;
         img {
             &:nth-of-type(1) {
-                bottom: 10vh;
+                bottom: 4vh;
                 top: inherit;
-                left: 2vw;
+                left: 4vw;
                 width: 150px;
             }
             &:nth-of-type(2) {
                 width: 100px;
                 top: inherit;
-                bottom: 27vh;
+                bottom: 15vh;
                 left: 30vw;
             }
             &:nth-of-type(3) {
@@ -221,11 +244,13 @@
             }
         }
     }
-.partners-send-request {
+.send-request.partners-send-request  {
     .wrapper {
-        .icon  {
-            span {
-                left: 24px !important;
+        .wrapper {
+            .icon {
+                span {
+                    left: 25px !important;
+                }
             }
         }
     }

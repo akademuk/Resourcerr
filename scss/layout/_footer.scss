@@ -113,8 +113,8 @@
         
             span {
                 &:nth-of-type(2) {
-                width: 40px;
-                height: 40px;
+                width: 48px;
+                height: 48px;
                 img {
                     width: 100%;
                     height: 100%;
@@ -128,10 +128,10 @@
             
             .icon {
                 &:before {
-                    width: 36px;
-                    height: 36px;
-                    left: 2px;
-                    top: 2px;
+                    width: 48px;
+                    height: 48px;
+                    left: 0;
+                    top: 0;
                 }
             }
         
@@ -139,7 +139,7 @@
    
 }
 .client-ho {
-    width: 165px !important;
+    width: 180px !important;
     span {
        &:nth-of-type(1) {
         width: 110px;
@@ -152,8 +152,8 @@
                 content: '';
                 background:#2ED7AB !important;
                 box-shadow: inset 0 0 0 1px #151515;
-                width: 36px;
-                height: 36px;
+                width: 48px;
+                    height: 48px;
                 background-size: cover;
                
             }
@@ -199,8 +199,10 @@
                 content: '';
                 background:#35C5F0;
                 box-shadow: inset 0 0 0 1px #151515;
-                width: 36px;
-                height: 36px;
+                width: 41px;
+                height: 41px;
+                left: 3px;
+                top: 3px;
                 background-size: cover;
                
             }
@@ -259,6 +261,8 @@
 .footer-navigation {
     width: 95%;
     padding-left: 0;
+    display: flex;
+    justify-content: space-between;
 }
 .footer-logo {
     margin-bottom: 30px;
@@ -277,7 +281,6 @@
     }
 }
 .footer-module {
-    margin-left: 15%;
     .toggle-switch  {
         .toggle-custom {
             a {
@@ -299,5 +302,15 @@
 }
 .footer-text {
     bottom: -80px;
+}
+.partners-blue-hover  {
+    width: auto;
+   span {
+    font-size: 13px !important;
+    width: auto;
+    &:nth-of-type(1) {
+        margin-right: 10px;
+    }
+   }
 }
 }
